@@ -23,29 +23,29 @@ The `useReducer` takes 2 arguments: a reducer function and an initial state.
 import { useReducer } from "react";
 
 const initialState = {
-  count: 0,
+	count: 0,
 };
 
 function reducer(state, action) {
-  switch (action.type) {
-    case "increment":
-      return { count: state.count + 1 };
-    case "decrement":
-      return { count: state.count - 1 };
-    default:
-      throw new Error("unknown action");
-  }
+	switch (action.type) {
+		case "increment":
+			return { count: state.count + 1 };
+		case "decrement":
+			return { count: state.count - 1 };
+		default:
+			throw new Error("unknown action");
+	}
 }
 
 function Counter() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  return (
-    <>
-      Count: {state.count}
-      <button onClick={() => dispatch({ type: "increment" })}>+</button>
-      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
-    </>
-  );
+	const [state, dispatch] = useReducer(reducer, initialState);
+	return (
+		<>
+			Count: {state.count}
+			<button onClick={() => dispatch({ type: "increment" })}>+</button>
+			<button onClick={() => dispatch({ type: "decrement" })}>-</button>
+		</>
+	);
 }
 ```
 
@@ -70,27 +70,27 @@ Let's see how you fetch data with `useState` and `useReducer`
 import { useState, useEffect } from "react";
 
 const useFetchApi = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+	const [data, setData] = useState([]);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const url = "https://jsonplaceholder.typicode.com/todos";
-      try {
-        const res = await fetch(url);
-        const data = await res.json();
-        setData(data);
-      } catch (error) {
-        setError(error);
-      }
-      setLoading(false);
-    };
+	useEffect(() => {
+		const fetchData = async () => {
+			const url = "https://jsonplaceholder.typicode.com/todos";
+			try {
+				const res = await fetch(url);
+				const data = await res.json();
+				setData(data);
+			} catch (error) {
+				setError(error);
+			}
+			setLoading(false);
+		};
 
-    fetchData();
-  }, []);
+		fetchData();
+	}, []);
 
-  return { data, loading, error };
+	return { data, loading, error };
 };
 
 export default useFetchApi;
@@ -112,60 +112,57 @@ Before we move on to the next section, when you update the state in React, it is
 import { useEffect, useReducer } from "react";
 
 const initialState = {
-  data: [],
-  loading: true,
-  error: null,
+	data: [],
+	loading: true,
+	error: null,
 };
 
 const FETCH_SUCCESS = "fetch_success";
 const FETCH_ERROR = "fetch_error";
 
 const reducer = (state, action) => {
-  switch (action.type) {
-    case FETCH_SUCCESS:
-      return {
-        ...state,
-        data: action.payload,
-        loading: false,
-      };
-    case FETCH_ERROR:
-      return {
-        ...state,
-        loading: false,
-        error: action.payload,
-      };
-    default:
-      throw new Error(`Unknown action: ${action.type}`);
-  }
+	switch (action.type) {
+		case FETCH_SUCCESS:
+			return {
+				...state,
+				data: action.payload,
+				loading: false,
+			};
+		case FETCH_ERROR:
+			return {
+				...state,
+				loading: false,
+				error: action.payload,
+			};
+		default:
+			throw new Error(`Unknown action: ${action.type}`);
+	}
 };
 
 const useFetchApi = () => {
-  const [{ data, loading, error }, dispatch] = useReducer(
-    reducer,
-    initialState
-  );
-  // you could write like this
-  // const [state, dispatch] = useReducer(reducer, initialState)
+	const [{ data, loading, error }, dispatch] = useReducer(reducer, initialState);
+	// you could write like this
+	// const [state, dispatch] = useReducer(reducer, initialState)
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const url = "https://jsonplaceholder.typicode.com/todos";
-      try {
-        const res = await fetch(url);
-        const data = await res.json();
-        // if you write state, this needs to be state.data
-        dispatch({ type: FETCH_SUCCESS, payload: data });
-      } catch (error) {
-        // same as above, need to be state.error
-        dispatch({ type: FETCH_ERROR, payload: error });
-      }
-    };
+	useEffect(() => {
+		const fetchData = async () => {
+			const url = "https://jsonplaceholder.typicode.com/todos";
+			try {
+				const res = await fetch(url);
+				const data = await res.json();
+				// if you write state, this needs to be state.data
+				dispatch({ type: FETCH_SUCCESS, payload: data });
+			} catch (error) {
+				// same as above, need to be state.error
+				dispatch({ type: FETCH_ERROR, payload: error });
+			}
+		};
 
-    fetchData();
-  }, []);
+		fetchData();
+	}, []);
 
-  // return state
-  return { data, loading, error };
+	// return state
+	return { data, loading, error };
 };
 
 export default useFetchApi;

@@ -29,18 +29,18 @@ After running `npx tsc --init`, you should see `tsconfig.json` in the root folde
 
 ```json title="tsconfig.json"
 {
-  "compilerOptions": {
-    /* Visit https://aka.ms/tsconfig to read more about this file */
-    "target": "es2016",
-    "module": "commonjs",
-    "resolveJsonModule": true,
-    "outDir": "./build" /* could set dist instead if you prefer */,
-    "rootDir": "./src",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
+	"compilerOptions": {
+		/* Visit https://aka.ms/tsconfig to read more about this file */
+		"target": "es2016",
+		"module": "commonjs",
+		"resolveJsonModule": true,
+		"outDir": "./build" /* could set dist instead if you prefer */,
+		"rootDir": "./src",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true
+	}
 }
 ```
 
@@ -60,11 +60,11 @@ const app: Express = express();
 const PORT = 3001;
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello from TS Node");
+	res.send("Hello from TS Node");
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+	console.log(`Server is running on port ${PORT}`);
 });
 ```
 
@@ -103,10 +103,10 @@ pnpm install -D nodemon ts-node
 
 ```json title="nodemon.json"
 {
-  "watch": ["src"],
-  "ext": ".ts,.js",
-  "ignore": [],
-  "exec": "npx ts-node src/index.ts"
+	"watch": ["src"],
+	"ext": ".ts,.js",
+	"ignore": [],
+	"exec": "npx ts-node src/index.ts"
 }
 ```
 

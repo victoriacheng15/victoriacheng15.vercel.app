@@ -22,35 +22,35 @@ The most common example is fetching data from API, which usually looks like the 
 import { useEffect, useState } from "react";
 
 function App() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+	const [data, setData] = useState([]);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("https://my-api.com/data");
-        const data = await res.json();
-        setData(data);
-      } catch (error) {
-        setError(error);
-      }
-      setLoading(false);
-    };
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const res = await fetch("https://my-api.com/data");
+				const data = await res.json();
+				setData(data);
+			} catch (error) {
+				setError(error);
+			}
+			setLoading(false);
+		};
 
-    fetchData();
-  }, []);
+		fetchData();
+	}, []);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error.message}</p>;
+	if (loading) return <p>Loading...</p>;
+	if (error) return <p>{error.message}</p>;
 
-  return (
-    <div>
-      {data.map((item) => (
-        <p>{item.name}</p>
-      ))}
-    </div>
-  );
+	return (
+		<div>
+			{data.map((item) => (
+				<p>{item.name}</p>
+			))}
+		</div>
+	);
 }
 ```
 
@@ -69,7 +69,7 @@ useEffect(() => {
 
 ```js
 useEffect(() => {
-  // Perform some side effect
+	// Perform some side effect
 }, []); // <-- see this array
 ```
 
@@ -83,11 +83,11 @@ Let's see what will happens if there are two useEffect hooks with different valu
 
 ```js
 useEffect(() => {
-  // Perform some side effect
+	// Perform some side effect
 }, [value1]);
 
 useEffect(() => {
-  // Perform some side effect
+	// Perform some side effect
 }, [value2]);
 ```
 
@@ -101,11 +101,11 @@ Let's see what happens if the first useEffect has `value1` and `value2` while th
 
 ```js
 useEffect(() => {
-  // Perform some side effect
+	// Perform some side effect
 }, [value1, value2]);
 
 useEffect(() => {
-  // Perform some side effect
+	// Perform some side effect
 }, [value2]);
 ```
 
@@ -119,11 +119,11 @@ Let's see what happens if the first useEffect has a value in the array while the
 
 ```js
 useEffect(() => {
-  // Perform some side effect
+	// Perform some side effect
 }, [value1]);
 
 useEffect(() => {
-  // Perform some side effect
+	// Perform some side effect
 });
 ```
 
@@ -147,38 +147,38 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [count1, setCount1] = useState(0);
+	const [count, setCount] = useState(0);
+	const [count1, setCount1] = useState(0);
 
-  function handleClick() {
-    setCount((prev) => prev + 1);
-  }
+	function handleClick() {
+		setCount((prev) => prev + 1);
+	}
 
-  function handleClick1() {
-    setCount1((prev) => prev + 5);
-  }
+	function handleClick1() {
+		setCount1((prev) => prev + 5);
+	}
 
-  useEffect(() => {
-    console.log(`the count: ${count}`);
-  }, [count]);
+	useEffect(() => {
+		console.log(`the count: ${count}`);
+	}, [count]);
 
-  useEffect(() => {
-    console.log(`the count1: ${count1}`);
-  }, []);
+	useEffect(() => {
+		console.log(`the count1: ${count1}`);
+	}, []);
 
-  return (
-    <main>
-      <h1>Hello</h1>
-      <p>count: {count}</p>
-      <p>count1: {count1}</p>
-      <button type="button" onClick={handleClick}>
-        click for count
-      </button>
-      <button type="button" onClick={handleClick1}>
-        click for count1
-      </button>
-    </main>
-  );
+	return (
+		<main>
+			<h1>Hello</h1>
+			<p>count: {count}</p>
+			<p>count1: {count1}</p>
+			<button type="button" onClick={handleClick}>
+				click for count
+			</button>
+			<button type="button" onClick={handleClick1}>
+				click for count1
+			</button>
+		</main>
+	);
 }
 
 export default App;
@@ -202,26 +202,26 @@ It is very similar to how would you write in the App or other components. Instea
 import { useEffect, useState } from "react";
 
 const useFetchApi = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+	const [data, setData] = useState([]);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("https://my-api.com/data");
-        const data = await res.json();
-        setData(data);
-      } catch (error) {
-        setError(error);
-      }
-      setLoading(false);
-    };
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const res = await fetch("https://my-api.com/data");
+				const data = await res.json();
+				setData(data);
+			} catch (error) {
+				setError(error);
+			}
+			setLoading(false);
+		};
 
-    fetchData();
-  }, []);
+		fetchData();
+	}, []);
 
-  return { data, loading, error };
+	return { data, loading, error };
 };
 
 export default useFetchApi;
