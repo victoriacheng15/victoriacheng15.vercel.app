@@ -141,14 +141,7 @@ export const PROJECTS = [
 		live: "https://rest-countries-api-ts-vc.netlify.app/",
 		description:
 			"Developed an app that displays short information about various countries on cards, with pagination to navigate between them. Each card leads to a separate page with more detailed information about the corresponding country. This app is a convenient and easy way to learn about the world around us.",
-		techs: [
-			"TypeScript",
-			"React",
-			"React Router",
-			"Tailwind CSS",
-			"Testing Library",
-			"Jest",
-		],
+		techs: ["TypeScript", "React", "React Router", "Tailwind CSS", "Testing Library", "Jest"],
 		isDevelop: false,
 	},
 	{
@@ -157,14 +150,7 @@ export const PROJECTS = [
 		live: "https://hacker-news-next.vercel.app/",
 		description:
 			"Developed a Hacker News clone that allows users to view the most recent eight stories for each category on the home page, and then browse additional stories on subsequent pages. The clone provides an intuitive interface for users to stay updated on the latest technology news.",
-		techs: [
-			"TypeScript",
-			"Next.js",
-			"Redux Toolkit",
-			"Chakra UI",
-			"Testing Library",
-			"Vitest",
-		],
+		techs: ["TypeScript", "Next.js", "Redux Toolkit", "Chakra UI", "Testing Library", "Vitest"],
 		isDevelop: false,
 	},
 ];
