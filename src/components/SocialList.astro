@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon";
+import { SOCIALS } from "@/data/constants";
+
+const filteredSocials = SOCIALS.filter(({ active }) => Boolean(active));
+---
+
+<ul class="flex gap-4">
+	{
+		filteredSocials.map(({ name, href, icon }) => (
+			<li class="w-8 duration-300 ease-in-out hover:text-accent">
+				<a href={href} target="_blank" rel="noopener noreferrer">
+					<Icon name={icon} />
+					<span class="sr-only">{name}</span>
+				</a>
+			</li>
+		))
+	}
+</ul>

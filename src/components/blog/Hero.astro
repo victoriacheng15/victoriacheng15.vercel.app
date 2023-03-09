@@ -1,0 +1,35 @@
+---
+import { getFormattedDate } from "@/utils";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+	content: CollectionEntry<"post">;
+}
+
+const { content } = Astro.props;
+
+const datetime = content.data.publishDate.toISOString();
+const postDate = getFormattedDate(content.data.publishDate);
+---
+
+<h1 class="title mb-3 sm:mb-1">{content.data.title}</h1>
+<time datetime={datetime}>{postDate}</time>
+{
+	!!content.data.tags?.length && (
+		<div class="mt-1 sm:mt-0 sm:inline sm:before:content-['|']">
+			{content.data.tags.map((tag, i) => (
+				<>
+					<a
+						class="cactus-link inline-block before:content-['#']"
+						aria-label={`View more blogs with the tag ${tag}`}
+						href={`/tags/${tag}`}
+					>
+						{tag}
+					</a>
+					{i < content.data.tags.length - 1 && ", "}
+				</>
+			))}
+		</div>
+	)
+}
+<!-- <p class="mt-8">{content.data.description}</p> -->

@@ -1,0 +1,15 @@
+---
+import { Icon } from "astro-icon";
+import { SKILLS } from "@/data/constants";
+---
+
+<ul class="flex flex-wrap gap-8">
+	{
+		SKILLS.map(({ skill, name }) => (
+			<li class="w-14 text-accent">
+				<Icon name={skill} />
+				<span class="sr-only">{name}</span>
+			</li>
+		))
+	}
+</ul>

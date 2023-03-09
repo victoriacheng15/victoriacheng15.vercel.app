@@ -1,0 +1,27 @@
+---
+const labelClass = "text-lg font-semibold";
+const inputClass = "w-full rounded-lg border-2 border-gray-500 px-4 py-2 text-lg";
+---
+
+<form class="mx-auto grid max-w-3xl gap-4" method="POST" action="https://form.taxi/s/v281n9zc">
+	<div class="grid gap-2">
+		<label class={labelClass} for="name">Name:</label>
+		<input id="name" type="text" class={inputClass} required />
+	</div>
+	<div>
+		<label class={labelClass} for="email">Email:</label>
+		<input id="email" type="email" class={inputClass} required />
+	</div>
+	<div>
+		<label class={labelClass} for="message">Message:</label>
+		<textarea
+			id="message"
+			class="h-[400px] w-full resize-none rounded-lg border-2 border-gray-500 px-4 py-2 text-lg"
+			required></textarea>
+	</div>
+	<input type="text" name="_gotcha" style={{ display: "none" }} />
+	<button
+		class="font-lg rounded-lg bg-blue-900 py-2 px-1 text-slate-100 hover:bg-blue-800"
+		type="submit">Send!</button
+	>
+</form>

@@ -1,0 +1,34 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+import { MENU_LINKS } from "@/data/constants";
+
+const url = new URL(Astro.request.url);
+---
+
+<nav class="bg-gray-900 py-4">
+	<div class="mx-auto w-11/12 max-w-5xl">
+		<section class="flex">
+			<div class="h-9">
+				<img class="h-full" src="/images/victoriacheng15_logo.png" alt="victoriacheng15 logo" />
+			</div>
+			<ThemeToggle />
+		</section>
+		<hr class="my-2" />
+		<ul class="flex items-center gap-6">
+			{
+				MENU_LINKS.map((link) => (
+					<li>
+						<a
+							href={link.path}
+							class="text-lg text-slate-100 duration-300 ease-in-out hover:text-[#7599ff]"
+							aria-current={url.pathname === link.path ? "page" : false}
+							rel="prefetch"
+						>
+							{link.title}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</nav>

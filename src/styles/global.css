@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		color-scheme: light;
+		--theme-bg: whitesmoke;
+		--theme-link: rgb(20 83 45);
+		--theme-text: #22272a;
+		--theme-accent: #000080;
+		--theme-accent-2: #cc5d02;
+		--theme-quote: #7223b3;
+		--theme-menu-bg: rgb(250 250 250 / 0.85);
+	}
+
+	:root.dark {
+		color-scheme: dark;
+		--theme-bg: #1d1f21;
+		--theme-link: rgb(74 222 128);
+		--theme-text: #c9cacc;
+		--theme-accent: #7599ff;
+		--theme-accent-2: #ffd16d;
+		--theme-quote: #ccffb6;
+		--theme-menu-bg: rgb(29 31 33 / 0.85);
+	}
+
+	html {
+		@apply scroll-smooth;
+	}
+
+	html body {
+		@apply flex min-h-screen flex-col bg-bgColor font-mono font-normal text-textColor antialiased;
+	}
+}

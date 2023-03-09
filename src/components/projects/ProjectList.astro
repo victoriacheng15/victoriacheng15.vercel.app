@@ -1,0 +1,38 @@
+---
+import { PROJECTS } from "@/data/constants";
+import Link from "./Link.astro";
+import TechStack from "./TechStack.astro";
+
+function formatImageName(name: string) {
+	return name.toLowerCase().split(" ").join("-");
+}
+---
+
+<section class="flex flex-col gap-6">
+	{
+		PROJECTS.map(({ title, code, live, description, techs, isDevelop }) => (
+			<article class="border-accent flex flex-col overflow-hidden rounded-lg border-2">
+				<h2 class="w-full bg-gray-700 py-1 text-center text-xl tracking-wider text-slate-100">
+					{title} - {isDevelop && "work in process"}
+				</h2>
+				<div class="flex flex-col gap-2 md:gap-4 lg:flex-row lg:gap-6">
+					<div class="relative mx-auto flex flex-1 basis-[50%] justify-center">
+						<div class="max-w-full object-cover">
+							<img src={`/projects/${formatImageName(title)}.jpg`} alt={title} />
+						</div>
+						<div class="absolute left-0 bottom-4 flex w-full justify-between px-4">
+							<Link href={code} text="Code" />
+							<Link href={live} text="Live Site" />
+						</div>
+					</div>
+					<div class="my-auto flex-1 basis-[65%] space-y-6 p-4 text-lg">
+						<h3 class="text-lg font-bold">Description:</h3>
+						<p>{description}</p>
+						<h3 class="text-lg font-bold">Tech Stacks:</h3>
+						<TechStack techs={techs} />
+					</div>
+				</div>
+			</article>
+		))
+	}
+</section>

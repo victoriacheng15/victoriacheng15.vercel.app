@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/Base";
+import { sortMDByDate } from "@/utils";
+import PostPreview from "@/components/blog/PostPreview";
+import SkillList from "@/components/SkillList";
+import Form from "@/components/Form";
+
+const MAX_POSTS = 5;
+const allPosts = await getCollection("post");
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+---
+
+<PageLayout meta={{ title: "Home" }}>
+	<section aria-label="skill list" class="mb-10">
+		<h2 class="title mb-6">Skills</h2>
+		<SkillList />
+	</section>
+	<section aria-label="Blog post list" class="mb-10">
+		<h2 class="title mb-4">Recent blog:</h2>
+		<ul class="grid gap-3">
+			{
+				allPostsByDate.map((p) => (
+					<li class="flex flex-col items-center gap-x-2 sm:flex-row">
+						<PostPreview post={p} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
+	<section aria-label="form">
+		<h2 class="title mb-6">Let's Connect!</h2>
+		<Form />
+	</section>
+</PageLayout>

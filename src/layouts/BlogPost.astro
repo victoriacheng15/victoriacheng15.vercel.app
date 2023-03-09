@@ -1,0 +1,52 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import BaseLayout from "./Base.astro";
+import BlogHero from "@/components/blog/Hero";
+
+interface Props {
+	post: CollectionEntry<"post">;
+}
+
+const { post } = Astro.props;
+const {
+	data: { title, description, ogImage, publishDate },
+	slug,
+} = post;
+const socialImage = ogImage ?? `/og-image/${slug}.png`;
+const articleDate = publishDate.toISOString();
+const { headings } = await post.render();
+---
+
+<BaseLayout meta={{ title, description, articleDate, ogImage: socialImage }}>
+	<div class="flex items-start">
+		{
+			!!headings.length && (
+				<aside class="sticky top-10 order-2 hidden basis-64 lg:block">
+					<h2 class="font-semibold">Table of Contents</h2>
+					<ul class="mt-2 text-xs">
+						{headings.map(({ depth, slug, text }) => (
+							<li class="line-clamp-2 hover:text-accent">
+								<a
+									class={`block ${depth <= 2 ? "mt-3" : "mt-2 pl-3 text-[0.6875rem]"}`}
+									href={`#${slug}`}
+									aria-label={`Scroll to section: ${text}`}
+								>
+									<span>{"#".repeat(depth)}</span> {text}
+								</a>
+							</li>
+						))}
+					</ul>
+				</aside>
+			)
+		}
+		<article class="w-full">
+			<div id="blog-hero"><BlogHero content={post} /></div>
+			<div
+				class="prose prose-lg prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-6 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+			>
+				<slot />
+			</div>
+		</article>
+	</div>
+</BaseLayout>

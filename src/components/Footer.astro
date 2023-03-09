@@ -1,0 +1,16 @@
+---
+import SocialList from "./SocialList.astro";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-auto bg-gray-800 py-4 text-sm text-slate-100">
+	<div class="mx-auto flex w-11/12 max-w-5xl flex-col items-center justify-between gap-4">
+		<SocialList />
+		<p class="text-center text-sm">
+			Copyright &copy; {year}
+			<span aria-label="rocket emoji">🚀</span>
+			Victoria Cheng
+		</p>
+	</div>
+</footer>
