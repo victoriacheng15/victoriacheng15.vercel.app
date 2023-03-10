@@ -2,8 +2,8 @@
 title: Let's Discover the JavaScript Map Keyed Collection
 description: "Learn about JavaScript Map: its keyed collection, differences from objects & how to perform CRUD operations using Map methods."
 publishDate: "2023-02-08"
-ogImage: "/blog/js-map-keyed-collection.jpg"
 tags: [javascript, data structure]
+ogImage: "/blog/js-map-keyed-collection.jpg"
 ---
 
 ![JavaScript Map Keyed Collection](/blog/js-map-keyed-collection.jpg)

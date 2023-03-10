@@ -1,9 +1,9 @@
 ---
 title: React Hooks - useMemo
 description: "Optimize React app performance with useMemo hook. Learn advantages/disadvantages & see performance difference with before/after examples."
-ogImage: "/blog/react-hooks-usememo.webp"
 publishDate: "2023-01-011"
 tags: [react, react hooks]
+ogImage: "/blog/react-hooks-usememo.webp"
 ---
 
 ![React Hooks useMemo](/blog/react-hooks-usememo.webp)
