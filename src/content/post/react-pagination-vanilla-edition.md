@@ -12,17 +12,17 @@ How to create pagination in React without using react-pagination or similar pack
 
 ## Intro
 
-I was working on this REST countries API project. The total number of countries is 252. If I were to display all country cards at once, it should not take long to load. However, this is not ideal since the real-world apps will not have 252 data to display.
+I was working on this REST countries API project. The total number of countries is 252. If I were to display all country cards at once, it should not take long to load. However, this is not ideal since real-world apps will not have 252 data to display.
 
 For example, Amazon has thousands of products to show online. If you were to display all of them at once. How long the loading will be? If it takes forever to loading, users would leave right away.
 
-I decided to implement pagination. But I had no idea how to do it. I went to the best friend Google to search and find a way to create pagination without using package like react-pagination. To my surprised, I found a YouTube that shows you how to create pagination without react-pagination or similar packages, I put the link in the resources section.
+I decided to implement pagination. But I had no idea how to do it. I went to my best friend Google to search and find a way to create pagination without using a package like react-pagination. To my surprise, I found a YouTube that shows you how to create pagination without react-pagination or similar packages, I put the link in the resources section.
 
 ## First Step
 
-At first, I created pagination with JavaScript first to see how the functions implement. But why JavaScript? To be honest, I am not sure why I did this first. Suppose I was curious to see how it works with JavaScript. Also, React works almost the same way as JavaScript, minus the hooks part.
+At first, I created pagination with JavaScript first to see how the functions were implemented. But why JavaScript? To be honest, I am not sure why I did this first. Suppose I was curious to see how it works with JavaScript. Also, React works almost the same way as JavaScript, minus the hooks part.
 
-![chrome_uNOfaxZ70T](https://user-images.githubusercontent.com/35031228/179285865-d17c5340-1316-4301-9943-8b3d5a42af22.gif)
+<img src="https://user-images.githubusercontent.com/35031228/179285865-d17c5340-1316-4301-9943-8b3d5a42af22.gif" alt="">
 
 You can [see Live Site](https://victoriacheng15.github.io/pagination-changing-demo/) and [code here](https://github.com/victoriacheng15/pagination-changing-demo/blob/main/script.js) if you are curious to see how I wrote with JavaScript.
 

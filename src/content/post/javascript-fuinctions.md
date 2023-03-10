@@ -41,8 +41,6 @@ function greeting() {
 greeting(); // Hello Penguin!
 ```
 
-![Hello Penguin](https://images6.fanpop.com/image/photos/37800000/-Hello-penguins-of-madagascar-37800672-500-500.gif)
-
 What if you need to greet many visitors and their names are not Penguin? You can set a parameter named `name` to the greeting function. And you pass 'Anna' or 'Victoria' or any name as an argument.
 
 ```js

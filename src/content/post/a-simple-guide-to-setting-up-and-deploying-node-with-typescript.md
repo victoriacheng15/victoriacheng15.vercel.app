@@ -149,7 +149,7 @@ The image below is from [render](https://render.com/). In the setting tab, some 
 
 Let's focus on these commands, **build** and **start**!
 
-![image](https://user-images.githubusercontent.com/35031228/223264104-7d5c8fd1-019a-47ef-813f-c76dda1555d4.png)
+<img src="https://user-images.githubusercontent.com/35031228/223264104-7d5c8fd1-019a-47ef-813f-c76dda1555d4.png" alt="render deployment setting with build and start commands">
 
 **Build command**
 

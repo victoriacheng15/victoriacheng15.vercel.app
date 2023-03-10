@@ -100,7 +100,7 @@ export default useFetchApi;
 
 Before we move on to the next section, when you update the state in React, it is recommended to copy the object before modify with the spread operator and keep the original state original!
 
-![chrome_o1W1YRUjtO](https://user-images.githubusercontent.com/35031228/208515994-4a4d6960-326a-462b-8139-7f0a1816161f.gif)
+<img src="https://user-images.githubusercontent.com/35031228/208515994-4a4d6960-326a-462b-8139-7f0a1816161f.gif" alt="">
 
 - `...state` copy everything from `state` to `updatedState`
 - `count: 5` will update the count to `5` from `0`

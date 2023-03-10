@@ -10,8 +10,6 @@ ogImage: "/blog/react-hooks-useContext.webp"
 
 Let's learn about useContext Hook and how it helps with your React app!
 
-<!--truncate-->
-
 ## What is useContext?
 
 It is a hook in React that allows you to access context throughout your app globally within a functional component. Have you had an issue with where you need to pass props from a top-level component to lower-level components?
@@ -31,16 +29,7 @@ Disadvantages:
 
 ## Props drilling
 
-```mermaid
-flowchart TD
-    a[component A] --> b[component B] --> c[component C] --> d[component D]
-
-    c[component C] --> e[component E]
-
-    b[component B] --> f[component F] --> g[component G]
-
-    f[component F] --> h[component H]
-```
+<img src="https://user-images.githubusercontent.com/35031228/210663654-ce79c986-a04c-4e34-964d-42053f8ec6be.png" alt="diagram shows a tree of components">
 
 Props drilling is the process of passing data down through multiple levels of the component tree in order to reach a lower-level component that needs the data. For example, if component E needs data from the top-level component `component A`, you would need to pass the data through `component B` and `component C` before it reaches `component E`.
 
@@ -145,16 +134,7 @@ export default App;
 
 Remember this diagram?
 
-```mermaid
-flowchart TD
-    a[component A] --> b[component B] --> c[component C] --> d[component D]
-
-    c[component C] --> e[component E]
-
-    b[component B] --> f[component F] --> g[component G]
-
-    f[component F] --> h[component H]
-```
+<img src="https://user-images.githubusercontent.com/35031228/210663654-ce79c986-a04c-4e34-964d-42053f8ec6be.png" alt="diagram shows a tree of components">
 
 To access todo data from `component G`, you can import the `useTodoContext` hook and destructure the data at line 5. For example:
 

@@ -10,8 +10,6 @@ ogImage: "/blog/js-hoisting.webp"
 
 I was reviewing my Anki cards on interview preps and the hoisting question came up. Sometimes, I remember and other times, I don't remember. 😅 So I decided to look into hoisting more.
 
-<!--truncate-->
-
 ## What is hoisting?
 
 It is a tricky question that comes with a tricky answer. However, **hoisting in JavaScript allows you to access functions and variables before they have been created** according to [Wes Bos's JavaScript - Hoisting](https://wesbos.com/javascript/03-the-tricky-bits/hoisting).

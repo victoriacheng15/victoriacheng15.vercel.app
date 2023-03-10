@@ -10,7 +10,7 @@ ogImage: "/blog/react-hooks-useState.webp"
 
 ## What is useState?
 
-What is `useState` hook? It is a feature in React that allow functional components to have states. It is called, inside a component, add one or more local states. The hook usually consists of 2 variables.
+What is `useState` hook? It is a feature in React that allow functional components to have states. It is called, inside a component, adding one or more local states. The hook usually consists of 2 variables.
 
 ```js
 import React, { useState } from "react";
@@ -33,9 +33,9 @@ function App() {
 export default App;
 ```
 
-The first variable `count` is the initial value. `setCount` is a function that update the initial value.
+The first variable `count` is the initial value. `setCount` is a function that updates the initial value.
 
-If you are confused or fairly new to React. Think this like JavaScript.
+If you are confused or fairly new to React. Think of this like JavaScript.
 
 ```js
 const button = document.querySelector("button");
@@ -70,13 +70,12 @@ In general, types should already inferred by TypeScript when:
 - default values are set for parameters
 - function return types are determined
 
-When you are on the editor, hover the mouse to the array1 or object or any variables, there should be a popup window that says `const variable: type`
+When you are on the editor, hover the mouse to the array or object or any variables, there should be a popup window that says `const variable: type`
 
-![image](https://user-images.githubusercontent.com/35031228/206090180-ac27305a-5cc7-4518-8ffa-fc510aeee0fb.png)
+<img src="https://user-images.githubusercontent.com/35031228/206090180-ac27305a-5cc7-4518-8ffa-fc510aeee0fb.png" alt="">
+<img src="https://user-images.githubusercontent.com/35031228/206090385-e1137ca8-cea1-493b-860e-7162330fa70d.png" alt="">
 
-![image](https://user-images.githubusercontent.com/35031228/206090385-e1137ca8-cea1-493b-860e-7162330fa70d.png)
-
-If type is to be determine, you should let TS know what type of this variable will be in the future.
+If type is to be determined, you should let TS know what type of this variable will be in the future.
 
 ## Update or change states
 
@@ -100,9 +99,9 @@ const copied = { ...object };
 
 ## Something strange...? Maybe?
 
-If you add `console.log(count)` in the `handleClick` function, and you notice that the console will log the previous value instead of the updated value. This may not be a dealbreaker for certain cases.
+If you add `console.log(count)` in the `handleClick` function, you notice that the console will log the previous value instead of the updated value. This may not be a dealbreaker for certain cases.
 
-Let's say you want to have a button that add 1 and another button that add 3.
+Let's say you want to have a button that adds 1 and another button that adds 3.
 
 ```js
 function App() {
@@ -134,15 +133,15 @@ function App() {
 }
 ```
 
-Let's see actions below!
+Let's see the actions below!
 
 Notice, it only adds 1 after clicked `add 3` with `setCount(count + 1)`.
 
-![chrome_5OnfOyd21a](https://user-images.githubusercontent.com/35031228/206037427-f2d7bb11-36c0-4065-964d-792458259c4e.gif)
+<img src="https://user-images.githubusercontent.com/35031228/206037427-f2d7bb11-36c0-4065-964d-792458259c4e.gif" alt="">
 
 Notice, it adds 3 after clicked `add 3` with `setCount(prev => prev + 1)`
 
-![chrome_0uooizbaEZ](https://user-images.githubusercontent.com/35031228/206037764-ddb487d9-cace-4429-a00a-1c79be1c4049.gif)
+<img src="https://user-images.githubusercontent.com/35031228/206037764-ddb487d9-cace-4429-a00a-1c79be1c4049.gif" alt="">
 
 > Note: I should name the parameter better, like prevCount.
 
@@ -175,7 +174,7 @@ const handleNext = (page) => {
 
 If I have the `totalPage -5` instead of the magic number `2`, the GIF shows how it behaves.
 
-![chrome_dWgiq9YfiD](https://user-images.githubusercontent.com/35031228/206044718-0fdc274b-58ee-47b5-8a1c-5e4c681d6847.gif)
+<img src="https://user-images.githubusercontent.com/35031228/206044718-0fdc274b-58ee-47b5-8a1c-5e4c681d6847.gif" alt="">
 
 Later, I decided to re-built the same app with TypeScript. While I was working on the app, I realized that I could have implement with the updater function. The math logic will sound right.
 
@@ -202,9 +201,9 @@ const forward = () => {
 
 This time, it works flawlessly!
 
-![chrome_VL2qIIcChD](https://user-images.githubusercontent.com/35031228/206045208-d23b9ca2-d1a7-4ca2-93ba-0da574aeb180.gif)
+<img src="https://user-images.githubusercontent.com/35031228/206045208-d23b9ca2-d1a7-4ca2-93ba-0da574aeb180.gif" alt="">
 
-**Keep the updater function in your mind. If a state is behaving strange, you may need to write it!**
+**Keep the updater function in your mind. If a state **is behaving **strangely**, you** may need to write it!**
 
 ## Resources
 
@@ -214,4 +213,4 @@ This time, it works flawlessly!
 
 ## Thank you!
 
-Thank you for your time and reading this!
+Thank you for your time and for reading this!
