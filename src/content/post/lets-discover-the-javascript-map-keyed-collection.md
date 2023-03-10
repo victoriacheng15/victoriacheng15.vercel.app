@@ -8,8 +8,6 @@ tags: [javascript, data structure]
 
 ![JavaScript Map Keyed Collection](/blog/js-map-keyed-collection.jpg)
 
-<!--truncate-->
-
 ## What is Map?
 
 It is an object that holds key-value pairs and remembers the original insertion order of the keys. It is similar to `Object` with the main difference being that `Map` allows keys of any type.
@@ -29,11 +27,27 @@ object.a = "this is string";
 object[1] = "this is number";
 object.true = "this is boolean";
 
-console.log(map);
-console.log(object);
+console.log({ map });
+console.log({ object });
 ```
 
-![image](https://user-images.githubusercontent.com/35031228/217418449-56848707-1ab2-4fd3-b018-ec1373be44b1.png)
+```js
+// output
+{
+  map: Map(3) {
+    'a' => 'this is string',
+    1 => 'this is number',
+    true => 'this is boolean'
+  }
+}
+{
+  object: {
+    '1': 'this is number',
+    a: 'this is string',
+    true: 'this is boolean'
+  }
+}
+```
 
 let's use `typeof` to check the key type.
 
@@ -47,17 +61,27 @@ Object.keys(object).map((key) => {
 });
 ```
 
-![image](https://user-images.githubusercontent.com/35031228/217418862-7b816c4b-b904-4869-a670-37a4b45f486e.png)
+```js
+// output
+Map_______________________
+key value: a | type: string
+key value: 1 | type: number
+key value: true | type: boolean
+Object_____________________
+key value: 1 | type: string
+key value: a | type: string
+key value: true | type: string
+```
 
 ### Map vs Object - Performance and Support
 
 According to the MDN docs, Map offers better performance while the object is not optimized.
 
-![Screenshot from 2023-02-08 13-57-54](https://user-images.githubusercontent.com/35031228/217649940-3963e5bd-8c96-458f-926e-a39e35056ad9.png)
+<img src="https://user-images.githubusercontent.com/35031228/217649940-3963e5bd-8c96-458f-926e-a39e35056ad9.png" alt="Map offers better performance if need to frequent additions and removals of key-value pairs while object is not optimized">
 
 At this moment, Map is supported in all major browsers based on [caniuse.com](https://caniuse.com/mdn-javascript_builtins_map).
 
-![Screenshot from 2023-02-08 14-20-21](https://user-images.githubusercontent.com/35031228/217653562-bd683908-a4dc-4119-9f62-4a5f3ae5f797.png)
+<img src="https://user-images.githubusercontent.com/35031228/217653562-bd683908-a4dc-4119-9f62-4a5f3ae5f797.png" alt="which browser can use the Map">
 
 ## Methods
 
@@ -89,7 +113,18 @@ characters.forEach((character) => {
 });
 ```
 
-![image](https://user-images.githubusercontent.com/35031228/217419815-72b1a16f-f22c-4c08-9df5-c9f3b750bc58.png)
+```js
+// output
+{
+  map: Map(5) {
+    1 => { id: 1, name: 'The Doctor', age: 900 },
+    2 => { id: 2, name: 'Rose Tyler', age: 26 },
+    3 => { id: 3, name: 'Martha Jones', age: 27 },
+    4 => { id: 4, name: 'Donna Noble', age: 31 },
+    5 => { id: 5, name: 'Amy Pond', age: 26 }
+  }
+}
+```
 
 ### has(key)
 
@@ -98,12 +133,12 @@ This method will find out if the key exists in the Map object by returning a boo
 ```js
 const checkForRose = map.has(2);
 console.log("Is Rose existed in the map? ", checkForRose);
+// Is Rose existed in the map?  true
 
 const checkForSomething = map.has(7);
 console.log("Is something existed in the map? ", checkForSomething);
+// Is something existed in the map?  false
 ```
-
-![image](https://user-images.githubusercontent.com/35031228/217420397-f5de8449-e29a-4731-9991-a34a95cff011.png)
 
 ### get(key)
 
@@ -112,12 +147,12 @@ This method will return the character based on the key. If the key doesn't exist
 ```js
 const getMartha = map.get(3);
 console.log("Martha Information: ", getMartha);
+// Martha Information:  { id: 3, name: 'Martha Jones', age: 27 }
 
 const getSomething = map.get(7);
 console.log("There is no key value of 7: ", getSomething);
+// There is no key value of 7:  undefined
 ```
-
-![image](https://user-images.githubusercontent.com/35031228/217421040-61fa7014-44b6-46b3-a747-507536046b9b.png)
 
 ### delete(key)
 
@@ -126,12 +161,12 @@ This method removes the specified element from a Map with the key value. If the 
 ```js
 const sorryMartha = map.delete(3);
 console.log("Deleting Martha Information: ", sorryMartha);
+// Deleting Martha Information:  true
 
 const deleteSomething = map.delete(7);
 console.log("Deleting something that doesn't exist: ", deleteSomething);
+// Deleting something that doesn't exist:  false
 ```
-
-![image](https://user-images.githubusercontent.com/35031228/217423087-f826a46d-8c92-4d3f-aaa8-f87176fae067.png)
 
 ### clear()
 
@@ -140,12 +175,19 @@ This method removes all elements from a Map object.
 ```js
 console.log(map);
 
+// map: Map(5) {
+//   1 => { id: 1, name: 'The Doctor', age: 900 },
+//   2 => { id: 2, name: 'Rose Tyler', age: 26 },
+//   3 => { id: 3, name: 'Martha Jones', age: 27 },
+//   4 => { id: 4, name: 'Donna Noble', age: 31 },
+//   5 => { id: 5, name: 'Amy Pond', age: 26 }
+// }
+
 map.clear();
 
 console.log(map);
+// map: Map(0) {}
 ```
-
-![image](https://user-images.githubusercontent.com/35031228/217423668-c7b9e750-7088-4c3f-8353-4b653f4e23af.png)
 
 ### size
 
@@ -168,9 +210,8 @@ This method returns keys for each element in the Map object in the insertion ord
 ```js
 const keys = map.keys();
 console.log(keys);
+// [Map Iterator] { 1, 2, 3, 4, 5 }
 ```
-
-![image](https://user-images.githubusercontent.com/35031228/217429552-1349ddb2-ee12-4fdb-ae05-5743dbf43871.png)
 
 ### values()
 
@@ -179,9 +220,14 @@ This method will return each element value.
 ```js
 const values = map.values();
 console.log(values);
+// [Map Iterator] {
+//   { id: 1, name: 'The Doctor', age: 900 },
+//   { id: 2, name: 'Rose Tyler', age: 26 },
+//   { id: 3, name: 'Martha Jones', age: 27 },
+//   { id: 4, name: 'Donna Noble', age: 31 },
+//   { id: 5, name: 'Amy Pond', age: 26 }
+// }
 ```
-
-![image](https://user-images.githubusercontent.com/35031228/217429688-ce4ceb37-c04a-4e87-aa85-3254c14577b4.png)
 
 ### entries()
 
@@ -190,9 +236,14 @@ This method will return the `[key, value]` pairs of each element.
 ```js
 const entries = map.entries();
 console.log("entries", entries);
+// entries [Map Entries] {
+//   [ 1, { id: 1, name: 'The Doctor', age: 900 } ],
+//   [ 2, { id: 2, name: 'Rose Tyler', age: 26 } ],
+//   [ 3, { id: 3, name: 'Martha Jones', age: 27 } ],
+//   [ 4, { id: 4, name: 'Donna Noble', age: 31 } ],
+//   [ 5, { id: 5, name: 'Amy Pond', age: 26 } ]
+// }
 ```
-
-![image](https://user-images.githubusercontent.com/35031228/217429876-66d9bff1-a693-4ebf-a5f8-e406deab17f8.png)
 
 ## Recap
 

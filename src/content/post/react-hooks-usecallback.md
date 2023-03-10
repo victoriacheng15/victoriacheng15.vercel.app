@@ -50,13 +50,13 @@ console.log("Function comparion", ff1 === ff2); // false
 
 As you can see, I typed `hello` (5 letters) and the console shows it logged the same thing 5 times. This tells us that the app was re-rendered 5 times.
 
-![chrome_juMNXmcUBF](https://user-images.githubusercontent.com/35031228/213028318-be0c50c3-20a8-4e31-8007-5b99363449c8.gif)
+<img src="https://user-images.githubusercontent.com/35031228/213028318-be0c50c3-20a8-4e31-8007-5b99363449c8.gif" alt="the console log will log 5 times as you type hello without useCallback">
 
 ### With useCallback
 
 Let's add `useCallback` hook. I typed `hello` like I did before and the console doesn't show any logged value. This is because `useCallback` hook knows the function value is the same as before, therefore, the app did not re-render.
 
-![chrome_4MFuH0eUfG](https://user-images.githubusercontent.com/35031228/213028316-ac34dd90-f6c8-4c93-a793-281ac56e375b.gif)
+<img src="https://user-images.githubusercontent.com/35031228/213028316-ac34dd90-f6c8-4c93-a793-281ac56e375b.gif" alt="the console log doesn't log anything as you type with useCallback">
 
 ### Test Code
 

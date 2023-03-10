@@ -18,19 +18,19 @@ Some powerful toys?!? All right, it is a free tool from Microsoft and allows win
 
 This is a quick and easy-to-pin app(s) on top. Maybe you need a calculator to calculate `px` to `rem` and your main screen is occupied by currently running app(s). Or you require an image reference without going and back forth between the image and the running app. Use this shortcut `win + ctrl + T` on the app that you want to be on top of all app(s). Also, the app will show borders. You can customize its thickness and colour! How cool is this!!
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645211255185/beoihZC5AC.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645211255185/beoihZC5AC.png" width="25" alt="">
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645211363911/tZTDYTueV.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645211363911/tZTDYTueV.png" width="25" alt="">
 
 ## Colour Picker
 
 This is a tool that enables you to pick colours from any running app(s). Let's say you want to know what colour is Baby Yoda. Activate this tool by pressing ` win + shift + C`, and it will show a colour window in hex code.
 
-![YoloMouse_WbuzJpHbCu.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1645213885046/mvcxUiIzJ.gif)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645213885046/mvcxUiIzJ.gif" width="25" alt="">
 
 Once you clicked, another window will pop up and shows the colour code in hex, RGB, and HSL. You will see a range of the clicked colour from light to dark. It also will remember these previous colours you have clicked.
 
-![Image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645214060528/tt9Ae1em-.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645214060528/tt9Ae1em-.png" width="25" alt="">
 
 ## FancyZones
 
@@ -38,7 +38,7 @@ This tool allows you to arrange and snap windows into the layouts you want. This
 
 > Tilda key - it is next to number 1 and looks like `
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645214626511/8c8ZVuaBQ.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645214626511/8c8ZVuaBQ.png" width="25" alt="">
 
 To snap the window to a specific area
 
@@ -54,4 +54,4 @@ If you have large-size images and this is the tool for you! It allows you to re-
 
 # Recap
 
-PowerToys is packed with a ton of awesome features. The listed features are what I am using the most. You can check [this documentation](https://docs.microsoft.com/en-us/windows/powertoys/) to see more features. Which one is your favourite? Leave your comment below! Mine is FancyZones! 😊
+PowerToys is packed with a ton of awesome features. The listed features are what I am using the most. You can check [this documentation](https://docs.microsoft.com/en-us/windows/powertoys/) to see more features. Which one is your favorite? Leave your comment below! Mine is FancyZones! 😊

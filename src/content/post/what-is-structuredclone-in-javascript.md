@@ -8,8 +8,6 @@ tags: [javascript]
 
 ![Unlocking the Power of StructuredClone](/blog/structuredclone-in-js.jpg)
 
-<!--truncate-->
-
 ## What is structuredClone()?
 
 It is a method that creates a deep copy of a given value using the structured clone algorithm and without using a 3rd-party library like Lodash. This makes it much easier for developers to transfer data between different applications without having to worry about compatibility issues.
@@ -39,7 +37,19 @@ console.log("original", original);
 console.log("copied", copied);
 ```
 
-![image](https://user-images.githubusercontent.com/35031228/216087605-c22ee0bd-3620-4fec-9043-3ca34eaaf285.png)
+```js
+// output
+original {
+  hello: 'world',
+  motto: 'it is so awesome',
+  address: { province: 'Awesome Province' }
+}
+copied {
+  hello: 'world',
+  motto: 'it is so awesome',
+  address: { province: 'Awesome Province' }
+}
+```
 
 ```js
 original.motto = "This only change the ____original____ object";
@@ -47,7 +57,19 @@ original.motto = "This only change the ____original____ object";
 
 As long as the properties are 1 level deep when the change is made to either `original` or `copied`, they keep their values.
 
-![image](https://user-images.githubusercontent.com/35031228/216088660-621ac830-76cc-436e-80bd-f7fd55fae278.png)
+```js
+// output
+original {
+  hello: 'world',
+  motto: 'This only change the ____original____ object',
+  address: { province: 'Awesome Province' }
+}
+copied {
+  hello: 'world',
+  motto: 'it is so awesome',
+  address: { province: 'Awesome Province' }
+}
+```
 
 ```js
 original.motto = "This only change the ____original____ object";
@@ -56,7 +78,19 @@ copied.motto = "This only change the ____copied____ object";
 
 As the screenshot shows, both mottos are changed, and they don't affect each other.
 
-![image](https://user-images.githubusercontent.com/35031228/216089298-80a29be5-8da3-4213-a0dd-aa55046d7dd5.png)
+```js
+// output
+original {
+  hello: 'world',
+  motto: 'This only change the ____original____ object',
+  address: { province: 'Awesome Province' }
+}
+copied {
+  hello: 'world',
+  motto: 'This only change the ____copied____ object',
+  address: { province: 'Awesome Province' }
+}
+```
 
 ```js
 original.address.province = "Original Province, this changes both objects";
@@ -64,7 +98,19 @@ original.address.province = "Original Province, this changes both objects";
 
 The province property is 2 levels deep and remembers a shallow copy creates an object with the same reference to the original object. This is why when the province is changed, both objects will have the same value.
 
-![image](https://user-images.githubusercontent.com/35031228/216089684-311f2776-e154-4aac-a3a2-5577c5f4461a.png)
+```js
+// output
+original {
+  hello: 'world',
+  motto: 'This only change the ____original____ object',
+  address: { province: 'Original Province, this changes both objects' }
+}
+copied {
+  hello: 'world',
+  motto: 'This only change the ____copied____ object',
+  address: { province: 'Original Province, this changes both objects' }
+}
+```
 
 ### Deep Copy
 
@@ -96,9 +142,32 @@ The `JSON.parse(JSON.stringify(obj))` has unexpected consequences. The `original
 
 ```js
 const cloned = JSON.parse(JSON.stringify(original));
+
+console.log("original", original);
+console.log("cloned", cloned);
 ```
 
-![image](https://user-images.githubusercontent.com/35031228/216103889-db5dfe8a-edc9-4408-867d-2d9a975a5d7c.png)
+```js
+//output
+original {
+  a: 2023-03-10T16:22:18.280Z,
+  b: NaN,
+  c: [Function: anonymous],
+  d: undefined,
+  e: [Function: e],
+  f: [Function: Number],
+  g: false,
+  h: Infinity,
+  i: { hello: 'world', a: { b: 'b', c: 'c' } }
+}
+cloned {
+  a: '2023-03-10T16:22:18.280Z',
+  b: null,
+  g: false,
+  h: null,
+  i: { hello: 'world', a: { b: 'b', c: 'c' } }
+}
+```
 
 Now, `structuredClone` can be used to copy objects. Keep in mind, it doesn't support `Function` and there are supported types by the structured clone algorithm such as Array, Boolean and more. You can read more on the algorithm at [this link](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
 
@@ -123,9 +192,32 @@ const original = {
 };
 
 const cloned = structuredClone(original);
+
+console.log("original", original);
+console.log("cloned", cloned);
 ```
 
-![image](https://user-images.githubusercontent.com/35031228/216103737-89200c60-32a8-4291-9af8-0138155460d9.png)
+```js
+// output
+original {
+  a: 2023-03-10T16:25:35.312Z,
+  b: NaN,
+  d: undefined,
+  g: false,
+  h: Infinity,
+  i: { hello: 'world', a: { b: 'b', c: 'c' } },
+  j: [ 1, 2, 3, 4, 5 ]
+}
+cloned {
+  a: 2023-03-10T16:25:35.312Z,
+  b: NaN,
+  d: undefined,
+  g: false,
+  h: Infinity,
+  i: { hello: 'world', a: { b: 'b', c: 'c' } },
+  j: [ 1, 2, 3, 4, 5 ]
+}
+```
 
 ```js
 original.i.a.b = "hey";
@@ -134,7 +226,27 @@ cloned.i.a.b = "hey, I have changed!";
 
 The `b` had "b" as the value before. With `structuredClone()`, both `original` and `copied` can have their values without affecting each other, unlike the shallow copy.
 
-![image](https://user-images.githubusercontent.com/35031228/216104885-92ab9215-721a-4122-9f4b-1e52d58affe1.png)
+```js
+// output
+original {
+  a: 2023-03-10T16:26:17.501Z,
+  b: NaN,
+  d: undefined,
+  g: false,
+  h: Infinity,
+  i: { hello: 'world', a: { b: 'hey', c: 'c' } },
+  j: [ 1, 2, 3, 4, 5 ]
+}
+cloned {
+  a: 2023-03-10T16:26:17.501Z,
+  b: NaN,
+  d: undefined,
+  g: false,
+  h: Infinity,
+  i: { hello: 'world', a: { b: 'hey, I have changed!', c: 'c' } },
+  j: [ 1, 2, 3, 4, 5 ]
+}
+```
 
 ## Recap
 

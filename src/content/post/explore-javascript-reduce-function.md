@@ -50,7 +50,15 @@ for (let i = 0; i < arr.length; i++) {
 console.log(`total value: ${total}`);
 ```
 
-![Screenshot from 2023-02-15 10-08-15](https://user-images.githubusercontent.com/35031228/219101666-50ab708c-8607-4821-98a2-aed64b0b6da6.png)
+```
+index: 0, currTotal: 0, num: 1
+index: 1, currTotal: 1, num: 2
+index: 2, currTotal: 3, num: 3
+index: 3, currTotal: 6, num: 4
+index: 4, currTotal: 10, num: 5
+index: 5, currTotal: 15, num: 6
+total value: 42
+```
 
 ### Now we have reduce()
 
@@ -78,7 +86,15 @@ const res = arr.reduce((currTotal, num) => currTotal + num, 0);
 console.log(`total value: ${res}`);
 ```
 
-![Screenshot from 2023-02-15 10-00-43](https://user-images.githubusercontent.com/35031228/219099885-6976ad5c-c12f-4bea-8645-d1984013e357.png)
+```
+index: 0, currTotal: 0, num: 1
+index: 1, currTotal: 1, num: 2
+index: 2, currTotal: 3, num: 3
+index: 3, currTotal: 6, num: 4
+index: 4, currTotal: 10, num: 5
+index: 5, currTotal: 15, num: 6
+total value: 21
+```
 
 Additionally, `accumulator` and `currentValue` could be the `callbackFn`. This works in the same way as `const res = arr.reduce((currTotal, num) => currTotal + num, 0);`, but you extract the sum function out.
 

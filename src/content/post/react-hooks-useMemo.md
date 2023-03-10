@@ -57,13 +57,13 @@ The test code is provided below.
 
 Watch how quickly the `New Todo` text is added to the list. It is very slow.
 
-![chrome_XwrXI8zg9u](https://user-images.githubusercontent.com/35031228/211906233-0e3fe9fc-3273-47b0-9f38-d5fa8fce318a.gif)
+<img src="https://user-images.githubusercontent.com/35031228/211906233-0e3fe9fc-3273-47b0-9f38-d5fa8fce318a.gif" alt="">
 
 ### With useMemo
 
 Watch the `New Todo` text again. Noticed it is adding quickly and smoothly.
 
-![chrome_6D3GuEvx6i](https://user-images.githubusercontent.com/35031228/211906235-be3476e9-7665-4466-bbd3-0e75b481bf71.gif)
+<img src="https://user-images.githubusercontent.com/35031228/211906235-be3476e9-7665-4466-bbd3-0e75b481bf71.gif" alt="">
 
 ### Test Code
 

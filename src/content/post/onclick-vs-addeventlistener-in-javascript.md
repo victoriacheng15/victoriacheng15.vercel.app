@@ -113,11 +113,11 @@ You can check this [Can I Use](https://caniuse.com/) site to see what browser ve
 
 - [onclick](https://caniuse.com/?search=onclick)
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645650000185/YOdNQ_WiR.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645650000185/YOdNQ_WiR.png" alt="">
 
 - [addEventLister](https://caniuse.com/?search=addeventlistener)
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645649826103/R9qluuUoj.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645649826103/R9qluuUoj.png" alt="">
 
 sources:
 

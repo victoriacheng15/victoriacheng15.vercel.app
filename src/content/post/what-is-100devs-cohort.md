@@ -89,19 +89,19 @@ What is specificity? There are 3 types of selector, Type, Class, and ID.
 - ID selector holds the value of **1-0-0**
 - _!important_ will override all of above
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1644166544526/89ha8ahry.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1644166544526/89ha8ahry.png" alt="">
 
 ## Week 3
 
 We dived deeper into the Box model and FLOAT!
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1644166902966/Ev3TYFNdpL.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1644166902966/Ev3TYFNdpL.png" alt="the box modal shows content, padding, border and margin">
 
 In short, it is basically the size of the content box with padding (green), border (yellow), and margin(brown).
 
 Recreated this layout with float only!
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1644167035914/aspFkPdGN.png)
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1644167035914/aspFkPdGN.png" alt="creating layout with float only">
 
 ```css
 * {

@@ -22,7 +22,7 @@ But why?
 
 ### Use percentage for container width
 
-The container will have 90% of the browser's width and it will adjust dynamically as you scale it to be narrow or wide with a maximum width of 500px. The second example use this `min()` CSS function, [see MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/min(%29). This function takes 2 parameters, the **first **parameter takes minimum width and the **second** parameter takes maximum width. You also write one less CSS line!
+The container will have 90% of the browser's width and it will adjust dynamically as you scale it to be narrow or wide with a maximum width of 500px. The second example use this `min()` CSS function, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min(%29">see MDN</a>. This function takes 2 parameters, the **first **parameter takes minimum width and the **second** parameter takes maximum width. You also write one less CSS line!
 
 ```css
 .container {
@@ -41,11 +41,9 @@ or
 }
 ```
 
-%[https://codepen.io/victoriacheng15/pen/YzEVOPM]
-
 ### Use clamp() function
 
-This function takes 3 parameters - min, val, and max, [check it out on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp(%29).
+This function takes 3 parameters - min, val, and max, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp(%29">check it out on MDN</a>.
 
 - min: minimum font size
 - val(value): scaling size
@@ -58,8 +56,6 @@ h1 {
 	font-size: clamp(2rem, 10vw, 5rem);
 }
 ```
-
-%[https://codepen.io/victoriacheng15/pen/oNoWPBV]
 
 ### flexbox
 
@@ -80,8 +76,6 @@ section {
 	height: 100px;
 }
 ```
-
-%[https://codepen.io/victoriacheng15/pen/ExbmerM]
 
 ### grid
 
@@ -104,8 +98,6 @@ main {
 	gap: 1rem;
 }
 ```
-
-%[https://codepen.io/victoriacheng15/pen/eYeGNyL]
 
 ### media queries
 

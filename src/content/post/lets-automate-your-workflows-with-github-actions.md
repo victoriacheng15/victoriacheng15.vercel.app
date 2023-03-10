@@ -44,7 +44,7 @@ name: ci-jest
 
 This is the name of the workflow. You could leave it empty, but it is better to have a name so you can see what it does in the `Actions` tab of the repo.
 
-![image](https://user-images.githubusercontent.com/35031228/201541653-73bf69b4-c0dd-4e37-93fc-74ce4831ee01.png)
+<img src="https://user-images.githubusercontent.com/35031228/201541653-73bf69b4-c0dd-4e37-93fc-74ce4831ee01.png" alt="">
 
 ```yaml
 on:
@@ -78,19 +78,7 @@ steps:
   - run: npm test
 ```
 
-```mermaid
-flowchart TD
-  check[check out your repo] --> node[set up node with version 16] --> cache[check for cache]
-
-  cache[check for cache] --> Notexisted[if not existed, set up cache]
-  cache[check for cache] --> existed[if existed, use the cache]
-
-  Notexisted[if not existed, set up cache] --> ci[npm ci] --> test[npm test]
-
-  existed[if existed, use the cache] --> ci[npm ci]
-```
-
-`cache` is to enable faster installation for the process.
+The `cache` is to enable faster installation for the process.
 
 > In computing, a cache is a hardware or software component that stores data so that future requests for that data can be served faster; the data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere. according to [Cache(computing) wiki](<https://en.wikipedia.org/wiki/Cache_(computing)>)
 
@@ -98,11 +86,11 @@ Think this way, you are set up a brand new folder and needs packages. You are in
 
 You can check how and what it runs by go to `Actions` tab of the repo. By the way, `min stack` is what I named for the PR.
 
-![image](https://user-images.githubusercontent.com/35031228/201543053-05b008cf-6994-4ba9-ae80-7bcb4e5b28aa.png)
+<img src="https://user-images.githubusercontent.com/35031228/201543053-05b008cf-6994-4ba9-ae80-7bcb4e5b28aa.png" alt="">
 
 If you are curious, you cna expand the dropdown and see what it does.
 
-![image](https://user-images.githubusercontent.com/35031228/201786708-c66d3a4a-8191-480c-ab83-802cd061ef70.png)
+<img src="https://user-images.githubusercontent.com/35031228/201786708-c66d3a4a-8191-480c-ab83-802cd061ef70.png" alt="">
 
 You also can set name for each `uses` action like below. Make sure there is no `-` for `uses`.
 
@@ -176,19 +164,13 @@ jobs:
 
 ## Recap
 
-What I know about the workflows is a small tip of the iceberg. It can automate more things for you. I have seen a couple of workflows that can auto-assign labels for issues, run prettier, deploy, merge schedule and more things. I sometime go to any organizations or anyone's repos and check out their workflows under `.github/workflows` to see what they are automating.
+What I know about the workflows is a small tip of the iceberg. It can automate more things for you. I have seen a couple of workflows that can auto-assign labels for issues, run prettier, deploy, merge schedule and more things. I sometimes go to any organizations or anyone's repos and check out their workflows under `.github/workflows` to see what they are automating.
 
-A tip for you, try to click all clickable links in `Actions` tab to see where each of them lead to. You don't need to add any workflows now, but to get familiar with interface. I just did this again and found out that you can add badges for your GitHub Actions status.
-
-```mermaid
-flowchart TD
-Actions[Actions tab of the repo] --> workflow[the workflow name] --> press[press one of the workflows]
-press[press one of the workflows] --> clickDots[press the 3 dots next to the re-run all jobs] --> badge[create status badge]
-```
+A tip for you, try to click all clickable links in `Actions` tab to see where each of them lead to. You don't need to add any workflows now, but to get familiar with the interface. I just did this again and found out that you can add badges for your GitHub Actions status.
 
 > Note: for some reason, I cannot type "check" in the label box, so I used "press" instead. 😅
 
-![get actions status badge](https://user-images.githubusercontent.com/35031228/201784096-d99aa0a4-e017-477e-956a-4695f9e94b3e.png)
+<img src="https://user-images.githubusercontent.com/35031228/201784096-d99aa0a4-e017-477e-956a-4695f9e94b3e.png" alt="">
 
 I hope this blog will help you to start with workflows quickly and start to automate repeated tasks for you!
 
@@ -202,4 +184,4 @@ I hope this blog will help you to start with workflows quickly and start to auto
 
 ## Thank you!
 
-Thank you for your time and reading this!
+Thank you for your time and for reading this!
