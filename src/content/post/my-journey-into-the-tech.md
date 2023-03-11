@@ -1,8 +1,8 @@
 ---
 title: My Journey into the Tech
-tags: [journey]
 description: "Tech-lover turned self-taught developer through YouTube and Frontend Mentor. Follow my journey to becoming a full-time developer!"
 publishDate: "2022-03-04"
+tags: [journey]
 ogImage: "/blog/my-journey-into-the-tech.webp"
 ---
 

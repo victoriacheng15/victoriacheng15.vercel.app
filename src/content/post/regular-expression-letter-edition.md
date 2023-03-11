@@ -1,8 +1,8 @@
 ---
 title: Regular Expression - Letter Edition
-tags: [regular expression, javascript]
 description: "Regex matches string chars with slashes and flags like 'g' (global) and 'i' (ignore case). Blog shows finding capitals, vowels and letters."
 publishDate: "2022-05-10"
+tags: [javascript]
 ogImage: "/blog/regular-expression-letter-edition.webp"
 ---
 

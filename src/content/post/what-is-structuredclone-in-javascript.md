@@ -2,8 +2,8 @@
 title: What is StructuredClone in JavaScript?
 description: "Shallow vs. deep copy in objects: shallow copies reference, deep copies the object. Use reference for shallow, recursively duplicate for deep copy."
 publishDate: "2023-02-01"
-ogImage: "/blog/structuredclone-in-js.jpg"
 tags: [javascript]
+ogImage: "/blog/structuredclone-in-js.jpg"
 ---
 
 ![Unlocking the Power of StructuredClone](/blog/structuredclone-in-js.jpg)

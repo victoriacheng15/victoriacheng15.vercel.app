@@ -1,8 +1,8 @@
 ---
 title: React Hooks - useEffect
-tags: [react, react hooks]
 description: "Learn to use useEffect in React for side effects such as fetching data, event listeners, etc. Control hook call with dependency array & use with diff values."
 publishDate: "2022-12-14"
+tags: [react, react hooks]
 ogImage: "/blog/react-hooks-useeffect.webp"
 ---
 
