@@ -1,0 +1,26 @@
+---
+import type { GetStaticPathsResult } from "astro";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import JournalPost from "@/layouts/BlogPost";
+
+export async function getStaticPaths(): Promise<GetStaticPathsResult> {
+	const journals: CollectionEntry<"journal">[] = await getCollection("journal");
+	const params = journals.map((journal) => ({
+		params: { journal: journal.slug },
+		props: { journal },
+	}));
+	return params;
+}
+
+interface Props {
+	journals: CollectionEntry<"journal">;
+}
+
+const { journal } = Astro.props;
+const { Content } = await journal.render();
+---
+
+<JournalPost post={journal}>
+	<Content />
+</JournalPost>
