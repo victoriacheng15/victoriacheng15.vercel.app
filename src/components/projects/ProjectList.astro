@@ -12,8 +12,9 @@ function formatImageName(name: string) {
 	{
 		PROJECTS.map(({ title, code, live, description, techs, isDevelop }) => (
 			<article class="border-accent flex flex-col overflow-hidden rounded-lg border-2">
-				<h2 class="w-full bg-gray-700 py-1 text-center text-xl tracking-wider text-slate-100">
-					{title} - {isDevelop && "work in process"}
+				<h2 class="w-full bg-gray-700 py-2 text-center text-xl tracking-wider text-slate-100">
+					{title}
+					{isDevelop && "- work in process"}
 				</h2>
 				<div class="flex flex-col gap-2 md:gap-4 lg:flex-row lg:gap-6">
 					<div class="relative mx-auto flex flex-1 basis-[50%] justify-center">
