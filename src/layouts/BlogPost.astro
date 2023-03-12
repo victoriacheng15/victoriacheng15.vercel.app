@@ -1,8 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
-
 import BaseLayout from "./Base.astro";
 import BlogHero from "@/components/blog/Hero";
+import { getFormattedDate } from "@/utils";
 
 interface Props {
 	post: CollectionEntry<"post">;
@@ -14,7 +14,7 @@ const {
 	slug,
 } = post;
 const socialImage = ogImage ?? `/og-image/${slug}.png`;
-const articleDate = publishDate.toISOString();
+const articleDate = getFormattedDate(publishDate);
 const { headings } = await post.render();
 ---
 
