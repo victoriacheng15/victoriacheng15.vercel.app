@@ -1,8 +1,8 @@
 ---
 title: The Journey of Contributing to Open Source
-tags: [open source, contribution]
 description: "Guide to contributing to open source: Covers Git, GitHub, finding good first issues. Personal journey of writer's first pull request, tips to start."
 publishDate: "2022-06-10"
+tags: [open-source, contribution]
 ogImage: "/blog/the-journey-of-contributing-to-open-source.webp"
 ---
 

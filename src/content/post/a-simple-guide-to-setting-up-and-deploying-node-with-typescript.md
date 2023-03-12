@@ -2,7 +2,7 @@
 title: A Simple Guide to Set up and Deploy Node with TypeScript
 description: "Set up & deploy TypeScript Node.js app: Learn how to enable TypeScript, run locally 3 ways, & deploy the app with this guide."
 publishDate: "2023-03-08"
-tags: [typescript, node]
+tags: [typescript, node.js]
 ogImage: "/blog/set-up-and-deploy-ts-node.jpg"
 ---
 
