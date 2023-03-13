@@ -13,7 +13,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 	const uniqueTags = getUniqueTags(allPostsByDate);
 
 	return uniqueTags.map((tag) => {
-		const filterPosts = allPostsByDate.filter((post) => post.data.tags?.includes(tag));
+		const filterPosts = allPostsByDate.filter(({ data: { tags } }) => tags?.includes(tag));
 		return paginate(filterPosts, {
 			params: { tag },
 			pageSize: 10,
@@ -58,7 +58,7 @@ const paginationProps = {
 		<ul class="space-y-8 text-left">
 			{
 				page.data.map((p) => (
-					<li class="flex flex-col flex-wrap gap-x-2 sm:flex-row [&_q]:w-full">
+					<li class="border-accent flex flex-col gap-2 rounded-xl border-2 p-2">
 						<PostPreview post={p} as="h2" withDesc />
 					</li>
 				))
