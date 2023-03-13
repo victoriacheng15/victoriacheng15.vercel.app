@@ -7,13 +7,11 @@ interface Props {
 }
 
 const { content } = Astro.props;
-
-const datetime = content.data.publishDate.toISOString();
 const postDate = getFormattedDate(content.data.publishDate);
 ---
 
 <h1 class="title mb-3 sm:mb-1">{content.data.title}</h1>
-<time datetime={datetime}>{postDate}</time>
+<time datetime={postDate}>{postDate}</time>
 {
 	!!content.data.tags?.length && (
 		<div class="mt-1 sm:mt-0 sm:inline sm:before:content-['|']">
@@ -32,4 +30,3 @@ const postDate = getFormattedDate(content.data.publishDate);
 		</div>
 	)
 }
-<!-- <p class="mt-8">{content.data.description}</p> -->
