@@ -4,9 +4,7 @@ type Markdown = CollectionEntry<"post">[] | CollectionEntry<"journal">[];
 
 export function sortMDByDate(posts: Markdown = []) {
 	return posts.sort(
-		(a, b) =>
-			new Date(b.data.publishDate).valueOf() -
-			new Date(a.data.publishDate).valueOf(),
+		(a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf()
 	);
 }
 
