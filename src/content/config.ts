@@ -17,8 +17,6 @@ const post = defineCollection({
 	}),
 });
 
-export const collections = { post };
-
 const journal = defineCollection({
 	schema: z.object({
 		title: z.string().max(60),
@@ -27,4 +25,7 @@ const journal = defineCollection({
 	}),
 });
 
-export const journals = { journal };
+export const collections = {
+	post,
+	journal,
+};
