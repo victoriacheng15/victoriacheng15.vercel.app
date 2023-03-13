@@ -1,0 +1,29 @@
+name: format
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "pnpm"
+
+      - name: install and run rome tool
+        run: |
+          pnpm i --frozen-lockfile
+          pnpm format
+
+      - name: commit change
+        uses: stefanzweifel/git-auto-commit-action@v4.15.2
+        with:
+          commit_message: "style: the code has been formatted!!"
+          branch: ${{ github.head_ref }}
