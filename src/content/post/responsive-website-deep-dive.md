@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Responsive Website Deep Dive
 description: "Responsive design builds adaptable websites using flexible grids, images & mobile-first design. Test on devices for the best user experience."
 publishDate: "2022-02-14"
