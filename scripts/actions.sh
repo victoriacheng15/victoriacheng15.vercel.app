@@ -37,7 +37,6 @@ setup_blog() {
   echo tags: [$tags] >> $slug.md
   echo ogImage: \"/blog/$slug.jpg\" >> $slug.md
   echo --- >> $slug.md
-  echo ![$alt](/blog/$slug.jpg) >> $slug.md
 }
 
 actions=(
