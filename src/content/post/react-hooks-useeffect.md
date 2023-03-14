@@ -1,4 +1,5 @@
 ---
+draft: false
 title: React Hooks - useEffect
 description: "Learn to use useEffect in React for side effects such as fetching data, event listeners, etc. Control hook call with dependency array & use with diff values."
 publishDate: "2022-12-14"

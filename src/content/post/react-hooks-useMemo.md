@@ -1,4 +1,5 @@
 ---
+draft: false
 title: React Hooks - useMemo
 description: "Optimize React app performance with useMemo hook. Learn advantages/disadvantages & see performance difference with before/after examples."
 publishDate: "2023-01-011"

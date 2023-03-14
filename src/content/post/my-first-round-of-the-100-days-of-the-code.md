@@ -1,4 +1,5 @@
 ---
+draft: false
 title: My First Round of the 100 Days of the Code
 description: "My 100 Days of Code experience: Focused on JS, HTML/CSS. Lessons, strategies for consistency, tips for working with JS, importance of breaks, goals"
 publishDate: "2022-06-03"
