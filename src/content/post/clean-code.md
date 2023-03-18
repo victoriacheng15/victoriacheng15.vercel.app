@@ -1,7 +1,10 @@
 ---
-title: Clean Code
+draft: false
+title: Clean Code Book Review
 description: My reviews of the Clean Code book by Robert Martin
 publishDate: "2023-01-20"
+tags: [book]
+ogImage: ""
 ---
 
 Clean Code: a handbook of agile software craftsmanship by Robert Martin. Even bad code can function, but if the code is not clean, it can bring the development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code, but it doesn't have to be that way.

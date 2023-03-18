@@ -1,7 +1,10 @@
 ---
-title: Atomic Habits
+draft: false
+title: Atomic Habits Book Review
 description: My reviews of the Atomic Habits book by James Clear
 publishDate: "2022-10-28"
+tags: [book]
+ogImage: ""
 ---
 
 > Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones
