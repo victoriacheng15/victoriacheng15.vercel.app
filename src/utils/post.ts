@@ -1,6 +1,6 @@
 import type { CollectionEntry } from "astro:content";
 
-type Markdown = CollectionEntry<"post">[] | CollectionEntry<"journal">[];
+type Markdown = CollectionEntry<"post">[];
 
 export function sortMDByDate(posts: Markdown = []) {
 	return posts.sort(
@@ -16,7 +16,7 @@ export function getUniqueTags(posts: Markdown = []) {
 	return Array.from(uniqueTags);
 }
 
-export function getUniqueTagsWithCount(posts: CollectionEntry<"post">[] = []): {
+export function getUniqueTagsWithCount(posts: Markdown = []): {
 	[key: string]: number;
 } {
 	return posts.reduce((prev, { data: { tags } }) => {

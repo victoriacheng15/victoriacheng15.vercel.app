@@ -18,15 +18,6 @@ const post = defineCollection({
 	}),
 });
 
-const journal = defineCollection({
-	schema: z.object({
-		title: z.string().max(60),
-		description: z.string().min(50).max(160),
-		publishDate: z.string().transform((str) => new Date(str)),
-	}),
-});
-
 export const collections = {
 	post,
-	journal,
 };

@@ -12,10 +12,6 @@ export const MENU_LINKS = [
 		title: "Posts",
 		path: "/posts",
 	},
-	{
-		title: "Journals",
-		path: "/journals",
-	},
 ];
 
 // ! Remember to add your own socials
