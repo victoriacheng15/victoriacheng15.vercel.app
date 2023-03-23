@@ -3,11 +3,12 @@ import { Icon } from "astro-icon";
 import { SKILLS } from "@/data/constants";
 ---
 
-<ul class="flex flex-wrap gap-8">
+<ul class="flex flex-wrap gap-6">
 	{
 		SKILLS.map(({ skill, name }) => (
-			<li class="w-14 text-accent">
+			<li class="text-accent grid w-20 place-items-center gap-2">
 				<Icon name={skill} />
+				<p class="text-center text-sm font-semibold">{name}</p>
 				<span class="sr-only">{name}</span>
 			</li>
 		))
