@@ -103,6 +103,10 @@ export const SKILLS = [
 		name: "Tailwind CSS",
 		skill: "simple-icons:tailwindcss",
 	},
+		{
+		name: "SASS",
+		skill: "simple-icons:sass",
+	},
 	{
 		name: "MongoDB",
 		skill: "simple-icons:mongodb",
@@ -118,6 +122,10 @@ export const SKILLS = [
 	{
 		name: "CSS 3",
 		skill: "simple-icons:css3",
+	},
+	{
+		name: "Cypress",
+		skill: "simple-icons:cypress",
 	},
 ];
 
@@ -160,6 +168,6 @@ export const PROJECTS = [
 		description:
 			'Developed a Midjourney/DALL-E clone where users can view the gallery of AI-generated images on the homepage. Users also can create their own AI-generated images by submit their desired prompts or click the "surprise me" button for a random prompt. Lastly, hit the generate button! Like the image? Lets sharing with the community!',
 		techs: ["TypeScript", "React", "React Router", "Node.js", "Express", "MongoDB"],
-		isDevelop: true,
+		isDevelop: false,
 	},
 ];
