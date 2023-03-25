@@ -3,14 +3,26 @@ import { Icon } from "astro-icon";
 import { SKILLS } from "@/data/constants";
 ---
 
-<ul class="flex flex-wrap gap-6">
+<ul class="flex flex-wrap items-center justify-between gap-4 md:justify-start">
 	{
 		SKILLS.map(({ skill, name }) => (
-			<li class="text-accent grid w-20 place-items-center gap-2">
+			<li class="text-accent grid w-12 place-items-center gap-2 sm:w-20">
 				<Icon name={skill} />
-				<p class="text-center text-sm font-semibold">{name}</p>
+				<p class="text-center text-xs font-semibold md:text-sm">{name}</p>
 				<span class="sr-only">{name}</span>
 			</li>
 		))
 	}
 </ul>
+
+<style>
+	[astro-icon] {
+		width: 40px;
+	}
+
+	@media screen and (min-width: 640px) {
+		[astro-icon] {
+			width: 50px;
+		}
+	}
+</style>

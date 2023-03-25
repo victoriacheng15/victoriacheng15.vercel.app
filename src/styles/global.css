@@ -5,7 +5,7 @@
 @layer base {
 	:root {
 		color-scheme: light;
-		--theme-bg: whitesmoke;
+		--theme-bg: rgb(241 245 249);
 		--theme-link: rgb(20 83 45);
 		--theme-text: #22272a;
 		--theme-accent: #000080;
