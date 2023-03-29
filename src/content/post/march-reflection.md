@@ -1,7 +1,7 @@
 ---
 draft: false
 title: March Reflection
-description: "Reflected on Hacker News clone learnings, especially Redux Toolkit. Gained Cypress API familiarity by writing e2e tests."
+description: "Reflected on what I learned about run TS node app, ch 1 of the System Design, LCP and CLS from Lighthouse, and run a tests array with one of Jest's features."
 publishDate: "2023-03-28"
 tags: [reflection, monthly-reflection]
 ogImage: "/blog/march-reflection.jpg"
