@@ -8,7 +8,7 @@ const filteredSocials = SOCIALS.filter(({ active }) => active);
 <ul class="flex gap-4">
 	{
 		filteredSocials.map(({ name, href, icon }) => (
-			<li class="hover:text-accent w-8 duration-300 ease-in-out">
+			<li class="w-8 duration-300 ease-in-out hover:text-accent">
 				<a href={href} target="_blank" rel="noopener noreferrer">
 					<Icon name={icon} />
 					<span class="sr-only">{name}</span>

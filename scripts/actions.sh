@@ -31,8 +31,9 @@ setup_blog() {
   touch $slug.md
 
   echo --- >> $slug.md
+  echo draft: true >> $slug.md
   echo title: $title >> $slug.md
-  echo description: TBA >> $slug.md
+  echo description: Remember to change me Lorem ipsum dolor sit amet, consectetuer adipiscing eli >> $slug.md
   echo publishDate: \"$pubDate\" >> $slug.md
   echo tags: [$tags] >> $slug.md
   echo ogImage: \"/blog/$slug.jpg\" >> $slug.md

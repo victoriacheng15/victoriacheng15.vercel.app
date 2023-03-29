@@ -103,7 +103,7 @@ export const SKILLS = [
 		name: "Tailwind CSS",
 		skill: "simple-icons:tailwindcss",
 	},
-		{
+	{
 		name: "SASS",
 		skill: "simple-icons:sass",
 	},
