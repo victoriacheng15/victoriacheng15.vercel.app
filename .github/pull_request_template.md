@@ -6,4 +6,6 @@
 
 Closes #ISSUE_NUMBER
 
+## Thank you!
+
 Thank you for opening the pull request!
