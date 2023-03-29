@@ -6,7 +6,7 @@ import { SKILLS } from "@/data/constants";
 <ul class="flex flex-wrap items-center justify-between gap-4 md:justify-start">
 	{
 		SKILLS.map(({ skill, name }) => (
-			<li class="text-accent grid w-12 place-items-center gap-2 sm:w-20">
+			<li class="grid w-12 place-items-center gap-2 text-accent sm:w-20">
 				<Icon name={skill} />
 				<p class="text-center text-xs font-semibold md:text-sm">{name}</p>
 				<span class="sr-only">{name}</span>
