@@ -22,7 +22,7 @@ jobs:
           npm ci
           npm format
       - name: commit change
-        uses: stefanzweifel/git-auto-commit-action@v4.16
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "style: the code has been formatted!"
           branch: ${{ github.head_ref }}
