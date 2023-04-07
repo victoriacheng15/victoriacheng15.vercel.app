@@ -3,6 +3,7 @@ name: format
 on:
   pull_request:
     branches: [main]
+    paths: [src/**]
 
 jobs:
   format:
