@@ -26,7 +26,7 @@ const { headings } = await post.render();
 					<h2 class="font-semibold">Table of Contents</h2>
 					<ul class="mt-2 text-xs">
 						{headings.map(({ depth, slug, text }) => (
-							<li class="hover:text-accent line-clamp-2">
+							<li class="line-clamp-2 hover:text-accent">
 								<a
 									class={`block ${depth <= 2 ? "mt-3" : "mt-2 pl-3 text-[0.6875rem]"}`}
 									href={`#${slug}`}
