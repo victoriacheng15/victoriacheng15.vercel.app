@@ -1,6 +1,6 @@
 ---
-import { getFormattedDate } from "@/utils";
 import type { CollectionEntry } from "astro:content";
+import { getFormattedDate, getReadingTime } from "@/utils";
 
 interface Props {
 	content: CollectionEntry<"post">;
@@ -11,7 +11,7 @@ const postDate = getFormattedDate(content.data.publishDate);
 ---
 
 <h1 class="title mb-3 sm:mb-1">{content.data.title}</h1>
-<time datetime={postDate}>{postDate}</time>
+<time datetime={postDate}>{postDate}</time> | <span>{getReadingTime(content.body)} min read</span>
 {
 	!!content.data.tags?.length && (
 		<div class="mt-1 sm:mt-0 sm:inline sm:before:content-['|']">
