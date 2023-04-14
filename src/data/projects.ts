@@ -11,8 +11,8 @@ export const PROJECTS = [
 	},
 	{
 		title: "Country Information App",
-		code: "https://github.com/victoriacheng15/rest-countries-api-ts#readme",
-		live: "https://rest-countries-api-ts-vc.netlify.app/",
+		code: "https://github.com/victoriacheng15/rest-countries-api-next#readme",
+		live: "https://rest-countries-api-next-redux.vercel.app/",
 		backend: "",
 		description:
 			"Devloped an app that display short information about various countries on cards with load more button at the end of the page. Users can search countries based on text and region. Each card leads to a seperated page with more detialed information about the corresponding coutnry.",
