@@ -7,11 +7,11 @@ import siteConfig from "@/site-config";
 import { getFormattedDate } from "@/utils";
 
 const monoFontReg = await fetch(
-	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf"
+	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf",
 );
 
 const monoFontBold = await fetch(
-	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-700-normal.ttf"
+	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-700-normal.ttf",
 );
 
 const ogOptions: SatoriOptions = {
@@ -68,9 +68,7 @@ const markup = (title: string, pubDate: string) => html`<div
 export async function get({ params: { slug } }: APIContext) {
 	const post = await getEntryBySlug("post", slug!);
 	const title = post?.data.title ?? siteConfig.title;
-	const postDate = getFormattedDate(post?.data.publishDate ?? Date.now(), {
-		weekday: "long",
-	});
+	const postDate = getFormattedDate(post?.data.publishDate ?? Date.now());
 	const svg = await satori(markup(title, postDate), ogOptions);
 	const png = new Resvg(svg).render().asPng();
 	return {
@@ -81,5 +79,7 @@ export async function get({ params: { slug } }: APIContext) {
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 	const posts = await getCollection("post");
-	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
+	return posts
+		.filter(({ data }) => !data.ogImage)
+		.map(({ slug }) => ({ params: { slug } }));
 }
