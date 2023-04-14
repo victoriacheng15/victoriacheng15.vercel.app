@@ -6,17 +6,16 @@ import { getFormattedDate } from "@/utils";
 interface Props extends IElement {
 	post: CollectionEntry<"post">;
 	withDesc?: boolean;
-	path: string;
 }
 
-const { post, as: Element = "div", withDesc = false, path = "posts" } = Astro.props;
+const { post, as: Element = "h2", withDesc = false } = Astro.props;
 const date = new Date(post.data.publishDate);
 const postDate = getFormattedDate(date);
 ---
 
 <time datetime={postDate} class="min-w-[100px] text-sm">{postDate}</time>
 <Element class="underline underline-offset-4">
-	<a href={`/${path}/${post.slug}`} class="text-lg font-bold hover:text-link" rel="prefetch">
+	<a href={`/posts/${post.slug}`} class="text-lg font-bold hover:text-link" rel="prefetch">
 		{post.data.title}
 	</a>
 </Element>
