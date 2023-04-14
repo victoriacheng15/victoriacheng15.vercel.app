@@ -1,5 +1,5 @@
 ---
-import { PROJECTS } from "@/data/constants";
+import { PROJECTS } from "@/data/projects";
 import Link from "./Link.astro";
 import TechStack from "./TechStack.astro";
 
@@ -10,7 +10,7 @@ function formatImageName(name: string) {
 
 <section class="flex flex-col gap-6">
 	{
-		PROJECTS.map(({ title, code, live, description, backend, techs, isDevelop }) => (
+		PROJECTS.map(({ title, code, live, description, techs, isDevelop }) => (
 			<article class="flex flex-col overflow-hidden rounded-lg border-2 border-accent">
 				<h2 class="w-full bg-gray-700 py-2 text-center text-xl tracking-wider text-slate-100">
 					{title}
@@ -28,7 +28,6 @@ function formatImageName(name: string) {
 						</div>
 						<div class="absolute bottom-4 left-0 flex w-full justify-between px-4">
 							<Link href={code} text="Code" />
-							{backend && <Link href={backend} text="API Site" />}
 							<Link href={live} text="Live Site" />
 						</div>
 					</div>
