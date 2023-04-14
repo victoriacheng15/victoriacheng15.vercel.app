@@ -7,11 +7,11 @@ import siteConfig from "@/site-config";
 import { getFormattedDate } from "@/utils";
 
 const monoFontReg = await fetch(
-	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf",
+	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf"
 );
 
 const monoFontBold = await fetch(
-	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-700-normal.ttf",
+	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-700-normal.ttf"
 );
 
 const ogOptions: SatoriOptions = {
@@ -79,7 +79,5 @@ export async function get({ params: { slug } }: APIContext) {
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 	const posts = await getCollection("post");
-	return posts
-		.filter(({ data }) => !data.ogImage)
-		.map(({ slug }) => ({ params: { slug } }));
+	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
 }
