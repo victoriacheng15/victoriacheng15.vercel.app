@@ -33,14 +33,7 @@ export const PROJECTS = [
 		backend: "",
 		description:
 			"Developed a Hacker News clone that allows users to view the most recent eight stories for each category on the home page, and then browse additional stories on subsequent pages. The clone provides an intuitive interface for users to stay updated on the latest technology news.",
-		techs: [
-			"TypeScript",
-			"Next.js",
-			"Redux Toolkit",
-			"Chakra UI",
-			"Testing Library",
-			"Vitest",
-		],
+		techs: ["TypeScript", "Next.js", "Redux Toolkit", "Chakra UI", "Testing Library", "Vitest"],
 		isDevelop: false,
 	},
 	{
@@ -50,14 +43,7 @@ export const PROJECTS = [
 		backend: "https://ai-image-generation-ixl2.onrender.com/",
 		description:
 			'Developed a Midjourney/DALL-E clone where users can view the gallery of AI-generated images on the homepage. Users also can create their own AI-generated images by submit their desired prompts or click the "surprise me" button for a random prompt. Lastly, hit the generate button! Like the image? Lets sharing with the community!',
-		techs: [
-			"TypeScript",
-			"React",
-			"React Router",
-			"Node.js",
-			"Express",
-			"MongoDB",
-		],
+		techs: ["TypeScript", "React", "React Router", "Node.js", "Express", "MongoDB"],
 		isDevelop: false,
 	},
 ];
