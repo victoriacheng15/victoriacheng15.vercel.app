@@ -343,7 +343,7 @@ function top() {
 
 	useEffect(() => {
 		if (status === "idle") {
-			dispatch(fetchTopDetails({ page, limit }));
+			dispatch(fetchTopStories({ page, limit }));
 		}
 	}, [dispatch, status, page, limit]);
 
