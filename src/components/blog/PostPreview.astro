@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import type { IElement } from "@/data/shared";
-import { getFormattedDate } from "@/utils";
+import { getFormattedDate, getReadingTime } from "@/utils";
 
 interface Props extends IElement {
 	post: CollectionEntry<"post">;
@@ -14,9 +14,10 @@ const postDate = getFormattedDate(date);
 ---
 
 <time datetime={postDate} class="min-w-[100px] text-sm">{postDate}</time>
-<Element class="underline underline-offset-4">
+<Element>
 	<a href={`/posts/${post.slug}`} class="text-lg font-bold hover:text-link" rel="prefetch">
-		{post.data.title}
+		{post.data.title} -
+		<span class="text-sm">{getReadingTime(post.body)} min read</span>
 	</a>
 </Element>
 {withDesc && <q class="mt-2 line-clamp-3 block italic">{post.data.description}</q>}
