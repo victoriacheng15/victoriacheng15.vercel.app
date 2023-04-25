@@ -18,26 +18,12 @@ export const projectDetails = [
 	},
 	{
 		title: "hacker-news-next",
-		techs: [
-			"TypeScript",
-			"Next.js",
-			"Redux Toolkit",
-			"Chakra UI",
-			"Testing Library",
-			"Vitest",
-		],
+		techs: ["TypeScript", "Next.js", "Redux Toolkit", "Chakra UI", "Testing Library", "Vitest"],
 		isDevelop: false,
 	},
 	{
 		title: "ai-image-generation",
-		techs: [
-			"TypeScript",
-			"React",
-			"React Router",
-			"Node.js",
-			"Express",
-			"MongoDB",
-		],
+		techs: ["TypeScript", "React", "React Router", "Node.js", "Express", "MongoDB"],
 		isDevelop: false,
 	},
 ];
