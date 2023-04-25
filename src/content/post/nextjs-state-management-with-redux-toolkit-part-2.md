@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Nextjs State Management with Redux Toolkit - Part 2
-description: "Part 1 covered setting up Redux Toolkit and topSlice function and then how would I refactor the codebase to make it more cleaner and readable way"
+description: "Part 1 covered setting up Redux Toolkit and topSlice function and then how would I refactor the codebase to make it cleaner and more readable way"
 publishDate: "2023-04-19"
 tags: [react, nextjs, redux-toolkit]
 ogImage: "/blog/nextjs-redux.jpg"
@@ -192,7 +192,7 @@ The `fetchTopStories` function is refactored with `getAllDetails` function from 
 - getAllDetails("top", page, limit) => getAllDetails("show", page, limit)
 - topsSlice => showsSlice
 - name: "tops" => name: "shows"
-- fetchTopStories.pending/fulfilled/reject => fetchShowStories.pending/fulfilled/reject
+- fetchTopStories.pending/fulfilled/rejected => fetchShowStories.pending/fulfilled/rejected
 - topsSlice.actions => showsSlice.actions
 - selectTops and state.tops => selectShows and state.shows
 - export default topsSlice => export default showsSlice
@@ -359,7 +359,7 @@ export function useFetchAllStories() {
 		topLimit,
 		dispatchTopStories,
 		dispatchMoreTop,
-		// repeat the same process for rest, and replace top to show/job
+		// repeat the same process for the rest, and replace top to show/job
 	};
 }
 ```
