@@ -17,7 +17,7 @@ took the opportunity to explore Next.js and Redux Toolkit. In this
 blog post, I will provide a detailed guide on how I configured Redux Toolkit to
 manage the application's state.
 
-You could check out the <a href="https://hacker-news-next.vercel.app/" target="_blank" rel="noreferrer">deployed site</a> here.
+You could check out the <a href="https://hacker-news-next.vercel.app/" target="_blank" rel="noopener noreferrer">deployed site</a> here.
 
 Let's go!
 
@@ -365,12 +365,12 @@ For part 2, let's see the refactoring action and how I expand the fetching funct
 
 ## Resources
 
-- <a href="https://github.com/HackerNews/API" target="_blank" rel="noreferrer">Hacker News API</a>
-- <a href="https://www.youtube.com/playlist?list=PL0Zuz27SZ-6M1J5I1w2-uZx36Qp6qhjKo" target="_blank" rel="noreferrer">Redux Toolkit by Dave Gray</a>
-- <a href="https://redux-toolkit.js.org/tutorials/typescript" target="_blank" rel="noreferrer">Redux Toolkit - TypeScript Quick Start</a>
-- <a href="https://redux-toolkit.js.org/api/createAsyncThunk" target="_blank" rel="noreferrer">Redux Toolkit - createAsyncThunk</a>
-- <a href="https://redux-toolkit.js.org/api/createSlice" target="_blank" rel="noreferrer">Redux Toolkit - createSlice</a>
-- <a href="https://www.npmjs.com/package/hacker-news-api-types" target="_blank" rel="noreferrer">hacker-news-api-types</a>
+- <a href="https://github.com/HackerNews/API" target="_blank" rel="noopener noreferrer">Hacker News API</a>
+- <a href="https://www.youtube.com/playlist?list=PL0Zuz27SZ-6M1J5I1w2-uZx36Qp6qhjKo" target="_blank" rel="noopener noreferrer">Redux Toolkit by Dave Gray</a>
+- <a href="https://redux-toolkit.js.org/tutorials/typescript" target="_blank" rel="noopener noreferrer">Redux Toolkit - TypeScript Quick Start</a>
+- <a href="https://redux-toolkit.js.org/api/createAsyncThunk" target="_blank" rel="noopener noreferrer">Redux Toolkit - createAsyncThunk</a>
+- <a href="https://redux-toolkit.js.org/api/createSlice" target="_blank" rel="noopener noreferrer">Redux Toolkit - createSlice</a>
+- <a href="https://www.npmjs.com/package/hacker-news-api-types" target="_blank" rel="noopener noreferrer">hacker-news-api-types</a>
 
 ## Thank you!
 

@@ -11,7 +11,7 @@ ogImage: "/blog/nextjs-redux.jpg"
 
 ## Intro
 
-In my <a href="https://victoriacheng15.vercel.app/posts/nextjs-state-management-with-redux-toolkit-part-1" target="_blank" rel="noreferrer">previous post</a>, I covered setting up Redux Toolkit and fetching stories from the top category. However, the application now needs to display stories from the show and job categories as well. As a result, the code needs to be refactored to create a reusable initial state object and function.
+In my <a href="https://victoriacheng15.vercel.app/posts/nextjs-state-management-with-redux-toolkit-part-1" target="_blank" rel="noopener noreferrer">previous post</a>, I covered setting up Redux Toolkit and fetching stories from the top category. However, the application now needs to display stories from the show and job categories as well. As a result, the code needs to be refactored to create a reusable initial state object and function.
 
 **Full code**
 
@@ -447,7 +447,7 @@ To summarize: Write the code in its simplest form initially, and then improve it
 
 ## Resources
 
-- <a href="https://github.com/victoriacheng15/hacker-news-next" target="_blank" rel="noreferrer">
+- <a href="https://github.com/victoriacheng15/hacker-news-next" target="_blank" rel="noopener noreferrer">
     hacker-news-next repository</a>
 
 ## Thank you!
