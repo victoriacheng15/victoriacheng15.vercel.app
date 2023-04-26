@@ -4,7 +4,9 @@ type Markdown = CollectionEntry<"post">[];
 
 export function sortMDByDate(posts: Markdown = []) {
 	return posts.sort(
-		(a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf()
+		(a, b) =>
+			new Date(b.data.publishDate).valueOf() -
+			new Date(a.data.publishDate).valueOf(),
 	);
 }
 
@@ -26,4 +28,13 @@ export function getUniqueTagsWithCount(posts: Markdown = []): {
 		});
 		return runningTags;
 	}, {});
+}
+
+const WORDS_PER_MINUTE = 200;
+
+export function getReadingTime(content: string) {
+	if (!content) return;
+	const clean = content.replace(/<\/?[^>]+(>|$)/g, "");
+	const numberOfWords = clean.split(/\s/g).length;
+	return Math.ceil(numberOfWords / WORDS_PER_MINUTE);
 }
