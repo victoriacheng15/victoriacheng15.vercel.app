@@ -1,10 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-	sortMDByDate,
-	getUniqueTags,
-	getUniqueTagsWithCount,
-	getReadingTime,
-} from "../utils";
+import { sortMDByDate, getUniqueTags, getUniqueTagsWithCount, getReadingTime } from "../utils";
 import { posts, expectedPostsByDate, content } from "../__testData__/testData";
 
 describe("sort by date", () => {
@@ -17,11 +12,7 @@ describe("sort by date", () => {
 describe("unique tags", () => {
 	it("should return tags", () => {
 		//@ts-expect-error
-		expect(getUniqueTags(posts)).toEqual([
-			"reflection",
-			"monthly-reflection",
-			"test",
-		]);
+		expect(getUniqueTags(posts)).toEqual(["reflection", "monthly-reflection", "test"]);
 	});
 
 	it("should return tags with count", () => {
