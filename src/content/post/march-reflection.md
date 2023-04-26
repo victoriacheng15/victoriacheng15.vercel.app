@@ -15,7 +15,7 @@ I think this month is pretty productive. I have done a couple of things:
 
 - Published a blog about how to set up and deploy a TS node app
 - Read chapter 1 of the System Design Interview
-- Learned about API versioning and how to implement versioning from <a href="https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api" target="_blank" rel="noreferrer">REST API Design Best Practices Handbook</a>
+- Learned about API versioning and how to implement versioning from <a href="https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api" target="_blank" rel="noopener noreferrer">REST API Design Best Practices Handbook</a>
 - Understood about largest contentful paint and cumulative layout shift
 - Discovered that Jest has a feature that you can loop through an array of test cases without using either ` forEach`` or  `for of` loops
 
@@ -36,7 +36,7 @@ Most deployment services have similar settings but focus on the `build` and `sta
 },
 ```
 
-You could check this <a href="https://victoriacheng15.vercel.app/posts/a-simple-guide-to-setting-up-and-deploying-node-with-typescript" target="_blank" rel="noreferrer">blog</a> for more details.
+You could check this <a href="https://victoriacheng15.vercel.app/posts/a-simple-guide-to-setting-up-and-deploying-node-with-typescript" target="_blank" rel="noopener noreferrer">blog</a> for more details.
 
 ### Chapter 1 of the System Design Interview
 
@@ -52,7 +52,7 @@ I learned about:
 
 This chapter has prompted me to consider the inner workings of a website, particularly how servers and databases are managed. For instance, when browsing through posts on LinkedIn or Twitter, the posts are probably being served from one of several cloned databases. Conversely, when creating a post, the content is likely sent to the master database.
 
-- <a href="https://www.linkedin.com/posts/victoriacheng15_systemdesign-softwareengineering-activity-7043226359703212032-2xqM?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer">LinkedIn post</a>
+- <a href="https://www.linkedin.com/posts/victoriacheng15_systemdesign-softwareengineering-activity-7043226359703212032-2xqM?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">LinkedIn post</a>
 
 ### API versioning
 
@@ -66,9 +66,9 @@ Over time, there will be improvements, new functionalities and more changes to t
 | ---- routes
 ```
 
-- <a href="https://www.linkedin.com/posts/victoriacheng15_typescript-softwareengineering-javascript-activity-7041831400752242688-Hs5P?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer">LinkedIn post</a>
-- <a href="https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api" target="_blank" rel="noreferrer">The Handbook</a>
-- <a href="https://github.com/victoriacheng15/ai-image-generation/tree/main/server/src/v1" target="_blank" rel="noreferrer">ai-image-generation code on GitHub</a>
+- <a href="https://www.linkedin.com/posts/victoriacheng15_typescript-softwareengineering-javascript-activity-7041831400752242688-Hs5P?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">LinkedIn post</a>
+- <a href="https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api" target="_blank" rel="noopener noreferrer">The Handbook</a>
+- <a href="https://github.com/victoriacheng15/ai-image-generation/tree/main/server/src/v1" target="_blank" rel="noopener noreferrer">ai-image-generation code on GitHub</a>
 
 ### Google Lighthouse
 
@@ -80,7 +80,7 @@ I used the Google Lighthouse tool to assess the performance of my projects. Howe
 
 LCP is a metric used to measure the loading performance of a web page. It measures the time it takes for the largest content element on a web page, such as an image, video, or block-level text element, to be fully rendered in the viewport. A couple of ways to optimize LCP is to make sure that the element can start loading as early as possible, render as soon as resources are loaded, and more.
 
-- <a href="https://www.linkedin.com/posts/victoriacheng15_coding-improvement-softwareengineering-activity-7044681649657155585-6TEd?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer">LinkedIn post</a>
+- <a href="https://www.linkedin.com/posts/victoriacheng15_coding-improvement-softwareengineering-activity-7044681649657155585-6TEd?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">LinkedIn post</a>
 
 **Cumulative layout shift (CLS)**
 
@@ -93,8 +93,8 @@ Let's say a page has a cover image on top of the page.
 
 Additionally, you can implement a skeleton layout for dynamically injected content. This enables you to display placeholders that inform readers that content is forthcoming, thus reducing the likelihood of layout shifts. By using this approach, I was able to significantly improve the Cumulative Layout Shift (CLS) from 0.344 to 0.033, which yielded impressive results. This experience surprised me and highlighted the importance of considering the use of skeleton layouts in the future.
 
-- <a href="https://www.linkedin.com/posts/victoriacheng15_coding-softwareengineering-improvement-activity-7045097140867518464-ZwGu?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer">LinkedIn post - part 1</a>
-- <a href="https://www.linkedin.com/posts/victoriacheng15_coding-softewareengineering-nextjs-activity-7046171092901646336-lhXW?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer"> LinkedIn post - part 2</a>
+- <a href="https://www.linkedin.com/posts/victoriacheng15_coding-softwareengineering-improvement-activity-7045097140867518464-ZwGu?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">LinkedIn post - part 1</a>
+- <a href="https://www.linkedin.com/posts/victoriacheng15_coding-softewareengineering-nextjs-activity-7046171092901646336-lhXW?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"> LinkedIn post - part 2</a>
 
 ### Jest - `test.each(table)(name, fn, timeout)`
 
@@ -138,7 +138,7 @@ describe("isograms", () => {
 });
 ```
 
-See more in this <a href="https://jestjs.io/docs/api#testeachtablename-fn-timeout" target="_blank" rel="noreferrer">section</a> of the Jest docs.
+See more in this <a href="https://jestjs.io/docs/api#testeachtablename-fn-timeout" target="_blank" rel="noopener noreferrer">section</a> of the Jest docs.
 
 ## Thank you!
 
