@@ -24,10 +24,9 @@ In the context of software development, the foundation might include setting up 
 
 ## AWS Amplify
 
-I discovered AWS Amplify and it is a solution that you can deploy frontend web and mobile apps on the internet. To my surprise that Amplify allows you to deploy a full-stack web app. 😮 It also offers a range of capabilities, such as user authentications, the ability to create either REST or graphQL API, and a database to store the app information. 
+I discovered AWS Amplify and it is a solution that you can deploy frontend web and mobile apps on the internet. To my surprise that Amplify allows you to deploy a full-stack web app. 😮 It also offers a range of capabilities, such as user authentications, the ability to create either REST or graphQL API, and a database to store the app information.
 
-While I went through the hands-on tutorial, I encountered a couple of issues. The first error message was "global was not defined" while using Vite bundler. The problem was due to Vite not defining a global field in the window as Webpack does. To solve this issue, a global field was added to the Vite configuration file as advised by the Viteh docs. Another error message was "request' is not exported by __vite-browser-external". The issue was similar to the first one and was caused by the Amplify JavaScript library relying on node-specific features.
-
+While I went through the hands-on tutorial, I encountered a couple of issues. The first error message was "global was not defined" while using Vite bundler. The problem was due to Vite not defining a global field in the window as Webpack does. To solve this issue, a global field was added to the Vite configuration file as advised by the Viteh docs. Another error message was "request' is not exported by \_\_vite-browser-external". The issue was similar to the first one and was caused by the Amplify JavaScript library relying on node-specific features.
 
 ```ts
 export default defineConfig({
@@ -58,9 +57,10 @@ API routes provide a convenient way to interact with a database, by writing `GET
 
 ## Rebuilt rest-countries-api with nextjs
 
-The Rest Countries API was rebuilt with Next.js, exploring its app directory, Redux Toolkit Query, and skeleton layout. The app's core features include a search box and a dropdown menu to filter countries based on text and the selected region, along with a theme toggle for dark and light modes. The new Next.js version allows users to search for both text and region, features a clear search button, a small window for displaying country cards, and a skeleton layout. 
+The Rest Countries API was rebuilt with Next.js, exploring its app directory, Redux Toolkit Query, and skeleton layout. The app's core features include a search box and a dropdown menu to filter countries based on text and the selected region, along with a theme toggle for dark and light modes. The new Next.js version allows users to search for both text and region, features a clear search button, a small window for displaying country cards, and a skeleton layout.
 
 Outline of the 3 apps:
+
 - 1st: JavaScript React and useContext as the state management with pagination feature
 - 2nd: Similar to the first, but with TypeScript and used useReducer, useMemo, and useCallback hooks
 - 3rd: Nextjs with TypeScript and Redux Toolkit Query
@@ -95,8 +95,7 @@ export const restCountriesApi = createApi({
 	}),
 });
 
-export const { useGetAllCountriesQuery, useGetOneCountryQuery } =
-	restCountriesApi;
+export const { useGetAllCountriesQuery, useGetOneCountryQuery } = restCountriesApi;
 ```
 
 - <a href="https://www.linkedin.com/posts/victoriacheng15_coding-programming-softwareengineering-activity-7053762938716766208-x0nR/?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">LinkedIn Post</a>
