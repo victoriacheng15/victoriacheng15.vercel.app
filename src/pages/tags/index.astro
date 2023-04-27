@@ -3,32 +3,30 @@ import PageLayout from "@/layouts/Base";
 import { getUniqueTagsWithCount } from "@/utils";
 import { getCollection } from "astro:content";
 
-const allPosts = await getCollection("post");
-const allTags = getUniqueTagsWithCount(allPosts);
-
 const meta = {
 	title: "All Tags",
 	description: "All tags from my blog posts",
 };
+
+const allPosts = await getCollection("post");
+const allTags = getUniqueTagsWithCount(allPosts);
+const sorted = Object.entries(allTags).sort((a, b) => b[1] - a[1]);
 ---
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-6">Tags</h1>
-	<ul class="space-y-4">
+	<ul class="flex flex-wrap gap-4">
 		{
-			Object.entries(allTags).map(([tag, val]) => (
-				<li class="flex items-center gap-x-2">
+			sorted.map(([tag, val]) => (
+				<li>
 					<a
-						class="cactus-link inline-block"
+						class="cactus-link inline-block text-lg"
 						href={`/tags/${tag}`}
 						title={`View posts with the tag: ${tag}`}
 						rel="prefetch"
 					>
-						&#35;{tag}
+						&#35;{tag} ({val})
 					</a>
-					<span class="inline-block">
-						- {val} Post{val > 1 && "s"}
-					</span>
 				</li>
 			))
 		}
