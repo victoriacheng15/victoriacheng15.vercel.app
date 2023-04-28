@@ -4,14 +4,14 @@ module.exports = {
 	root: true,
 	env: {
 		node: true,
+		jest: true,
 	},
 	parser: "@typescript-eslint/parser",
 	plugins: ["@typescript-eslint", "prettier"],
 	extends: [
-		"eslint:recommended",
+		"plugin:astro/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:prettier/recommended",
-		"plugin:astro/recommended",
 	],
 	overrides: [
 		{
@@ -25,8 +25,6 @@ module.exports = {
 				"prettier/prettier": "off",
 				"import/no-named-as-default-member": "off",
 				"import/no-named-as-default": "off",
-				"@typescript-eslint/consistent-type-imports": "error",
-				"@typescript-eslint/no-unused-vars": "off",
 			},
 		},
 		{
@@ -50,6 +48,7 @@ module.exports = {
 					{ argsIgnorePattern: "^_", destructuredArrayIgnorePattern: "^_" },
 				],
 				"@typescript-eslint/no-non-null-assertion": "off",
+				"@typescript-eslint/ban-ts-comment": "off",
 			},
 		},
 	],
