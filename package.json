@@ -10,7 +10,8 @@
 		"preview": "astro preview",
 		"format": "prettier -w ./src ./src/**/*.astro",
 		"test": "vitest",
-		"test:coverage": "vitest --coverage"
+		"test:coverage": "vitest --coverage",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@astrojs/mdx": "^0.19.0",
@@ -38,7 +39,8 @@
 		"prettier-plugin-tailwindcss": "^0.2.7",
 		"tailwindcss": "^3.3.1",
 		"typescript": "^5.0.4",
-		"vitest": "^0.30.1"
+		"vitest": "^0.30.1",
+		"husky": "^8.0.0"
 	},
 	"dependencies": {
 		"@astrojs/prefetch": "^0.2.1",
