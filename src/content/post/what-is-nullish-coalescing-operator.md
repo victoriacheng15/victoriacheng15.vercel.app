@@ -13,7 +13,7 @@ ogImage: "/blog/nullish-coalescing-operator.jpg"
 
 The Nullish Coalescing Operator (??) is a relatively new addition to JavaScript that provides a concise way to check for `null` or `undefined` values. It can be used to provide a default value when a given expression is null or undefined, without conflating the two.
 
-The operator works by returning the left-hand side operand if it is NOT null or undefined, and otherwise, evaluating and returning the right-hand side operand. 
+The operator works by returning the left-hand side operand if it is NOT null or undefined, and otherwise, evaluating and returning the right-hand side operand.
 
 ### Example
 
@@ -38,7 +38,7 @@ When the `value` is a string, the `check` value will return the value on the lef
 
 ### A couple of pitfalls
 
-In JavaScript, an empty string and number zero's boolean value is false and a non-empty string and number one's boolean value is true. Remember the nullish coalescing operator ONLY check for null and undefined value.
+In JavaScript, an empty string and number zero's boolean value is false and a non-empty string and number one's boolean value is true. Remember the nullish coalescing operator ONLY check for null and undefined values.
 
 You could copy and paste the code below to the browser's console or editor and see.
 
@@ -57,7 +57,7 @@ console.log("Boolean value for number one is: ", Boolean(1));
 Boolean value for number zero is:  false
 Boolean value for number one is:  true 
 */
-``` 
+```
 
 ```js
 const value = "";
@@ -111,9 +111,8 @@ Choosing between the nullish coalescing operator and the logical OR operator can
 
 ## Resources
 
-- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing" target="_blank" rel="noopener noreferrer">MDN Docs  - Nullish coalescing operator (??)</a>
-- <a href="https://javascript.info/nullish-coalescing-operator" target="_blank" rel="noopener noreferrer">JavaScript Info  - Nullish coalescing operator (??)</a>
-
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing" target="_blank" rel="noopener noreferrer">MDN Docs - Nullish coalescing operator (??)</a>
+- <a href="https://javascript.info/nullish-coalescing-operator" target="_blank" rel="noopener noreferrer">JavaScript Info - Nullish coalescing operator (??)</a>
 
 ## Thank you!
 
