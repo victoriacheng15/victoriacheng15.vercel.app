@@ -8,7 +8,7 @@ interface Props extends IElement {
 	withDesc?: boolean;
 }
 
-const { post, as: Element = "h2", withDesc = false } = Astro.props;
+const { post, as: Element = "h3", withDesc = false } = Astro.props;
 const date = new Date(post.data.publishDate);
 const postDate = getFormattedDate(date);
 ---
