@@ -46,7 +46,7 @@ const paginationProps = {
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-6">Posts</h1>
-	<div class="flex flex-col gap-2">
+	<div class="flex flex-col gap-8">
 		{
 			uniqueTags.length && (
 				<aside class="basis-auto">
@@ -64,7 +64,7 @@ const paginationProps = {
 							</li>
 						))}
 					</ul>
-					<span class="mt-4 block">
+					<span class="mt-6 block">
 						<a class="sm:hover:text-accent" href="/tags" aria-label="View all blog categories">
 							View all →
 						</a>
@@ -78,7 +78,7 @@ const paginationProps = {
 				{
 					page.data.map((p) => (
 						<li class="flex flex-col gap-2 rounded-xl border-2 border-accent p-2">
-							<PostPreview post={p} as="h2" withDesc />
+							<PostPreview post={p} withDesc />
 						</li>
 					))
 				}
