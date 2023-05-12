@@ -11,7 +11,7 @@ ogImage: "/blog/nullish-coalescing-operator.jpg"
 
 ## What is Nullish Coalescing Operator?
 
-The Nullish Coalescing Operator (??) is a relatively new addition to JavaScript that provides a concise way to check for `null` or `undefined` values. It can be used to provide a default value when a given expression is null or undefined, without conflating the two.
+The Nullish Coalescing Operator (??) is a relatively new addition to JavaScript (ES2020) that provides a concise way to check for `null` or `undefined` values. It can be used to provide a default value when a given expression is null or undefined, without conflating the two.
 
 The operator works by returning the left-hand side operand if it is NOT null or undefined, and otherwise, evaluating and returning the right-hand side operand.
 
