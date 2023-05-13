@@ -71,4 +71,8 @@ export const SKILLS = [
 		name: "Cypress",
 		skill: "simple-icons:cypress",
 	},
+	{
+		name: "Linux",
+		skill: "simple-icons:linux",
+	},
 ];
