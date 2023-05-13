@@ -20,6 +20,10 @@ export const projectDetails = [
 	},
 	{
 		title: "ai-image-generation",
-		techs: ["TypeScript", "React", "React Router", "Node.js", "Express", "MongoDB"],
+		techs: ["TypeScript", "React", "React Router", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+	},
+	{
+		title: "victoriacheng15.vercel.app",
+		techs: ["TypeScript", "Jest", "Cypress", "Tailwind CSS", "Astro"],
 	},
 ];
