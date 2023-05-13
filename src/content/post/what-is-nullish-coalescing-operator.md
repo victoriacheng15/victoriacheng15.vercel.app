@@ -36,7 +36,7 @@ console.log(check); // 1st value
 
 When the `value` is a string, the `check` value will return the value on the left side. This is because the `value` is existed and is not null or undefined.
 
-### A couple of pitfalls
+### A pitfall
 
 In JavaScript, an empty string and number zero's boolean value is false and a non-empty string and number one's boolean value is true. Remember the nullish coalescing operator ONLY check for null and undefined values.
 
