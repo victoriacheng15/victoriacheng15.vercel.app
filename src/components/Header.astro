@@ -7,22 +7,40 @@ import Highlight from "./Highlight.astro";
 	<div class="mx-auto w-11/12 max-w-5xl">
 		<section class="flex flex-col items-center justify-between gap-8 md:flex-row">
 			<div class="border-1 w-56 md:w-64">
-				<img width={256} height={256} src="/images/avatar.webp" alt="Victoria Cheng" />
+				<img
+					width={256}
+					height={256}
+					src="/images/avatar.jpg"
+					alt="Victoria Cheng"
+					class="rounded-full"
+				/>
 			</div>
-			<div class="basis-[65%]">
+			<div class="basis-[65%] space-y-6">
 				<h1 class="pb-6 text-2xl font-bold text-accent md:text-3xl">
 					👋 Hi there, I am Victoria Cheng!
 				</h1>
-				<p class="pb-4 text-lg leading-8 tracking-wide">
-					I am a <Highlight text="software developer" /> and a <Highlight text="blogger" />. I am
-					dedicated to enhancing the user experience of web applications. I have designed and
-					implemented the frontend and backend web solutions using my customer-focused mindset,
-					effective time management, and collaborative approach. I have worked as a packaging
-					engineer for the past several years, but found myself passionless by what I do lately. So
-					I took some time to educate myself about programming in 2021.
+				<p>
+					As a <Highlight text="software developer" /> and <Highlight text="blogger" />, my goal is
+					to make web applications as user-friendly and enjoyable as possible. With a
+					customer-focused mindset and a collaborative approach, I've designed and implemented both
+					the frontend and backend solutions for various web projects. My effective time management
+					skills ensure that I deliver quality work within strict deadlines.
+				</p>
+				<p>
+					Although I spent several years working as a packaging engineer, I found myself feeling
+					uninspired and unfulfilled in my career. But in 2021, I decided to take the leap and dive
+					into the world of programming. I've been educating myself ever since, and I'm excited to
+					continue growing my skills and knowledge in this exciting field. The technology world is
+					endless!
 				</p>
 				<SocialList />
 			</div>
 		</section>
 	</div>
 </header>
+
+<style>
+	p {
+		@apply text-lg leading-8 tracking-wide;
+	}
+</style>
