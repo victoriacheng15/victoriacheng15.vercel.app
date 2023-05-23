@@ -1,13 +1,13 @@
 ---
 draft: false
-title: March Reflection
+title: March Reflection 2023
 description: "Reflected on what I learned about run TS node app, ch 1 of the System Design, LCP and CLS from Lighthouse, and run a tests array with one of Jest's features."
 publishDate: "2023-03-28"
 tags: [reflection, monthly-reflection]
-ogImage: "/blog/march-reflection.jpg"
+ogImage: "/blog/march-reflection-2023.jpg"
 ---
 
-![March Reflection Cover Image](/blog/march-reflection.jpg)
+![March Reflection Cover Image](/blog/march-reflection-2023.jpg)
 
 ## Monthly Reflection
 
