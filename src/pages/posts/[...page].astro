@@ -12,7 +12,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 	const allPosts = getPosts.filter(({ data: { draft } }) => !draft);
 	const allPostsByDate = sortMDByDate(allPosts);
 	const uniqueTags = getUniqueTags(allPosts);
-	return paginate(allPostsByDate, { props: { uniqueTags }, pageSize: 10 });
+	return paginate(allPostsByDate, { props: { uniqueTags }, pageSize: 12 });
 }
 
 interface Props {
@@ -49,7 +49,7 @@ const paginationProps = {
 	<div class="flex flex-col gap-8">
 		{
 			uniqueTags.length && (
-				<aside class="basis-auto">
+				<aside class="basis-auto border-b-2 border-b-accent pb-2">
 					<h2 class="mb-4 flex items-center text-lg font-semibold">Explore by Tags</h2>
 					<ul class="flex flex-row flex-wrap gap-2 text-bgColor">
 						{uniqueTags.map((tag) => (
@@ -69,16 +69,15 @@ const paginationProps = {
 							View all →
 						</a>
 					</span>
-					<hr class="my-2" />
 				</aside>
 			)
 		}
 		<section aria-label="Blog post list">
-			<ul class="flex flex-col gap-8">
+			<ul class="flex flex-col gap-4 pb-4">
 				{
 					page.data.map((p) => (
-						<li class="flex flex-col gap-2 rounded-xl border-2 border-accent p-2">
-							<PostPreview post={p} withDesc />
+						<li class="border-b-2 border-b-accent pb-2">
+							<PostPreview post={p} />
 						</li>
 					))
 				}
