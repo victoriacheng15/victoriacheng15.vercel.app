@@ -1,6 +1,6 @@
 ---
 draft: false
-title: What have I learned about React Context API?
+title: What Have I Learned About React Context API
 description: "Explore React's Context API for sharing data among components without props drilling. Demo includes search, region filter, pagination, and theme switcher."
 publishDate: "2022-10-28"
 tags: [react, learning]
