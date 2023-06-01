@@ -7,7 +7,7 @@ tags: [book]
 ogImage: "/blog/deep-work.jpg"
 ---
 
-<!-- ![Deep Work](/blog/deep-work.jpg) -->
+![Deep Work](/blog/deep-work.jpg)
 
 Deep Work book by Cal Newport describes that deep work is the ability to focus without distraction on a cognitively demanding task and a skill that allows you to quickly master complicated information and produce better results in less time.
 
