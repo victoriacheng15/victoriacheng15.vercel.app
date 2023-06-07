@@ -13,10 +13,10 @@ const date = new Date(post.data.publishDate);
 const postDate = getFormattedDate(date);
 ---
 
-<a href={`/posts/${post.slug}`} class="text-xl font-bold hover:text-link" rel="prefetch">
+<a href={`/posts/${post.slug}`} class="text-xl hover:text-link" rel="prefetch">
 	<Element>
-		<time datetime={postDate} class="min-w-[100px] text-base">{postDate}</time> |
+		<time datetime={postDate} class="text-sm tracking-tight">{postDate}</time> |
 		{post.data.title} -
-		<span class="text-base">{getReadingTime(post.body)} min read</span>
+		<span class="text-sm tracking-tight">{getReadingTime(post.body)} min read</span>
 	</Element>
 </a>

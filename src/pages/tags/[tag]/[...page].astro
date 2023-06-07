@@ -16,7 +16,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 		const filterPosts = allPostsByDate.filter(({ data: { tags } }) => tags?.includes(tag));
 		return paginate(filterPosts, {
 			params: { tag },
-			pageSize: 10,
+			pageSize: 15,
 		});
 	});
 }
@@ -37,13 +37,13 @@ const paginationProps = {
 	...(page.url.prev && {
 		prevUrl: {
 			url: page.url.prev,
-			text: `← Previous Tags`,
+			text: `← Previous Page`,
 		},
 	}),
 	...(page.url.next && {
 		nextUrl: {
 			url: page.url.next,
-			text: `Next Tags →`,
+			text: `Next Page →`,
 		},
 	}),
 };
@@ -51,14 +51,14 @@ const paginationProps = {
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-6 flex items-center">
-		<a href="/tags/" class="text-accent sm:hover:underline">Tags</a><span class="ml-2 mr-3">→</span>
+		<a href="/tags/" class="text-accent sm:hover:underline">Tags</a><span class="mx-3">→</span>
 		<span class="text-xl">#{tag}</span>
 	</h1>
 	<section aria-label="Blog post list">
-		<ul class="flex flex-col gap-4 pb-4">
+		<ul class="flex flex-col gap-6 pb-4">
 			{
 				page.data.map((p) => (
-					<li class="border-b-2 border-b-accent pb-2">
+					<li>
 						<PostPreview post={p} as="h2" />
 					</li>
 				))
