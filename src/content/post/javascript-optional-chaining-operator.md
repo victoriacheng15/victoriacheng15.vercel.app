@@ -75,15 +75,28 @@ fetchData()
 
 - Conditional rendering in UI
 
+There are 2 options for this. First, `<p>Country: {user?.address?.country ?? "N/A"}</p>` will rendering `N/A` if the `country` property doesn't exist. Secondly, `user?.address?.country && <p>Country: {user?.address?.country}</p>}` will not render if the `country` property doesn't exist.
+
 ```jsx
 import React from "react";
 
-const UserProfile = ({ user }) => {
+const UserProfile = () => {
+	const user = {
+		id: 1,
+		name: "John",
+		address: {
+			city: "New York",
+			zipcode: "10001",
+			// country: "Somewhere",
+		},
+	};
+
 	return (
 		<div>
-			{user?.name && <h1>Welcome, {user.name}!</h1>}
-			{user?.address?.city && <p>City: {user.address.city}</p>}
-			{user?.address?.country && <p>Country: {user.address.country}</p>}
+			<h1>Welcome, {user.name}!</h1>
+			<p>City: {user?.address?.city}</p>
+			<p>Country: {user?.address?.country ?? "N/A"}</p>
+			{user?.address?.country && <p>Country: {user?.address?.country}</p>}
 		</div>
 	);
 };
