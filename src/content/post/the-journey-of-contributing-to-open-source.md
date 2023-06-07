@@ -6,6 +6,7 @@ publishDate: "2022-06-10"
 tags: [open-source]
 ogImage: "/blog/the-journey-of-contributing-to-open-source.webp"
 ---
+
 ## What is open source??
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/the-journey-of-contributing-to-open-source)**

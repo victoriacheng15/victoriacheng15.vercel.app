@@ -7,6 +7,7 @@ description: "100Devs is a 30-week remote cohort by Leon Noel teaching MongoDB, 
 tags: [misc]
 ogImage: "/blog/what-is-100devs-cohort.webp"
 ---
+
 ## What is 100Devs Cohort?
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/100devs-cohort)**
