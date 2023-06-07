@@ -7,10 +7,6 @@ tags: [100-days-of-code]
 ogImage: "/blog/my-first-round-of-the-100-days-of-the-code.webp"
 ---
 
-![my first round of the 100 days of the code](/blog/my-first-round-of-the-100-days-of-the-code.webp)
-
-<!--truncate-->
-
 ## The end of 100 days of code - Round 1
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/my-first-round-of-the-100-days-of-code)**

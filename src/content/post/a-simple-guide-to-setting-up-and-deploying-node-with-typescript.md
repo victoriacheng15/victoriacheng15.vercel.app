@@ -7,8 +7,6 @@ tags: [typescript, node.js]
 ogImage: "/blog/set-up-and-deploy-ts-node.jpg"
 ---
 
-![Set up and deploy the TypeScript node app](/blog/set-up-and-deploy-ts-node.jpg)
-
 TypeScript is a language developed by Microsoft that includes all JavaScript features with added type syntax checks. It can catch errors before runtime, improving code quality and scalability, making it great for large applications.
 
 Let's learn how to set up and deploy the TS node app!

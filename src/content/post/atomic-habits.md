@@ -7,8 +7,6 @@ tags: [book]
 ogImage: "/blog/atomic-habits.jpg"
 ---
 
-![Atomic Habits](/blog/atomic-habits.jpg)
-
 > Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones
 
 Author: [James Clear](https://jamesclear.com/atomic-habits).

@@ -7,8 +7,6 @@ tags: [reflection, monthly-reflection]
 ogImage: "/blog/february-reflection-2023.jpg"
 ---
 
-![February Reflection](/blog/february-reflection-2023.jpg)
-
 ## Monthly Reflection
 
 During the month, I have published blogs:

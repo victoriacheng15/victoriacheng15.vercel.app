@@ -7,10 +7,6 @@ tags: [react, react-hooks]
 ogImage: "/blog/react-hooks-useeffect.webp"
 ---
 
-![react hooks useEffect](/blog/react-hooks-useeffect.webp)
-
-What is the useEffect Hook in React?
-
 ## What is useEffect?
 
 It is a tool in React that allows developers to perform side effects in function components. The hook is called every time a component is rendered, including the first time the component is rendered. It allows developers to perform a wide range of tasks, such as `fetching data`, `setting up event listeners`, and `modifying the DOM`.

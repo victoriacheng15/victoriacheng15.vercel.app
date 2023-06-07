@@ -7,8 +7,6 @@ tags: [open-source]
 ogImage: "/blog/the-journey-of-contributing-to-open-source.webp"
 ---
 
-![the journey of contributing to open source](/blog/the-journey-of-contributing-to-open-source.webp)
-
 ## What is open source??
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/the-journey-of-contributing-to-open-source)**

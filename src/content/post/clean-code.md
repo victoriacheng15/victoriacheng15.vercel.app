@@ -7,8 +7,6 @@ tags: [book]
 ogImage: "/blog/cleann-code.jpg"
 ---
 
-![Clean Code](/blog/clean-code.jpg)
-
 Clean Code: a handbook of agile software craftsmanship by Robert Martin. Even bad code can function, but if the code is not clean, it can bring the development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code, but it doesn't have to be that way.
 
 This repo [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) is adapted from the Clean Code book for JS.

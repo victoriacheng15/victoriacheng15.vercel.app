@@ -7,8 +7,6 @@ tags: [javascript]
 ogImage: "/blog/regular-expression-letter-edition.webp"
 ---
 
-![regular expression letter edition](/blog/regular-expression-letter-edition.webp)
-
 ## 😬 What is Regular Expression? 😬
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/regular-expressions-letter-edition)**

@@ -7,8 +7,6 @@ tags: [reflection, monthly-reflection]
 ogImage: "/blog/january-reflection-2023.jpg"
 ---
 
-![January Reflection](/blog/january-reflection-2023.jpg)
-
 ## Monthly Reflection
 
 I recently read the book Atomic Habits by James Clear (just before the end of 2022), which emphasizes the importance of raising awareness of our current actions to make our habits more automatic. Based on this insight, I have decided to write a monthly reflection on what I have learned and accomplished during the month.

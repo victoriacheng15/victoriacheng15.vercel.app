@@ -7,8 +7,6 @@ tags: [css]
 ogImage: "/blog/tailwind-css-beginner-edition.webp"
 ---
 
-![tailwind css beginner edition](/blog/tailwind-css-beginner-edition.webp)
-
 ## What is Tailwind CSS?
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/tailwind-css-beginner-edition)**

@@ -7,8 +7,6 @@ tags: [journey]
 ogImage: "/blog/my-journey-into-the-tech.webp"
 ---
 
-![my journey into the tech](/blog/my-journey-into-the-tech.webp)
-
 ## Who Am I?
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/my-journey-into-the-tech)**

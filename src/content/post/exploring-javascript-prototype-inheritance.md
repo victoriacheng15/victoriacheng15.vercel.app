@@ -7,8 +7,6 @@ tags: [javascript]
 ogImage: "/blog/javascript-prototype-inheritance.jpg"
 ---
 
-![JavaScript Prototype Inheritance](/blog/javascript-prototype-inheritance.jpg)
-
 ## What is prototype inheritance?
 
 Prototype inheritance is a mechanism for object-oriented programming that allows objects to inherit properties and methods from other objects. In prototypal inheritance, each object has an internal link to another object called its prototype. When a property or method is accessed on an object, and it is not found on the object itself, the JavaScript engine automatically looks up the chain of prototypes until it finds the property or method or reaches the end of the chain.

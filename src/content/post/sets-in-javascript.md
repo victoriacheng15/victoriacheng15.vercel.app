@@ -7,8 +7,6 @@ tags: [javascript]
 ogImage: "/blog/sets-in-javascript.webp"
 ---
 
-![sets in javascript](/blog/sets-in-javascript.webp)
-
 ## 🤔 Set in JavaScript 🤔
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/set-in-javascript)**

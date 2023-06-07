@@ -7,8 +7,6 @@ tags: [react, react-hooks]
 ogImage: "/blog/react-hooks-usememo.webp"
 ---
 
-![React Hooks useMemo](/blog/react-hooks-usememo.webp)
-
 ## What is useMemo?
 
 The useMemo is a React Hook that allows you to remember a component's computed value. It is a way to optimize the performance of your React apps by caching the result of an expensive calculation and reusing it if the values have **not** changed.

@@ -7,8 +7,6 @@ tags: [javascript]
 ogImage: "/blog/js-map-keyed-collection.jpg"
 ---
 
-![JavaScript Map Keyed Collection](/blog/js-map-keyed-collection.jpg)
-
 ## What is Map?
 
 It is an object that holds key-value pairs and remembers the original insertion order of the keys. It is similar to `Object` with the main difference being that `Map` allows keys of any type.

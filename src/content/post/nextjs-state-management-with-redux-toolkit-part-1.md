@@ -7,8 +7,6 @@ tags: [react, nextjs, redux-toolkit]
 ogImage: "/blog/nextjs-redux.jpg"
 ---
 
-![Nextjs State Management with Redux Toolkit](/blog/nextjs-redux.jpg)
-
 ## Intro
 
 I developed an application named Hacker News utilizing Next.js (non-app

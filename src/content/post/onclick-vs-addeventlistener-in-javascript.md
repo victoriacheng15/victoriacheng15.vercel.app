@@ -7,8 +7,6 @@ tags: [javascript]
 ogImage: "/blog/onclick-vs-addeventlistener-in-js.webp"
 ---
 
-![onClick vs addEventListener in JavaScript](/blog/onclick-vs-addeventlistener-in-js.webp)
-
 ## onclick
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/onclick-vs-addeventlistener-in-javascript)**

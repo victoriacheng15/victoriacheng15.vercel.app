@@ -7,8 +7,6 @@ tags: [javascript]
 ogImage: "/blog/javascript-mutable-array-methods.webp"
 ---
 
-![javascript mutable array methods](/blog/javascript-mutable-array-methods.webp)
-
 ## What are mutable array methods?
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/javascript-mutable-array-methods)**
