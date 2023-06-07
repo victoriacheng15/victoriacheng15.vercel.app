@@ -6,9 +6,6 @@ publishDate: "2023-02-01"
 tags: [javascript]
 ogImage: "/blog/structuredclone-in-js.jpg"
 ---
-
-![Unlocking the Power of StructuredClone](/blog/structuredclone-in-js.jpg)
-
 ## What is structuredClone()?
 
 It is a method that creates a deep copy of a given value using the structured clone algorithm and without using a 3rd-party library like Lodash. This makes it much easier for developers to transfer data between different applications without having to worry about compatibility issues.

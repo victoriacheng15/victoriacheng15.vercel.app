@@ -7,10 +7,6 @@ tags: [react, react-hooks]
 ogImage: "/blog/react-hooks-usereducer.webp"
 ---
 
-![react hooks useReducer](/blog/react-hooks-usereducer.webp)
-
-Learning useReducer: A Step-by-Step Guide
-
 ## What is useReducer Hook?
 
 It is a hook that allows you to manage states in your components. It is similar to `useState` but more powerful and flexible since you can manage complex state changes that may involve multiple sub-values.

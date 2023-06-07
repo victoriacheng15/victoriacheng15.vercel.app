@@ -7,8 +7,6 @@ tags: [misc]
 ogImage: "/blog/netwokring-100devs.webp"
 ---
 
-![networking 100Devs](/blog/netwokring-100devs.webp)
-
 ## Introduction
 
 Networking is the class that everyone and I have been waiting for! But why it is important? Let's say, you click _APPLY_ on the job board vs building connections with individuals who are already in the industry. Leon describes this with an eagle flying by and picking up the ONE resume that was thrown out with other resumes and then the eagle drops the resume at the recruiter's desk. The recruiter SEES your information on the resume.

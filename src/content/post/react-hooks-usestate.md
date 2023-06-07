@@ -7,8 +7,6 @@ tags: [react, react-hooks]
 ogImage: "/blog/react-hooks-useState.webp"
 ---
 
-![react-hooks-useState](/blog/react-hooks-useState.webp)
-
 ## What is useState?
 
 What is `useState` hook? It is a feature in React that allow functional components to have states. It is called, inside a component, adding one or more local states. The hook usually consists of 2 variables.

@@ -7,8 +7,6 @@ tags: [reflection, monthly-reflection]
 ogImage: "/blog/march-reflection-2023.jpg"
 ---
 
-![March Reflection Cover Image](/blog/march-reflection-2023.jpg)
-
 ## Monthly Reflection
 
 I think this month is pretty productive. I have done a couple of things:

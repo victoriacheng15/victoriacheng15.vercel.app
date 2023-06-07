@@ -7,8 +7,6 @@ tags: [react, nextjs, redux-toolkit]
 ogImage: "/blog/nextjs-redux.jpg"
 ---
 
-![Nextjs State Management with Redux Toolkit](/blog/nextjs-redux.jpg)
-
 ## Intro
 
 In my <a href="https://victoriacheng15.vercel.app/posts/nextjs-state-management-with-redux-toolkit-part-1" target="_blank" rel="noopener noreferrer">previous post</a>, I covered setting up Redux Toolkit and fetching stories from the top category. However, the application now needs to display stories from the show and job categories as well. As a result, the code needs to be refactored to create a reusable initial state object and function.

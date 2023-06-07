@@ -7,8 +7,6 @@ tags: [javascript]
 ogImage: "/blog/javascript-functions.webp"
 ---
 
-![javascript functions](/blog/javascript-functions.webp)
-
 ## What is a function?
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/javascript-functions)**

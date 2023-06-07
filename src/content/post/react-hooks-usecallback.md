@@ -7,10 +7,6 @@ tags: [react, react-hooks]
 ogImage: "/blog/react-hooks-usecallback.png"
 ---
 
-![React Hooks useCallback](/blog/react-hooks-usecallback.png)
-
-<!--truncate-->
-
 ## What is useCallback?
 
 The hook allows you to cache a function definition and optimize the performance of your component by only re-rendering if one of its dependencies has changed. This hook works similarly to `useMemo`, but to memorize function instead.

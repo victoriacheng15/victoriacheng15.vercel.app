@@ -7,8 +7,6 @@ tags: [css]
 ogImage: "/blog/responsive-website-deep-dive.webp"
 ---
 
-![responsive website deep dive](/blog/responsive-website-deep-dive.webp)
-
 ## What is responsive design? And why it is important?
 
 Responsive design is a way to let a website scale its content and size based on the user's screen size.

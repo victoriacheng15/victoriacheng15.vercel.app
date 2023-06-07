@@ -7,8 +7,6 @@ tags: [reflection, monthly-reflection]
 ogImage: "/blog/may-reflection-2023.jpg"
 ---
 
-![May Reflection](/blog/may-reflection-2023.jpg)
-
 ## Monthly Reflection
 
 This month was a bit slow for me, but I managed to brainstorm at least 5+ blog post ideas. I suppose this is not a bad thing. As always, celebrate this win!

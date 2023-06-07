@@ -5,11 +5,7 @@ description: "PowerToys, a free Microsoft tool, enhances productivity via pinned
 publishDate: "2022-02-18"
 tags: [productivity]
 ogImage: "/blog/what-is-powertoys.webp"
----
-
-![what is powertoys](/blog/what-is-powertoys.webp)
-
-## What is PowerToys?
+---## What is PowerToys?
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/what-is-powertoys)**
 

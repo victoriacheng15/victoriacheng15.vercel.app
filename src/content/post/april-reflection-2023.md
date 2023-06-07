@@ -7,8 +7,6 @@ tags: [reflection, monthly-reflection]
 ogImage: "/blog/april-reflection-2023.jpg"
 ---
 
-![April Reflection](/blog/april-reflection-2023.jpg)
-
 ## Monthly Reflection
 
 This month, I wrote 2 blogs which are one more than the "usual". Why the "usual"? 😂 It depends on the month and my motivation. 😅 At least, let me celebrate this small win.

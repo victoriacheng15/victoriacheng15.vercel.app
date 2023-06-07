@@ -7,15 +7,13 @@ tags: [javascript]
 ogImage: "/blog/js-reduce-function.jpg"
 ---
 
-![JavaScript Reduce Function](/blog/js-reduce-function.jpg)
-
 ## What is reduce()?
 
 It is a built-in function array method in JavaScript that allows you to transform an array into a single value. It does this by iterating over each element in the array and accumulating a result based on the operation you define.
 
 basic syntax:
 
-```js
+```
 array.reduce((accumulator, currentValue) => {
 	// do something
 }, initialValue);

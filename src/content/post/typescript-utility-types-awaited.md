@@ -7,8 +7,6 @@ tags: [typescript]
 ogImage: "/blog/ts-utility-awaited.jpg"
 ---
 
-![TS utility Await](/blog/ts-utility-awaited.jpg)
-
 ## What is Awaited?
 
 > Note: I would like to remind you that I am writing a series on TypeScript utility types to enhance my understanding of TypeScript and its utility types. If you come across any incorrect information, please don't hesitate to let me know!

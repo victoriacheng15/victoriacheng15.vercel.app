@@ -7,10 +7,6 @@ tags: [react, react-hooks]
 ogImage: "/blog/react-hooks-useContext.webp"
 ---
 
-![react hooks usecontext](/blog/react-hooks-useContext.webp)
-
-Let's learn about useContext Hook and how it helps with your React app!
-
 ## What is useContext?
 
 It is a hook in React that allows you to access context throughout your app globally within a functional component. Have you had an issue with where you need to pass props from a top-level component to lower-level components?

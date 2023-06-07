@@ -7,8 +7,6 @@ tags: [react]
 ogImage: "/blog/react-context.webp"
 ---
 
-![react context api](/blog/react-context.webp)
-
 ## Context API
 
 I have a project "REST Countries API with color theme switcher" from Frontend Mentor that I was not working on it for a while. Originally, I didn't use `Context API` and in fact, I was planning to finish this without the API. Until I watched this video [React JavaScript Framework for Beginners – Project-Based Course](https://www.youtube.com/watch?v=u6gSSpfsoOQ&t=6808s) from FreeCodeCamp. I figured I should try to implement the API in the project.

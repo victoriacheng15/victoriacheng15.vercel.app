@@ -7,10 +7,6 @@ tags: [react]
 ogImage: "/blog/react-pagination-vanilla-edition.webp"
 ---
 
-![react pagination vanilla edition](/blog/react-pagination-vanilla-edition.webp)
-
-How to create pagination in React without using react-pagination or similar packages? 🤔
-
 ## Intro
 
 I was working on this REST countries API project. The total number of countries is 252. If I were to display all country cards at once, it should not take long to load. However, this is not ideal since real-world apps will not have 252 data to display.
