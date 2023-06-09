@@ -4,7 +4,6 @@ title: May Reflection 2023
 description: "Reflected on what I have learned for the May, what is docker and its usage, Harvard CS50, Back of the Envelope Estimation from System Design."
 publishDate: "2023-05-22"
 tags: [reflection, monthly-reflection]
-ogImage: "/blog/may-reflection-2023.jpg"
 ---
 
 ## Monthly Reflection

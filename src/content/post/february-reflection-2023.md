@@ -4,7 +4,6 @@ title: February Reflection 2023
 description: "Reflected on Hacker News clone learnings, especially Redux Toolkit. Gained Cypress API familiarity by writing e2e tests."
 publishDate: "2023-02-22"
 tags: [reflection, monthly-reflection]
-ogImage: "/blog/february-reflection-2023.jpg"
 ---
 
 ## Monthly Reflection

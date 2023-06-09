@@ -4,7 +4,6 @@ title: Sets in JavaScript
 description: "JS Set stores unique values of any type, removes array duplicates. Check isograms using Set size. Ignore case by converting to lowercase first"
 publishDate: "2022-05-17"
 tags: [javascript]
-ogImage: "/blog/sets-in-javascript.webp"
 ---
 
 ## 🤔 Set in JavaScript 🤔

@@ -4,7 +4,6 @@ title: A Simple Guide to Set up and Deploy Node with TypeScript
 description: "Set up & deploy TypeScript Node.js app: Learn how to enable TypeScript, run locally 3 ways, & deploy the app with this guide."
 publishDate: "2023-03-08"
 tags: [typescript, node.js]
-ogImage: "/blog/set-up-and-deploy-ts-node.jpg"
 ---
 
 TypeScript is a language developed by Microsoft that includes all JavaScript features with added type syntax checks. It can catch errors before runtime, improving code quality and scalability, making it great for large applications.

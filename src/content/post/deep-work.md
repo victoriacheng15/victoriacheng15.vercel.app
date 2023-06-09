@@ -4,7 +4,6 @@ title: Deep Work Book Review
 description: My reviews of the Deep Work - Rules for Focused Success in a Distracted World book by Cal Newport
 publishDate: "2023-02-20"
 tags: [book]
-ogImage: "/blog/deep-work.jpg"
 ---
 
 Deep Work book by Cal Newport describes that deep work is the ability to focus without distraction on a cognitively demanding task and a skill that allows you to quickly master complicated information and produce better results in less time.
