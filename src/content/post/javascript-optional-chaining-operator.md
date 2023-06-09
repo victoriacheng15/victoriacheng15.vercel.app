@@ -75,7 +75,7 @@ fetchData()
 
 - Conditional rendering in UI
 
-There are 2 options for this. First, `<p>Country: {user?.address?.country ?? "N/A"}</p>` will rendering `N/A` if the `country` property doesn't exist. Secondly, `user?.address?.country && <p>Country: {user?.address?.country}</p>}` will not render if the `country` property doesn't exist.
+There are 2 options for this. First, `<p>Country: {user?.address?.country ?? "N/A"}</p>` will be rendering `N/A` if the `country` property doesn't exist. Secondly, `user?.address?.country && <p>Country: {user?.address?.country}</p>}` will not render if the `country` property doesn't exist.
 
 ```jsx
 import React from "react";
@@ -138,7 +138,7 @@ const city = user?.address?.city ?? "No City Found";
 console.log(city); // output: No City Found
 ```
 
-Remember, there is a pitfall in using nullish coalescing operator. If the value from the API or somewhere else is evaluated in the Boolean context, nullish coalescing operator would return left-hand operand. If you know in advanced that the value is either null or undefined, the nullish coalescing operator can be used, otherwise use the logical OR operator instead.
+Remember, there is a pitfall in using nullish coalescing operator. If the value from the API or somewhere else is evaluated in the Boolean context, nullish coalescing operator would return left-hand operand. If you know in advanced that the value is either null or undefined, the nullish coalescing operator can be used, otherwise, use the logical OR operator instead
 
 ## Extra
 
