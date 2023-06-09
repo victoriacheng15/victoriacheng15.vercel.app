@@ -4,7 +4,6 @@ title: React Hooks - useState
 description: "Learn to use useState in React to handle data types, avoid mutability in arrays & update state values. Bonus: TypeScript & handling state logging behavior."
 publishDate: "2022-12-06"
 tags: [react, react-hooks]
-ogImage: "/blog/react-hooks-useState.webp"
 ---
 
 ## What is useState?

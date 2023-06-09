@@ -4,7 +4,6 @@ title: April Reflection 2023
 description: "Reflected on my Next.js journey: app dir, API route files, Redux Toolkit for state mgmt, SQL queries through a game, and AWS Amplify deployment."
 publishDate: "2023-04-26"
 tags: [reflection, monthly-reflection]
-ogImage: "/blog/april-reflection-2023.jpg"
 ---
 
 ## Monthly Reflection

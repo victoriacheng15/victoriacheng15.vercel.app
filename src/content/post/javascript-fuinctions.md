@@ -4,7 +4,6 @@ title: JavaScript Functions
 description: "JavaScript function: reusable block of code with arguments and defaults. Declare via declaration/ expression; arrow functions are shorter."
 publishDate: "2022-03-01"
 tags: [javascript]
-ogImage: "/blog/javascript-functions.webp"
 ---
 
 ## What is a function?

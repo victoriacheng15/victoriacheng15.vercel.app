@@ -4,7 +4,6 @@ title: Tailwind CSS - Beginner Edition
 description: "Tailwind CSS: utility-first framework speeds up styling with inline markup, wide class range like flex and pt-4. Customizable and no switching files."
 publishDate: "2022-05-30"
 tags: [css]
-ogImage: "/blog/tailwind-css-beginner-edition.webp"
 ---
 
 ## What is Tailwind CSS?
