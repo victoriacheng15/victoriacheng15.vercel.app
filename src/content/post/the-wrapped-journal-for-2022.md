@@ -3,7 +3,7 @@ draft: false
 title: The Wrapped Journal for 2022
 description: "Reflect on 2022 with The Wrapped Journal. Build consistency, and overcome burnout & imposter syndrome. Track progress & achievements."
 publishDate: "2022-12-28"
-tags: [reflection, journey]
+tags: [reflection]
 ---
 
 ## The 2022
