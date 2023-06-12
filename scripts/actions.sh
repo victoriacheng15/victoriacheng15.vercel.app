@@ -13,12 +13,10 @@ setup_blog() {
 
   read -p "Enter the title of the blog post: " title
   read -p "Enter tags: " tags
-  read -p "Enter image alt: " alt
   read -p "Enter month: " mm
   read -p "Enter day: " dd
 
   slug=$(echo $title | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
-  formated_alt=$(echo $title | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 
   year=$(date +%Y)
   month=$(date +%m)
@@ -31,10 +29,9 @@ setup_blog() {
   echo --- >> $slug.md
   echo draft: true >> $slug.md
   echo title: $title >> $slug.md
-  echo description: Remember to change me Lorem ipsum dolor sit amet, consectetuer adipiscing eli >> $slug.md
+  echo description: \"Remember to change me Lorem ipsum dolor sit amet, consectetuer adipiscing eli\" >> $slug.md
   echo publishDate: \"$pubDate\" >> $slug.md
   echo tags: [$tags] >> $slug.md
-  echo ogImage: \"/blog/$alt.jpg\" >> $slug.md
   echo --- >> $slug.md
 }
 
