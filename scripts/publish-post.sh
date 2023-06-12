@@ -1,5 +1,6 @@
 #!/bin/bash
 
+drafts="src/drafts"
 markdown_directory="src/content/post"
 draft="true" 
 
@@ -11,13 +12,13 @@ while IFS= read -r -d $'\0' file; do
   if [[ $is_draft == "$draft" ]]; then
     files_sorted_by_publish_date+=("$publish_date|$file")
   fi
-done < <(find "$markdown_directory" -name '*.md' -print0 | sort -z)
+done < <(find "$drafts" -name '*.md' -print0 | sort -z)
 
-echo "------ list of files ------"
+echo "------ the beginning of the list ------"
 for file in "${files_sorted_by_publish_date[@]}"; do
   echo "$file"
 done
-echo "------ list of files ------"
+echo "------ the end of the list ------"
 
 # Change draft value in the first matching file
 if [[ ${#files_sorted_by_publish_date[@]} -gt 0 ]]; then
@@ -27,4 +28,5 @@ if [[ ${#files_sorted_by_publish_date[@]} -gt 0 ]]; then
 
   # Perform operations on the file, such as changing the draft value
   sed -i '0,/draft: true/s//draft: false/' "$file_path"
+  mv "$file_path" "$markdown_directory"
 fi
