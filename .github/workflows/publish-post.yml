@@ -1,0 +1,33 @@
+name: Publish Post
+
+on:
+  # schedule:
+  #   - cron: '0 0 * * 3'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+
+    - name: Create branch
+      run: git switch -c publish-post
+
+    - name: Run publish-post.sh script
+      run: ./scripts/publish-post.sh
+
+    - name: Commit and push
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "chore: publish post 🎉"
+        git push origin publish-post
+
+    - name: Create pull request
+      run: gh pr create --base=main --head=publish-post --title="Publish post"
+
+    - name: Close pull request
+      run: gh pr close 1 --repo=$(basename $GITHUB_REPOSITORY)
