@@ -2,8 +2,8 @@ name: Publish Post
 
 on:
   # schedule:
-  #   - cron: '0 0 * * 3'  
-  workflow_dispatch:  
+  #   - cron: '0 0 * * 3'
+  workflow_dispatch:
 
 jobs:
   publish:
