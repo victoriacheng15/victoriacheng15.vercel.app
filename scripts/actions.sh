@@ -9,7 +9,7 @@ setup_blog() {
   read -p "Enter the name of the blog branch: " blog_branch
   git switch -c blog/$blog_branch
 
-  cd src/content/post
+  cd src/drafts
 
   read -p "Enter the title of the blog post: " title
   read -p "Enter tags: " tags
