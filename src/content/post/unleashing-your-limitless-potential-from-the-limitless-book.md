@@ -16,7 +16,7 @@ The author begins by sharing his personal story of overcoming learning challenge
 
 1. Adopt a growth mindset: the book emphasizes the importance of cultivating a growth mindset, which involves believing in the ability to learn and grow continuously. By adopting a growth mindset, individuals can overcome limiting beliefs.
 
-   - Instead of thinking, “I am not good at math”, you say “I may not be good at math yet, but with practice and dedication, I can improve my skills.
+   - Instead of thinking, `I am not good at math`, you say `I may not be good at math yet, but with practice and dedication, I can improve my skills`.
 
 2. Optimize learning techniques: the book explores various learning techniques and strategies that enhance memory, speed up learning, and improve comprehension. These techniques include visualization exercises, mind mapping, and other memory-enhancing methods.
 
