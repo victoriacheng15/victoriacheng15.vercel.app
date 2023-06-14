@@ -13,7 +13,9 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 	const uniqueTags = getUniqueTags(allPostsByDate);
 
 	return uniqueTags.map((tag) => {
-		const filterPosts = allPostsByDate.filter(({ data: { tags } }) => tags?.includes(tag));
+		const filterPosts = allPostsByDate.filter(
+			({ data: { tags, draft } }) => tags?.includes(tag) && !draft
+		);
 		return paginate(filterPosts, {
 			params: { tag },
 			pageSize: 15,
