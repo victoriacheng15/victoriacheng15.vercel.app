@@ -1,31 +1,39 @@
 #!/bin/bash
 
 drafts="src/drafts"
-markdown_directory="src/content/post"
-draft="true" 
+markdown_directory="/content/post"
 
-# Extract publish dates and filenames, filter by draft value, sort by publish date
-files_sorted_by_publish_date=()
-while IFS= read -r -d $'\0' file; do
-  publish_date=$(awk -F ': ' '/^publishDate:/ {print $2}' "$file")
-  is_draft=$(awk -F ': ' '/^draft:/ {print $2}' "$file")
-  if [[ $is_draft == "$draft" ]]; then
-    files_sorted_by_publish_date+=("$publish_date | $file")
-  fi
-done < <(find "$drafts" -name '*.md' -print0)
+cd "$drafts" || exit 1
+files=($(ls -t))
 
-echo "------ the beginning of the list ------"
-for file in "${files_sorted_by_publish_date[@]}"; do
-  echo "$file"
+# Create an associative array to store the publishDate of each file
+declare -A publish_dates
+
+for file in "${files[@]}"; do
+  publish_date=$(awk -F'"' '/publishDate:/ {print $2}' "$1" "$file")
+  publish_dates["$file"]=$publish_date
 done
-echo "------ the end of the list ------"
 
-# Change draft value in the first matching file
-if [[ ${#files_sorted_by_publish_date[@]} -gt 0 ]]; then
-  file=${files_sorted_by_publish_date[0]}
-  file_path=${file#*|}
-  echo "draft changed to false: $file_path"
+# Sort the publish dates in ascending order using sort
+sorted_files=($(printf "%s\n" "${!publish_dates[@]}" | sort -k2 -t- -r))
 
-  sed -i '0,/draft: true/s//draft: false/' "$file_path"
-  mv "$file_path" "$markdown_directory"
+echo "List of files sorted by publish date:"
+for file in "${sorted_files[@]}"; do
+  publish_date=${publish_dates["$file"]}
+  echo "$publish_date - $file"
+done
+echo "List of files sorted by publish date:"
+
+
+if [[ ${#sorted_files[@]} -gt 0 ]]; then
+  first_file=${sorted_files[0]}
+  echo "Changing draft value to false for $first_file"
+  sed -i 's/draft: true/draft: false/' "$first_file"
+  echo "Draft value changed to false for $first_file"
+  
+  echo "Moving $first_file to $markdown_directory"
+  mv "$first_file" "../$markdown_directory"
+  echo "Moved $first_file to $markdown_directory"
+else
+  echo "No file found with a publish date."
 fi
