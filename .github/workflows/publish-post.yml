@@ -28,7 +28,7 @@ jobs:
 
     - name: Create pull request
       run: gh pr create --base=main --head=publish-post --title="Publish post"
-    
+      
     - name: Wait for CI checks
       uses: fountainhead/action-wait-for-check@v1.1.0
       with:
