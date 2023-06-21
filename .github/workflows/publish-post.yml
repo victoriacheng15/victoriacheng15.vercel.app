@@ -28,6 +28,13 @@ jobs:
 
     - name: Create pull request
       run: gh pr create --base=main --head=publish-post --title="Publish post"
+    
+    - name: Wait for CI checks
+      uses: fountainhead/action-wait-for-check@v1.1.0
+      with:
+        ref: ${{ github.head_ref }}
+        checkName: 'CI checks'
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Close pull request
-      run: gh pr close 1 --repo=$(basename $GITHUB_REPOSITORY)
+    - name: Merge pull request
+      run: gh pr merge --squash --delete-branch
