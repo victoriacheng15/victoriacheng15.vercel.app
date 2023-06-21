@@ -11,13 +11,10 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v3
-
     - name: Create branch
       run: git switch -c publish-post
-
     - name: Run publish-post.sh script
       run: ./scripts/publish-post.sh
-
     - name: Commit and push
       run: |
         git config --local user.email "action@github.com"
@@ -25,16 +22,13 @@ jobs:
         git add .
         git commit -m "chore: publish post 🎉"
         git push origin publish-post
-
     - name: Create pull request
       run: gh pr create --base=main --head=publish-post --title="Publish post"
-      
     - name: Wait for CI checks
       uses: fountainhead/action-wait-for-check@v1.1.0
       with:
         ref: ${{ github.head_ref }}
         checkName: 'CI checks'
         token: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Merge pull request
       run: gh pr merge --squash --delete-branch
