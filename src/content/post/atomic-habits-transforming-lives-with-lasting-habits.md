@@ -16,16 +16,16 @@ Clear introduces the concept of atomic habits, which are tiny, consistent action
 
 ## The top 4 core ideas
 
-1. **The Power of Atomic Habits**: the book emphasizes the transformative power of small and consistent actions. By focusing on making incremental improvements and adopting atomic habits, individuals can create a compounding effect that leads to significant long-term change.
+- **The Power of Atomic Habits**: the book emphasizes the transformative power of small and consistent actions. By focusing on making incremental improvements and adopting atomic habits, individuals can create a compounding effect that leads to significant long-term change.
    - Building atomic habits is like building muscle. Consistent small habits compound, strengthening behaviors and identity. Just as muscles grow with exercise, these habits lead to personal growth. Focus on small, consistent improvements for remarkable results.
-2. **Identity-Based Habits**: the book suggests that true behavior change occurs when individuals align habits with their desired identity. By focusing on who you want to become and building habits that reinforce that identity.
+- **Identity-Based Habits**: the book suggests that true behavior change occurs when individuals align habits with their desired identity. By focusing on who you want to become and building habits that reinforce that identity.
    - To become a healthy person, you adopt their mindset and ask yourself, `What would a healthy person choose when it comes to food?` You consciously consider whether a healthy person would opt for a salad or junk food, and make choices aligned with the behaviors of a healthy individual.
 
 > Your Habits shape your identity, and your identity shapes your habits. -- James Clear
 
-1. **The Four Law of Behavior Change**: the four laws that guide effective habit formation: making habits obvious, attractive, easy, and satisfying. These laws provide a practical framework for designing habit systems that promote consistency and success.
+- **The Four Law of Behavior Change**: the four laws that guide effective habit formation: making habits obvious, attractive, easy, and satisfying. These laws provide a practical framework for designing habit systems that promote consistency and success.
    - Embracing a healthy lifestyle is like building a strong foundation for a house. The Four Laws of Behavior Change act as your construction tools: make healthy choices the solid base (foundation), make them appealing and enticing (attractive architecture), make them easily accessible (well-designed layout), and make them rewarding (comfortable living space). By building upon this foundation, you create a sustainable and fulfilling healthy lifestyle.
-2. **Environment Design**: the book emphasizes the importance of shaping the environment to support desired habits. By creating an environment that makes positive behaviors more accessible and reducing the friction associated with negative habits, individuals can increase the likelihood of sticking to their desired changes.
+- **Environment Design**: the book emphasizes the importance of shaping the environment to support desired habits. By creating an environment that makes positive behaviors more accessible and reducing the friction associated with negative habits, individuals can increase the likelihood of sticking to their desired changes.
    - This approach proved highly effective. During high school, I successfully learned both English and American Sign Language simultaneously, immersing myself in an English-rich environment and quickly acquiring proficiency in both languages. Don't sleep on this!
 
 ## Recap
