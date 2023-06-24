@@ -24,6 +24,8 @@ jobs:
         git push origin publish-post
     - name: Create pull request
       run: gh pr create --base=main --head=publish-post --title="Publish post"
+      env:
+        GH_TOKEN: ${{ github.token }}
     - name: Wait for CI checks
       uses: fountainhead/action-wait-for-check@v1.1.0
       with:
@@ -32,3 +34,5 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Merge pull request
       run: gh pr merge --squash --delete-branch
+      env:
+        GH_TOKEN: ${{ github.token }}
