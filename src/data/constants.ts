@@ -50,6 +50,6 @@ export const SOCIALS = [
 		name: "buy me a coffee",
 		href: "https://www.buymeacoffee.com/victoriacheng15",
 		icon: "simple-icons:buymeacoffee",
-		active: false,
+		active: true,
 	},
 ];
