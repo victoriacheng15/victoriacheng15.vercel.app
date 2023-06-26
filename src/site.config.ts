@@ -1,6 +1,6 @@
 const siteMeta = {
 	author: "Victoria Cheng",
-	title: "Victoria | Software Developer",
+	title: "Victoria Cheng 🐧",
 	description:
 		"As a software developer, my goal is to continuously grow and improve my skills. I am interested in staying current with the latest tech trends and making meaningful contributions to open-source projects.",
 	lang: "en-us",
