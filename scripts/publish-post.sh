@@ -27,10 +27,7 @@ echo "List of files sorted by publish date:"
 
 if [[ ${#sorted_files[@]} -gt 0 ]]; then
   first_file=${sorted_files[0]}
-  echo "Changing draft value to false for $first_file"
-  sed -i 's/draft: true/draft: false/' "$first_file"
-  echo "Draft value changed to false for $first_file"
-  
+
   echo "Moving $first_file to $markdown_directory"
   mv "$first_file" "../$markdown_directory"
   echo "Moved $first_file to $markdown_directory"
