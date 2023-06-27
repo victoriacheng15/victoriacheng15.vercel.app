@@ -15,10 +15,12 @@ It is a concept popularized by author and professor Cal Newport in this book tit
 The core principle of deep work revolves around the idea that in today’s hyper-connected world, many people are constantly bombarded with various distractions such as social media, email notifications, and other interruptions. These distractions hinder their ability to focus and engage in meaningful, concentrated work.
 
 The importance of deep work for several reasons:
+
 - Crucial for mastering complex skills and achieving expertise in a particular field
 - Highly valuable in terms of productivity and output
 
 To facilitate deep work, the book proposes various strategies:
+
 - `Establishing a distraction-free environment`: minimize interruptions like turning off notifications
 - `Implementing routes and rituals`: develop structured habits and rituals that signal the brain to enter a state of deep work like allocating time blocks for deep work and creating a consistent schedule
 - `Embracing deep work philosophies`: during the time block, isolate yourself and focus solely on the work
