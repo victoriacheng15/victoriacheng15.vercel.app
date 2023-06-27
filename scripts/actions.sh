@@ -16,13 +16,14 @@ setup_blog() {
   read -p "Enter month: " mm
   read -p "Enter day: " dd
 
-  slug=$(echo $title | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+  slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr -dc '[:alpha:] ' | tr ' ' '-')
 
   year=$(date +%Y)
-  month=$(date +%m)
-  day=$(date +%d)
+  month=${mm:-$(date +%m)}
+  day=${dd:-$(date +%d)}
 
   pubDate=$year-$month-$day
+  echo $slug
 
   touch $slug.md
 
@@ -38,6 +39,7 @@ setup_blog() {
 actions=(
   "update_main"
   "setup_blog"
+  "Publish Post"
 )
 
 PS3="Select the action: " 
@@ -51,6 +53,10 @@ do
       ;;
     ${actions[1]})
       setup_blog
+      break
+      ;;
+    ${actions[2]})
+      scripts/publish-post.sh
       break
       ;;
     *)
