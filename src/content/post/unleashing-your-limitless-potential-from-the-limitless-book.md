@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Unleashing Your Limitless Potential from the Limitless Book
 description: "Unlock your brain's potential, learn faster, and embrace a positive mindset with practical techniques from the Limitless book."
 publishDate: "2023-06-14"

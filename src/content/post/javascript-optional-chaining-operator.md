@@ -1,5 +1,4 @@
 ---
-draft: false
 title: JavaScript Optional Chaining Operator
 description: "JS optional chaining operator (?.) is a safe way to access nested object properties, even if the property doesn't exist."
 publishDate: "2023-06-07"

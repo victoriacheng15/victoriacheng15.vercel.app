@@ -1,5 +1,4 @@
 ---
-draft: false
 title: January Reflection 2023
 description: "Reflecting on January, inspired by Atomic Habits, I'm learning Next.js, Chakra UI, and Redux Toolkit for the Hacker News project. Next up: Cypress."
 publishDate: "2023-01-25"

@@ -1,5 +1,4 @@
 ---
-draft: false
 title: TypeScript Utility Types - Awaited
 description: "Let's deep dive into how Awaited works and what are the differences between Awaited and Promise"
 publishDate: "2023-05-31"
