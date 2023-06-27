@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Exploring JavaScript Prototype Inheritance
 description: "Object.create() creates objects inheriting through the prototype chain, while 'new' with a constructor directly inherits properties"
 publishDate: "2023-05-18"

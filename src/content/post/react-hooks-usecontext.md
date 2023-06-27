@@ -1,5 +1,4 @@
 ---
-draft: false
 title: React Hooks - useContext
 description: "Access global state in functional components with useContext hook in React 16.8. Avoid prop drilling & consume context efficiently."
 publishDate: "2023-01-04"

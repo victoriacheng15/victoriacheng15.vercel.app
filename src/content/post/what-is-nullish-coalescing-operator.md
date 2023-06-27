@@ -1,5 +1,4 @@
 ---
-draft: false
 title: What is Nullish Coalescing Operator
 description: "Let's learn about what is nullish coalescing operator and how it is different from a logical OR operator!"
 publishDate: "2023-05-09"

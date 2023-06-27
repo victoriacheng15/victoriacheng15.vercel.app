@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "From Busy to Productive: Embracing the Deep Work Mindset"
 description: "Unlock your productivity potential with deep work. Embrace focus, eliminate distractions, and achieve remarkable results in a distracted world."
 publishDate: "2023-07-01"

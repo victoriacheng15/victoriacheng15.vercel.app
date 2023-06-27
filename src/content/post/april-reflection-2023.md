@@ -1,5 +1,4 @@
 ---
-draft: false
 title: April Reflection 2023
 description: "Reflected on my Next.js journey: app dir, API route files, Redux Toolkit for state mgmt, SQL queries through a game, and AWS Amplify deployment."
 publishDate: "2023-04-26"

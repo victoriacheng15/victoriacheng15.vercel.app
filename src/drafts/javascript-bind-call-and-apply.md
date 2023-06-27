@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "JavaScript - Bind, Call, and Apply"
 description: "JavaScript's bind(), call(), and apply() methods control function context, allowing explicit this binding and argument passing."
 publishDate: "2023-07-05"

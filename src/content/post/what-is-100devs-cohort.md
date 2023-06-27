@@ -1,5 +1,4 @@
 ---
-draft: false
 slug: what-is-100-devs-cohort
 title: What is 100Devs Cohort
 publishDate: "2022-02-06"

@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Let's Automate Your Workflows with GitHub Actions
 description: "Automate CI/CD tasks and improve your workflow with GitHub Actions. Learn triggers, jobs, steps & setting up Jest testing with a practical example."
 publishDate: "2022-11-15"
