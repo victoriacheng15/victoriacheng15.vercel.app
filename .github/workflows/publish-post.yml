@@ -24,7 +24,7 @@ jobs:
         git commit -m "chore: publish post 🎉"
         git push origin publish-post
     - name: Create pull request
-      run: gh pr create --base=main --head=publish-post --title="Publish post"
+      run: gh pr create --base=main --head=publish-post --fill
       env:
         GH_TOKEN: ${{ github.token }}
     - name: Wait for CI checks
