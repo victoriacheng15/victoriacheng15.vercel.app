@@ -57,7 +57,7 @@ module.exports = {
 							fontWeight: "700",
 						},
 						code: {
-							border: "1px dotted #666",
+							border: "1px solid #666",
 							borderRadius: "2px",
 						},
 						blockquote: {
