@@ -15,11 +15,18 @@
 			"onAutoForward": "openPreview"
 		}
 	},
-
-	"updateContentCommand": "npm install",
-	"postAttachCommand": "npm run dev"
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"astro-build.astro-vscode",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"yzhang.markdown-all-in-one"
+			]
+		}
+	},
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "npm install"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
