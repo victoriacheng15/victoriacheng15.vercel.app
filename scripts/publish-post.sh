@@ -30,7 +30,7 @@ if [[ ${#sorted_files[@]} -gt 0 ]]; then
   first_file=${sorted_files[0]}
 
   echo "Moving $first_file to $markdown_directory"
-  # mv "$first_file" "../$markdown_directory"
+  mv "$first_file" "../$markdown_directory"
   echo "Moved $first_file to $markdown_directory"
 else
   echo "No file found with a publish date."
