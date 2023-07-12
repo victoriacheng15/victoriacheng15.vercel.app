@@ -12,12 +12,15 @@ declare -A publish_dates
 for file in "${files[@]}"; do
   if [[ "$file" =~ \.md$ ]]; then
     publish_date=$(awk -F': ' '/publishDate:/ {print $2}' "$file")
+    echo $publish_date
     publish_dates["$file"]=$publish_date
   fi
 done
 
 # Sort the publish dates in ascending order using sort
-sorted_files=($(printf "%s\n" "${!publish_dates[@]}" | sort -k1 -t-))
+sorted_files=($(for file in "${!publish_dates[@]}"; do
+  echo "${publish_dates["$file"]} $file"
+done | sort -k1,1 -t- | awk '{print $2}'))
 
 echo -e "=== List of files sorted by publish date: ===\n"
 for file in "${sorted_files[@]}"; do
