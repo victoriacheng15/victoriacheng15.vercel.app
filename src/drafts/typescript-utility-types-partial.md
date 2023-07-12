@@ -4,13 +4,14 @@ description: "Discover the power of TypeScript partial usage. Learn how to effic
 publishDate: "2023-07-19"
 tags: [typescript]
 ---
+
 ## What is Partial?
 
 The `Partial` is a built-in utility type that allows you to create a new type by making all properties of an existing type optional. It means that every property in the new type can be present or omitted, regardless of its original required or optional status. This utility type helps you work with partially filled or mutable objects.
 
 ```tsx
 type Partial<T> = {
-  [P in keyof T]?: T[P];
+	[P in keyof T]?: T[P];
 };
 ```
 
@@ -48,30 +49,29 @@ If you write `fieldToUpdate: Todo` in the function above and try to update the s
 
 ```tsx
 interface Todo {
-  title?: string;
-  description?: string;
-  completed?: boolean
+	title?: string;
+	description?: string;
+	completed?: boolean;
 }
 ```
 
-You could add the optional property for all types, but these types also are the required inputs that you need for the Todo app. 
+You could add the optional property for all types, but these types also are the required inputs that you need for the Todo app.
 
 This is where `Partial` comes in!
 
 ```tsx
-
 function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
-  return { ...todo, ...fieldsToUpdate };
+	return { ...todo, ...fieldsToUpdate };
 }
 
 const updateStatus = updateTodo(original, {
-  completed: true
+	completed: true,
 });
 
-console.log({ original, updateStatus }) 
+console.log({ original, updateStatus });
 ```
 
-You write `fieldsToUpdate: Partial<Todo>` and now you can update one of the properties! 
+You write `fieldsToUpdate: Partial<Todo>` and now you can update one of the properties!
 
 ## Full Code
 
@@ -106,7 +106,7 @@ type Todo = {
 	title: string;
 	description: string;
 	completed: boolean;
-}
+};
 
 type HoverPartial = Partial<Todo>;
 ```

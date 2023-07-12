@@ -29,12 +29,11 @@ This book is a compelling business novel that follows the journey of IT manager 
 
 ## Recap
 
-After reading this book, it is crazy to see how each team had its disjointed processes and operated independently, which resulted in a sluggish and ineffective system. However, everything changed when Bill introduced the teaching from Erik. This prompted a deeper examination of how to improve and standardize processes throughout the company.  
+After reading this book, it is crazy to see how each team had its disjointed processes and operated independently, which resulted in a sluggish and ineffective system. However, everything changed when Bill introduced the teaching from Erik. This prompted a deeper examination of how to improve and standardize processes throughout the company.
 
 This book aligns well with my knowledge of Lean Six Sigma methodologies, incorporating tools like Kanban and DMAIC to drive continuous improvement and reduce product defects. Drawing from my previous career as a Packaging Engineer, I fully understand the importance of transforming ideas into marketable products, ensuring effective realization and successful market entry.
 
 > Note: this book introduces the concept of DevOps, while Lean Six Sigma is a methodology for process improvement and quality management. While there may be some alignment and shared principles, they are not identical concepts.
-> 
 
 If you're looking for an engaging read that highlights the remarkable outcomes of process standardization and automation of mundane tasks, then this book is a must-read. It offers valuable insights into the transformative power of streamlining operations and eliminating repetitive work, providing a glimpse into the exciting possibilities that emerge from such improvements.
 
