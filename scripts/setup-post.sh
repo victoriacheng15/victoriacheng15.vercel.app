@@ -1,16 +1,16 @@
 #!/bin/bash
 
-read -p "Enter the name of the blog branch: " blog_branch
-git switch -c blog/$blog_branch
+read -p "Enter the name of the post branch: " post_branch
+git switch -c post/$post_branch
 
 cd src/drafts
 
-read -p "Enter the title of the blog post: " title
+read -p "Enter the title of the post: " title
 read -p "Enter tags: " tags
 read -p "Enter month: " mm
 read -p "Enter day: " dd
 
-slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/[-:,:]//g; s/ /-/g')
+slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-zA-Z]+/-/g; s/^-//; s/-$//')
 
 year=$(date +%Y)
 month=${mm:-$(date +%m)}
