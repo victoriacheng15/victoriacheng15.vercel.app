@@ -19,10 +19,10 @@ const { headings } = await post.render();
 ---
 
 <BaseLayout meta={{ title, description, articleDate, ogImage: socialImage }}>
-	<div class="flex items-start gap-6">
+	<div class="flex items-start gap-10">
 		{
 			!!headings.length && (
-				<aside class="sticky top-10 order-2 hidden basis-64 lg:block">
+				<aside class="sticky top-10 order-2 hidden md:block md:basis-64">
 					<h2 class="font-semibold">Table of Contents</h2>
 					<ul class="mt-2 text-xs">
 						{headings.map(({ depth, slug, text }) => (
@@ -43,7 +43,7 @@ const { headings } = await post.render();
 		<article class="w-full">
 			<div id="blog-hero"><BlogHero content={post} /></div>
 			<div
-				class="prose prose-lg prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-6 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+				class="prose prose-lg prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ml-6 prose-headings:before:text-accent prose-th:before:content-none"
 			>
 				<slot />
 			</div>
