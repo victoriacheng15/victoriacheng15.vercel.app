@@ -8,7 +8,7 @@ describe("Projects page", () => {
 		cy.get("h1").should("contain", "Projects");
 	});
 
-	it("should have a list of 4 projects", () => {
-		cy.get("article").should("have.length", 4);
+	it("should have a list of 5 projects", () => {
+		cy.get("article").should("have.length", 5);
 	});
 });
