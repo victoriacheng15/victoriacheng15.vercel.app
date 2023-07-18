@@ -8,7 +8,7 @@ describe("Posts page", () => {
 		cy.get("h1").should("contain", "Posts");
 	});
 
-	it("should have a list of 10 posts", () => {
-		cy.get("li.flex.flex-col").should("have.length", 10);
+	it("should have a list of 15 posts", () => {
+		cy.get("li h3").should("have.length", 15);
 	});
 });
