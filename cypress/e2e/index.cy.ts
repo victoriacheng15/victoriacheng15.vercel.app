@@ -15,8 +15,8 @@ describe("homepage", () => {
 		cy.get("ul > .grid").should("have.length.gt", 10);
 	});
 
-	it("should have recent blog title", () => {
-		cy.get("h2").eq(1).should("contain", "Recent blog:");
+	it("should have recent post title", () => {
+		cy.get("h2").eq(1).should("contain", "Recent Posts:");
 	});
 
 	it("should have more than 10 skills on the list", () => {
