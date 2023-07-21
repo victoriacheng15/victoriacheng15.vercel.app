@@ -7,11 +7,11 @@ import siteConfig from "@/site-config";
 import { getFormattedDate } from "@/utils";
 
 const monoFontReg = await fetch(
-	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf"
+	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf",
 );
 
 const monoFontBold = await fetch(
-	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-700-normal.ttf"
+	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-700-normal.ttf",
 );
 
 const ogOptions: SatoriOptions = {
@@ -35,16 +35,15 @@ const ogOptions: SatoriOptions = {
 	],
 };
 
-const markup = (title: string) => html`<div
-	tw="flex flex-col w-full h-full bg-[#1d1f21] text-[#c9cacc]"
->
-	<div tw="flex flex-col flex-1 w-full p-12 justify-center">
-		<h1 tw="text-6xl font-bold leading-snug text-white">${title}</h1>
-	</div>
-	<div tw="flex items-center justify-end w-full p-12 border-t border-[#2bbc89] text-xl">
-		<p>by ${siteConfig.author}</p>
-	</div>
-</div>`;
+const markup = (title: string) =>
+	html`<div tw="flex flex-col w-full h-full bg-[#1d1f21] text-[#c9cacc]">
+		<div tw="flex flex-col flex-1 w-full p-12 justify-center">
+			<h1 tw="text-6xl font-bold leading-snug text-white">${title}</h1>
+		</div>
+		<div tw="flex items-center justify-end w-full p-12 border-t border-[#2bbc89] text-xl">
+			<p>by ${siteConfig.author}</p>
+		</div>
+	</div>`;
 
 export async function get({ params: { slug } }: APIContext) {
 	const post = await getEntryBySlug("post", slug!);
