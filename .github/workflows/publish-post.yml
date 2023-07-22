@@ -31,7 +31,7 @@ jobs:
       uses: fountainhead/action-wait-for-check@v1.1.0
       with:
         ref: ${{ github.head_ref }}
-        checkName: "format"
+        checkName: Vercel
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Merge pull request
       run: gh pr merge --squash --delete-branch
