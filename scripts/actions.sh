@@ -6,8 +6,8 @@ update_main() {
 }
 
 actions=(
-  "update_main"
-  "setup_blog"
+  "update main"
+  "setup post"
   "Publish Post"
 )
 
@@ -21,7 +21,7 @@ do
       break
       ;;
     ${actions[1]})
-      scripts/setup-blog.sh
+      scripts/setup-post.sh
       break
       ;;
     ${actions[2]})
