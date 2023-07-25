@@ -36,9 +36,9 @@ A couple of things to mention:
 
 ## Google Generative AI
 
-The Generative AI Learning Path by Google Cloud covers various courses, introducing Generative AI, Large Language Models, Image Generation, Attention Mechanism, Transformer Models, BERT, and Image Captioning. It also explores Generative AI Studio, facilitating generative model building with no or low code. 
+The Generative AI Learning Path by Google Cloud covers various courses, introducing Generative AI, Large Language Models, Image Generation, Attention Mechanism, Transformer Models, BERT, and Image Captioning. It also explores Generative AI Studio, facilitating generative model building with no or low code.
 
-This learning path provides me insights on how AI is being trained with large existing data and then generate new content based on that existing knowledge and user’s input. 
+This learning path provides me insights on how AI is being trained with large existing data and then generate new content based on that existing knowledge and user’s input.
 
 [Google Generative AI Learning Path](https://www.cloudskillsboost.google/journeys/118)
 
@@ -82,7 +82,7 @@ I recently learned about the **`git tag`** command. Tags in Git refer to specifi
 
 ## Three.js
 
-The first one involved displaying shapes with a GUI interface, enabling adjustments to each shape's size and segments. This allowed me to familiarize myself with the parameters of each shape and how they appear under different lighting conditions with various materials. 
+The first one involved displaying shapes with a GUI interface, enabling adjustments to each shape's size and segments. This allowed me to familiarize myself with the parameters of each shape and how they appear under different lighting conditions with various materials.
 
 [Shapes Demo](https://victoriacheng15.github.io/three-js-demo/2-shapes/)
 
