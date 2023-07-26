@@ -1,6 +1,6 @@
 ---
 title: "July Reflection 2023"
-description: "Remember to change me Lorem ipsum dolor sit amet, consectetuer adipiscing eli"
+description: "Celebrated a 300-day Duolingo streak, embracing a mindset of abundance. Explored blogs, books, AI, AWS, system design, Git, and Three.js. 🚀"
 publishDate: "2023-07-26"
 tags: [reflection]
 ---
