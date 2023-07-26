@@ -10,7 +10,7 @@ tags: [reflection]
 A couple of things to mention:
 
 - I reached 300 days streak on Duolingo on the 21st! It is a small win and I am on the road to 365 days streak!
-- In the book `Building a Second Brain`, I found the concept of adopting a **mindset of abundance** compelling. It involves releasing beliefs about necessities for survival that no longer serve us. In today's information overloaded era, we have an abundance of data, but being selective about what we consume can lead to personal growth and a better understanding of what we want to learn or know. To put it simple, it is about letting of low-value information that seems important, but that doesn’t make us better people.
+- In the book `Building a Second Brain`, I found the concept of adopting a **mindset of abundance** compelling. It involves releasing beliefs about necessities for survival that no longer serve us. In today's information overloaded era, we have an abundance of data, but being selective about what we consume can lead to personal growth and a better understanding of what we want to learn or know. To put it simply, it is about letting go of low-value information that seems important, but that doesn’t make us better people.
 
 ## Blogs
 
