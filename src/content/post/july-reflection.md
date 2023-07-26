@@ -40,13 +40,15 @@ The Generative AI Learning Path by Google Cloud covers various courses, introduc
 
 This learning path provides me insights on how AI is being trained with large existing data and then generate new content based on that existing knowledge and user’s input.
 
-[Google Generative AI Learning Path](https://www.cloudskillsboost.google/journeys/118)
+[Google Generative AI Learning Path](https://www.cloudskillsboost.google/)
 
 [fCC - Intro to Generative AI – 10 Free Courses by Google](https://www.freecodecamp.org/news/intro-to-generative-ai-10-free-courses-by-google/)
 
 ## AWS
 
 What is the difference between a `root account` and `IAM (Identity and Access Management)`? The root account holds the highest power, having complete control over the infrastructure. Securing it is crucial (e.g., enabling MFA) to prevent disastrous consequences. To manage access securely, create IAM users with restricted access based on specific roles, adhering to the principle of least privilege.
+
+[LinkedIn Post - AWS root accounts and IAM](https://www.linkedin.com/posts/victoriacheng15_coding-programming-softwareengineering-activity-7087800066987458560-ateD?utm_source=share&utm_medium=member_desktop)
 
 ## System Design Primer
 
