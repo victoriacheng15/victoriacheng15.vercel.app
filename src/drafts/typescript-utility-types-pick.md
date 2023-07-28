@@ -13,7 +13,7 @@ The **`Pick`** utility type in TypeScript allows you to create a new type by sel
 type Pick<T, K extends keyof T> = { [P in K]: T[P] };
 ```
 
-## ****How does Pick work?****
+## \***\*How does Pick work?\*\***
 
 Imagine you are building a React application, and you want to create a user card component that displays basic information, such as username and email, for users fetched from the **`https://jsonplaceholder.typicode.com/users`** API. Each user card should be clickable, leading to a more detailed page displaying additional information, such as the user's name and address.
 
