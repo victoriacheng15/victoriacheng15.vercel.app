@@ -17,14 +17,15 @@ jobs:
       run: ./scripts/publish-post.sh
     - name: Commit and push
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "GitHub Actions"
+        git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+        git config --local user.name "${{ github.actor }}"
         git pull origin main --no-ff
         git add .
         git commit -m "chore: publish post 🎉"
         git push origin publish-post
     - name: Create pull request
-      run: gh pr create --base=main --head=publish-post --fill
+      run: |
+        gh pr create --base=main --head=publish-post --fill
       env:
         GH_TOKEN: ${{ github.token }}
 #     - name: Wait for CI checks
