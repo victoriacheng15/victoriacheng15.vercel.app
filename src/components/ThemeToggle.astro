@@ -10,6 +10,7 @@ import { Icon } from "astro-icon";
 
 			function setTheme(dark: boolean) {
 				document.documentElement.classList.toggle("dark", dark);
+				button.setAttribute("aria-label", `Toggle ${dark ? "Dark" : "Light"} Mode`);
 				button.setAttribute("aria-pressed", String(dark));
 			}
 
@@ -30,7 +31,6 @@ import { Icon } from "astro-icon";
 		type="button"
 		id="toggle-theme"
 		class="group relative h-9 w-9 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700"
-		aria-label="Toggle Dark Mode"
 	>
 		<Icon
 			class="icon group-aria-pressed:scale-100 group-aria-pressed:opacity-100"
