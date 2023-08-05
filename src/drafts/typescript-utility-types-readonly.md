@@ -17,37 +17,37 @@ type Readonly<T> = {
 
 ## How does Readonly work?
 
-Consider a scenario where you have a crucial configuration object, and it is most important that one of its properties remains unchangeable. 
+Consider a scenario where you have a crucial configuration object, and it is most important that one of its properties remains unchangeable.
 
 ```tsx
 interface Configuration {
-  apiKey: string;
-  serverUrl: string;
+	apiKey: string;
+	serverUrl: string;
 }
 
 const config: Configuration = {
-  apiKey: "abc123",
-  serverUrl: "https://api.example.com",
+	apiKey: "abc123",
+	serverUrl: "https://api.example.com",
 };
 
-config.apiKey = "def456" // can change
+config.apiKey = "def456"; // can change
 config.serverUrl = "https://api.example.com/v2"; // can change
 ```
 
-With the provided code snippet, it allows anyone to change both properties of the object, which might not be desirable. This is where `Readonly` utility type comes to the rescue. By using `Readonly`, you can ensure that specific properties of an object become read-only, preventing any modification after their initial assignment. 
+With the provided code snippet, it allows anyone to change both properties of the object, which might not be desirable. This is where `Readonly` utility type comes to the rescue. By using `Readonly`, you can ensure that specific properties of an object become read-only, preventing any modification after their initial assignment.
 
 ```tsx
 interface Configuration {
-  apiKey: string;
-  serverUrl: string;
+	apiKey: string;
+	serverUrl: string;
 }
 
 const config: Readonly<Configuration> = {
-  apiKey: "abc123",
-  serverUrl: "https://api.example.com",
+	apiKey: "abc123",
+	serverUrl: "https://api.example.com",
 };
 
-config.apiKey = "def456" // cannot change
+config.apiKey = "def456"; // cannot change
 config.serverUrl = "https://api.example.com/v2"; // cannot change
 ```
 
@@ -55,16 +55,16 @@ config.serverUrl = "https://api.example.com/v2"; // cannot change
 
 ```tsx
 interface Configuration {
-  apiKey: string;
-  serverUrl: string;
+	apiKey: string;
+	serverUrl: string;
 }
 
-type CantChange = Readonly<Configuration>
+type CantChange = Readonly<Configuration>;
 
-// or 
+// or
 interface Configuration {
-  readonly apiKey: string;
-  readonly serverUrl: string;
+	readonly apiKey: string;
+	readonly serverUrl: string;
 }
 ```
 
