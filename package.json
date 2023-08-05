@@ -10,7 +10,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"format": "prettier -w ./src ./src/**/*.astro",
-		"test": "vitest",
+		"test": "vitest --run",
 		"test:coverage": "vitest --coverage",
 		"prepare": "husky install",
 		"cypress:open": "npx cypress open",
