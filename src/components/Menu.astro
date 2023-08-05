@@ -1,0 +1,22 @@
+---
+import { MENU_LINKS } from "@/data/constants";
+
+const url = new URL(Astro.request.url);
+---
+
+<ul class="flex items-center gap-6">
+	{
+		MENU_LINKS.map((link) => (
+			<li>
+				<a
+					href={link.path}
+					class="text-lg text-slate-100 duration-300 ease-in-out hover:text-[#7599ff]"
+					aria-current={url.pathname === link.path ? "page" : false}
+					rel="prefetch"
+				>
+					{link.title}
+				</a>
+			</li>
+		))
+	}
+</ul>

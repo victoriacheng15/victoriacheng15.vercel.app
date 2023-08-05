@@ -38,7 +38,7 @@ export const SOCIALS = [
 		name: "polywork",
 		href: "https://www.polywork.com/victoriacheng15",
 		icon: "simple-icons:polywork",
-		active: true,
+		active: false,
 	},
 	{
 		name: "codepen",

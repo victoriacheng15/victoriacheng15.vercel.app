@@ -1,14 +1,14 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import type { IElement } from "@/data/shared";
-import { getFormattedDate, getReadingTime } from "@/utils";
+import { getFormattedDate } from "@/utils";
 
 interface Props extends IElement {
 	post: CollectionEntry<"post">;
 	withDesc?: boolean;
 }
 
-const { post, as: Element = "h3", withDesc = false } = Astro.props;
+const { post, as: Element = "h3"} = Astro.props;
 const date = new Date(post.data.publishDate);
 const postDate = getFormattedDate(date);
 ---
