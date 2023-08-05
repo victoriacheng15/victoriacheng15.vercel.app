@@ -1,8 +1,7 @@
 ---
 import SocialList from "./SocialList.astro";
-import { MENU_LINKS } from "@/data/constants";
+import Menu from "./Menu.astro";
 
-const url = new URL(Astro.request.url);
 const year = new Date().getFullYear();
 ---
 
@@ -10,22 +9,7 @@ const year = new Date().getFullYear();
 	<div class="mx-auto w-11/12 max-w-5xl space-y-8">
 		<div class="flex w-full flex-col items-center justify-between gap-8 sm:flex-row">
 			<SocialList />
-			<ul class="flex items-center gap-4">
-				{
-					MENU_LINKS.map((link) => (
-						<li>
-							<a
-								href={link.path}
-								class="text-lg text-slate-100 duration-300 ease-in-out hover:text-[#7599ff]"
-								aria-current={url.pathname === link.path ? "page" : false}
-								rel="prefetch"
-							>
-								{link.title}
-							</a>
-						</li>
-					))
-				}
-			</ul>
+			<Menu />
 		</div>
 		<p class="text-center">
 			Copyright &copy; {year}
