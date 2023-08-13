@@ -6,6 +6,7 @@ git switch -c post/$post_branch
 cd src/drafts
 
 read -p "Enter the title of the post: " title
+read -p "Enter the description of the post: " description
 read -p "Enter tags: " tags
 read -p "Enter month: " mm
 read -p "Enter day: " dd
@@ -23,7 +24,7 @@ touch $slug.md
 
 echo --- >> $slug.md
 echo title: \"$title\" >> $slug.md
-echo description: \"Remember to change me Lorem ipsum dolor sit amet, consectetuer adipiscing eli\" >> $slug.md
+echo description: \"$description\" >> $slug.md
 echo publishDate: \"$pubDate\" >> $slug.md
 echo tags: [$tags] >> $slug.md
 echo --- >> $slug.md
