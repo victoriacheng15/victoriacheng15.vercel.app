@@ -1,6 +1,6 @@
 ---
 title: "Insights from Software Engineering at Google Book"
-description: "Remember to change me Lorem ipsum dolor sit amet, consectetuer adipiscing eli"
+description: "Learn from Google's engineering culture: data-driven decisions, code reviews, scalability, collaboration, and innovation. Boost productivity and reliability."
 publishDate: "2023-08-19"
 tags: [book]
 ---
