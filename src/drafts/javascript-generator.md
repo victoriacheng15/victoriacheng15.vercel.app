@@ -18,7 +18,7 @@ function* myGeneratorFunction(num) {
 }
 
 const generator = myGeneratorFunction(5);
-console.log(generator.next()); 
+console.log(generator.next());
 // { value: 'value 0 was generated', done: false }
 console.log(generator.next());
 // { value: 'value 0 was generated', done: false }
@@ -73,7 +73,7 @@ const apiUrls = [
 ];
 
 const generator = dataGenerator(apiUrls);
-runGenerator(generator); 
+runGenerator(generator);
 ```
 
 ## Recap
