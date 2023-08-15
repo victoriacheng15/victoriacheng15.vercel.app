@@ -52,9 +52,9 @@ const paginationProps = {
 					<h2 class="flex items-center text-lg font-semibold">Explore by Tags</h2>
 					<ul class="flex flex-row flex-wrap gap-2 text-bgColor">
 						{uniqueTags.map((tag) => (
-							<li>
+							<li class="bg-accent px-3 py-2 duration-300 ease-in-out hover:rounded-xl">
 								<a
-									class="flex items-center justify-center bg-accent px-3 py-2 duration-300 ease-in-out hover:rounded-xl"
+									class="text-lg"
 									href={`/tags/${tag}`}
 									aria-label={`View all posts with the tag: ${tag}`}
 								>
