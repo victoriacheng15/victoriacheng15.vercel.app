@@ -21,7 +21,7 @@ const generator = myGeneratorFunction(5);
 console.log(generator.next());
 // { value: 'value 0 was generated', done: false }
 console.log(generator.next());
-// { value: 'value 0 was generated', done: false }
+// { value: 'value 1 was generated', done: false }
 console.log(generator.next());
 // { value: 'value 2 was generated', done: false }
 ```
