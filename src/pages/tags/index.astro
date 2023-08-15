@@ -15,17 +15,17 @@ const sorted = Object.entries(allTags).sort((a, b) => b[1] - a[1]);
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-6">Tags</h1>
-	<ul class="flex flex-wrap gap-4">
+	<ul class="flex flex-wrap gap-4 text-bgColor">
 		{
 			sorted.map(([tag, val]) => (
-				<li>
+				<li class="bg-accent px-3 py-2 duration-300 ease-in-out hover:rounded-xl">
 					<a
-						class="cactus-link inline-block text-lg"
+						class="text-lg"
 						href={`/tags/${tag}`}
 						title={`View posts with the tag: ${tag}`}
 						rel="prefetch"
 					>
-						&#35;{tag} ({val})
+						{tag} ({val})
 					</a>
 				</li>
 			))
