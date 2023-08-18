@@ -3,10 +3,15 @@
 {
 	"name": "Default Linux Universal",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+	"image": "mcr.microsoft.com/vscode/devcontainers/typescript-node",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "npm install",
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [3000],
@@ -15,21 +20,39 @@
 			"onAutoForward": "openPreview"
 		}
 	},
+	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"astro-build.astro-vscode",
 				"dbaeumer.vscode-eslint",
 				"esbenp.prettier-vscode",
-				"yzhang.markdown-all-in-one"
-			]
+				"yzhang.markdown-all-in-one",
+				"bradlc.vscode-tailwindcss"
+			],
+			"settings": {
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.formatOnSave": true,
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": true
+				},
+				"[markdown]": {
+					"editor.wordWrap": "on",
+					"editor.codeActionsOnSave": {
+						"source.fixAll.markdownlint": true
+					}
+				},
+				"prettier.documentSelectors": ["**/*.astro"],
+				"eslint.validate": [
+					"javascript",
+					"javascriptreact",
+					"astro", // Enable .astro
+					"typescript", // Enable .ts
+					"typescriptreact"
+				]
+			}
 		}
-	},
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install"
-
-	// Configure tool-specific properties.
-	// "customizations": {},
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
