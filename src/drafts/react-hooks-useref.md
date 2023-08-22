@@ -30,19 +30,19 @@ const myValue = useRef(null);
 ## Example code
 
 ```jsx
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 export default function App() {
-	const [count, setCount] = useState(0)
+	const [count, setCount] = useState(0);
 
 	function handleClick() {
-		setCount(prevCount => prevCount + 1)
+		setCount((prevCount) => prevCount + 1);
 		console.log(`You clicked ${count} times!`);
 	}
 
 	useEffect(() => {
-		console.log("re-rendering")
-	}, [count])
+		console.log("re-rendering");
+	}, [count]);
 
 	// let ref = useRef(0);
 
@@ -55,11 +55,8 @@ export default function App() {
 	// 	console.log("re-rendering")
 	// }, [ref])
 
-	return (
-			<button onClick={handleClick}>
-				Click me!
-			</button>
-	);
+	return <button onClick={handleClick}>Click me!</button>;
+}
 ```
 
 ## Recap
