@@ -21,7 +21,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		<ul class="grid gap-8 md:gap-4">
 			{
 				allPostsByDate.map((p) => (
-					<li class="border-2 rounded-lg border-transparent hover:border-accent p-1 duration-300 ease-in-out">
+					<li class="rounded-lg border-2 border-transparent p-1 duration-300 ease-in-out hover:border-accent">
 						<PostPreview post={p} />
 					</li>
 				))
