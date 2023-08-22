@@ -7,9 +7,9 @@ tags: [react, react-hooks]
 
 ## What is useRef?
 
-The **`useRef`** hook in React is tailored for working with DOM elements and mutable values within functional components. Its key advantage is that it avoids unnecessary re-renders, boosting performance.
+The `useRef` hook in React is tailored for working with DOM elements and mutable values within functional components. Its key advantage is that it avoids unnecessary re-renders, boosting performance.
 
-A major use case for **`useRef`** is obtaining direct references to DOM elements, which is useful for imperative operations like focusing inputs or working with external libraries. It also stores values across renders without causing re-renders, serving as a lightweight alternative to the useState.
+A major use case for `useRef` is obtaining direct references to DOM elements, which is useful for imperative operations like focusing inputs or working with external libraries. It also stores values across renders without causing re-renders, serving as a lightweight alternative to the useState.
 
 ```jsx
 const ref = useRef(initialValue);
@@ -61,7 +61,7 @@ export default function App() {
 
 ## Recap
 
-The **`useRef`** hook is a tool in React for managing mutable values and interacting with the DOM within functional components. It shares similarities with **`useCallback`** and **`useMemo`** in that it prevents unnecessary re-renders, contributing to better performance.
+The `useRef` hook is a tool in React for managing mutable values and interacting with the DOM within functional components. It shares similarities with `useCallback` and `useMemo` in that it prevents unnecessary re-renders, contributing to better performance.
 
 ## Resources
 
