@@ -7,7 +7,7 @@ tags: [book]
 
 ## What is Can’t Hurt Me book?
 
-In 'Can't Hurt Me,' David Goggins shares his extraordinary journey from a troubled past to becoming a Navy SEAL, ultra-endurance athlete, and motivational force. Embracing discomfort and confronting fears, he empowers readers to push beyond limits, achieve greatness, and unlock untapped potential. Raw vulnerability and actionable insights make this book a powerful tool for transforming lives and finding strength in the face of adversity. Goggins' story serves as a testament to the unyielding determination and the human spirit's capacity to triumph over challenges.
+In `Can't Hurt Me`, David Goggins shares his extraordinary journey from a troubled past to becoming a Navy SEAL, ultra-endurance athlete, and motivational force. Embracing discomfort and confronting fears, he empowers readers to push beyond limits, achieve greatness, and unlock untapped potential. Raw vulnerability and actionable insights make this book a powerful tool for transforming lives and finding strength in the face of adversity. Goggins' story serves as a testament to the unyielding determination and the human spirit's capacity to triumph over challenges.
 
 ## The ideas and strategies that he used to achieve his goals
 
@@ -26,7 +26,7 @@ In 'Can't Hurt Me,' David Goggins shares his extraordinary journey from a troubl
 
 ## Recap
 
-"Can't Hurt Me" tells David Goggins' journey from struggles to becoming a Navy SEAL and athlete. His advice: be honest with yourself, toughen your mind, set big goals, get used to discomfort, exceed limits, and keep learning. He believes our minds are powerful—overcoming challenges through adaptation and hard work is key. His story shows we can transform our lives by embracing adversity and staying determined.
+`Can't Hurt Me` tells David Goggins' journey from struggles to becoming a Navy SEAL and athlete. His advice: be honest with yourself, toughen your mind, set big goals, get used to discomfort, exceed limits, and keep learning. He believes our minds are powerful—overcoming challenges through adaptation and hard work is key. His story shows we can transform our lives by embracing adversity and staying determined.
 
 This book resonated with me due to its emphasis on the process, similar to what I've encountered in other works like "Atomic Habits." Focusing on the process keeps you on course and moving toward your primary objectives. I also appreciate the author's idea of cultivating a resilient mindset by pushing past limits to become a better self.
 
