@@ -35,6 +35,7 @@ if [[ ${#sorted_files[@]} -gt 0 ]]; then
   echo "Moving $first_file to $markdown_directory"
   mv "$first_file" "../$markdown_directory"
   echo "Moved $first_file to $markdown_directory"
+  echo "https://victoriacheng15.vercel.app/posts/$first_file"
 else
   echo "No file found with a publish date."
 fi
