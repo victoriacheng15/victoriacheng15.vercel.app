@@ -24,6 +24,6 @@ export const projectDetails = [
 	},
 	{
 		title: "victoriacheng15.vercel.app",
-		techs: ["TypeScript", "Jest", "Cypress", "Tailwind CSS", "Astro"],
+		techs: ["Astro", "TypeScript","Tailwind CSS", "Vitest", "Cypress"],
 	},
 ];
