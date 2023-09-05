@@ -29,7 +29,7 @@ type MyRecord = Record<keys, value>;
 
 Before we move onto examples, when you see `string | number`, it is a type union. A type union is used to specify that a value can have one of several possible types. In this case of `string | number`, it means that a variable can be either a string or a number.
 
- - Without specifying key values:
+- Without specifying key values:
 
 ```tsx
 type User = Record<string, string | number>;
