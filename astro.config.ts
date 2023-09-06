@@ -14,11 +14,9 @@ export default defineConfig({
 		},
 	},
 	integrations: [
-		mdx(),
+		mdx({}),
 		tailwind({
-			config: {
-				applyBaseStyles: false,
-			},
+			applyBaseStyles: false,
 		}),
 		sitemap(),
 		prefetch(),
