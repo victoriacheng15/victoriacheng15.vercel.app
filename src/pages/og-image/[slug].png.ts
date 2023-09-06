@@ -1,10 +1,9 @@
 import type { APIContext, GetStaticPathsResult } from "astro";
 import { getCollection, getEntryBySlug } from "astro:content";
-import satori, { SatoriOptions } from "satori";
+import satori, { type SatoriOptions } from "satori";
 import { html } from "satori-html";
 import { Resvg } from "@resvg/resvg-js";
 import siteConfig from "@/site-config";
-import { getFormattedDate } from "@/utils";
 
 const monoFontReg = await fetch(
 	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf",
@@ -45,15 +44,17 @@ const markup = (title: string) =>
 		</div>
 	</div>`;
 
-export async function get({ params: { slug } }: APIContext) {
+export async function GET({ params: { slug } }: APIContext) {
 	const post = await getEntryBySlug("post", slug!);
 	const title = post?.data.title ?? siteConfig.title;
 	const svg = await satori(markup(title), ogOptions);
 	const png = new Resvg(svg).render().asPng();
-	return {
-		body: png,
-		encoding: "binary",
-	};
+	return new Response(png, {
+		headers: {
+			"Content-Type": "image/png",
+			"Cache-Control": "public, max-age=31536000, immutable",
+		},
+	});
 }
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
