@@ -18,7 +18,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 	</section>
 	<section aria-label="Blog post list" class="mb-20">
 		<h2 class="title mb-4">Recent Posts:</h2>
-		<ul class="grid gap-8 md:gap-4">
+		<ul class="space-y-4">
 			{
 				allPostsByDate.map((p) => (
 					<li class="rounded-lg border-2 border-transparent p-1 duration-300 ease-in-out hover:border-accent">
