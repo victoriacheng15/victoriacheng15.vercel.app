@@ -1,28 +1,28 @@
 import type { CollectionEntry } from "astro:content";
 
-export function sortMDByDate(posts: Array<CollectionEntry<"post">>) {
+type Post = Array<CollectionEntry<"post">>;
+
+export function sortMDByDate(posts: Post) {
 	return posts.sort(
 		(a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf(),
 	);
 }
 
-export function getAllTags(posts: Array<CollectionEntry<"post">>) {
-	return posts.flatMap((post) => [...post.data.tags]);
+export function getAllTags(posts: Post) {
+	return posts.flatMap(({ data: { tags } }) => [...tags]);
 }
 
-export function getUniqueTags(posts: Array<CollectionEntry<"post">>) {
+export function getUniqueTags(posts: Post) {
 	return [...new Set(getAllTags(posts))];
 }
 
-export function getUniqueTagsWithCount(
-	posts: Array<CollectionEntry<"post">>,
-): Array<[string, number]> {
-	return [
-		...getAllTags(posts).reduce(
-			(acc, t) => acc.set(t, (acc.get(t) || 0) + 1),
-			new Map<string, number>(),
-		),
-	].sort((a, b) => b[1] - a[1]);
+export function getUniqueTagsWithCount(posts: Post): Array<[string, number]> {
+	const tags = [
+		...getAllTags(posts).reduce((acc, tag) => {
+			return acc.set(tag, (acc.get(tag) || 0) + 1);
+		}, new Map<string, number>()),
+	];
+	return tags.sort((a, b) => b[1] - a[1]);
 }
 
 const WORDS_PER_MINUTE = 200;
