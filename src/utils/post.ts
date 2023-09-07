@@ -9,7 +9,7 @@ export function sortMDByDate(posts: Post) {
 }
 
 export function getAllTags(posts: Post) {
-	return posts.flatMap(({data: {tags}}) => [...tags]);
+	return posts.flatMap(({ data: { tags } }) => [...tags]);
 }
 
 export function getUniqueTags(posts: Post) {
