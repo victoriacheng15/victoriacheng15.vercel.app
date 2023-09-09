@@ -47,6 +47,12 @@ export const SOCIALS = [
 		active: false,
 	},
 	{
+		name: "youtube",
+		href: "https://www.youtube.com/@victoriacheng15",
+		icon: "simple-icons:youtube",
+		active: true,
+	},
+	{
 		name: "buy me a coffee",
 		href: "https://www.buymeacoffee.com/victoriacheng15",
 		icon: "simple-icons:buymeacoffee",
