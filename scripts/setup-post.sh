@@ -21,6 +21,7 @@ pubDate=$year-$month-$day
 echo $slug
 
 touch $slug.md
+echo "https://victoriacheng15.vercel.app/posts/$slug"
 
 echo --- >> $slug.md
 echo title: \"$title\" >> $slug.md
