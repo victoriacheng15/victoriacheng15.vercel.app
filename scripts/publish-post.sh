@@ -29,13 +29,21 @@ for file in "${sorted_files[@]}"; do
 done
 echo -e "\n=== List of files sorted by publish date: ===\n"
 
+
+
 if [[ ${#sorted_files[@]} -gt 0 ]]; then
   first_file=${sorted_files[0]}
 
-  echo "Moving $first_file to $markdown_directory"
+  link="${first_file%.*}"
+
+  echo "Moving $first_file to $markdown_directory..."
   mv "$first_file" "../$markdown_directory"
   echo "Moved $first_file to $markdown_directory"
-  echo "https://victoriacheng15.vercel.app/posts/$first_file"
+  echo "https://victoriacheng15.vercel.app/posts/$link"
 else
   echo "No file found with a publish date."
 fi
+
+# filename="ultralearning-accelerated-learning-strategies.md"
+# filename_without_extension="${filename%.*}"
+# echo "$filename_without_extension"
