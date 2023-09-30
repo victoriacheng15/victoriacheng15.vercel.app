@@ -7,7 +7,7 @@ tags: [reflection]
 
 ## Monthly Reflection
 
-I found the "2-minute rule" in "Eat that Frog" to be quite fascinating. This rule is designed to help people deal with small tasks that can be finished within two minutes. The key here is to act promptly on these tasks rather than putting them off. I think this rule is superb because it allows you to efficiently tackle many small tasks, giving you a sense of achievement. Furthermore, if a task can't be completed within two minutes, you have the option to break it down into smaller, manageable steps, or if possible, delegate it to someone else.
+I found the "2-minute rule" in "Getting Thing Done" book to be quite fascinating. This rule is designed to help people deal with small tasks that can be finished within two minutes. The key here is to act promptly on these tasks rather than putting them off. I think this rule is superb because it allows you to efficiently tackle many small tasks, giving you a sense of achievement. Furthermore, if a task can't be completed within two minutes, you have the option to break it down into smaller, manageable steps, or if possible, delegate it to someone else.
 
 I've also dabbled in using time blocks, and I genuinely appreciate the concept of allocating specific time blocks for dedicated focus on particular tasks. I should make better use of this technique by scheduling blocks on my calendar for activities like reading books, exercising, and other tasks. This approach will enable me to concentrate exclusively on one thing during each block.
 
