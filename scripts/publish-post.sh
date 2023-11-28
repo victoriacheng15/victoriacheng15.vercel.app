@@ -43,7 +43,3 @@ if [[ ${#sorted_files[@]} -gt 0 ]]; then
 else
   echo "No file found with a publish date."
 fi
-
-# filename="ultralearning-accelerated-learning-strategies.md"
-# filename_without_extension="${filename%.*}"
-# echo "$filename_without_extension"

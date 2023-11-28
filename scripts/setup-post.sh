@@ -1,7 +1,12 @@
 #!/bin/bash
 
 read -p "Enter the name of the post branch: " post_branch
-git switch -c post/$post_branch
+
+if [[ -n "$post_branch" ]]; then
+  git switch -c post/$post_branch
+else
+  echo "no input provided, skipping the git command."
+fi
 
 cd src/drafts
 
@@ -18,7 +23,6 @@ month=${mm:-$(date +%m)}
 day=${dd:-$(date +%d)}
 
 pubDate=$year-$month-$day
-echo $slug
 
 touch $slug.md
 echo "https://victoriacheng15.vercel.app/posts/$slug"
