@@ -6,9 +6,12 @@ update_main() {
 }
 
 actions=(
-  "update main"
-  "setup post"
-  "Publish Post"
+  "Update main branch"
+  "Setup post branch and draft post(s)"
+  "Publish a new post"
+  "Create a new Pull Request"
+  "Check github action progress"
+  "Merge a Pull Request"
 )
 
 PS3="Select the action: " 
@@ -26,6 +29,26 @@ do
       ;;
     ${actions[2]})
       scripts/publish-post.sh
+      break
+      ;;
+    ${actions[3]})
+      # -f --fill
+      gh pr create -f
+      break
+      ;;
+    ${actions[4]})
+      # -i --interval
+      gh pr checks
+      break
+      ;;
+    ${actions[5]})
+      read -p "Enter the PR number: " pr_number
+      # -s --squash -d --delete-branch
+      if [[ -z $pr_number ]]; then
+        gh pr merge -s -d
+      else
+        gh pr merge -s -d $pr_number
+      fi
       break
       ;;
     *)
