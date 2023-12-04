@@ -38,7 +38,7 @@ do
       ;;
     ${actions[4]})
       # -i --interval
-      gh pr checks -i --watch
+      gh pr checks
       break
       ;;
     ${actions[5]})
