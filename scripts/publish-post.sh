@@ -27,15 +27,13 @@ for file in "${sorted_files[@]}"; do
   echo "$publish_date - $file"
 done
 
-
-
 if [[ ${#sorted_files[@]} -gt 0 ]]; then
   first_file=${sorted_files[0]}
 
   link="${first_file%.*}"
   echo -e "\n==== 🎦️ The file is moving to the post folder 🎦️ ===\n"
   echo "Moving $first_file to $markdown_directory..."
-  # mv "$first_file" "../$markdown_directory"
+  mv "$first_file" "../$markdown_directory"
   echo -e "\n==== 🥳️ The file moving is done 🥳️ ===\n"
   echo "https://victoriacheng15.vercel.app/posts/$link"
 else
