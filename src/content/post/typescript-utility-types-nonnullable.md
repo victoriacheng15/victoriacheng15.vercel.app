@@ -20,7 +20,7 @@ type AllTypes = string | number | null | undefined;
 const isDefined: AllTypes = undefined;
 
 type NoNulls = NonNullable<AllTypes>;
-const isDefined2: NoNulls = null; // this is now allowed
+const isDefined2: NoNulls = null; // this is not allowed
 ```
 
 In the above code, `AllTypes` can be a string, a number, null, or undefined. But `NoNulls`, which is `NonNullable<AllTypes>`**,** can only be a string or a number. It cannot be null or undefined.
