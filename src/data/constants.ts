@@ -1,3 +1,5 @@
+export const POSTS_PER_PAGE = 15;
+
 /* eslint-disable prettier/prettier */
 export const MENU_LINKS = [
 	{
