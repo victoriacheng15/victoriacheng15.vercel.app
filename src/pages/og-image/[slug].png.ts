@@ -39,7 +39,9 @@ const markup = (title: string) =>
 		<div tw="flex flex-col flex-1 w-full p-12 justify-center">
 			<h1 tw="text-6xl font-bold leading-snug text-white">${title}</h1>
 		</div>
-		<div tw="flex items-center justify-end w-full p-12 border-t border-[#2bbc89] text-xl">
+		<div
+			tw="flex items-center justify-end w-full p-12 border-t border-t-8 border-[#60a5fa] text-xl"
+		>
 			<p>by ${siteConfig.author}</p>
 		</div>
 	</div>`;
