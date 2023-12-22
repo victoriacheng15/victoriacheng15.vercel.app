@@ -1,20 +1,26 @@
 #!/bin/bash
 
-read -p "Enter the name of the post branch: " post_branch
+echo "Enter the name of the post branch: "
+read -r post_branch
 
 if [[ -n "$post_branch" ]]; then
-  git switch -c post/$post_branch
+  git switch -c post/"$post_branch"
 else
   echo "no input provided, skipping the git command."
 fi
 
-cd src/drafts
+cd src/drafts || exit
 
-read -p "Enter the title of the post: " title
-read -p "Enter the description of the post: " description
-read -p "Enter tags: " tags
-read -p "Enter month: " mm
-read -p "Enter day: " dd
+echo "Enter the title of the post: " title
+read -r title
+echo "Enter the description of the post: " description
+read -r description
+echo "Enter tags: " tags
+read -r tags
+echo "Enter month: " mm
+read -r mm
+echo "Enter day: " dd
+read -r dd
 
 slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-zA-Z]+/-/g; s/^-//; s/-$//')
 
