@@ -20,6 +20,8 @@
 		"@astrojs/mdx": "^1.1.5",
 		"@astrojs/sitemap": "^3.0.4",
 		"@astrojs/tailwind": "5.0.4",
+		"@iconify-json/ph": "^1.1.9",
+		"@iconify-json/simple-icons": "^1.1.86",
 		"@resvg/resvg-js": "^2.6.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/line-clamp": "^0.4.4",
