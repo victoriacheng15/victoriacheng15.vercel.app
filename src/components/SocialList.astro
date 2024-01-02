@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import { SOCIALS } from "@/data/constants";
 
 const filteredSocials = SOCIALS.filter(({ active }) => active);
@@ -8,9 +8,9 @@ const filteredSocials = SOCIALS.filter(({ active }) => active);
 <ul class="flex gap-4">
 	{
 		filteredSocials.map(({ name, href, icon }) => (
-			<li class="w-8 duration-300 ease-in-out hover:text-accent">
+			<li class="duration-300 ease-in-out hover:text-accent">
 				<a href={href} aria-label={name} target="_blank" rel="noopener noreferrer">
-					<Icon name={icon} />
+					<Icon class="h-10 w-10" name={icon} />
 				</a>
 			</li>
 		))

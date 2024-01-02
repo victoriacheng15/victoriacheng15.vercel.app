@@ -3,7 +3,7 @@ import PageLayout from "@/layouts/Base";
 import TechStack from "@/components/TechStack";
 import { getPinnedProjects } from "@/utils";
 import { projectDetails } from "@/data/projects";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const projects = await getPinnedProjects();
 
@@ -25,7 +25,7 @@ const meta = {
 							<h2 class="text-xl md:text-2xl">{name}</h2>
 							<span class="flex items-center gap-1">
 								{stargazerCount}
-								<Icon name="ic:baseline-star" />
+								<Icon name="ph:star-fill" />
 							</span>
 						</div>
 						<p class="italic">"{description}"</p>
@@ -40,9 +40,3 @@ const meta = {
 		}
 	</section>
 </PageLayout>
-
-<style>
-	[astro-icon] {
-		width: 20px;
-	}
-</style>
