@@ -2,39 +2,38 @@ name: Publish Post
 
 on:
   schedule:
-    - cron: "0 23 * * 2,5"
+    - cron: "0 23 * * 1,3,5"
   workflow_dispatch:
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out code
-      uses: actions/checkout@v3
-    - name: Create branch
-      run: git switch -c publish-post
-    - name: Run publish-post.sh script
-      run: ./scripts/publish-post.sh
-    - name: Commit and push
-      run: |
-        git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-        git config --local user.name "${{ github.actor }}"
-        git pull origin main --no-ff
-        git add .
-        git commit -m "chore: publish post 🎉"
-        git push origin publish-post
-    - name: Create pull request
-      run: |
-        gh pr create --base=main --head=publish-post --fill
-      env:
-        GH_TOKEN: ${{ github.token }}
-#     - name: Wait for CI checks
-#       uses: fountainhead/action-wait-for-check@v1.1.0
-#       with:
-#         ref: ${{ github.head_ref }}
-#         checkName: Vercel
-#         token: ${{ secrets.GITHUB_TOKEN }}
-#     - name: Merge pull request
-#       run: gh pr merge --squash --delete-branch
-#       env:
-#         GH_TOKEN: ${{ github.token }}
+      - uses: actions/checkout@v3
+      - name: Create a branch and run the script
+        run: |
+          git switch -c publish-post
+          ./scripts/publish-post.sh
+
+      - name: Check for changes
+        run: |
+          changes=$(git status --porcelain)
+          if [ -z "$changes" ]; then
+            echo "No changes to commit. Exiting..."
+            exit 0
+          fi
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+          git pull origin main --no-ff
+          git add .
+          git commit -m "chore: publish post 🎉"
+          git push origin publish-post
+
+      - name: Create pull request
+        run: |
+          gh pr create --base=main --head=publish-post --fill
+        env:
+          GH_TOKEN: ${{ github.token }}
