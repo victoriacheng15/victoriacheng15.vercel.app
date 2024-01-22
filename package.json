@@ -41,7 +41,7 @@
 		"eslint-plugin-astro": "^0.31.3",
 		"eslint-plugin-prettier": "^5.1.2",
 		"husky": "^8.0.3",
-		"jsdom": "^23.0.1",
+		"jsdom": "^24.0.0",
 		"postcss": "^8.4.33",
 		"prettier": "^3.1.1",
 		"prettier-plugin-astro": "0.12.3",
