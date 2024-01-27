@@ -9,21 +9,24 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Create a branch and run the script
         run: |
           git switch -c publish-post
           ./scripts/publish-post.sh
 
       - name: Check for changes
+        id: check-changes
         run: |
-          changes=$(git status --porcelain)
-          if [ -z "$changes" ]; then
-            echo "No changes to commit. Exiting..."
-            exit 0
-          fi
+          git diff --exit-code || echo "::set-output name=changes::true"
 
-      - name: Commit and push
+  commit-push:
+    needs: [publish]
+    runs-on: ubuntu-latest
+    if: ${{ needs.publish.outputs['check-changes'] == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: config git - commit - push
         run: |
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git config --local user.name "${{ github.actor }}"
@@ -31,9 +34,8 @@ jobs:
           git add .
           git commit -m "chore: publish post 🎉"
           git push origin publish-post
-
       - name: Create pull request
-        run: |
-          gh pr create --base=main --head=publish-post --fill
         env:
           GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr create --base=main --head=publish-post -f
