@@ -17,8 +17,8 @@
 		"cypress:run": "npx cypress run"
 	},
 	"devDependencies": {
-		"@astrojs/mdx": "^1.1.5",
-		"@astrojs/sitemap": "^3.0.4",
+		"@astrojs/mdx": "^2.1.0",
+		"@astrojs/sitemap": "^3.0.5",
 		"@astrojs/tailwind": "5.1.0",
 		"@iconify-json/ph": "^1.1.10",
 		"@iconify-json/simple-icons": "^1.1.87",
@@ -52,8 +52,8 @@
 	},
 	"dependencies": {
 		"@astrojs/prefetch": "^0.4.1",
-		"@astrojs/rss": "^4.0.2",
-		"astro": "^3.6.4",
+		"@astrojs/rss": "^4.0.4",
+		"astro": "^4.2.6",
 		"astro-icon": "^1.0.2",
 		"satori": "0.10.11",
 		"satori-html": "^0.3.2"
