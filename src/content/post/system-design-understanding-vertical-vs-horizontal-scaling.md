@@ -5,7 +5,7 @@ publishDate: "2024-01-09"
 tags: [system-design]
 ---
 
-## \***\*Understanding Vertical and Horizontal Scaling\*\***
+## Understanding Vertical and Horizontal Scaling
 
 When it comes to scaling your system, you have two main strategies:
 
