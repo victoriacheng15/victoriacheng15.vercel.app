@@ -18,23 +18,24 @@ jobs:
       - name: Check for changes
         id: check-changes
         run: |
-          git diff --exit-code || echo "::set-output name=changes::true"
+          check_changes=$(git status --porcelain)
+          echo "check_changes=$check_changes" >> "$GITHUB_ENV"
 
-  commit-push:
-    needs: [publish]
-    runs-on: ubuntu-latest
-    if: ${{ needs.publish.outputs['check-changes'] == 'true' }}
-    steps:
-      - uses: actions/checkout@v4
-      - name: config git - commit - push
+      - name: Commit changes or exit the process
         run: |
+          check_changes=$(echo "$check_changes" | tr -d '\r')
+          if [ ! $check_changes ]; then
+            echo "No changes detected. Exiting the process."
+            exit 0
+          fi
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git config --local user.name "${{ github.actor }}"
           git pull origin main --no-ff
-          git add .
-          git commit -m "chore: publish post 🎉"
-          git push origin publish-post
-      - name: Create pull request
+          git add src/content/
+          git commit -m "chore: the post is published! 🎉"
+          git push -u origin HEAD
+
+      - name: Create PR
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
