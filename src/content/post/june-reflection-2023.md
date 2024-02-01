@@ -1,5 +1,5 @@
 ---
-title: June Relfection 2023
+title: June Reflection 2023
 description: "Reflecting on what I learned from Harvard CS50 from memory to HTML, rate limiting, and my thoughts on the tracking system for posts and books."
 publishDate: "2023-06-28"
 tags: [reflection]
