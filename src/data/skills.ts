@@ -1,5 +1,9 @@
 export const SKILLS = [
 	{
+		name: "React",
+		skill: "simple-icons:react",
+	},
+	{
 		name: "TypeScript",
 		skill: "simple-icons:typescript",
 	},
@@ -8,16 +12,16 @@ export const SKILLS = [
 		skill: "simple-icons:javascript",
 	},
 	{
+		name: "Python",
+		skill: "simple-icons:python",
+	},
+	{
 		name: "Next.js",
 		skill: "simple-icons:nextdotjs",
 	},
 	{
-		name: "React",
-		skill: "simple-icons:react",
-	},
-	{
-		name: "React Router",
-		skill: "simple-icons:reactrouter",
+		name: "Docker",
+		skill: "simple-icons:docker",
 	},
 	{
 		name: "Jest",
@@ -52,6 +56,22 @@ export const SKILLS = [
 		skill: "simple-icons:sass",
 	},
 	{
+		name: "Cypress",
+		skill: "simple-icons:cypress",
+	},
+	{
+		name: "React Router",
+		skill: "simple-icons:reactrouter",
+	},
+	{
+		name: "Linux",
+		skill: "simple-icons:linux",
+	},
+	{
+		name: "Chakra UI",
+		skill: "simple-icons:chakraui",
+	},
+	{
 		name: "MongoDB",
 		skill: "simple-icons:mongodb",
 	},
@@ -66,13 +86,5 @@ export const SKILLS = [
 	{
 		name: "CSS 3",
 		skill: "simple-icons:css3",
-	},
-	{
-		name: "Cypress",
-		skill: "simple-icons:cypress",
-	},
-	{
-		name: "Linux",
-		skill: "simple-icons:linux",
 	},
 ];
