@@ -18,22 +18,22 @@ jobs:
       - name: Check for changes
         id: check-changes
         run: |
-          check_changes=$(git status --porcelain)
-          echo "check_changes=$check_changes" >> "$GITHUB_ENV"
+          check_changes=$(<<< "$(git status --porcelain)")
 
       - name: Commit changes or exit the process
         run: |
-          check_changes=$(echo "$check_changes" | tr -d '\r')
-          if [ ! $check_changes ]; then
+          if [ -n "$check_changes" ]; then
+            echo "Changes detected. Proceeding with commit and push..."
+            git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+            git config --local user.name "${{ github.actor }}"
+            git pull origin main --no-ff
+            git add src/content/ src/drafts 
+            git commit -m "chore: the post is published! 🎉"
+            git push -u origin HEAD
+          else
             echo "No changes detected. Exiting the process."
             exit 0
           fi
-          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-          git config --local user.name "${{ github.actor }}"
-          git pull origin main --no-ff
-          git add src/content/ && src/drafts 
-          git commit -m "chore: the post is published! 🎉"
-          git push -u origin HEAD
 
       - name: Create PR
         env:
