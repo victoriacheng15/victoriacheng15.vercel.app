@@ -11,18 +11,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Create a branch and run the script
+        id: get_output
         run: |
           git switch -c publish-post
           ./scripts/publish-post.sh
 
-      - name: Check for changes
-        id: check-changes
-        run: |
-          check_changes=$(<<< "$(git status --porcelain)")
-
       - name: Commit changes or exit the process
         run: |
-          if [ -n "$check_changes" ]; then
+          if [[ "${{ steps.get_output.outputs.stdout }}" == "no file" ]]; then
+            echo "No changes detected. Exiting the process."
+            exit 0
+          else
             echo "Changes detected. Proceeding with commit and push..."
             git config --local user.email "${{ github.actor }}@users.noreply.github.com"
             git config --local user.name "${{ github.actor }}"
@@ -30,9 +29,6 @@ jobs:
             git add src/content/ src/drafts 
             git commit -m "chore: the post is published! 🎉"
             git push -u origin HEAD
-          else
-            echo "No changes detected. Exiting the process."
-            exit 0
           fi
 
       - name: Create PR
