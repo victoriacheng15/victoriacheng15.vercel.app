@@ -9,7 +9,7 @@ tags: [typescript]
 
 The `Record` utility type is designed to help you define objects with a specific set of keys and their corresponding value types. This is particularly useful when you want to create structured data objects or dictionaries where you know in advance what keys will be present and what types of values they should hold.
 
-```tsx
+```ts
 type Record<K extends string | number | symbol, T> = {
 	[P in K]: T;
 };
@@ -17,7 +17,7 @@ type Record<K extends string | number | symbol, T> = {
 
 The syntax for using the `Record` type is as follows:
 
-```tsx
+```ts
 type MyRecord = Record<keys, value>;
 ```
 
@@ -31,7 +31,7 @@ Before we move onto examples, when you see `string | number`, it is a type union
 
 - Without specifying key values:
 
-```tsx
+```ts
 type User = Record<string, string | number>;
 
 const user: User = {
@@ -44,7 +44,7 @@ const user: User = {
 
 - With specifying key values such as name, age, email and etc:
 
-```tsx
+```ts
 type User = Record<"name" | "age" | "email", string | number>;
 
 const user: User = {
@@ -56,7 +56,7 @@ const user: User = {
 
 - Nested Records:
 
-```tsx
+```ts
 type Address = Record<"street" | "city", string>;
 type User = Record<"name" | "age" | "address", string | number | Address>;
 
@@ -78,7 +78,7 @@ When you copy the provided code snippet below, and then hover your mouse to `Use
 2. **User2**: It will say 3 properties of `name`, `age`, and `email` with string and number values. This type explicitly defines the keys and their value types.
 3. **User3**: It will say 3 properties of `name`, `age`, and `address` with string, number, and address values. This type defines the keys and allows the `address` property to hold values of a nested structure defined by the `Address` type.
 
-```tsx
+```ts
 type User = Record<string, string | number>;
 
 type User2 = Record<"name" | "age" | "email", string | number>;

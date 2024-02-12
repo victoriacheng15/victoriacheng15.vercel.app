@@ -9,7 +9,7 @@ tags: [javascript]
 
 In JavaScript, the logical AND assignment operator (**`&&=`**) is a tool for updating variables based on conditions. It combines the logical AND operation with assignment in a concise manner. It only evulates the right operand and assigns to the left if the **left operand** is truthy.
 
-```tsx
+```js
 let x = 5;
 let y = 3;
 
@@ -20,7 +20,7 @@ console.log(`x is ${x}`); // x = 3
 
 If x is considered true, then the x value will become 3, which is a value of y.
 
-```tsx
+```js
 let x = 0;
 let y = 3;
 
@@ -36,7 +36,7 @@ If x is considered false, then the x value will stay 0, which is its original va
 
 - Example 1:
 
-```tsx
+```js
 let message = "Hello, ";
 let name = "Alice";
 
@@ -47,7 +47,7 @@ console.log("message: ", message); // Output: "Alice"
 
 - Example 2:
 
-```tsx
+```js
 let isEnabled = true;
 let userLoggedIn = false;
 
@@ -58,7 +58,7 @@ console.log("isEnabled: ", isEnabled); // Output: false
 
 - Example 3:
 
-```tsx
+```js
 let numbers = [1, 2, 3];
 let newNumber = 200;
 
@@ -69,7 +69,7 @@ console.log("numbers: ", numbers); // Output: [200, 1, 2, 3]
 
 - Example 4:
 
-```tsx
+```js
 let person = {
 	name: "John",
 	age: 30,

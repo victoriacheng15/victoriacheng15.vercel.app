@@ -11,7 +11,7 @@ It is an operator in JavaScript that is used to assign a value to variable if th
 
 Syntax:
 
-```jsx
+```js
 x ??= y;
 ```
 
@@ -21,7 +21,7 @@ JavaScript checks if the variable `x` is nullish or not. If `x` is nullish, then
 
 - Number:
 
-```jsx
+```js
 let num = null;
 let defaultNum = 10;
 num ??= defaultNum;
@@ -37,7 +37,7 @@ console.log(num2); // output: 5
 
 - String:
 
-```jsx
+```js
 let str = null;
 let defaultStr = "Hello, World!";
 str ??= defaultStr;
@@ -53,7 +53,7 @@ console.log(str2); // output: "Hello"
 
 - Array:
 
-```jsx
+```js
 let arr = null;
 let defaultArr = [1, 2, 3];
 arr ??= defaultArr;
@@ -69,7 +69,7 @@ console.log(arr2); // output: [4, 5, 6]
 
 - Object:
 
-```jsx
+```js
 let obj = null;
 let defaultObj = { name: "Bing", type: "Assistant" };
 obj ??= defaultObj;

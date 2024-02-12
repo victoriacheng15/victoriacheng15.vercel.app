@@ -9,7 +9,7 @@ tags: [javascript]
 
 In JavaScript, closure is a combination of a function and the lexical environment within which that function was declared. You may think what is a lexical environment? It is an environment that is wrapped with curly brackets.
 
-```jsx
+```js
 function lexical() {
 	// This is the lexical environment
 }
@@ -19,7 +19,7 @@ In simpler terms, a closure allows a function to access variables from its outer
 
 ## Example
 
-```jsx
+```js
 function test() {
 	const a = "a";
 	console.log(

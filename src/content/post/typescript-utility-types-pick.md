@@ -9,7 +9,7 @@ tags: [typescript]
 
 The **`Pick`** utility type in TypeScript allows you to create a new type by selecting specific properties from an existing type. It is useful when you want to extract only certain properties from an object type and create a new type containing just those selected properties.
 
-```jsx
+```ts
 type Pick<T, K extends keyof T> = { [P in K]: T[P] };
 ```
 
@@ -19,7 +19,7 @@ Imagine you are building a React application, and you want to create a user card
 
 We can declare `User` type like below.
 
-```tsx
+```ts
 interface User {
 	id: number;
 	name: string;
@@ -36,7 +36,7 @@ interface User {
 
 To create the user card component, we only require three pieces of information: the **`id`** (used as a key prop), **`username`**, and **`email`**. We'll define a **`UserCard`** type to represent this structure.
 
-```tsx
+```ts
 type UserCard = Pick<User, "id" | "username" | "email">;
 ```
 
@@ -46,7 +46,7 @@ This type will help us ensure the any data used for rendering the user card comp
 
 Hovering the cursor to `UserCard` after copying and pasting the code below to the editor, you will see the `UserCard` will display the 3 properties, `id`, `username`, and `email`.
 
-```tsx
+```ts
 interface User {
 	id: number;
 	name: string;

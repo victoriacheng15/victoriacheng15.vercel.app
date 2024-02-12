@@ -9,14 +9,14 @@ tags: [typescript]
 
 It is a built-in utility type that extracts the parameter types of a function. It accepts a function type as input and gives back a tuple type that lists the parameter types of the function.
 
-```tsx
+```ts
 type Parameters<T extends (...args: any) => any> =
 	T extends (..args: infer P) => any ? P: never
 ```
 
 ## How Does Parameters Work?
 
-```tsx
+```ts
 function myFunc(a: string, b: number, c: boolean) {
 	//...
 }
@@ -36,7 +36,7 @@ type myParams = Parameters<typeof myFunc>;
 
 You also can extract one item like you would with arrays.
 
-```tsx
+```ts
 type LastParam = Parameters<typeof myFunc>[2];
 // boolean
 ```
