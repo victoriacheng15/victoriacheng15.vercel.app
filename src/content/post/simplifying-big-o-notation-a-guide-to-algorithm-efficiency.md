@@ -15,7 +15,7 @@ Big O notation provides a standardized way to express the efficiency of algorith
 
 In constant time (O(1)), finding a name takes the same amount of time, regardless of the list size. It's like having an index or a direct reference to the name, making retrieval quick and constant.
 
-```jsx
+```js
 function findNameConstantTime(names, index) {
 	return names[index];
 }

@@ -9,7 +9,7 @@ tags: [typescript]
 
 The `Required` type in TypeScript is a built-in type that allows you to transform object types by making all of their properties required. This means that any property marked as optional (with the `?` modifier) in the original object type will become mandatory in the resulting type. This is useful when you want to enforce that certain properties must always be present in an object.
 
-```tsx
+```ts
 type Required<T> = {
 	[P in keyof T]-?: T[P];
 };
@@ -19,7 +19,7 @@ type Required<T> = {
 
 In the provided code snippet, we define an object of type `Form` with certain properties marked as optional using the `?` modifier. This means that when updating the `userData` object, it's possible to modify either one or both of these properties, offering flexibility in the update process
 
-```tsx
+```ts
 interface Form {
 	name?: string;
 	email?: string;
@@ -51,7 +51,7 @@ console.log(updatedUserData);
 
 Imagine a scenario where you need to update all the user information. In such cases, you can leverage the built-in `Required` type.
 
-```tsx
+```ts
 function updateAllData(newData: Form, updates: Required<Form>) {
 	return {
 		...newData,
@@ -81,7 +81,7 @@ At times, it's beneficial to begin with all properties marked as optional for fl
 
 When you copy the provided code snippet and hover your mouse over **`Form`**, you'll see that the 'name' property is described as **`string | undefined`**. Furthermore, if you hover your mouse over **`AllRequired`**, you'll observe that the optional modifier has been removed.
 
-```tsx
+```ts
 type Form = {
 	name?: string;
 	email?: string;

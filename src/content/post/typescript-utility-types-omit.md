@@ -9,7 +9,7 @@ tags: [typescript]
 
 In TypeScript, the `Omit` utility type is a convenient tool for creating new types by excluding specific properties from an existing type. It allows you to take an object type and specify which properties you want to remove, effectively creating a new type that lacks those properties. This can be useful when you need to work with variations of data structures or when you want to ensure that certain properties are excluded from a type to meet specific requirements.
 
-```tsx
+```ts
 type Omit<T, K extends string | number | symbol> = {
 	[P in Exclude<keyof T, K>]: T[P];
 };
@@ -19,7 +19,7 @@ type Omit<T, K extends string | number | symbol> = {
 
 Suppose you have a `Product` type that includes properties like `id`, `name`, `price`, and `category`. If you need to create a simplified product type that only requires `name` and `price`, you can utilize the `Omit` utility to exclude `id` and `category` from the `Product` type.
 
-```tsx
+```ts
 type Product = {
 	id: number;
 	name: string;

@@ -9,7 +9,7 @@ tags: [typescript]
 
 The `Exclude` utility type in TypeScript is designed to work with union types, making it a powerful tool for crafting custom types by removing specific values from existing types. This feature empowers you to create precise and customized type definitions, effectively filtering out undesired types according to your specific criteria. This becomes particularly valuable when you require almost all types from a given set, except for a select few that need to be excluded.
 
-```tsx
+```ts
 type Exclude<T, U> = T extends U ? never : T;
 ```
 
@@ -19,7 +19,7 @@ type Exclude<T, U> = T extends U ? never : T;
 
 You have a set of types that includes string, number, boolean, and symbol, but you only require boolean and symbol. In such a scenario, you can employ the `Exclude` utility to remove string and number from the set called `AllTypes`.
 
-```tsx
+```ts
 type AllTypes = string | number | boolean | symbol;
 type ExcludePrimitives = Exclude<AllTypes, string | number>;
 ```
@@ -30,7 +30,7 @@ You have two sets of possible values: `FirstUnion`, which contains "A" and "B," 
 
 To achieve this, you can use the `Exclude` utility type. By applying `Exclude<FirstUnion | SecondUnion, "B">`, you effectively remove "B" from the combined set, resulting in `ExcludeFromMerged` containing only "A" and "C."
 
-```tsx
+```ts
 type FirstUnion = "A" | "B";
 type SecondUnion = "B" | "C";
 type ExcludeFromMerged = Exclude<FirstUnion | SecondUnion, "B">;
@@ -42,7 +42,7 @@ You have a list of fruits, each described by its type, color, and taste. You wan
 
 To do this, you can use the `Exclude` utility type. Applying `Exclude<Fruit, { type: "apple" }>`, you effectively remove all apple entries from the list, resulting in a new list containing only non-apple fruits.
 
-```tsx
+```ts
 type Fruit =
 	| { type: "apple"; color: "red" | "green"; taste: "sweet" }
 	| { type: "banana"; color: "yellow"; taste: "sweet" }

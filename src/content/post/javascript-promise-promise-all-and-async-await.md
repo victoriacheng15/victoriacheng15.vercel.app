@@ -13,7 +13,7 @@ Asynchronous programming is a technique that allows your program to start a long
 
 Promises are a way to handle asynchronous operations in JavaScript. A promise represents a value that may not be available yet but will be resolved in the future. It has three states: pending, fulfilled, or rejected. When a promise is fulfilled or rejected, it is said to be "settled." Promises are used to handle asynchronous operations.
 
-```jsx
+```js
 // Creating a Promise that resolves after a timeout
 const myPromise = new Promise((resolve, reject) => {
 	setTimeout(() => {
@@ -35,7 +35,7 @@ myPromise
 
 It is a method that takes an array of promises as input and returns a new promise. This new promise is fulfilled when all the promises in the input array have been fulfilled or rejected if any of the promises are rejected. It allows you to wait for multiple asynchronous operations to complete simultaneously.
 
-```jsx
+```js
 // Creating an array of promises
 const promise1 = Promise.resolve("Promise 1 resolved");
 const promise2 = new Promise((resolve, reject) => {
@@ -62,7 +62,7 @@ It is a feature introduced in ES2017 (ES8) that provides a more readable way to 
 - The async keyword makes an async function
 - The await keyword makes the async function to pause the execution until a promise is resolved
 
-```jsx
+```js
 // Example asynchronous function using async/await
 function fetchData() {
 	return new Promise((resolve, reject) => {

@@ -9,7 +9,7 @@ tags: [typescript]
 
 The `Partial` is a built-in utility type that allows you to create a new type by making all properties of an existing type optional. It means that every property in the new type can be present or omitted, regardless of its original required or optional status. This utility type helps you work with partially filled or mutable objects.
 
-```tsx
+```ts
 type Partial<T> = {
 	[P in keyof T]?: T[P];
 };
@@ -19,7 +19,7 @@ You can view this by hovering cursor on `Partial` and a pop-up will show up.
 
 ## How does Partial work?
 
-```tsx
+```ts
 interface Todo {
 	title: string;
 	description: string;
@@ -35,7 +35,7 @@ const original = {
 
 Let’s say you have a list of todos and you would declare `Todo` with title as string, description as string, and completed as boolean. You also define the `original` object with all necessary properties as the `Todo` interface.
 
-```tsx
+```ts
 function updateTodo(todo: Todo, fieldsToUpdate: Todo) {
 	return { ...todo, ...fieldsToUpdate };
 }
@@ -47,7 +47,7 @@ const updateStatus = updateTodo(original, {
 
 If you write `fieldToUpdate: Todo` in the function above and try to update the status for one of the todos, TypeScript will let you know that there is an error of `Argument of type '{ completed: true; }' is not assignable to parameter of type 'Todo'. Type '{ completed: true; }' is missing the following properties from type 'Todo': title, description`. This is to tell you that you are missing the `title` and `description`.
 
-```tsx
+```ts
 interface Todo {
 	title?: string;
 	description?: string;
@@ -59,7 +59,7 @@ You could add the optional property for all types, but these types also are the 
 
 This is where `Partial` comes in!
 
-```tsx
+```ts
 function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
 	return { ...todo, ...fieldsToUpdate };
 }
@@ -75,7 +75,7 @@ You write `fieldsToUpdate: Partial<Todo>` and now you can update one of the prop
 
 ## Full Code
 
-```tsx
+```ts
 interface Todo {
 	title: string;
 	description: string;
@@ -101,7 +101,7 @@ console.log({ original, updateStatus });
 
 ## Recap
 
-```tsx
+```ts
 type Todo = {
 	title: string;
 	description: string;

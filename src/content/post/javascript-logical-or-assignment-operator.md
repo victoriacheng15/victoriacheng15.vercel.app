@@ -18,7 +18,7 @@ Here’s how it works:
 
 - Example with a number:
 
-```jsx
+```js
 let num = 0;
 num ||= 100;
 
@@ -27,7 +27,7 @@ console.log(num); // ouput: 100
 
 - Example with a string:
 
-```jsx
+```js
 let str = "";
 str ||= "another string";
 
@@ -36,7 +36,7 @@ console.log(str); // output: another string
 
 - Example with an object:
 
-```jsx
+```js
 let obj = null;
 obj ||= { greeting: "Hello" };
 
@@ -45,7 +45,7 @@ console.log(obj); // output: { greeting: "Hello" }
 
 - Example with an array:
 
-```jsx
+```js
 let arr = undefined;
 arr ||= [1, 2, 3];
 

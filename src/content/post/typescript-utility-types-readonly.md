@@ -1,6 +1,6 @@
 ---
 title: "TypeScript Utility Types - Readonly"
-description: "Remember to change me Lorem ipsum dolor sit amet, consectetuer adipiscing eli"
+description: "Readonly utility type in TypeScript ensures immutability for specific properties, preventing accidental modifications."
 publishDate: "2023-08-09"
 tags: [typescript]
 ---
@@ -9,7 +9,7 @@ tags: [typescript]
 
 The `readonly` modifier in TypeScript is a powerful tool that enables you to create immutable object types. By applying `readonly` to specific properties within a type, you designate them as read-only, meaning their values cannot be altered or reassigned after their initial assignment.
 
-```tsx
+```ts
 type Readonly<T> = {
 	readonly [P in keyof T]: T[P];
 };
@@ -19,7 +19,7 @@ type Readonly<T> = {
 
 Consider a scenario where you have a crucial configuration object, and it is most important that one of its properties remains unchangeable.
 
-```tsx
+```ts
 interface Configuration {
 	apiKey: string;
 	serverUrl: string;
@@ -36,7 +36,7 @@ config.serverUrl = "https://api.example.com/v2"; // can change
 
 With the provided code snippet, it allows anyone to change both properties of the object, which might not be desirable. This is where `Readonly` utility type comes to the rescue. By using `Readonly`, you can ensure that specific properties of an object become read-only, preventing any modification after their initial assignment.
 
-```tsx
+```ts
 interface Configuration {
 	apiKey: string;
 	serverUrl: string;
@@ -53,7 +53,7 @@ config.serverUrl = "https://api.example.com/v2"; // cannot change
 
 ## Recap
 
-```tsx
+```ts
 interface Configuration {
 	apiKey: string;
 	serverUrl: string;

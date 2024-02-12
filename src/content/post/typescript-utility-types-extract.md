@@ -9,7 +9,7 @@ tags: [typescript]
 
 The Extract utility type in TypeScript is used to construct a new type by extracting members from a union type that matches a certain criterion. In short, it is only getting a couple of specific values that you need.
 
-```tsx
+```ts
 type Extract<T, U> = T extends U ? T : never
 ```
 
@@ -17,14 +17,14 @@ type Extract<T, U> = T extends U ? T : never
 
 - Example of extracting specific keys from a union:
 
-```tsx
+```ts
 type Role = "ADMIN" | "MANAGER" | "USER";
 type RoleExtracted = Extract<Role, "ADMIN" | "MANAGER">;
 ```
 
 - Example of extracting function types from a union:
 
-```tsx
+```ts
 type Args = string | number | (() => string) | (() => number);
 type FunctionArgs = Extract<Args, Function>;
 ```

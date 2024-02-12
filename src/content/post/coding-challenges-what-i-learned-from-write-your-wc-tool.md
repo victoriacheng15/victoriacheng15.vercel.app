@@ -9,7 +9,7 @@ tags: [coding-challenges, javascript]
 
 It is a challenge created by John Crickett and the purpose of this challenge is to build your own version of the Unix command line tool `wc`. The wc is a command-line tool that can analyze and display information about the number of bytes, lines, words, and characters from a text file or input through the terminal.
 
-```jsx
+```js
 wc[options][files];
 ```
 

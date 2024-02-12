@@ -9,7 +9,7 @@ tags: [javascript]
 
 A JavaScript generator is a special type of function that allows you to generate a sequence of values, one at a time, using the `yield` keyword. Unlike regular functions that run to completion and return a single value, generators can pause their execution and later resume it from where it left off. This unique ability to pause and resume execution makes generators a powerful tool for handling asynchronous operations, iterating over large datasets, and implementing custom iterators.
 
-```jsx
+```js
 function* myGeneratorFunction(num) {
 	// Generator logic with yield statements
 	for (let i = 0; i < num; i++) {
@@ -37,7 +37,7 @@ Next, we have a `generator` function, `dataGenerator(apiUrls)`, which takes an a
 
 We also have an `async function`, `runGenerator(generator)`, that runs the generator and prints the results sequentially. It uses `generator.next()` to get the next value, waits for the Promise to resolve using `await`, and then logs the result using `console.log`. The function continues until `next.done` is true.
 
-```jsx
+```js
 async function fetchApiData(url) {
 	const response = await fetch(url);
 	if (!response.ok) {

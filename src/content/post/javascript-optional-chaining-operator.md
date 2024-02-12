@@ -75,7 +75,7 @@ fetchData()
 
 There are 2 options for this. First, `<p>Country: {user?.address?.country ?? "N/A"}</p>` will be rendering `N/A` if the `country` property doesn't exist. Secondly, `user?.address?.country && <p>Country: {user?.address?.country}</p>}` will not render if the `country` property doesn't exist.
 
-```jsx
+```js
 import React from "react";
 
 const UserProfile = () => {
