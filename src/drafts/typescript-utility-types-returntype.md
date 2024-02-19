@@ -10,7 +10,7 @@ tags: [typescript]
 In TypeScript, `ReturnType<Type>` is a utility type that allows developers to extract the return type of a function or a callable object. This utility type is particularly useful in situtations where you want to capture and work wih the specific type that a function is expected to return, without having to annotate it.
 
 ```ts
-type ReturnType<T extends (...args: any) => any> => 
+type ReturnType<T extends (...args: any) => any> =>
 		T extends (...args: any) => infer R ? R : any
 ```
 
@@ -20,7 +20,7 @@ Example 1: return the type of a function returning a number
 
 ```ts
 function getNumber(): number {
-  return 42;
+	return 42;
 }
 
 type NumberReturnType = ReturnType<typeof getNumber>;
@@ -42,7 +42,7 @@ Example 3: return the type of a function returning an array
 
 ```ts
 function getArray(): number[] {
-  return [1, 2, 3, 4, 5];
+	return [1, 2, 3, 4, 5];
 }
 
 type ArrayReturnType = ReturnType<typeof getArray>;
@@ -63,19 +63,19 @@ The function is designed to return a number, and in this particular instance, th
 
 ```ts
 function getNumber() {
-  return 42;
+	return 42;
 }
 
 type NumberReturnType = ReturnType<typeof getNumber>;
 // NumberReturnType = number
 ```
 
-Example 2: 
+Example 2:
 In certain scenarios, if you receive an array with numbers as input and intend to produce an array with strings as output, it becomes necessary to explicitly specify that the array will have a string type instead of numbers.
 
 ```ts
 function getArray(...arr: number[]): string[] {
-  return [...arr].map(String)
+	return [...arr].map(String);
 }
 type ArrayReturnType = ReturnType<typeof getArray>;
 // ArrayReturnType = string[]
