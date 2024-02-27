@@ -11,18 +11,18 @@ fi
 
 cd src/drafts || exit
 
-echo "Enter the title of the post: " title
+echo "Enter the title of the post: "
 read -r title
-echo "Enter the description of the post: " description
+echo "Enter the description of the post: "
 read -r description
-echo "Enter tags: " tags
+echo "Enter tags: "
 read -r tags
-echo "Enter month: " mm
+echo "Enter month: "
 read -r mm
-echo "Enter day: " dd
+echo "Enter day: "
 read -r dd
 
-slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-zA-Z]+/-/g; s/^-//; s/-$//')
+slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr -d '-' | sed 's/ \{1,\}/ /g' | tr -d ':' | sed 's/ \+/-/g')
 
 year=$(date +%Y)
 month=${mm:-$(date +%m)}
