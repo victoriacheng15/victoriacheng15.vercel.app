@@ -12,29 +12,29 @@ Embark on a thought-provoking journey with 'Start with Why' by Simon Sinek, wher
 ## Sinek’s Strategies:
 
 1. **Clarify Your Purpose:**
-    - Reflect on your personal and organizational values.
-    - Identify the core beliefs that drive your actions.
+   - Reflect on your personal and organizational values.
+   - Identify the core beliefs that drive your actions.
 2. **Define Your Why:**
-    - Clearly articulate the purpose behind your endeavors.
-    - Focus on the deeper reasons for your existence or the existence of your organization.
+   - Clearly articulate the purpose behind your endeavors.
+   - Focus on the deeper reasons for your existence or the existence of your organization.
 3. **Communicate Authentically:**
-    - Craft a compelling narrative that communicates your why.
-    - Share stories that resonate emotionally with your audience.
+   - Craft a compelling narrative that communicates your why.
+   - Share stories that resonate emotionally with your audience.
 4. **Inspire Action:**
-    - Connect with people who share your beliefs.
-    - Encourage others to join your cause by aligning with the shared purpose.
+   - Connect with people who share your beliefs.
+   - Encourage others to join your cause by aligning with the shared purpose.
 5. **Consistency in Actions:**
-    - Align your actions and decisions with your why.
-    - Demonstrate consistency in behavior to build trust and credibility.
+   - Align your actions and decisions with your why.
+   - Demonstrate consistency in behavior to build trust and credibility.
 6. **Stay True to Your Values:**
-    - Resist the temptation to compromise your core values for short-term gains.
-    - Uphold your principles even in the face of challenges.
+   - Resist the temptation to compromise your core values for short-term gains.
+   - Uphold your principles even in the face of challenges.
 7. **Continuous Refinement:**
-    - Periodically revisit and refine your why.
-    - Adapt to changing circumstances while staying true to your overarching purpose.
+   - Periodically revisit and refine your why.
+   - Adapt to changing circumstances while staying true to your overarching purpose.
 8. **Inspire Others to Find Their Why:**
-    - Encourage those around you to explore and articulate their own why.
-    - Foster a culture that values purpose-driven actions.
+   - Encourage those around you to explore and articulate their own why.
+   - Foster a culture that values purpose-driven actions.
 
 ## Recap
 
