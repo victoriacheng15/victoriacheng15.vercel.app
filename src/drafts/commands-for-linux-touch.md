@@ -16,36 +16,39 @@ touch [options] file1 file2 file3
 ```
 
 1. `c` or `-no-create`:
-    - This is to check the specific file. If the file is present, it updates the access, modification, and change time, however, if the file doesn’t exist, it takes no action to create a new file.
-    
-    ```bash
-    touch -c filename
-    ```
-    
+
+   - This is to check the specific file. If the file is present, it updates the access, modification, and change time, however, if the file doesn’t exist, it takes no action to create a new file.
+
+   ```bash
+   touch -c filename
+   ```
+
 2. `t` or `-time`:
-    - The `t` option allows you to specify a custom timestamp for the file's access and modification times. This can be useful in certain scripting or automation scenarios.
-    
-    ```bash
-    touch -t YYYYMMDDhhmm.ss filename
-    
-    # Example: Set the timestamp to January 31, 2023, 14:30:00
-    # touch -t 202301311430.00 filename
-    ```
-    
+
+   - The `t` option allows you to specify a custom timestamp for the file's access and modification times. This can be useful in certain scripting or automation scenarios.
+
+   ```bash
+   touch -t YYYYMMDDhhmm.ss filename
+
+   # Example: Set the timestamp to January 31, 2023, 14:30:00
+   # touch -t 202301311430.00 filename
+   ```
+
 3. `a` or `-time=access`:
-    - The `a` option is used to change only the access time of a file, leaving the modification time unchanged.
-    
-    ```bash
-    touch -a filename
-    ```
-    
+
+   - The `a` option is used to change only the access time of a file, leaving the modification time unchanged.
+
+   ```bash
+   touch -a filename
+   ```
+
 4. `m` or `-time=modify`:
-    - The `m` option is used to change only the modification time of a file, leaving the access time unchanged.
-    
-    ```bash
-    touch -m filename
-    ```
-    
+
+   - The `m` option is used to change only the modification time of a file, leaving the access time unchanged.
+
+   ```bash
+   touch -m filename
+   ```
 
 If you want to learn more about the `touch` command and its options directly in the terminal, you can use the `man` command for the manual.
 
