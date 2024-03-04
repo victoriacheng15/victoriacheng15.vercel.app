@@ -6,8 +6,8 @@ export const projectDetails = [
 	{
 		title: "rest-countries-api-next",
 		techs: [
+			"React (Next.js)",
 			"TypeScript",
-			"Next.js",
 			"Redux ToolKit Query",
 			"Tailwind CSS",
 			"Testing Library",
@@ -16,14 +16,17 @@ export const projectDetails = [
 	},
 	{
 		title: "hacker-news-next",
-		techs: ["TypeScript", "Next.js", "Redux Toolkit", "Chakra UI", "Testing Library", "Vitest"],
+		techs: [
+			"React (Next.js)",
+			"TypeScript",
+			"Redux Toolkit",
+			"Chakra UI",
+			"Testing Library",
+			"Vitest",
+		],
 	},
 	{
-		title: "ai-image-generation",
-		techs: ["TypeScript", "React", "React Router", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-	},
-	{
-		title: "victoriacheng15.vercel.app",
-		techs: ["Astro", "TypeScript", "Tailwind CSS", "Vitest", "Cypress"],
+		title: "articles-extractor",
+		techs: ["Python", "Docker", "Google Sheets", "Raspberry Pi"],
 	},
 ];
