@@ -25,6 +25,25 @@ export function getUniqueTagsWithCount(posts: Post): Array<[string, number]> {
 	return tags.sort((a, b) => b[1] - a[1]);
 }
 
+export function getAllYears(posts: Post) {
+	return posts.flatMap(({ data: { publishDate } }) => [
+		new Date(publishDate).toISOString().split("-")[0],
+	]);
+}
+
+export function getUniqueYears(posts: Post) {
+	return [...new Set(getAllYears(posts))];
+}
+
+export function getUniqueYearsWithoutCount(posts: Post): Array<[string, number]> {
+	const years = [
+		...getAllYears(posts).reduce((acc, year) => {
+			return acc.set(year as string, (acc.get(year as string) || 0) + 1);
+		}, new Map<string, number>()),
+	];
+	return years.sort((a, b) => b[1] - a[1]);
+}
+
 const WORDS_PER_MINUTE = 200;
 
 export function getReadingTime(content: string) {
