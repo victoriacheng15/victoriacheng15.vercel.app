@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets";
+import siteConfig from "@/site-config";
 import type { SiteMeta } from "@/data/siteMeta";
 import BaseHead from "@/components/BaseHead";
-import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import siteConfig from "@/site-config";
+import ThemeToggle from "@/components/ThemeToggle";
+import SocialList from "@/components/SocialList";
+import Menu from "@/components/Menu";
 
 interface Props {
 	meta: SiteMeta;
@@ -22,7 +24,6 @@ const {
 			const root = document.documentElement;
 			const colorThemeMetaTag = document.querySelector("meta[name='theme-color']");
 
-			// get user preference of dark mode, 1st local storage, 2nd browser
 			function getThemePreference() {
 				if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
 					return localStorage.getItem("theme");
@@ -32,15 +33,12 @@ const {
 
 			const isDark = getThemePreference() === "dark";
 
-			// watch document element class attribute and update user preference when it changes.
 			const observer = new MutationObserver(() => {
 				const rootIsDark = root.classList.contains("dark");
-				// set the meta attribute
 				colorThemeMetaTag.setAttribute(
 					"content",
 					siteConfig[rootIsDark ? "themeColorDark" : "themeColorLight"],
 				);
-				// store user preference
 				if (typeof localStorage !== "undefined") {
 					localStorage.setItem("theme", rootIsDark ? "dark" : "light");
 				}
@@ -52,11 +50,40 @@ const {
 		</script>
 	</head>
 	<body>
-		<Navbar />
+		<nav class="bg-gray-900 py-8">
+			<div class="mx-auto w-11/12 max-w-5xl">
+				<section class="flex">
+					<div class="h-12">
+						<Image
+							width={220}
+							height={52}
+							loading="eager"
+							src="/images/victoriacheng15_logo.png"
+							alt="victoriacheng15 logo"
+						/>
+					</div>
+					<ThemeToggle />
+				</section>
+				<hr class="my-4" />
+				<Menu />
+			</div>
+		</nav>
 		{title === "Home" && <Header />}
 		<main class="mx-auto w-11/12 max-w-5xl py-16">
 			<slot />
 		</main>
-		<Footer />
+		<footer class="mt-auto bg-gray-900 py-8 text-slate-100">
+			<div class="mx-auto w-11/12 max-w-5xl space-y-8">
+				<div class="flex w-full flex-col items-center justify-between gap-8 sm:flex-row">
+					<SocialList />
+					<Menu />
+				</div>
+				<p class="text-center">
+					Copyright &copy; {new Date().getFullYear()}
+					<span aria-label="penguin emoji">🐧</span>
+					Victoria Cheng
+				</p>
+			</div>
+		</footer>
 	</body>
 </html>
