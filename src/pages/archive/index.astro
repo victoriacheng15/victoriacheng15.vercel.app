@@ -1,0 +1,35 @@
+---
+import PageLayout from "@/layouts/Base";
+import { getUniqueYearsWithoutCount } from "@/utils";
+import { getCollection } from "astro:content";
+
+const meta = {
+	title: "Archive posts",
+	description: "all archived posts baed on years",
+};
+
+const allPosts = await getCollection("post");
+const allYears = getUniqueYearsWithoutCount(allPosts);
+
+const sortedYears = allYears.sort((a, b) => Number(a[0]) - Number(b[0]));
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-6">Archive posts by years</h1>
+	<ul class="grid justify-items-start gap-4 text-bgColor">
+		{
+			sortedYears.map(([year, val]) => (
+				<li class="bg-accent p-2 duration-300 ease-in-out hover:rounded-xl">
+					<a
+						class="text-lg"
+						href={`/archive/${year}`}
+						title={`View posts with the year: ${year}`}
+						rel="prefetch"
+					>
+						{year} ({val})
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</PageLayout>

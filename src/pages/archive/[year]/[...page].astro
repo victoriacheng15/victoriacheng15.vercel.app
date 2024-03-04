@@ -1,0 +1,73 @@
+---
+import type { GetStaticPaths, Page } from "astro";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import { getUniqueYears, sortMDByDate } from "@/utils";
+import PageLayout from "@/layouts/Base";
+import PostPreview from "@/components/blog/PostPreview";
+import Pagination from "@/components/Paginator";
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+	const allPosts = await getCollection("post");
+	const allPostsByDate = sortMDByDate(allPosts);
+	const uniqueYears = getUniqueYears(allPostsByDate);
+
+	return uniqueYears.flatMap((year) => {
+		const filterPosts = allPostsByDate.filter((post) => {
+			const date = new Date(post.data.publishDate).toISOString().split("-")[0];
+			return date === year;
+		});
+
+		return paginate(filterPosts, {
+			params: { year },
+			pageSize: 30,
+		});
+	});
+};
+
+interface Props {
+	page: Page<CollectionEntry<"post">>;
+}
+
+const { page } = Astro.props;
+const { year } = Astro.params;
+
+const meta = {
+	title: `Year: ${year}`,
+	description: `View all posts with the year - ${year}`,
+};
+
+const paginationProps = {
+	...(page.url.prev && {
+		prevUrl: {
+			url: page.url.prev,
+			text: `← Previous Page`,
+		},
+	}),
+	...(page.url.next && {
+		nextUrl: {
+			url: page.url.next,
+			text: `Next Page →`,
+		},
+	}),
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-6 flex items-center">
+		<a href="/archive/" class="text-accent sm:hover:underline">Year:</a>
+		<span class="ml-2 text-xl">#{year}</span>
+	</h1>
+	<section aria-label="Blog post list">
+		<ul class="space-y-4 pb-4">
+			{
+				page.data.map((p) => (
+					<li class="rounded-lg border-2 border-transparent p-1 duration-300 ease-in-out hover:border-accent">
+						<PostPreview post={p} as="h2" />
+					</li>
+				))
+			}
+		</ul>
+		<Pagination {...paginationProps} />
+	</section>
+</PageLayout>
