@@ -32,7 +32,7 @@ Let's take a journey through the steps involved in resolving a familiar domain l
 8. **Website Access:**
     - Your computer now knows where to find Google's servers. It establishes a connection, and voilà – you seamlessly access "[www.google.com](http://www.google.com/)."
 
-## **TL;DR:**
+## TL;DR:
 
 When you type "[www.google.com](http://www.google.com/)" in your browser, your computer goes through a process involving DNS queries to find the IP address. It checks local cache, consults root and top-level domain servers, reaches the authoritative DNS server for "google.com," gets the IP address, and finally, your computer can access Google's servers.
 
