@@ -1,12 +1,18 @@
 ---
 import { MENU_LINKS } from "@/data/constants";
 
+interface Props {
+	TopNav: boolean;
+}
+
 const url = new URL(Astro.request.url);
+const { TopNav } = Astro.props;
+const links = TopNav ? MENU_LINKS.slice(0, 3) : MENU_LINKS;
 ---
 
 <ul class="flex items-center gap-6">
 	{
-		MENU_LINKS.map((link) => (
+		links.map((link) => (
 			<li>
 				<a
 					href={link.path}
