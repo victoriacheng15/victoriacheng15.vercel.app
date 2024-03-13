@@ -65,7 +65,7 @@ const {
 					<ThemeToggle />
 				</section>
 				<hr class="my-4" />
-				<Menu />
+				<Menu TopNav={true} />
 			</div>
 		</nav>
 		{title === "Home" && <Header />}
@@ -76,7 +76,7 @@ const {
 			<div class="mx-auto w-11/12 max-w-5xl space-y-8">
 				<div class="flex w-full flex-col items-center justify-between gap-8 sm:flex-row">
 					<SocialList />
-					<Menu />
+					<Menu TopNav={false} />
 				</div>
 				<p class="text-center">
 					Copyright &copy; {new Date().getFullYear()}
