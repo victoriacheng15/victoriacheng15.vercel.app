@@ -26,7 +26,9 @@ Google Apps Script, a JavaScript-based language, automates and enhances tasks ac
      }
      ```
 3. **Rename the Function:**
+
    - Change the function name to `addCheckboxes`:
+
      ```jsx
      // Define a function named addCheckboxes
      function addCheckboxes() {
@@ -64,6 +66,7 @@ Google Apps Script, a JavaScript-based language, automates and enhances tasks ac
      	});
      }
      ```
+
 4. **Run the Script:**
    - Click the "Run" button.
    - A pop-up will appear, stating "Authorization required. This project requires your permission to access your data."
