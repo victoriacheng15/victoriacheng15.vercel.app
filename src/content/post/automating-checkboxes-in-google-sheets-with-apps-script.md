@@ -20,7 +20,7 @@ Google Apps Script, a JavaScript-based language, automates and enhances tasks ac
    - Click on `Extensions` and then select `Apps Script`
 2. **Initialize the Script:**
    - The initial code will look like this:
-     ```jsx
+     ```js
      function myFunction() {
      	//
      }
@@ -29,7 +29,7 @@ Google Apps Script, a JavaScript-based language, automates and enhances tasks ac
 
    - Change the function name to `addCheckboxes`:
 
-     ```jsx
+     ```js
      // Define a function named addCheckboxes
      function addCheckboxes() {
      	// Get the active sheet of the spreadsheet
@@ -48,7 +48,7 @@ Google Apps Script, a JavaScript-based language, automates and enhances tasks ac
      		const firstName = person[1];
      		const lastName = person[2];
      		const email = person[3];
-     		const iunviteCol = person[4];
+     		const inviteCol = person[4];
 
      		// Check if all required data is present and invite column is empty
      		if (firstName && lastName && email && iunviteCol === "") {
