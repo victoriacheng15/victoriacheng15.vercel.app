@@ -17,7 +17,7 @@ tags: [linux]
 mkdir directory1
 ```
 
-You can you use `-v`  option to make `mkdir` more verbose, showing each directory as it is created.
+You can you use `-v` option to make `mkdir` more verbose, showing each directory as it is created.
 
 ```bash
 mkdir -v directory1
