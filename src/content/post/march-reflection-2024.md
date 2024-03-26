@@ -21,8 +21,6 @@ In life, we face numerous decisions, from simple to complex. The Stacey Matrix o
     1. In uncertain situations with multiple factors at play, like deciding whether to relocate for a job or pursue further education, embrace experimentation and adaptability. Allow solutions to emerge naturally instead of seeking predetermined answers.
 4. **Chaotic Decisions:** 
     1. During crises like dealing with unexpected health issues or sudden financial setbacks, prioritize stabilizing the situation before devising long-term solutions.
-5. **Disorder:** 
-    1. Recognize situations lacking certainty and agreement, indicating confusion or dysfunction. Focus on establishing clarity and consensus before making decisions.
 
 By applying the Stacey Matrix principles to personal life, individuals can navigate various decision-making scenarios with greater confidence and effectiveness.
 
