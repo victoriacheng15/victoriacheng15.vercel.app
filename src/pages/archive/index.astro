@@ -3,15 +3,17 @@ import PageLayout from "@/layouts/Base";
 import { getUniqueYearsWithoutCount } from "@/utils";
 import { getCollection } from "astro:content";
 
-const meta = {
-	title: "Archive posts",
-	description: "all archived posts baed on years",
-};
-
 const allPosts = await getCollection("post");
 const allYears = getUniqueYearsWithoutCount(allPosts);
-
 const sortedYears = allYears.sort((a, b) => Number(a[0]) - Number(b[0]));
+
+const beginning = Number(sortedYears?.[0]?.[0]);
+const ending = Number(sortedYears?.[sortedYears.length - 1]?.[0]);
+
+const meta = {
+	title: "Archive posts",
+	description: `Explore archived posts from ${beginning} to ${ending}. Journey through the years and revisit past content.`,
+};
 ---
 
 <PageLayout meta={meta}>
