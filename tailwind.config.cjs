@@ -55,6 +55,11 @@ module.exports = {
 						},
 						strong: {
 							fontWeight: "700",
+							color: "var(--theme-bold)",
+						},
+						em: {
+							"text-decoration": "underline",
+							color: "var(--theme-underline)",
 						},
 						code: {
 							border: "1px solid #666",
