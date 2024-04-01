@@ -5,7 +5,6 @@ publishDate: "2024-04-02"
 tags: [python]
 ---
 
-
 ## What is a Python Tuple?
 
 A Tuple Python is an ordered collection of elements, much like a list. However, what sets tuples apart is their immutability. Once created, the elements within a tuple cannot be modified, added or removed. This immutability lends tuples a sense of stability and reliability, making them useful in scenarios where data integrity is paramount.
@@ -29,7 +28,7 @@ print(my_tuple[3])  # Output: 'a'
 ```python
 my_tuple = (1, 2, 2, 3, 4, 2)
 
-print(my_tuple.count(2))  
+print(my_tuple.count(2))
 # Output: 3 (as '2' appears three times in the tuple)
 ```
 
@@ -38,9 +37,9 @@ print(my_tuple.count(2))
 ```python
 my_tuple = ("a", "b", "c", "a", "d")
 
-print(my_tuple.index("a"))  
+print(my_tuple.index("a"))
 # Output: 0 (index of first occurrence of 'a')
-print(my_tuple.index("b"))  
+print(my_tuple.index("b"))
 # Output: 1 (index of first occurrence of "b")
 ```
 
@@ -73,9 +72,9 @@ print(three) # Output: 3
 ### Syntax:
 
 - **Tuples**: Defined using _parentheses_ and elements separated by commas.
-    - Example: `(1, 2, 3)`
+  - Example: `(1, 2, 3)`
 - **Lists**: Defined using _square brackets_ and elements separated by commas.
-    - Example: `[1, 2, 3]`
+  - Example: `[1, 2, 3]`
 
 ### Mutability:
 

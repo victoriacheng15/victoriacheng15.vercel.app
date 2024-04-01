@@ -71,14 +71,14 @@ set2 = {3, 4, 5}
 
 # Using difference() method
 difference_result = set1.difference(set2)
-print("Using difference() method:", difference_result)  
+print("Using difference() method:", difference_result)
 # Output: {1, 2}
-print("Original set1 after difference():", set1)  
+print("Original set1 after difference():", set1)
 # 👉 Output: {1, 2, 3} (unchanged)
 
 # Using difference_update() method
 set1.difference_update(set2)
-print("Original set1 after difference_update()", set1)  
+print("Original set1 after difference_update()", set1)
 # 👉 Output: {1, 2}
 ```
 
@@ -104,9 +104,9 @@ set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 
 intersection_result = set1.intersection(set2)
-print("Using intersection() method:", intersection_result)  
+print("Using intersection() method:", intersection_result)
 # Output: {3}
-print("Original set1 after intersection():", set1)  
+print("Original set1 after intersection():", set1)
 # 👉 Output: {1, 2, 3} (unchanged)
 
 # Using intersection_update() method
@@ -114,7 +114,7 @@ set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 
 set1.intersection_update(set2)
-print("Original set1 after intersection_update():", set1)  
+print("Original set1 after intersection_update():", set1)
 # 👉 Output: {3}
 ```
 
@@ -195,7 +195,7 @@ print(my_set)  # Output: {1, 2, 4}
 
 ### `symmetric_difference()` vs `symmetric_difference_update()`:
 
-- `symmetric_difference()`:  Returns a new set containing elements that are present in either of the sets, but not in both. It does _not modify the original sets_ but rather returns a new set with elements that are unique to each set.
+- `symmetric_difference()`: Returns a new set containing elements that are present in either of the sets, but not in both. It does _not modify the original sets_ but rather returns a new set with elements that are unique to each set.
 - `symmetric_difference_update()`: _Modifies the original_ set by inserting the symmetric differences from this set and another set.
 
 ```python
@@ -204,9 +204,9 @@ set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 
 symmetric_difference_result = set1.symmetric_difference(set2)
-print("Using symmetric_difference() method:", symmetric_difference_result)  
+print("Using symmetric_difference() method:", symmetric_difference_result)
 # Output: {1, 2, 4, 5}
-print("Original set1 after symmetric_difference():", set1)  
+print("Original set1 after symmetric_difference():", set1)
 # 👉 Output: {1, 2, 3} (unchanged)
 
 # Using symmetric_difference_update()
@@ -214,7 +214,7 @@ set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 
 set1.symmetric_difference_update(set2)
-print("Original set1 after symmetric_difference_update():", set1)  
+print("Original set1 after symmetric_difference_update():", set1)
 # 👉 Output: {1, 2, 4, 5}
 
 ```
