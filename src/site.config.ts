@@ -2,7 +2,7 @@ const siteMeta = {
 	author: "Victoria Cheng",
 	title: "Victoria Cheng 🐧",
 	description:
-		"As a software developer, my goal is to continuously grow and improve my skills. I am interested in staying current with the latest tech trends and making meaningful contributions to open-source projects.",
+		"Software developer passionate about growth & tech trends. Skilled in JavaScript, TypeScript, Python, Docker. Continuously learning.",
 	lang: "en-us",
 	ogLocale: "en-us",
 	githubUrl: "https://github.com/victoriacheng15/victoriacheng15.vercel.app",
