@@ -17,7 +17,7 @@
 		"cypress:run": "npx cypress run"
 	},
 	"devDependencies": {
-		"@astrojs/mdx": "^2.2.1",
+		"@astrojs/mdx": "^2.2.2",
 		"@astrojs/sitemap": "^3.1.1",
 		"@astrojs/tailwind": "5.1.0",
 		"@iconify-json/ph": "^1.1.11",
