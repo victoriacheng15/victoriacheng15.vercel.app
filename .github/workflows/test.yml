@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [main]
+    paths: [src/**]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18.x, 20.x]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: "npm"
+      - name: install and run test
+        run: |
+          npm ci
+          npm run test
