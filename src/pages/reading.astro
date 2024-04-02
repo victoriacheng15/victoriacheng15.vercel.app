@@ -1,0 +1,30 @@
+---
+import PageLayout from "@/layouts/Base";
+import { allBooks } from "@/data/books";
+
+const meta = {
+	title: "Reaing",
+	description:
+		"Explore my reading journey since 2022 with this comprehensive list of books I've enjoyed.",
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-6">Reading</h1>
+	<p class="mb-10 text-lg">
+		I'm working on developing a habit of choosing book reading over aimlessly scrolling through
+		social media. Here's a rundown of the books I've managed to dive into so far! 📚
+	</p>
+	{
+		allBooks.map(({ year, books }) => (
+			<section class="mb-10">
+				<h2 class="mb-2 text-2xl font-bold tracking-wider">{year}</h2>
+				<ul class="grid gap-4">
+					{books.map((title) => (
+						<li class="ml-8 list-disc text-lg">{title}</li>
+					))}
+				</ul>
+			</section>
+		))
+	}
+</PageLayout>
