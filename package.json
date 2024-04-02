@@ -12,7 +12,6 @@
 		"format": "prettier -w ./src ./src/**/*.astro",
 		"test": "vitest --run",
 		"test:coverage": "vitest --coverage",
-		"prepare": "husky install",
 		"cypress:open": "npx cypress open",
 		"cypress:run": "npx cypress run"
 	},
