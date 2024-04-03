@@ -2,6 +2,7 @@
 import PageLayout from "@/layouts/Base";
 import { getUniqueYearsWithoutCount } from "@/utils";
 import { getCollection } from "astro:content";
+import TagList from "@/components/TagList";
 
 const allPosts = await getCollection("post");
 const allYears = getUniqueYearsWithoutCount(allPosts);
@@ -21,7 +22,7 @@ const meta = {
 	<ul class="grid justify-items-start gap-4 text-bgColor">
 		{
 			sortedYears.map(([year, val]) => (
-				<li class="bg-accent p-2 duration-300 ease-in-out hover:rounded-xl">
+				<TagList>
 					<a
 						class="text-lg"
 						href={`/archive/${year}`}
@@ -30,7 +31,7 @@ const meta = {
 					>
 						{year} ({val})
 					</a>
-				</li>
+				</TagList>
 			))
 		}
 	</ul>

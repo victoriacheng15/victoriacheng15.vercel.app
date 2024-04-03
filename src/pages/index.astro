@@ -5,6 +5,7 @@ import { sortMDByDate } from "@/utils";
 import PostPreview from "@/components/blog/PostPreview";
 import SkillList from "@/components/SkillList";
 import Form from "@/components/Form";
+import PostPreivewList from "@/components/blog/PostPreivewList";
 
 const MAX_POSTS = 5;
 const allPosts = await getCollection("post");
@@ -21,9 +22,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		<ul class="space-y-4">
 			{
 				allPostsByDate.map((p) => (
-					<li class="rounded-lg border-2 border-transparent p-1 duration-300 ease-in-out hover:border-accent">
+					<PostPreivewList>
 						<PostPreview post={p} />
-					</li>
+					</PostPreivewList>
 				))
 			}
 		</ul>
