@@ -2,6 +2,7 @@
 import PageLayout from "@/layouts/Base";
 import { getUniqueTagsWithCount } from "@/utils";
 import { getCollection } from "astro:content";
+import TagList from "@/components/TagList";
 
 const meta = {
 	title: "All Tags",
@@ -18,7 +19,7 @@ const allTags = getUniqueTagsWithCount(allPosts);
 	<ul class="flex flex-wrap gap-4 text-bgColor">
 		{
 			allTags.map(([tag, val]) => (
-				<li class="bg-accent p-2 duration-300 ease-in-out hover:rounded-xl">
+				<TagList>
 					<a
 						class="text-lg"
 						href={`/tags/${tag}`}
@@ -27,7 +28,7 @@ const allTags = getUniqueTagsWithCount(allPosts);
 					>
 						{tag} ({val})
 					</a>
-				</li>
+				</TagList>
 			))
 		}
 	</ul>
