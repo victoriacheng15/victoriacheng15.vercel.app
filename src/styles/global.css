@@ -5,28 +5,28 @@
 @layer base {
 	:root {
 		color-scheme: light;
-		--theme-bg: rgb(245 245 245);
-		--theme-link: rgb(21 128 61);
-		--theme-text: rgb(34 39 42);
-		--theme-accent: rgb(30 58 138);
-		--theme-accent-2: rgb(204 93 2);
-		--theme-quote: rgb(114 35 179);
-		--theme-menu-bg: rgb(250 250 250 / 0.85);
-		--theme-bold: rgb(179, 88, 118);
-		--theme-underline: rgb(15, 92, 43);
+		--theme-bg: #d1d5db;
+		--theme-link: #064e3b;
+		--theme-text: #22272a;
+		--theme-accent: #1e3a8a;
+		--theme-accent-2: #9a3412;
+		--theme-quote: #6b21a8;
+		--theme-menu-bg: #d1d5db;
+		--theme-bold: #9d174d;
+		--theme-underline: #0f5c2b;
 	}
 
 	:root.dark {
 		color-scheme: dark;
 		--theme-bg: #1f2937;
-		--theme-link: rgb(74 222 128);
-		--theme-text: rgb(243 244 246);
-		--theme-accent: rgb(96 165 250);
-		--theme-accent-2: rgb(255 209 109);
-		--theme-quote: rgb(204 255 182);
-		--theme-menu-bg: rgba(29 31 33 0.85);
-		--theme-bold: rgb(255, 164, 180);
-		--theme-underline: rgb(99, 222, 143);
+		--theme-link: #34d399;
+		--theme-text: #f1f5f9;
+		--theme-accent: #60a5fa;
+		--theme-accent-2: #fdba74;
+		--theme-quote: #d8b4fe;
+		--theme-menu-bg: #1d1f21d9;
+		--theme-bold: #f9a8d4;
+		--theme-underline: #63de8f;
 	}
 
 	html {
