@@ -2,7 +2,7 @@
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
-import { getUniqueYears, sortMDByDate } from "@/utils";
+import { getUniqueYears, sortMDByDate, setPaginationProps } from "@/utils";
 import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
 import ReturnHeading from "@/components/ReturnHeading";
@@ -39,20 +39,7 @@ const meta = {
 	description: `View all posts with the year - ${year}`,
 };
 
-const paginationProps = {
-	...(page.url.prev && {
-		prevUrl: {
-			url: page.url.prev,
-			text: `← Previous Page`,
-		},
-	}),
-	...(page.url.next && {
-		nextUrl: {
-			url: page.url.next,
-			text: `Next Page →`,
-		},
-	}),
-};
+const paginationProps = setPaginationProps(page);
 ---
 
 <PageLayout meta={meta}>

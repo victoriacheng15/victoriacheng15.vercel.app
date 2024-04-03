@@ -2,7 +2,7 @@
 import type { Page, GetStaticPathsOptions } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
-import { getUniqueTags, sortMDByDate } from "@/utils";
+import { getUniqueTags, sortMDByDate, setPaginationProps } from "@/utils";
 import { POSTS_PER_PAGE } from "@/data/constants";
 import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
@@ -30,20 +30,7 @@ const meta = {
 		"A collection of posts that I wrote to sharing my knowledge of various topcis such as TypeScript, React, Node.js and more!",
 };
 
-const paginationProps = {
-	...(page.url.prev && {
-		prevUrl: {
-			url: page.url.prev,
-			text: `← Previous Posts`,
-		},
-	}),
-	...(page.url.next && {
-		nextUrl: {
-			url: page.url.next,
-			text: `Next Posts →`,
-		},
-	}),
-};
+const paginationProps = setPaginationProps(page);
 ---
 
 <PageLayout meta={meta}>
