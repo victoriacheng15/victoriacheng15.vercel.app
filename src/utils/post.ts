@@ -1,3 +1,4 @@
+import type { Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 
 type Post = Array<CollectionEntry<"post">>;
@@ -51,4 +52,21 @@ export function getReadingTime(content: string) {
 	const clean = content.replace(/<\/?[^>]+(>|$)/g, "");
 	const numberOfWords = clean.split(/\s/g).length;
 	return Math.ceil(numberOfWords / WORDS_PER_MINUTE);
+}
+
+export function setPaginationProps(page: Page<CollectionEntry<"post">>) {
+	return {
+		...(page.url.prev && {
+			prevUrl: {
+				url: page.url.prev,
+				text: `← Previous Posts`,
+			},
+		}),
+		...(page.url.next && {
+			nextUrl: {
+				url: page.url.next,
+				text: `Next Posts →`,
+			},
+		}),
+	};
 }
