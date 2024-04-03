@@ -7,5 +7,6 @@ export {
 	getUniqueYears,
 	getUniqueYearsWithoutCount,
 	getReadingTime,
+	setPaginationProps,
 } from "./post";
 export { getPinnedProjects } from "./fetchProjectsAPI";
