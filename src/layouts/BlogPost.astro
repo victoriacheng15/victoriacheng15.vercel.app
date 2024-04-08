@@ -28,11 +28,11 @@ const { headings } = await post.render();
 						{headings.map(({ depth, slug, text }) => (
 							<li class="line-clamp-2 hover:text-accent">
 								<a
-									class={`block ${depth <= 2 ? "mt-3" : "mt-2 pl-3 text-[0.6875rem]"}`}
+									class={`block ${depth <= 2 ? "mt-3" : "mt-2 pl-3 text-[0.75rem]"}`}
 									href={`#${slug}`}
 									aria-label={`Scroll to section: ${text}`}
 								>
-									<span>{"#".repeat(depth)}</span> {text}
+									# {text}
 								</a>
 							</li>
 						))}
