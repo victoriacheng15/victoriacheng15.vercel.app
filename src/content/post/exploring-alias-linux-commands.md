@@ -1,5 +1,5 @@
 ---
-title: "Commands for Linux - alias"
+title: "Exploring alias - Linux Commands"
 description: "Discover the power of Linux commands with our guide on using 'alias.' Streamline your workflow and explore awesome tips for efficient terminal operations."
 publishDate: "2024-01-18"
 tags: [linux]
