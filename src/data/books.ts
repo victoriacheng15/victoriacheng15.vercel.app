@@ -41,7 +41,6 @@ const BOOKS = [
 				title:
 					"Limitless: Upgrade Your Brain, Learn Anything Faster, and Unlock Your Exceptional Life",
 			},
-			{ title: "101 Tips for Becoming a Better Developer" },
 			{ title: "Deep Work: Rules for Focused Success in a Distracted World" },
 			{ title: "Clean Code: A Handbook of Agile Software Craftsmanship" },
 		],
