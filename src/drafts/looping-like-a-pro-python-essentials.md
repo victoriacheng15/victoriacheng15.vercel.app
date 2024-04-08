@@ -34,7 +34,7 @@ fruits_list = ["apple", "banana", "cherry"]
 
 for fruit in fruits_list:
     print(fruit)
-    
+
 """
 Output:
 apple
@@ -42,6 +42,7 @@ banana
 cherry
 """
 ```
+
 ### Looping Through a Tuple
 
 ```python
@@ -49,7 +50,7 @@ fruits_tuple = ("apple", "banana", "cherry")
 
 for fruit in fruits_tuple:
     print(fruit)
-    
+
 """
 Output:
 apple
@@ -160,7 +161,7 @@ index = 0  # Initialize index
 while index < len(keys):
     key = keys[index]
     print(f"index: {index}, key: {key}")
-    index += 1 
+    index += 1
 
 """
 Output:
@@ -218,7 +219,7 @@ for item in fruits:
         break
 else:
     print("Watermelon is not found in the set.")
-	
+
 """
 Output:
 Watermelon is not found in the set.

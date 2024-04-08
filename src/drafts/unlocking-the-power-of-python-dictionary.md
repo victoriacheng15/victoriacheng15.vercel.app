@@ -76,7 +76,7 @@ Remove all the elements from the dictionary
 ```python
 students.clear()
 
-print("After clearing the dictionary:", students)  
+print("After clearing the dictionary:", students)
 # Output: {}
 ```
 
@@ -86,7 +86,7 @@ Returns a copy of the dictionary
 
 ```python
 students_copy = students.copy()
-print("Copy of the dictionary:", students_copy, indent=2)  
+print("Copy of the dictionary:", students_copy, indent=2)
 # This will be empty since we cleared it with the method above
 # Output: {}
 ```
@@ -131,7 +131,7 @@ Returns the value of the specified key
 
 ```python
 viktor_info = new_students.get("Viktor", {})
-print("Viktor's info using get():", viktor_info)  
+print("Viktor's info using get():", viktor_info)
 
 """
 Output:
@@ -140,7 +140,7 @@ Viktor's info using get(): {'age': 20, 'grades': {'Math': 85, 'Science': 90, 'Hi
 
 # get Viktor's age using a chain of get() functions
 viktor_age = new_students.get("Viktor").get("age")
-print("Viktor's age using get():", viktor_age) 
+print("Viktor's age using get():", viktor_age)
 # Output: Viktor's age using get(): 20
 ```
 
@@ -156,10 +156,10 @@ print(new_students.items())
 Output:
 dict_items(
   [
-    ('Viktor', 
+    ('Viktor',
       {'age': 20, 'grades': {'Math': 85, 'Science': 90, 'History': 78}}
-    ), 
-    ('Emma', 
+    ),
+    ('Emma',
       {'age': 20, 'grades': {'Math': 85, 'Science': 90, 'History': 78}}
     )
   ]
@@ -176,7 +176,7 @@ print("Keys in students dictionary:")
 print(new_students.keys())
 
 """
-Output: 
+Output:
 dict_keys(
   ['Viktor', 'Emma']
 )
