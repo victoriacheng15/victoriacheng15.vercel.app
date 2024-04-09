@@ -77,7 +77,7 @@ Remove all the elements from the dictionary
 students.clear()
 
 print("After clearing the dictionary:", students)
-# Output: {}
+# After clearing the dictionary: {}
 ```
 
 ### copy()
@@ -88,7 +88,7 @@ Returns a copy of the dictionary
 students_copy = students.copy()
 print("Copy of the dictionary:", students_copy, indent=2)
 # This will be empty since we cleared it with the method above
-# Output: {}
+# Copy of the dictionary: {}
 ```
 
 ### fromkeys()
@@ -98,12 +98,14 @@ Return a dictionary with the specific keys and value
 ```python
 keys = ["Viktor", "Emma"]
 values = {"age": 20, "grades": {"Math": 85, "Science": 90, "History": 78}}
+
 new_students = dict.fromkeys(keys, values)
+
 print("New students dictionary:")
 print(json.dumps(new_students, indent=2))
 
 """
-Output:
+New students dictionary:
 {
   "Viktor": {
     "age": 20,
@@ -134,14 +136,13 @@ viktor_info = new_students.get("Viktor", {})
 print("Viktor's info using get():", viktor_info)
 
 """
-Output:
 Viktor's info using get(): {'age': 20, 'grades': {'Math': 85, 'Science': 90, 'History': 78}}
 """
 
 # get Viktor's age using a chain of get() functions
 viktor_age = new_students.get("Viktor").get("age")
 print("Viktor's age using get():", viktor_age)
-# Output: Viktor's age using get(): 20
+# Viktor's age using get(): 20
 ```
 
 ### items()
@@ -153,7 +154,7 @@ print("Items in students dictionary:")
 print(new_students.items())
 
 """
-Output:
+Items in students dictionary:
 dict_items(
   [
     ('Viktor',
@@ -176,7 +177,7 @@ print("Keys in students dictionary:")
 print(new_students.keys())
 
 """
-Output:
+Keys in students dictionary:
 dict_keys(
   ['Viktor', 'Emma']
 )
@@ -193,7 +194,7 @@ print("Removed Viktor's info:")
 print(json.dumps(viktor_info, indent=2))
 
 """
-Output:
+Removed Viktor's info:
 {
   "age": 20,
   "grades": {
@@ -208,7 +209,7 @@ print("Students dictionary after popping Viktor's info:")
 print(json.dumps(new_students, indent=2))
 
 """
-Output:
+Students dictionary after popping Viktor's info:
 {
   "Emma": {
     "age": 20,
@@ -232,7 +233,7 @@ print("Last inserted key-value pair removed:")
 print(last_inserted)
 
 """
-Output:
+Last inserted key-value pair removed:"
 ('Emma', {'age': 20, 'grades': {'Math': 85, 'Science': 90, 'History': 78}})
 """
 
@@ -240,7 +241,7 @@ print("Students dictionary after popping last inserted key-value pair:")
 print(json.dumps(new_students, indent=2))
 
 """
-Output: {}
+Students dictionary after popping last inserted key-value pair: {}
 """
 ```
 
@@ -254,7 +255,6 @@ print("Value of Viktor using setdefault:")
 print(json.dumps(value, indent=2))
 
 """
-Output:
 Value of Viktor using setdefault:
 {
   "age": 25,
@@ -270,7 +270,6 @@ print("Updated students dictionary:")
 print(json.dumps(new_students, indent=2))
 
 """
-Output:
 Updated students dictionary:
 {
   "Viktor": {
@@ -296,7 +295,6 @@ print("Updated Viktor's grades:")
 print(json.dumps(new_students["Viktor"]["grades"], indent=2))
 
 """
-Output:
 Updated Viktor's grades:
 {
   "Math": 94,
@@ -315,7 +313,6 @@ print("Values in students dictionary:")
 print(new_students.values())
 
 """
-Output:
 Values in students dictionary:
 dict_values(
   [
