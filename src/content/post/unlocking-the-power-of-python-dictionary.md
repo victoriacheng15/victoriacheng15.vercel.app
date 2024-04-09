@@ -233,7 +233,7 @@ print("Last inserted key-value pair removed:")
 print(last_inserted)
 
 """
-Last inserted key-value pair removed:"
+Last inserted key-value pair removed:
 ('Emma', {'age': 20, 'grades': {'Math': 85, 'Science': 90, 'History': 78}})
 """
 
