@@ -218,11 +218,11 @@ for item in fruits:
         print("Found a watermelon!")
         break
 else:
-    print("Watermelon is not found in the set.")
+    print("Watermelon is not found.")
 
 """
 Output:
-Watermelon is not found in the set.
+Watermelon is not found.
 """
 ```
 
