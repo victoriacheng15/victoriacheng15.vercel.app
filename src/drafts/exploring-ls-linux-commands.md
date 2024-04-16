@@ -7,7 +7,7 @@ tags: [linux]
 
 ## What is ls command in Linux?
 
-At irs core, *ls* stands for list. It is a command-line utility that reveals the contents of a directory. Whether you’re exploring the file system, managing files, or simpley curious abut what’s in a folder, `ls` is your go-to tool. Let’s delve deeper into its functionality and explore some of its options
+At irs core, _ls_ stands for list. It is a command-line utility that reveals the contents of a directory. Whether you’re exploring the file system, managing files, or simpley curious abut what’s in a folder, `ls` is your go-to tool. Let’s delve deeper into its functionality and explore some of its options
 
 ## Understanding the Basics
 
@@ -37,7 +37,7 @@ ls -a
 
 ### -h
 
-When used in conjunction with the long format option, this option displays file sizes in a human-readable format,  such as kilobytes (K), megabytes (M), or gigabytes (G).
+When used in conjunction with the long format option, this option displays file sizes in a human-readable format, such as kilobytes (K), megabytes (M), or gigabytes (G).
 
 ```bash
 ls -lh
@@ -53,7 +53,7 @@ ls -R
 
 ### -t
 
-Sorting files by *modification time*, with the newest files listed first.
+Sorting files by _modification time_, with the newest files listed first.
 
 ```bash
 ls -t
@@ -61,7 +61,7 @@ ls -t
 
 ### -S
 
-Sorting files by *size*, with the largest files listed first.
+Sorting files by _size_, with the largest files listed first.
 
 ```bash
 ls -S

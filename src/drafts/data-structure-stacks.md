@@ -5,10 +5,9 @@ publishDate: "2024-04-18"
 tags: [dsa]
 ---
 
-
 ## What is a Stack?
 
-A stack is a fundamental data structure that adheres to the *Last In, First Out* (LIFO) principle. In simple terms, elements can be added or removed only from the top of the stack.
+A stack is a fundamental data structure that adheres to the _Last In, First Out_ (LIFO) principle. In simple terms, elements can be added or removed only from the top of the stack.
 
 Think of a stack of plates in a cafeteria; you can only add a new plate to the top or remove the top plate. This straightforward analogy illustrates the essence of a stack in computer science.
 
@@ -52,10 +51,10 @@ class Stack {
 		return this.items.length;
 	}
 
-    // Print all the elements in the stack
-    print() {
-        console.log(this.items);
-    }
+	// Print all the elements in the stack
+	print() {
+		console.log(this.items);
+	}
 }
 
 const stack = new Stack();
@@ -120,7 +119,7 @@ if __name__ == "__main__":
     stack.push(5)
     stack.push(10)
     stack.push(15)
-    
+
     print("Stack:")
     stack.display()  # Output: [5, 10, 15]
 
