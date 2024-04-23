@@ -20,9 +20,9 @@ Here's a breakdown of each part:
 - **expression**: This is the operation you want to perform on each item in the iterable to create the elements of the new list.
 - **item**: This represents each individual item in the iterable.
 - **iterable**: This is the collection of items you want to iterate over, such as a _list_, _tuple_, or _range_.
-- **ifcondition (optional)**: This part allows you to filter the items based on a condition. Only items for which the condition evaluates to True will be included in the new list
+- **if condition (optional)**: This part allows you to filter the items based on a condition. Only items for which the condition evaluates to True will be included in the new list
 
-## For loop vs List Comprehension
+## For Loop vs List Comprehension
 
 We'll compare the traditional for loop with the shorter list comprehension method. Using examples, we'll show how each one makes a list of numbers from 0 to 4.
 
