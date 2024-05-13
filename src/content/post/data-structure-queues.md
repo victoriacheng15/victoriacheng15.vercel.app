@@ -24,7 +24,7 @@ Similar to how people enter and exit a line, elements are added to the end of th
 
 ### JavaScript
 
-```jsx
+```js
 class Queue {
 	constructor() {
 		this.items = [];

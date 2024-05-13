@@ -23,7 +23,7 @@ The stack data structure supports two main operation:
 
 ### JavaScript
 
-```jsx
+```js
 class Stack {
 	constructor() {
 		this.items = [];
