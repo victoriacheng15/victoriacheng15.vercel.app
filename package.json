@@ -50,7 +50,7 @@
 	"dependencies": {
 		"@astrojs/prefetch": "^0.4.1",
 		"@astrojs/rss": "^4.0.6",
-		"astro": "^4.8.3",
+		"astro": "^4.9.0",
 		"astro-icon": "^1.1.0",
 		"satori": "0.10.13",
 		"satori-html": "^0.3.2"
