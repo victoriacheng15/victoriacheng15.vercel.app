@@ -2,6 +2,8 @@ const BOOKS = [
 	{
 		year: "2024",
 		books: [
+			{ title: "The Miracle Monring" },
+			{ title: "On Writing Well" },
 			{ title: "Find Your Why" },
 			{ title: "Start with Why" },
 			{ title: "Smart Brevity" },
