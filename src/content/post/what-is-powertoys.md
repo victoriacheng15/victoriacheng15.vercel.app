@@ -2,7 +2,7 @@
 title: What is PowerToys?
 description: "PowerToys, a free Microsoft tool, enhances productivity via pinned apps, window arrangement, color picking, and image resizing, with customizable options."
 publishDate: "2022-02-18"
-tags: [productivity]
+tags: [misc]
 ---## What is PowerToys?
 
 **Archived blogs from [here](https://victoriacheng15.hashnode.dev/what-is-powertoys)**
