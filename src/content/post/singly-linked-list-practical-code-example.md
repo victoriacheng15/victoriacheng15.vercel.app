@@ -21,10 +21,10 @@ It represents a single node in the linked list with two properties: `value` to s
 
 ```js
 class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
+	constructor(value) {
+		this.value = value;
+		this.next = null;
+	}
 }
 ```
 
@@ -36,31 +36,31 @@ class Node {
 
 ```js
 class LinkedList {
-  constructor() {
-    this.head = null;
-    this.size = 0;
-  }
+	constructor() {
+		this.head = null;
+		this.size = 0;
+	}
 
-  isEmpty() {
-    return this.size === 0;
-  }
+	isEmpty() {
+		return this.size === 0;
+	}
 
-  getSize() {
-    return this.size;
-  }
+	getSize() {
+		return this.size;
+	}
 
-  print() {
-    if (this.isEmpty()) {
-      return 'the list is empty';
-    }
-    let curr = this.head;
-    let ListValues = '';
-    while (curr) {
-      ListValues += `${curr.value} `;
-      curr = curr.next;
-    }
-    return ListValues;
-  }
+	print() {
+		if (this.isEmpty()) {
+			return "the list is empty";
+		}
+		let curr = this.head;
+		let ListValues = "";
+		while (curr) {
+			ListValues += `${curr.value} `;
+			curr = curr.next;
+		}
+		return ListValues;
+	}
 }
 ```
 
@@ -70,7 +70,7 @@ class LinkedList {
 prepend(value) {
  // Create a new node with the provided value
   const node = new Node(value);
-  
+
   // Check if the linked list is empty
   if (this.isEmpty()) {
    // If empty, set the new node as the head node
@@ -92,7 +92,7 @@ prepend(value) {
 append(value) {
 // Create a new node with the provided value
   const node = new Node(value);
-  
+
 // Check if the linked list is empty
   if (this.isEmpty()) {
     // If empty, set the new node as the head node
@@ -120,7 +120,7 @@ removeFrom(index) {
   if (index < 0 || index >= this.size) {
     return null;
   }
-  
+
   let removedNode;
   // If index is 0, remove the first node
   if (index === 0) {
@@ -202,122 +202,122 @@ Here is the full code for this post.
 
 ```js
 class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
+	constructor(value) {
+		this.value = value;
+		this.next = null;
+	}
 }
 
 class LinkedList {
-  constructor() {
-    this.head = null;
-    this.size = 0;
-  }
+	constructor() {
+		this.head = null;
+		this.size = 0;
+	}
 
-  isEmpty() {
-    return this.size === 0;
-  }
+	isEmpty() {
+		return this.size === 0;
+	}
 
-  getSize() {
-    return this.size;
-  }
+	getSize() {
+		return this.size;
+	}
 
-  prepend(value) {
-    const node = new Node(value);
-    
-    if (this.isEmpty()) {
-      this.head = node;
-    } else {
-      node.next = this.head;
-      this.head = node;
-    }
-    this.size += 1;
-  }
+	prepend(value) {
+		const node = new Node(value);
 
-  append(value) {
-    const node = new Node(value);
+		if (this.isEmpty()) {
+			this.head = node;
+		} else {
+			node.next = this.head;
+			this.head = node;
+		}
+		this.size += 1;
+	}
 
-    if (this.isEmpty()) {
-      this.head = node;
-    } else {
-      let prev = this.head;
-      while (prev.next) {
-        prev = prev.next;
-      }
-      prev.next = node;
-    }
+	append(value) {
+		const node = new Node(value);
 
-    this.size += 1;
-  }
-
-  removeFrom(index) {
-    if (index < 0 || index >= this.size) {
-      return null;
-    }
-    
-    let removedNode;
-    if (index === 0) {
-      removedNode = this.head;
-      this.head = this.head.next;
-    } else {
-      let prev = this.head;
-      for (let i = 0; i < index - 1; i += 1) {
-        prev = prev.next;
-      }
-      removedNode = prev.next;
-      prev.next = removedNode.next;
-    }
-    this.size -= 1;
-    return removedNode.value;
-  }
-
-  reverse() {
-    let prev = null;
-    let curr = this.head;
-    while (curr) {
-      let { next } = curr; //  let next = curr.next;
-      curr.next = prev;
-      prev = curr;
-      curr = next;
-    }
-    this.head = prev;
-  }
-  
-  search(value) {
-	  if (this.isEmpty()){
-		  return -1
-	  }
-	  
-	  let index = 0
-	  let curr = this.head
-	  while(curr){
-		  if (curr.value === value) {
-			  return index
+		if (this.isEmpty()) {
+			this.head = node;
+		} else {
+			let prev = this.head;
+			while (prev.next) {
+				prev = prev.next;
 			}
-			curr = curr.next
-			index++
- 	  }
-	  return -1
-  }
+			prev.next = node;
+		}
 
-  print() {
-    if (this.isEmpty()) {
-      return 'the list is empty';
-    }
-    let curr = this.head;
-    let ListValues = '';
-    while (curr) {
-      ListValues += `${curr.value} `;
-      curr = curr.next;
-    }
-    return ListValues;
-  }
+		this.size += 1;
+	}
+
+	removeFrom(index) {
+		if (index < 0 || index >= this.size) {
+			return null;
+		}
+
+		let removedNode;
+		if (index === 0) {
+			removedNode = this.head;
+			this.head = this.head.next;
+		} else {
+			let prev = this.head;
+			for (let i = 0; i < index - 1; i += 1) {
+				prev = prev.next;
+			}
+			removedNode = prev.next;
+			prev.next = removedNode.next;
+		}
+		this.size -= 1;
+		return removedNode.value;
+	}
+
+	reverse() {
+		let prev = null;
+		let curr = this.head;
+		while (curr) {
+			let { next } = curr; //  let next = curr.next;
+			curr.next = prev;
+			prev = curr;
+			curr = next;
+		}
+		this.head = prev;
+	}
+
+	search(value) {
+		if (this.isEmpty()) {
+			return -1;
+		}
+
+		let index = 0;
+		let curr = this.head;
+		while (curr) {
+			if (curr.value === value) {
+				return index;
+			}
+			curr = curr.next;
+			index++;
+		}
+		return -1;
+	}
+
+	print() {
+		if (this.isEmpty()) {
+			return "the list is empty";
+		}
+		let curr = this.head;
+		let ListValues = "";
+		while (curr) {
+			ListValues += `${curr.value} `;
+			curr = curr.next;
+		}
+		return ListValues;
+	}
 }
 ```
 
 ## Resources
 
-I appreicate the way Codevolution, a Youtuber, explains the process of coding a JavaScript implementation for a Linked List, with clear visuals. The playlist covers more linked list methods than this post mentioned, so I highly recommend exploring the *JavaScript Data Structures* playlist to deepen your knowledge on data structures.
+I appreicate the way Codevolution, a Youtuber, explains the process of coding a JavaScript implementation for a Linked List, with clear visuals. The playlist covers more linked list methods than this post mentioned, so I highly recommend exploring the _JavaScript Data Structures_ playlist to deepen your knowledge on data structures.
 
 [JavaScript Data Structure 14 - Linked List Class](https://www.youtube.com/watch?v=Tggvw4QlA9U&list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy&index=13&pp=iAQB)
 

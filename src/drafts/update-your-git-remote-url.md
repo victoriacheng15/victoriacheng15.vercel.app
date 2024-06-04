@@ -21,13 +21,13 @@ Changing the remote URL in git is a straightfoward process. Here is how you can 
 git remote -v
 ```
 
-- Change the remote URL with *HTTPS*:
+- Change the remote URL with _HTTPS_:
 
 ```bash
 git remote set-url origin https://github.com/your-username/your-repo.git
 ```
 
-- Change the remote URL with *SSH*:
+- Change the remote URL with _SSH_:
 
 ```bash
 git remote set-url origin git@github.com:your-username/your-repo.git
@@ -44,6 +44,7 @@ This can be particularly helpful when you change the repository name or if the r
 ### How to Find the SSH or HTTPS URL
 
 If you need visual assistance on finding the SSH or HTTPS URL for your repository, watch this short clip:
+
 <iframe width="560" height="315" src="https://github.com/victoriacheng15/victoriacheng15.vercel.app/assets/35031228/d2581d53-a54e-4df0-97b7-521bf61e16bf" frameborder="0" allowfullscreen></iframe>
 
 ## Resources

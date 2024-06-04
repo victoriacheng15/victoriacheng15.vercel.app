@@ -209,7 +209,7 @@ export const fetchTopStories = createAsyncThunk(
 		// change below
 		const details = await getAllDetails("top", page, limit);
 		return details;
-	}
+	},
 );
 // change below
 const topsSlice = createSlice({

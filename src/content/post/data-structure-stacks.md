@@ -20,7 +20,6 @@ The stack data structure supports two main operation:
 
 ![data-structure-stacks](https://github.com/victoriacheng15/victoriacheng15.vercel.app/assets/35031228/bf56f7b0-3a79-4f10-9fff-eaa987318cc3)
 
-
 ### JavaScript
 
 ```js

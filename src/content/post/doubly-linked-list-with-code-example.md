@@ -25,11 +25,11 @@ The `node` class represents a single element in a doubly linked list. Each node 
 
 ```js
 class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-    this.prev = null;
-  }
+	constructor(value) {
+		this.value = value;
+		this.next = null;
+		this.prev = null;
+	}
 }
 ```
 
@@ -42,21 +42,20 @@ Since the doubly linked list is very similar to the singly linked list, we will 
 
 ```js
 class DoublyLinkedList {
-  constructor() {
-    this.head = null;
-    this.tail = null;
-    this.size = 0;
-  }
+	constructor() {
+		this.head = null;
+		this.tail = null;
+		this.size = 0;
+	}
 
-  isEmpty() {
-    return this.size === 0;
-  }
+	isEmpty() {
+		return this.size === 0;
+	}
 
-  getSize() {
-    return this.size;
-  }
+	getSize() {
+		return this.size;
+	}
 }
-
 ```
 
 ### Adding an Element at the Front (prepend):
@@ -116,10 +115,10 @@ class DoublyLinkedList {
     if (this.isEmpty()) {
       return null;
     }
-    
+
 		// Store the value of the current head node
     const { value } = this.head; // const value = this.head.value;
-    
+
     // If the list has only one node
     if (this.size === 1) {
 	    // Set head and tail to null
@@ -145,10 +144,10 @@ class DoublyLinkedList {
     if (this.isEmpty()) {
       return null;
     }
-    
+
 		// Store the value of the current tail node
     const { value } = this.tail; // const value = this.tail.value;
-    
+
     // If the list has only one node
     if (this.size === 1) {
 	    // Set head and tail to null
@@ -162,7 +161,7 @@ class DoublyLinkedList {
     }
 
     this.size -= 1;
-    
+
     return value;
   }
 
@@ -174,93 +173,93 @@ Here is the full code for this post.
 
 ```js
 class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-    this.prev = null;
-  }
+	constructor(value) {
+		this.value = value;
+		this.next = null;
+		this.prev = null;
+	}
 }
 
 class DoublyLinkedList {
-  constructor() {
-    this.head = null;
-    this.tail = null;
-    this.size = 0;
-  }
+	constructor() {
+		this.head = null;
+		this.tail = null;
+		this.size = 0;
+	}
 
-  isEmpty() {
-    return this.size === 0;
-  }
+	isEmpty() {
+		return this.size === 0;
+	}
 
-  getSize() {
-    return this.size;
-  }
+	getSize() {
+		return this.size;
+	}
 
-  prepend(value) {
-    const node = new Node(value);
+	prepend(value) {
+		const node = new Node(value);
 
-    if (this.isEmpty()) {
-      this.head = node;
-      this.tail = node;
-    } else {
-      this.head.prev = node;
-      node.next = this.head;
-      this.head = node;
-    }
+		if (this.isEmpty()) {
+			this.head = node;
+			this.tail = node;
+		} else {
+			this.head.prev = node;
+			node.next = this.head;
+			this.head = node;
+		}
 
-    this.size += 1;
-  }
+		this.size += 1;
+	}
 
-  append(value) {
-    const node = new Node(value);
+	append(value) {
+		const node = new Node(value);
 
-    if (this.isEmpty()) {
-      this.head = node;
-      this.tail = node;
-    } else {
-      this.tail.next = node;
-      node.prev = this.tail;
-      this.tail = node;
-    }
+		if (this.isEmpty()) {
+			this.head = node;
+			this.tail = node;
+		} else {
+			this.tail.next = node;
+			node.prev = this.tail;
+			this.tail = node;
+		}
 
-    this.size += 1;
-  }
+		this.size += 1;
+	}
 
-  removeFromFront() {
-    if (this.isEmpty()) {
-      return null;
-    }
+	removeFromFront() {
+		if (this.isEmpty()) {
+			return null;
+		}
 
-    const { value } = this.head; // const value = this.head.value;
-    if (this.size === 1) {
-      this.head = null;
-      this.tail = null;
-    } else {
-      this.head = this.head.next;
-      this.head.prev = null;
-    }
+		const { value } = this.head; // const value = this.head.value;
+		if (this.size === 1) {
+			this.head = null;
+			this.tail = null;
+		} else {
+			this.head = this.head.next;
+			this.head.prev = null;
+		}
 
-    this.size -= 1;
-    return value;
-  }
+		this.size -= 1;
+		return value;
+	}
 
-  removeFromEnd() {
-    if (this.isEmpty()) {
-      return null;
-    }
+	removeFromEnd() {
+		if (this.isEmpty()) {
+			return null;
+		}
 
-    const { value } = this.tail; // const value = this.tail.value;
-    if (this.size === 1) {
-      this.head = null;
-      this.tail = null;
-    } else {
-      this.tail = this.tail.prev;
-      this.tail.next = null;
-    }
+		const { value } = this.tail; // const value = this.tail.value;
+		if (this.size === 1) {
+			this.head = null;
+			this.tail = null;
+		} else {
+			this.tail = this.tail.prev;
+			this.tail.next = null;
+		}
 
-    this.size -= 1;
-    return value;
-  }
+		this.size -= 1;
+		return value;
+	}
 }
 ```
 

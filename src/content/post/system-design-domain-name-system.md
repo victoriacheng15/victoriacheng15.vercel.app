@@ -11,26 +11,26 @@ The Domina Name System is a pivotal element of the broader system design, respon
 
 ## How does DNS work?
 
-Ever wondered about the magic that happens behind the scenes when you type a website address into your browser? This experience is powered by the Domain Name System (DNS), a vital component of the internet's architecture. 
+Ever wondered about the magic that happens behind the scenes when you type a website address into your browser? This experience is powered by the Domain Name System (DNS), a vital component of the internet's architecture.
 
 Let's take a journey through the steps involved in resolving a familiar domain like [www.google.com](http://www.google.com/).
 
 1. **User Input:**
-    - Imagine you want to visit Google, so you type "[www.google.com](http://www.google.com/)" into your browser's address bar.
+   - Imagine you want to visit Google, so you type "[www.google.com](http://www.google.com/)" into your browser's address bar.
 2. **DNS Query:**
-    - Your computer initiates a DNS query, asking the DNS resolver for the IP address associated with "[www.google.com](http://www.google.com/)."
+   - Your computer initiates a DNS query, asking the DNS resolver for the IP address associated with "[www.google.com](http://www.google.com/)."
 3. **DNS Resolution:**
-    - The resolver first checks its local cache for a quick answer. If not found, it proceeds to the next step.
+   - The resolver first checks its local cache for a quick answer. If not found, it proceeds to the next step.
 4. **Root DNS Server:**
-    - The resolver contacts the root DNS server, which, although not aware of "[www.google.com](http://www.google.com/)," directs it to the ".com" top-level domain (TLD) server.
+   - The resolver contacts the root DNS server, which, although not aware of "[www.google.com](http://www.google.com/)," directs it to the ".com" top-level domain (TLD) server.
 5. **TLD DNS Server:**
-    - The TLD server, responsible for ".com" domains, guides the resolver to the authoritative DNS server for "google.com."
+   - The TLD server, responsible for ".com" domains, guides the resolver to the authoritative DNS server for "google.com."
 6. **Authoritative DNS Server:**
-    - Here, the magic happens. The authoritative DNS server for "google.com" provides the resolver with the exact IP address for "[www.google.com](http://www.google.com/)."
+   - Here, the magic happens. The authoritative DNS server for "google.com" provides the resolver with the exact IP address for "[www.google.com](http://www.google.com/)."
 7. **DNS Response:**
-    - Armed with the IP address, the resolver sends the information back to your computer.
+   - Armed with the IP address, the resolver sends the information back to your computer.
 8. **Website Access:**
-    - Your computer now knows where to find Google's servers. It establishes a connection, and voilà – you seamlessly access "[www.google.com](http://www.google.com/)."
+   - Your computer now knows where to find Google's servers. It establishes a connection, and voilà – you seamlessly access "[www.google.com](http://www.google.com/)."
 
 ## TL;DR:
 

@@ -13,7 +13,7 @@ I think this month is pretty productive. I have done a couple of things:
 - Read chapter 1 of the System Design Interview
 - Learned about API versioning and how to implement versioning from <a href="https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api" target="_blank" rel="noopener noreferrer">REST API Design Best Practices Handbook</a>
 - Understood about largest contentful paint and cumulative layout shift
-- Discovered that Jest has a feature that you can loop through an array of test cases without using either ` forEach`` or  `for of` loops
+- Discovered that Jest has a feature that you can loop through an array of test cases without using either `forEach`` or `for of` loops
 
 ### Setup and deploy a TS node app
 

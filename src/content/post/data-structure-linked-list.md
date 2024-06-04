@@ -7,13 +7,14 @@ tags: [dsa]
 
 ## What is a Linked List?
 
-A linked lists stand as a building block. Picture a series of interconnected nodes, each containing *data* and a *pointer* to the next node in the sequence. This sequential arrangement is what gives linked lists their distinctive structure and functionality.
+A linked lists stand as a building block. Picture a series of interconnected nodes, each containing _data_ and a _pointer_ to the next node in the sequence. This sequential arrangement is what gives linked lists their distinctive structure and functionality.
 
 At its core, a linked list is a dynamic data structure where elements, called nodes, are not stored in contiguous memory locations like arrays but rather scattered across memory, connected by pointers. This allows for efficient insertion and deletion operations, as no shifting of elements is required.
 
 ## How Does Linked Lists Work?
 
 The linked list supports three main operations:
+
 - **Insertion** - add an element at the beginning, end or at given index in the list
 - **deletion** - remove an element at its index or value
 - **Search** - find an element given its value
@@ -32,7 +33,7 @@ Each node points to the next node in the sqeuence. It is straightforward and eff
 
 ### Doubly Linked List
 
-Each node contains two pointers; one point to the *next* node and another to the *previous* node. This bidirectional linkage allows for efficient traversal in both direcitons but requires more memory due to the extra pointers.
+Each node contains two pointers; one point to the _next_ node and another to the _previous_ node. This bidirectional linkage allows for efficient traversal in both direcitons but requires more memory due to the extra pointers.
 
 ![a node with 2 pointers to null on both sides](https://github.com/victoriacheng15/victoriacheng15.vercel.app/assets/35031228/f59fa65a-2515-436e-9d17-9c4a2e05d0eb)
 
