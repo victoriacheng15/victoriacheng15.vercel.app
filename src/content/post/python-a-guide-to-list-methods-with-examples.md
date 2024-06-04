@@ -35,7 +35,7 @@ print(my_list2[-1]) # Output: 5
 ```python
 fruits = ["apple", "banana", "orange"]
 fruits.append("grape")
-print(fruits)  
+print(fruits)
 # Output: ["apple", "banana", "orange", "grape"]
 ```
 
@@ -44,7 +44,7 @@ print(fruits)
 ```python
 fruits = ["orange", "banana", "apple"]
 fruits.clear()
-print(fruits)  
+print(fruits)
 # Output: []
 ```
 
@@ -81,7 +81,7 @@ print(f"There are {orange_count} orange")
 fruits = ["apple", "banana", "orange"]
 new_fruits = ["grape", "kiwi", "melon"]
 fruits.extend(new_fruits)
-print(fruits)  
+print(fruits)
 # Output: ["apple", "banana", "orange", "grape", "kiwi", "melon"]
 ```
 
@@ -104,7 +104,7 @@ print(f"The first orange is at {orange_index}")
 ```python
 fruits = ["apple", "banana", "orange"]
 fruits.insert(1, "grape")
-print(fruits)  
+print(fruits)
 # Output: ["apple", "grape", "banana", "orange"]
 ```
 
@@ -124,7 +124,7 @@ print("Remaining fruits:", fruits)
 ```python
 fruits = ["apple", "banana", "orange", "banana"]
 fruits.remove("banana")
-print(fruits)  
+print(fruits)
 # Output: ["apple", "orange", "banana"]
 ```
 
@@ -133,7 +133,7 @@ print(fruits)
 ```python
 fruits = ["apple", "banana", "orange"]
 fruits.reverse()
-print(fruits)  
+print(fruits)
 # Output: ["orange", "banana", "apple"]
 ```
 
@@ -142,7 +142,7 @@ print(fruits)
 ```python
 fruits = ["orange", "banana", "apple"]
 fruits.sort()
-print(fruits)  
+print(fruits)
 # Output: ["apple", "banana", "orange"]
 ```
 
@@ -161,9 +161,9 @@ existing_array_extend = [1, 2]
 new_array_extend = [6, 7, 8]
 existing_array_extend.extend(new_array_extend)
 
-print("Using append():", existing_array_append) 
+print("Using append():", existing_array_append)
 # Using append(): [1, 2, [6, 7, 8]]
-print("Using extend():", existing_array_extend)  
+print("Using extend():", existing_array_extend)
 # Using extend(): [1, 2, 6, 7, 8]
 ```
 
@@ -171,7 +171,7 @@ print("Using extend():", existing_array_extend)
 
 ```python
 nums = [num**2 for num in range(1, 6)]
-print(nums)  
+print(nums)
 # Output: [1, 4, 9, 16, 25]
 
 # This is equal to the above
@@ -179,7 +179,7 @@ nums = []
 for num in range(1, 6):
     nums.append(num ** 2)
 
-print(nums) 
+print(nums)
 # Output: [1, 4, 9, 16, 25]
 ```
 

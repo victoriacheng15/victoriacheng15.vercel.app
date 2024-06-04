@@ -121,7 +121,7 @@ export const fetchTopStories = createAsyncThunk(
 
 		const details = await Promise.all(promise);
 		return details;
-	}
+	},
 );
 ```
 

@@ -8,23 +8,20 @@ tags: [reflection]
 ## Monthly Reflection
 
 > Worry does not empty tomorrow of its sorrow. It emptyies today of its strength. By Corrie Ten Boom
-> 
 
-At certain points in our lives, we often find ourselves consumed by worry and gripped by anxiety, whether for valid reasons or seemingly trivial ones. This is an inevitable aspect of the human experience. To think more on this, it begs the question: why we invest our precious time and energy in matters over which we have no control? This places a heavy burden on our mental and emotional reserves, leaving us depleted by day’s end. Let’s shift our attention towards the positivity that illuminate our path and focus on what we can conrol. 
+At certain points in our lives, we often find ourselves consumed by worry and gripped by anxiety, whether for valid reasons or seemingly trivial ones. This is an inevitable aspect of the human experience. To think more on this, it begs the question: why we invest our precious time and energy in matters over which we have no control? This places a heavy burden on our mental and emotional reserves, leaving us depleted by day’s end. Let’s shift our attention towards the positivity that illuminate our path and focus on what we can conrol.
 
 Moreover. if something has already hapened, let us leave it behind in the past, but not without first learning from it to improve ourselves for the future.
 
 > Once you replace negative thoughts with positive ones, you’ll start having positive results. By Willie Nelson
-> 
 
 > No matter what you're going through, there's a light at the end of the tunnel and it may seem hard to get to it but you can do it and just keep working towards it and you'll find the positive side of things. By Demi Lovato
-> 
 
 Ideas to help reduce worry:
 
 - Mindfulness and meditation - Cultivate awareness and calm by focusing on the present moment. 🧘‍♂️
-- Journaling -  Express worries, explore solutions, and gain clarity through writing. 📝
-- A daily *worry* period - Designate time to acknowledge and address worries, reducing their impact. ⏰
+- Journaling - Express worries, explore solutions, and gain clarity through writing. 📝
+- A daily _worry_ period - Designate time to acknowledge and address worries, reducing their impact. ⏰
 - Estblishing a route - Create stability and control through consistent daily habits. 🔄
 - Setting boundaries with technology -Limit exposure to news and social media for reduced anxiety. 📵
 
@@ -39,7 +36,7 @@ This is inspired by the LinkedIn post by Omar Halabieh, you can see the post at 
 
 I've been a bit lax with my daily reading this month, taking it as a mini break. But I'm committed to getting back on track by starting with 10 pages a day. 😅 😬
 
-- On Writing Well by William Zinsser -  A timeless guide to clear, concise, and engaging writing. With practical advice and insightful anecdotes
+- On Writing Well by William Zinsser - A timeless guide to clear, concise, and engaging writing. With practical advice and insightful anecdotes
 
 ## Blogs
 

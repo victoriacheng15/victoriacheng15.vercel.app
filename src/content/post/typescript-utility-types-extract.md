@@ -10,7 +10,7 @@ tags: [typescript]
 The Extract utility type in TypeScript is used to construct a new type by extracting members from a union type that matches a certain criterion. In short, it is only getting a couple of specific values that you need.
 
 ```ts
-type Extract<T, U> = T extends U ? T : never
+type Extract<T, U> = T extends U ? T : never;
 ```
 
 ## How Does Extract Work?

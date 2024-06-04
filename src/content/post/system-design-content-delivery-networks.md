@@ -15,7 +15,7 @@ In simple terms, CDNs make internet stuff faster to get by bringing it closer to
 
 ## How It Works?
 
-Imagine you are eagaret oread a popular book that many people are also interested in. Instead of everyone going  to the *main library* to borrow the book, the library decides to duplicate copies and distribute them toi small libraries scarrered across the town. These smaller libraraies are conveniently located closer to residential areas, allowing people to access the book more quickly.
+Imagine you are eagaret oread a popular book that many people are also interested in. Instead of everyone going to the _main library_ to borrow the book, the library decides to duplicate copies and distribute them toi small libraries scarrered across the town. These smaller libraraies are conveniently located closer to residential areas, allowing people to access the book more quickly.
 
 1. **Copying Books Everywhere:** The internet stuff—like websites, videos, and pictures—is like the books in the library. CDNs make copies of this stuff and store them in servers all over the world. Each server is like a small library branch.
 2. **Getting Your Book Fast:** When you want to read a website or watch a video, instead of going to the main library (which could be far away), you go to the nearest library branch. This branch has a copy of what you want, so you can get it quickly, just like getting your book from the local library instead of traveling across town.

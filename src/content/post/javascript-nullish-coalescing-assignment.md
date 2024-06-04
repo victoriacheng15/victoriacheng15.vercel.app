@@ -83,7 +83,7 @@ obj2 ??= defaultObj2;
 console.log(obj2); // output: { name: "User", type: "Human" }
 ```
 
-Keep in mind, that this operator only kicks into action if the current value of the variable is either **null** or ***undefined**. If the variable’s current value is **false**, it won’t trigger an assignment. So, it’s all about whether the variable is nullish or not!
+Keep in mind, that this operator only kicks into action if the current value of the variable is either **null** or **\*undefined**. If the variable’s current value is **false**, it won’t trigger an assignment. So, it’s all about whether the variable is nullish or not!
 
 ## Recap
 

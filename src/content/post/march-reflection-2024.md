@@ -13,14 +13,14 @@ The Stacey Matrix, devised by Ralph D. Stacey, assesses organizational scenarios
 
 In life, we face numerous decisions, from simple to complex. The Stacey Matrix offers a framework to navigate through these crucial moments, providing clarity and direction. Here's a breakdown of how it can guide personal decision-making:
 
-1. **Simple Decisions:** 
-    1. When faced with straightforward choices, such as what to eat for breakfast or which movie to watch, follow clear directives without overthinking.
-2. **Complicated Decisions:** 
-    1. For more intricate matters such as choosing a career path or making a major purchase, rely on expertise and analysis to make informed decisions.
-3. **Complex Decisions:** 
-    1. In uncertain situations with multiple factors at play, like deciding whether to relocate for a job or pursue further education, embrace experimentation and adaptability. Allow solutions to emerge naturally instead of seeking predetermined answers.
-4. **Chaotic Decisions:** 
-    1. During crises like dealing with unexpected health issues or sudden financial setbacks, prioritize stabilizing the situation before devising long-term solutions.
+1. **Simple Decisions:**
+   1. When faced with straightforward choices, such as what to eat for breakfast or which movie to watch, follow clear directives without overthinking.
+2. **Complicated Decisions:**
+   1. For more intricate matters such as choosing a career path or making a major purchase, rely on expertise and analysis to make informed decisions.
+3. **Complex Decisions:**
+   1. In uncertain situations with multiple factors at play, like deciding whether to relocate for a job or pursue further education, embrace experimentation and adaptability. Allow solutions to emerge naturally instead of seeking predetermined answers.
+4. **Chaotic Decisions:**
+   1. During crises like dealing with unexpected health issues or sudden financial setbacks, prioritize stabilizing the situation before devising long-term solutions.
 
 By applying the Stacey Matrix principles to personal life, individuals can navigate various decision-making scenarios with greater confidence and effectiveness.
 
