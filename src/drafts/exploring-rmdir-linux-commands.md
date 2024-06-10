@@ -23,11 +23,11 @@ rmdir directory-name
 
 ## Options
 
-| Option | Description |
-| --- | --- |
-| -p, —parents | Remove the specificed directory and its parents directories if they become empty |
-| -v, —verbos | Provides detailed feedback on the actions performed by rmdir |
-| —ignore-fail-on-non-empty | Ignore errors when attempting to remove non-empty directories |
+| Option                    | Description                                                                      |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| -p, —parents              | Remove the specificed directory and its parents directories if they become empty |
+| -v, —verbos               | Provides detailed feedback on the actions performed by rmdir                     |
+| —ignore-fail-on-non-empty | Ignore errors when attempting to remove non-empty directories                    |
 
 ## Additional Help
 

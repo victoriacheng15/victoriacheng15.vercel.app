@@ -29,14 +29,14 @@ rm file1.txt file2.txt
 
 ## Options
 
-| Option | Description |
-| --- | --- |
-| -i, --interactive | Prompts before every removal. |
-| -f, --force | Overrides any existing files at the destination without prompting for confirmation. |
-| -r, --recursive | Removes directories and their contents recursively. |
-| -d, --dir | Removes empty directories. |
-| -v, --verbose | Provides detailed feedback on the actions performed by rm. |
-| --preserve-root | Ensures that the root directory / is not accidentally removed. |
+| Option            | Description                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------------- |
+| -i, --interactive | Prompts before every removal.                                                            |
+| -f, --force       | Overrides any existing files at the destination without prompting for confirmation.      |
+| -r, --recursive   | Removes directories and their contents recursively.                                      |
+| -d, --dir         | Removes empty directories.                                                               |
+| -v, --verbose     | Provides detailed feedback on the actions performed by rm.                               |
+| --preserve-root   | Ensures that the root directory / is not accidentally removed.                           |
 | --one-file-system | Limits the removal to the current file system, avoiding crossing file system boundaries. |
 
 ## Additional Help
