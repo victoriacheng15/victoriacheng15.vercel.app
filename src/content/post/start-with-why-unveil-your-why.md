@@ -1,5 +1,5 @@
 ---
-title: "Start with Why: Unveil Your Why"
+title: "Start with Why - Unveil Your Why"
 description: "Explore 'Start with Why' by Simon Sinek. Clarify your personal purpose, inspire meaningful action, and redefine success with this insightful guide."
 publishDate: "2024-03-09"
 tags: [book]

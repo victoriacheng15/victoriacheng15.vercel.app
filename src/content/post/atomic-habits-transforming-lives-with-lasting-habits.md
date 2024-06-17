@@ -1,5 +1,5 @@
 ---
-title: "Atomic Habits: Transforming Lives with Lasting Habits"
+title: "Atomic Habits - Transforming Lives with Lasting Habits"
 description: "Atomic Habits by Clear offers a practical guide to harnessing the power of small habits for remarkable personal transformation."
 publishDate: "2023-06-24"
 tags: [book]

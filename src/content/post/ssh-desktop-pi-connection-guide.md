@@ -1,5 +1,5 @@
 ---
-title: "SSH & Desktop: Pi Connection Guide"
+title: "SSH & Desktop - Pi Connection Guide"
 description: "Unlock the full potential of your Raspberry Pi with our step-by-step guides for remote desktop, SSH, and file transfers. Elevate your Pi experience today!”"
 publishDate: "2024-02-08"
 tags: [linux, raspberry-pi]

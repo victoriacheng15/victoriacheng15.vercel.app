@@ -1,5 +1,5 @@
 ---
-title: "Unlocking Your Second Brain: Enhanced Learning & Innovation"
+title: "Unlocking Your Second Brain - Enhanced Learning & Innovation"
 description: "Building A Second Brain by Tiago Forte: A guide to effective personal knowledge management, combating info overload, and fostering creativity. 📚💡🚀"
 publishDate: "2023-08-05"
 tags: [book]

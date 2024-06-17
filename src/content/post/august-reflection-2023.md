@@ -15,13 +15,13 @@ Scott Young, the author of the Ultralearning book, brings up an insightful conce
 
 - [Living the Life with The Subtle Art of Not Giving a Fk](https://victoriacheng15.vercel.app/posts/living-the-life-with-the-subtle-art-of-not-giving-a-fk)
 - [TypeScript Utility Types - Pick](https://victoriacheng15.vercel.app/posts/typescript-utility-types-pick)
-- [Unlocking Your Second Brain: Enhanced Learning & Innovation](https://victoriacheng15.vercel.app/posts/unlocking-your-second-brain-enhanced-learning-innovation)
+- [Unlocking Your Second Brain - Enhanced Learning & Innovation](https://victoriacheng15.vercel.app/posts/unlocking-your-second-brain-enhanced-learning-innovation)
 - [TypeScript Utility Types - Readonly](https://victoriacheng15.vercel.app/posts/typescript-utility-types-readonly)
-- [Obstacle Is the Way: Transforming Challenges into Success](https://victoriacheng15.vercel.app/posts/obstacle-is-the-way-transforming-challenges-into-success)
+- [Obstacle Is the Way - Transforming Challenges into Success](https://victoriacheng15.vercel.app/posts/obstacle-is-the-way-transforming-challenges-into-success)
 - [JavaScript Generators](https://victoriacheng15.vercel.app/posts/javascript-generator)
 - [Insights from Software Engineering at Google Book](https://victoriacheng15.vercel.app/posts/insights-from-software-engineering-at-google-book)
 - [React Hooks - useRef](https://victoriacheng15.vercel.app/posts/react-hooks-useref)
-- [How to Win Friends and Influence People: Modern Insights](https://victoriacheng15.vercel.app/posts/how-to-win-friends-and-influence-people-modern-insights)
+- [How to Win Friends and Influence People - Modern Insights](https://victoriacheng15.vercel.app/posts/how-to-win-friends-and-influence-people-modern-insights)
 
 ## Books
 

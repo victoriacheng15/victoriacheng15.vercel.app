@@ -1,5 +1,5 @@
 ---
-title: "Reflecting on 2023: A Year in Review"
+title: "Reflecting on 2023 - A Year in Review"
 description: "Reflecting on the highs, lows, and lessons of 2023. Here's to a wonderful 2024 ahead!"
 publishDate: "2023-12-27"
 tags: [reflection]
@@ -55,7 +55,7 @@ I look forward to the opportunities and growth that the upcoming year holds. Wis
 
 I didn't publish the monthly reflections for October and November, so I'm including them here. The hiatus in these reflections was due to my vacation. As a result, all the blog posts created during this period, from the last update until November, are listed below.
 
-- [The Unfair Advantage: Harnessing Your Unique Abilities](https://victoriacheng15.vercel.app/posts/the-unfair-advantage-harnessing-your-unique-abilities)
+- [The Unfair Advantage - Harnessing Your Unique Abilities](https://victoriacheng15.vercel.app/posts/the-unfair-advantage-harnessing-your-unique-abilities)
 - [TypeScript Utility Types - Omit](https://victoriacheng15.vercel.app/posts/typescript-utility-types-omit)
 - [Jumpstart Your Day with 'Eat That Frog' Wisdom](https://victoriacheng15.vercel.app/posts/jumpstart-your-day-with-eat-that-frog-wisdom)
 - [JavaScript - Logical AND Assignment Operator](https://victoriacheng15.vercel.app/posts/javascript-logical-and-assignment-operator)
@@ -66,7 +66,7 @@ I didn't publish the monthly reflections for October and November, so I'm includ
 - [TypeScript Utility Types - Extract](https://victoriacheng15.vercel.app/posts/typescript-utility-types-extract)
 - [Exploring the Aspects of Modern Software Engineering](https://victoriacheng15.vercel.app/posts/exploring-the-aspects-of-modern-software-engineering)
 - [TypeScript Utility Types - NonNullable](https://victoriacheng15.vercel.app/posts/typescript-utility-types-nonnullable)
-- [Unignorable Mastery: So Good They Can't Ignore You](https://victoriacheng15.vercel.app/posts/unignorable-mastery-so-good-they-cant-ignore-you)
+- [Unignorable Mastery - So Good They Can't Ignore You](https://victoriacheng15.vercel.app/posts/unignorable-mastery-so-good-they-cant-ignore-you)
 
 ## Thank you!
 

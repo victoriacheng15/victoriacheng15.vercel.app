@@ -1,5 +1,5 @@
 ---
-title: "Steal Like an Artist: Navigating Inspiration and Innovation"
+title: "Steal Like an Artist - Navigating Inspiration and Innovation"
 description: "Revolutionize your approach to creativity with 'Steal Like an Artist.' Transform influence into innovation for a truly unique journey of yours."
 publishDate: "2024-01-13"
 tags: [book]

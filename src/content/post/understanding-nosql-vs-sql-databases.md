@@ -50,15 +50,15 @@ _Cons:_
 
 Here is a comparative table suimmarizing the differences:
 
-| Feature | SQL | NoSQL |
-| --- | --- | --- |
-| Data Storage Model | Tables with predefined schemas (relational) | Various models: key-value pairs, documents, column-family, graphs |
-| Scalability | Vertical | Horizontal |
-| Data Flexibility | Structured data with relationships | Supports unstructured and semi-structured data |
-| Querying | Powerful, supports complex queries and joins | May have limited support for complex queries |
-| Performance | Excellent for complex queries and structured data | Fast performance for read/write operations with large datasets |
-| Tooling & Maturity | Mature ecosystem with extensive tools | Less mature, fewer tools and best practices |
-| Examples | MySQL, PostgreSQL, SQLite | MongoDB, Apache Cassandra, Amazon DynamoDB |
+| Feature            | SQL                                               | NoSQL                                                             |
+| ------------------ | ------------------------------------------------- | ----------------------------------------------------------------- |
+| Data Storage Model | Tables with predefined schemas (relational)       | Various models: key-value pairs, documents, column-family, graphs |
+| Scalability        | Vertical                                          | Horizontal                                                        |
+| Data Flexibility   | Structured data with relationships                | Supports unstructured and semi-structured data                    |
+| Querying           | Powerful, supports complex queries and joins      | May have limited support for complex queries                      |
+| Performance        | Excellent for complex queries and structured data | Fast performance for read/write operations with large datasets    |
+| Tooling & Maturity | Mature ecosystem with extensive tools             | Less mature, fewer tools and best practices                       |
+| Examples           | MySQL, PostgreSQL, SQLite                         | MongoDB, Apache Cassandra, Amazon DynamoDB                        |
 
 Choosing the right database depends on your specific data requirements. SQL databases are ideal for structured data and applications needing strong consistency and complex querying capabilities. On the other hand, NoSQL databases are suited for handling unstructured or semi-structured data with a focus on scalability and performance in distributed environments. The decision should align with your application's data structure, scalability needs, and the type of queries you'll be performing.
 

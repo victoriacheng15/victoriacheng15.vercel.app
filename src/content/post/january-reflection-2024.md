@@ -21,7 +21,7 @@ One crucial aspect I want to emphasize about failure is that it is an inherent p
 - [A Blueprint for Digital Visibility - Show Your Work](https://victoriacheng15.vercel.app/posts/a-blueprint-for-digital-visibility-show-your-work)
 - [System Design - Understanding Vertical vs Horizontal Scaling](https://victoriacheng15.vercel.app/posts/system-design-understanding-vertical-vs-horizontal-scaling)
 - [Coding Challenges: What I Learned From Write Your wc Tool?](https://victoriacheng15.vercel.app/posts/coding-challenges-what-i-learned-from-write-your-wc-tool)
-- [Steal Like an Artist: Navigating Inspiration and Innovation](https://victoriacheng15.vercel.app/posts/steal-like-an-artist-navigating-inspiration-and-innovation)
+- [Steal Like an Artist - Navigating Inspiration and Innovation](https://victoriacheng15.vercel.app/posts/steal-like-an-artist-navigating-inspiration-and-innovation)
 - [Simplifying Big O Notation - A Guide to Algorithm Efficiency](https://victoriacheng15.vercel.app/posts/simplifying-big-o-notation-a-guide-to-algorithm-efficiency)
 - [Exploring alias - Linux Commands](https://victoriacheng15.vercel.app/posts/exploring-alias-linux-commands)
 

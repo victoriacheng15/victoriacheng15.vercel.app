@@ -21,7 +21,7 @@ I resonated with this quote by Lao Tzu. To gain knowledge, one should actively a
 - <a href="https://victoriacheng15.vercel.app/posts/javascript-optional-chaining-operator" target="_blank" rel="noopener noreferrer">JavaScript Optional Chaining Operator</a>
 - <a href="https://victoriacheng15.vercel.app/posts/unleashing-your-limitless-potential-from-the-limitless-book" target="_blank" rel="noopener noreferrer">Unleashing Your Limitless Potential from the Limitless Book</a>
 - <a href="https://victoriacheng15.vercel.app/posts/javascript-promise-promise-all-and-async-await" target="_blank" rel="noopener noreferrer">JavaScript - Promise, Promise All, and async/await</a>
-- <a href="https://victoriacheng15.vercel.app/posts/atomic-habits-transforming-lives-with-lasting-habits" target="_blank" rel="noopener noreferrer">Atomic Habits: Transforming Lives with Lasting Habits</a>
+- <a href="https://victoriacheng15.vercel.app/posts/atomic-habits-transforming-lives-with-lasting-habits" target="_blank" rel="noopener noreferrer">Atomic Habits - Transforming Lives with Lasting Habits</a>
 
 ## Books
 

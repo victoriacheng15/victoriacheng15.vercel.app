@@ -1,5 +1,5 @@
 ---
-title: "Unleashing the 12-Week Plan: The Road to Accomplishment"
+title: "Unleashing the 12-Week Plan - The Road to Accomplishment"
 description: "Embark on a transformative journey of accomplishment with the powerful 12-Week Plan. Unleash your potential and achieve your goals like never before."
 publishDate: "2023-07-22"
 tags: [book]

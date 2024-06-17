@@ -1,5 +1,5 @@
 ---
-title: onClick vs addEventListener in JavaScript
+title: JavaScript - onClick vs addEventListener
 description: "JS onclick: all browsers. addEventListener: multiple events but not in older IE"
 publishDate: "2022-02-25"
 tags: [javascript]
