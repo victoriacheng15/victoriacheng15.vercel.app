@@ -13,10 +13,10 @@ I've also dabbled in using time blocks, and I genuinely appreciate the concept o
 
 ## Blogs
 
-- [Can't Hurt Me: Embracing Struggle, Achieving the Impossible](https://victoriacheng15.vercel.app/posts/cant-hurt-me-embracing-struggle-achieving-the-impossible)
+- [Can't Hurt Me - Embracing Struggle, Achieving the Impossible](https://victoriacheng15.vercel.app/posts/cant-hurt-me-embracing-struggle-achieving-the-impossible)
 - [TypeScript Utility Types - Required](https://victoriacheng15.vercel.app/posts/typescript-utility-types-required)
 - [TypeScript Utility Types - Record](https://victoriacheng15.vercel.app/posts/typescript-utility-types-record)
-- [Clean Architecture: Building Robust Systems](<[https://victoriacheng15.vercel.app/posts/clean-architecture-building-robust-systems](https://victoriacheng15.vercel.app/posts/typescript-utility-types-required)>)
+- [Clean Architecture - Building Robust Systems](<[https://victoriacheng15.vercel.app/posts/clean-architecture-building-robust-systems](https://victoriacheng15.vercel.app/posts/typescript-utility-types-required)>)
 - [TypeScript Utility Types - Exclude](https://victoriacheng15.vercel.app/posts/typescript-utility-types-exclude)
 - [Ultralearning: Accelerated Learning Strategies](https://victoriacheng15.vercel.app/posts/ultralearning-accelerated-learning-strategies)
 

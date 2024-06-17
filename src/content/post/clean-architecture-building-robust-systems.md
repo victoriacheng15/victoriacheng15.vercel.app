@@ -1,5 +1,5 @@
 ---
-title: "Clean Architecture: Building Robust Systems"
+title: "Clean Architecture - Building Robust Systems"
 description: "Clean architecture focuses on modular, maintainable software design. It emphasizes clear separation of concerns and business logic centrality."
 publishDate: "2023-09-16"
 tags: [book]

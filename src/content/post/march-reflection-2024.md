@@ -34,7 +34,7 @@ This reflection draws inspiration from Addy Osmaniâ€™s LinkedIn post titled [ðŸš
 
 - [Exploring stat - Linux Commands](https://victoriacheng15.vercel.app/posts/exploring-stat-linux-commands)
 - [Exploring touch - Linux Commands](https://victoriacheng15.vercel.app/posts/exploring-touch-linux-commands)
-- [Start with Why: Unveil Your Why](https://victoriacheng15.vercel.app/posts/start-with-why-unveil-your-why)
+- [Start with Why - Unveil Your Why](https://victoriacheng15.vercel.app/posts/start-with-why-unveil-your-why)
 - [System Design - Domain Name System](https://victoriacheng15.vercel.app/posts/system-design-domain-name-system)
 - [Automating Checkboxes in Google Sheets with Apps Script](https://victoriacheng15.vercel.app/posts/automating-checkboxes-in-google-sheets-with-apps-script)
 - [Python - A Guide to List Methods With Examples](https://victoriacheng15.vercel.app/posts/python-a-guide-to-list-methods-with-examples)

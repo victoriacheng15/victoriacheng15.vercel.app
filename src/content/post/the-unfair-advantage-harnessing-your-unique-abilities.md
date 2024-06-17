@@ -1,5 +1,5 @@
 ---
-title: "The Unfair Advantage: Harnessing Your Unique Abilities"
+title: "The Unfair Advantage - Harnessing Your Unique Abilities"
 description: "Discover how to elevate your skills and game with this valuable book, unlocking your true potential for success."
 publishDate: "2023-09-30"
 tags: [book]

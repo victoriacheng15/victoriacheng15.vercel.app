@@ -1,5 +1,5 @@
 ---
-title: "Python List Comprehension: Simplify Your Code"
+title: "Python List Comprehension - Simplify Your Code"
 description: "Unlock Python's potential with list comprehensions. Learn efficient coding techniques, including conditional statements and nested lists"
 publishDate: "2024-04-23"
 tags: [python]

@@ -14,19 +14,19 @@ A couple of things to mention:
 
 ## Blogs
 
-[From Busy to Productive: Embracing the Deep Work Mindset](https://victoriacheng15.vercel.app/posts/from-busy-to-productive-embracing-the-deep-work-mindset)
+[From Busy to Productive - Embracing the Deep Work Mindset](https://victoriacheng15.vercel.app/posts/from-busy-to-productive-embracing-the-deep-work-mindset)
 
 [JavaScript - Bind, Call, and Apply](https://victoriacheng15.vercel.app/posts/javascript-bind-call-and-apply)
 
-[The Path to Clean Code: Insights from Robert Martin](https://victoriacheng15.vercel.app/posts/the-path-to-clean-code-insights-from-robert-martin)
+[The Path to Clean Code - Insights from Robert Martin](https://victoriacheng15.vercel.app/posts/the-path-to-clean-code-insights-from-robert-martin)
 
 [JavaScript - Closure](https://victoriacheng15.vercel.app/posts/javascript-closure)
 
-[Continuous Improvement: Lessons from The Phoenix Project](https://victoriacheng15.vercel.app/posts/continuous-improvement-lessons-from-the-phoenix-project)
+[Continuous Improvement - Lessons from The Phoenix Project](https://victoriacheng15.vercel.app/posts/continuous-improvement-lessons-from-the-phoenix-project)
 
 [TypeScript Utility Types - Partial](https://victoriacheng15.vercel.app/posts/typescript-utility-types-partial)
 
-[Unleashing the 12-Week Plan: The Road to Accomplishment](https://victoriacheng15.vercel.app/posts/unleashing-the-12week-plan-the-road-to-accomplishment)
+[Unleashing the 12-Week Plan - The Road to Accomplishment](https://victoriacheng15.vercel.app/posts/unleashing-the-12week-plan-the-road-to-accomplishment)
 
 ## Books
 

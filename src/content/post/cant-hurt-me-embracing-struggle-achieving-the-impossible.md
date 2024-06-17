@@ -1,5 +1,5 @@
 ---
-title: "Can't Hurt Me: Embracing Struggle, Achieving the Impossible"
+title: "Can't Hurt Me - Embracing Struggle, Achieving the Impossible"
 description: "Unlock potential with David Goggins' strategies: face challenges, set audacious goals, embrace discomfort, and develop a resilient mindset."
 publishDate: "2023-09-02"
 tags: [book]

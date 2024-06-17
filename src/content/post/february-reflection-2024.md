@@ -24,13 +24,13 @@ And here's a bonus discovery, Makefile is awesome! It allows you to set up comma
 
 ## Blogs
 
-- [Docker Compose: Configuring Images and Container Names](https://victoriacheng15.vercel.app/posts/docker-compose-configuring-images-and-container-names)
+- [Docker Compose - Configuring Images and Container Names](https://victoriacheng15.vercel.app/posts/docker-compose-configuring-images-and-container-names)
 - [Empower Your Journey with the 7 Highly Effective Habits](https://victoriacheng15.vercel.app/posts/empower-your-journey-with-the-highly-effective-habits)
 - [Managing Workflows with GitHub Actions: needs](https://victoriacheng15.vercel.app/posts/managing-workflows-with-github-actions-needs)
-- [SSH & Desktop: Pi Connection Guide](https://victoriacheng15.vercel.app/posts/ssh-desktop-pi-connection-guide)
-- [Keep Going: Navigate Your Creative Journey](https://victoriacheng15.vercel.app/posts/keep-going-navigate-your-creative-journey)
+- [SSH & Desktop - Pi Connection Guide](https://victoriacheng15.vercel.app/posts/ssh-desktop-pi-connection-guide)
+- [Keep Going - Navigate Your Creative Journey](https://victoriacheng15.vercel.app/posts/keep-going-navigate-your-creative-journey)
 - [JavaScript - Change Array by Copy Methods](https://victoriacheng15.vercel.app/posts/javascript-change-array-by-copy-methods)
-- [Smart Brevity: Your Path to Effective Communication](https://victoriacheng15.vercel.app/posts/smart-brevity-your-path-to-effective-communication)
+- [Smart Brevity - Your Path to Effective Communication](https://victoriacheng15.vercel.app/posts/smart-brevity-your-path-to-effective-communication)
 - [TypeScript Utility Types - ReturnType](https://victoriacheng15.vercel.app/posts/typescript-utility-types-returntype)
 
 ## Thank you!
