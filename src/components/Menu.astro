@@ -2,15 +2,19 @@
 import { MENU_LINKS } from "@/data/constants";
 
 interface Props {
-	TopNav: boolean;
+	isInHeader: boolean;
 }
 
 const url = new URL(Astro.request.url);
-const { TopNav } = Astro.props;
-const links = TopNav ? MENU_LINKS.slice(0, -1) : MENU_LINKS;
+const { isInHeader } = Astro.props;
+const links = isInHeader ? MENU_LINKS.slice(0, -1) : MENU_LINKS;
+
+const ulClass = isInHeader
+	? "flex flex-wrap items-center gap-6"
+	: "flex flex-col justify-center gap-6 md:flex-row";
 ---
 
-<ul class="flex items-center gap-6">
+<ul class={ulClass}>
 	{
 		links.map((link) => (
 			<li>
