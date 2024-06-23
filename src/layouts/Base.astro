@@ -65,18 +65,18 @@ const {
 					<ThemeToggle />
 				</section>
 				<hr class="my-4" />
-				<Menu TopNav={true} />
+				<Menu isInHeader={true} />
 			</div>
 		</nav>
 		{title === "Home" && <Header />}
-		<main class="mx-auto w-11/12 max-w-5xl py-16">
+		<main class="mx-auto w-11/12 max-w-5xl py-12">
 			<slot />
 		</main>
 		<footer class="mt-auto bg-gray-900 py-8 text-slate-100">
-			<div class="mx-auto w-11/12 max-w-5xl space-y-8">
-				<div class="flex w-full flex-col items-center justify-between gap-8 sm:flex-row">
-					<SocialList />
-					<Menu TopNav={false} />
+			<div class="mx-auto w-11/12 max-w-5xl">
+				<div class="mb-10 flex w-full justify-around gap-10 md:flex-col">
+					<Menu isInHeader={false} />
+					<SocialList isInHeader={false} />
 				</div>
 				<p class="text-center">
 					Copyright &copy; {new Date().getFullYear()}
