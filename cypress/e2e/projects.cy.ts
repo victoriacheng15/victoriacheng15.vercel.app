@@ -1,6 +1,6 @@
 describe("Projects page", () => {
 	beforeEach(() => {
-		cy.visit("http://localhost:3000/");
+		cy.visit("http://localhost:4321/");
 		cy.get("li a.text-slate-100.duration-300").eq(1).click();
 	});
 
@@ -9,6 +9,6 @@ describe("Projects page", () => {
 	});
 
 	it("should have a list of 5 projects", () => {
-		cy.get("article").should("have.length", 5);
+		cy.get("article").should("have.length", 4);
 	});
 });

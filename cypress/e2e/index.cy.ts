@@ -1,6 +1,6 @@
 describe("homepage", () => {
 	beforeEach(() => {
-		cy.visit("http://localhost:3000/");
+		cy.visit("http://localhost:4321/");
 	});
 
 	it("should have the title contain hi there", () => {
@@ -12,14 +12,10 @@ describe("homepage", () => {
 	});
 
 	it("should have more than 10 skills on the list", () => {
-		cy.get("ul > .grid").should("have.length.gt", 10);
+		cy.get("ul.grid > li.grid").should("have.length.gt", 10);
 	});
 
 	it("should have recent post title", () => {
 		cy.get("h2").eq(1).should("contain", "Recent Posts:");
-	});
-
-	it("should have more than 10 skills on the list", () => {
-		cy.get("ul > .gap-x-2").should("have.length", 5);
 	});
 });

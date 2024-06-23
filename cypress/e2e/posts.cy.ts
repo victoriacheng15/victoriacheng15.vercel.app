@@ -1,6 +1,6 @@
 describe("Posts page", () => {
 	beforeEach(() => {
-		cy.visit("http://localhost:3000/");
+		cy.visit("http://localhost:4321/");
 		cy.get("li a.text-slate-100.duration-300").eq(2).click();
 	});
 
