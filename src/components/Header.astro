@@ -3,10 +3,10 @@ import { Image } from "astro:assets";
 import SocialList from "./SocialList.astro";
 ---
 
-<header class="py-20">
+<header class="py-12">
 	<div class="mx-auto w-11/12 max-w-5xl">
 		<section class="flex flex-col items-center justify-between gap-6 md:flex-row">
-			<div class="border-1 w-56 md:w-64">
+			<div class="w-56 md:w-64">
 				<Image
 					width={256}
 					height={256}
@@ -17,9 +17,7 @@ import SocialList from "./SocialList.astro";
 				/>
 			</div>
 			<div class="basis-[70%] space-y-6">
-				<h1 class="text-2xl font-bold text-accent md:text-3xl">
-					👋 Hi there, I am Victoria Cheng!
-				</h1>
+				<h1 class="text-xl font-bold text-accent md:text-3xl">👋 Hi there, I am Victoria Cheng!</h1>
 				<p>
 					As a software developer and blogger, my previous career in packaging engineering has
 					instilled in me the importance of collaboration and effective communication across teams.
@@ -35,7 +33,7 @@ import SocialList from "./SocialList.astro";
 					technology world, utilizing my diverse background to create inspired and impactful web
 					applications.
 				</p>
-				<SocialList />
+				<SocialList isInHeader={true} />
 			</div>
 		</section>
 	</div>
@@ -43,6 +41,6 @@ import SocialList from "./SocialList.astro";
 
 <style>
 	p {
-		@apply text-lg leading-9 tracking-wide;
+		@apply leading-9 tracking-wide md:text-lg;
 	}
 </style>
