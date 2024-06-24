@@ -24,11 +24,11 @@ Reflecting on my journey so far, I've realized the importance of flexibility and
 I've started setting aside a specific time each day for reading. It's taking time, but I'm steadily making reading a part of my daily routine.
 
 - **The Miracle Morning**:
-    - This book advocates for transforming your life by starting a powerful morning ritual. Rituals are meditation, exercise, reading, and affirmations to boost productivity and well-being.
+  - This book advocates for transforming your life by starting a powerful morning ritual. Rituals are meditation, exercise, reading, and affirmations to boost productivity and well-being.
 - **Make Time**:
-    - This book focuses on productivity and mindfulness. It gives you a framework to take back control of your time and attention, even with distractions. It highlights making daily routines that prioritize meaningful work and personal growth.
+  - This book focuses on productivity and mindfulness. It gives you a framework to take back control of your time and attention, even with distractions. It highlights making daily routines that prioritize meaningful work and personal growth.
 - **Version Control with Git**:
-    - This book is a practical guide to using Git, a widely used version control system. It covers key concepts such as repositories, branches, commits, and merging. It empowers developers to manage and collaborate on software projects effectively.
+  - This book is a practical guide to using Git, a widely used version control system. It covers key concepts such as repositories, branches, commits, and merging. It empowers developers to manage and collaborate on software projects effectively.
 
 ## Thank you!
 
