@@ -72,6 +72,10 @@ export const SKILLS = [
 		skill: "simple-icons:mongodb",
 	},
 	{
+		name: "PostgreSQL",
+		skill: "simple-icons:postgresql",
+	},
+	{
 		name: "Bash",
 		skill: "simple-icons:gnubash",
 	},
