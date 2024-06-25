@@ -10,28 +10,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Create a branch and run the script
-        id: get_output
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Run publishPost script
+        run: node scripts/publishPost.js
+
+      - name: Check for changes
+        id: changes
         run: |
-          git switch -c publish-post
-          ./scripts/publish-post.sh
+          git add src/content/ src/drafts
+          git diff --cached --exit-code || echo "changes detected" > changes.txt
 
       - name: Commit changes or exit the process
+        if: steps.changes.outputs.changes_detected == 'true'
         run: |
-          if [[ "${{ steps.get_output.outputs.stdout }}" == "no file" ]]; then
-            echo "No changes detected. Exiting the process."
-            exit 0
-          else
-            echo "Changes detected. Proceeding with commit and push..."
-            git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-            git config --local user.name "${{ github.actor }}"
-            git pull origin main --no-ff
-            git add src/content/ src/drafts 
-            git commit -m "chore: the post is published! 🎉"
-            git push -u origin HEAD
-          fi
+          echo "Changes detected. Proceeding with commit and push..."
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+          git pull origin main --no-ff
+          git commit -m "chore: the post is published! 🎉"
+          git push -u origin HEAD
 
       - name: Create PR
+        if: steps.changes.outputs.changes_detected == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
