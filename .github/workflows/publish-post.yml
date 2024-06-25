@@ -15,7 +15,9 @@ jobs:
           node-version: 18
 
       - name: Run publishPost script
-        run: node scripts/publishPost.js
+        run: |
+          git switch -c publish-post
+          node scripts/publishPost.js
 
       - name: Check for changes
         id: changes
