@@ -2,7 +2,7 @@ const BOOKS = [
 	{
 		year: "2024",
 		books: [
-      "Sleep Smarter"
+      "Sleep Smarter",
 			"Version Control with Git",
 			"Make Time",
 			"The Miracle Monring",
