@@ -29,7 +29,7 @@ jobs:
           fi
 
       - name: Commit changes or exit the process
-        if: steps.changes.outputs.changes_detected == 'true'
+        if: env.changes_detected == 'true'
         run: |
           echo "Changes detected. Proceeding with commit and push..."
           git add src/content/ src/drafts
@@ -40,7 +40,7 @@ jobs:
           git push -u origin HEAD
 
       - name: Create PR
-        if: steps.changes.outputs.changes_detected == 'true'
+        if: env.changes_detected == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
