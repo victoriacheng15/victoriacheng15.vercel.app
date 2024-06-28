@@ -2,13 +2,16 @@ const BOOKS = [
 	{
 		year: "2024",
 		books: [
+      "Sleep Smarter"
+			"Version Control with Git",
+			"Make Time",
 			"The Miracle Monring",
 			"On Writing Well",
 			"Find Your Why",
 			"Start with Why",
 			"Smart Brevity",
 			"Keep Going",
-			"It Starts With Food: Discover the Whole30 and Change Your Life in Unexpected Ways",
+			"It Starts With Food",
 			"The 7 Habits of Highly Effective People",
 		],
 	},
@@ -26,7 +29,7 @@ const BOOKS = [
 			"Eat That Frog!",
 			"The Unfair Advantage",
 			"Ultralearning",
-			"Clean Architecture: A Craftsman's Guide to Software Structure and Design ",
+			"Clean Architecture",
 			"Can’t Hurt Me",
 			"How to Win Friends and Influence People in the Digital Age",
 			"Software Engineering at Google",
@@ -38,8 +41,8 @@ const BOOKS = [
 			"The Phoenix Projects",
 			"The 12 Week Year",
 			"Limitless: Upgrade Your Brain, Learn Anything Faster, and Unlock You Exceptional Life",
-			"Deep Work: Rules for Focused Success in a Distracted World",
-			"Clean Code: A Handbook of Agile Software Craftsmanship",
+			"Deep Work",
+			"Clean Code",
 		],
 	},
 	{
