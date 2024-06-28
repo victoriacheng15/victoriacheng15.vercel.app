@@ -23,13 +23,13 @@ jobs:
         id: changes
         run: |
           if git diff --cached --exit-code; then
-            echo "changes_detected=false" >> $GITHUB_ENV
+            echo "changes_detected=true" >> "$GITHUB_OUTPUT"
           else
-            echo "changes_detected=true" >> $GITHUB_ENV
+            echo "changes_detected=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Commit changes or exit the process
-        if: env.changes_detected == 'true'
+        if: steps.changes.outputs.changes_detected == 'true'
         run: |
           echo "Changes detected. Proceeding with commit and push..."
           git add src/content/ src/drafts
@@ -40,7 +40,7 @@ jobs:
           git push -u origin HEAD
 
       - name: Create PR
-        if: env.changes_detected == 'true'
+        if: steps.changes.outputs.changes_detected == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
