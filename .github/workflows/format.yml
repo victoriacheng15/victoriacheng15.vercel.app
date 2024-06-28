@@ -1,4 +1,4 @@
-name: format
+name: Run Prettier
 
 on:
   pull_request:
