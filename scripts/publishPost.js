@@ -1,8 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-const draftsDir = "src/drafts";
-const markdownDir = "src/content/post";
+const DRAFT_DIR = "src/drafts";
+const MARKDOWN_DIR = "src/content/post";
 
 function getTodayDate() {
 	const today = new Date();
@@ -14,8 +14,9 @@ function getTodayDate() {
 async function sortFiles(files) {
 	try {
 		const posts = {};
+
 		for (const file of files) {
-			const filePath = path.join(draftsDir, file);
+			const filePath = path.join(DRAFT_DIR, file);
 			const fileContent = await fs.readFile(filePath, "utf-8");
 
 			const titlePattern = /^title:\s*(.*)/im;
@@ -40,7 +41,7 @@ async function sortFiles(files) {
 
 (async () => {
 	try {
-		const files = await fs.readdir(draftsDir);
+		const files = await fs.readdir(DRAFT_DIR);
 
 		const markdownFiles = files.filter((file) => file.endsWith(".md"));
 
@@ -57,7 +58,8 @@ async function sortFiles(files) {
 
 		if (new Date(today).getTime() + ONE_DAY === new Date(firstPost[0]).getTime()) {
 			const fileName = `${firstPost[1]}.md`;
-			await fs.rename(joinPath(draftsDir, fileName), joinPath(markdownDir, fileName));
+
+			await fs.rename(`${DRAFT_DIR}/${fileName}`, `${MARKDOWN_DIR}/${fileName}`);
 
 			console.log("\n== 🥳️ The file moving is done 🥳️ ==\n");
 		} else {
