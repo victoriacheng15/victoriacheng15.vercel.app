@@ -22,13 +22,17 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add src/content/ src/drafts
-          git diff --cached --exit-code || echo "changes detected" > changes.txt
+          if git diff --cached --exit-code; then
+            echo "changes_detected=false" >> $GITHUB_ENV
+          else
+            echo "changes_detected=true" >> $GITHUB_ENV
+          fi
 
       - name: Commit changes or exit the process
         if: steps.changes.outputs.changes_detected == 'true'
         run: |
           echo "Changes detected. Proceeding with commit and push..."
+          git add src/content/ src/drafts
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git config --local user.name "${{ github.actor }}"
           git pull origin main --no-ff
