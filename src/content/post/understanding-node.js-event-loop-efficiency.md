@@ -35,6 +35,8 @@ console.log("Third log");
 
 <iframe style="width: 100%; height: 400px; border: none;"src="https://github.com/victoriacheng15/victoriacheng15.vercel.app/assets/35031228/54b721f3-df59-4d72-8206-03f673c6b1d0" frameborder="0" allowfullscreen></iframe>
 
+_This GIF, created by me, illustrates the synchronous execution of code in Node.js._
+
 ### Asynchronous operation
 
 This code snippet logs three messages sequentially: **First log** and **Third log** synchronously execute immediately, while the **Second log** scheduled with `setTimeout` appears last due to Node.js prioritizing synchronous tasks. This highlights Node.js's event-driven model, ensuring efficient handling of tasks without blocking execution.
@@ -52,6 +54,8 @@ console.log("Third log");
 ```
 
 <iframe style="width: 100%; height: 400px; border: none;" src="https://github.com/victoriacheng15/victoriacheng15.vercel.app/assets/35031228/a18a2f66-f974-46af-94bc-e43ef6b518b2" frameborder="0" allowfullscreen></iframe>
+
+_This GIF, created by me, illustrates the asynchronous execution model in Node.js, showcasing how the event loop handles tasks._
 
 A list of asynchronous operations:
 
