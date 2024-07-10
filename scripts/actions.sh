@@ -5,10 +5,18 @@ update_main() {
   git fetch && git pull origin main
 }
 
+continue_checks() {
+  while true; do
+    gh pr checks
+    sleep 5
+  done
+}
+
 actions=(
   "Update main branch"
   "Setup post branch and draft post(s)"
   "Publish a new post"
+  "GH worflow check"
 )
 
 PS3="Select the action: "
@@ -25,6 +33,10 @@ select action in "${actions[@]}"; do
     ;;
   "${actions[2]}")
     scripts/publish-post.sh
+    break
+    ;;
+  "${actions[3]}")
+    continue_checks
     break
     ;;
   *)
