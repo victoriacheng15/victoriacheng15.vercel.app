@@ -24,7 +24,7 @@ The magic behind hash tables lies in the use of a hash function. Here's a step-b
 
 Hash tables are favored in many applications for several reasons:
 
-- **Speed**: The average time complexity for insertions, deletions, and lookups is O(1), making hash tables extremely fast.
+- **Speed**: The average time complexity for *insertions*, *deletions*, and *lookups* is *O(1)*, making hash tables extremely fast.
 - **Flexibility**: They can store various types of data as keys and values, from integers and strings to complex objects.
 - **Efficiency**: By minimizing the time spent on data retrieval, hash tables enhance the performance of applications, especially those that require frequent and fast access to data.
 
@@ -37,7 +37,7 @@ Hash tables are versatile and can be used in various scenarios, including:
 
 ## Recap
 
-A hash table maps keys to values, allowing fast data retrieval with average operations in O(1) time. It uses a hash function to convert keys into array indices. If collisions occur (two keys map to the same index), techniques like chaining (linked lists) or open addressing (finding another slot) are used. Hash tables are speedy, flexible, and efficient, making them ideal for databases, caches, symbol tables, and sets.
+A hash table maps keys to values, *allowing fast data retrieval with average operations in O(1) time*. It uses a hash function to convert keys into array indices. If collisions occur (two keys map to the same index), techniques like chaining (linked lists) or open addressing (finding another slot) are used. Hash tables are speedy, flexible, and efficient, making them ideal for databases, caches, symbol tables, and sets.
 
 ## Resources
 
