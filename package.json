@@ -52,7 +52,7 @@
 		"@astrojs/rss": "^4.0.7",
 		"astro": "^4.11.5",
 		"astro-icon": "^1.1.0",
-		"satori": "0.10.13",
+		"satori": "0.10.14",
 		"satori-html": "^0.3.2"
 	}
 }
