@@ -16,8 +16,8 @@ The magic behind hash tables lies in the use of a hash function. Here's a step-b
 1. **Hash Function**: Converts a key into an integer (hash code) used as an array index. A good hash function spreads keys evenly to minimize collisions.
 2. **Index Calculation**: Adjusts the hash code, typically using modulo with the array size, to ensure it fits within the array bounds.
 3. **Handling Collisions**: Occurs when two keys map to the same index. Common techniques include:
-    - **Chaining**: Stores collide items in a linked list at the index.
-    - **Open Addressing**: Finds the next available slot using methods like linear or quadratic probing, or double hashing.
+   - **Chaining**: Stores collide items in a linked list at the index.
+   - **Open Addressing**: Finds the next available slot using methods like linear or quadratic probing, or double hashing.
 4. **Insertion and Retrieval**: For insertion, the hash function finds the index to store the value. For retrieval, the same function finds the index for fast access.
 
 ## Why Use Hash Tables?

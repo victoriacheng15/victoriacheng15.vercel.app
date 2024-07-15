@@ -28,22 +28,22 @@ less [option] [file]
 ## Options
 
 - Options for `more`
-  
-| Option | Description |
-| --- | --- |
-| -d | Prompt with "[Press space to continue, 'q' to quit.]" and display "[Press 'h' for instructions.]" instead of ringing the bell |
-| -c | Clear the screen before displaying the next page |
-| -s | Squeeze multiple blank lines into one |
-| -u | Suppress underlining |
+
+| Option | Description                                                                                                                   |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| -d     | Prompt with "[Press space to continue, 'q' to quit.]" and display "[Press 'h' for instructions.]" instead of ringing the bell |
+| -c     | Clear the screen before displaying the next page                                                                              |
+| -s     | Squeeze multiple blank lines into one                                                                                         |
+| -u     | Suppress underlining                                                                                                          |
 
 - Options for `less`
-  
-| Option | Description |
-| --- | --- |
-| -N | Show line numbers |
-| -S | Chop long lines instead of wrapping |
-| -X | Disable termcap init/deinit codes |
-| -F | Automatically exit if the entire file fits on one screen |
+
+| Option | Description                                              |
+| ------ | -------------------------------------------------------- |
+| -N     | Show line numbers                                        |
+| -S     | Chop long lines instead of wrapping                      |
+| -X     | Disable termcap init/deinit codes                        |
+| -F     | Automatically exit if the entire file fits on one screen |
 
 ## Additional Help
 
