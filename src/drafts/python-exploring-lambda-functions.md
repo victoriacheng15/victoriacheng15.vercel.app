@@ -39,37 +39,37 @@ print(add(3, 5))
 Lambda functions offer several benefits that make them valuable in specific scenarios:
 
 1. **Conciseness**: Lambda functions allow you to write small functions in a single line of code. This can make your code more concise and readable when the function logic is simple.
-    
-    ```python
-    # Without lambda
-    def square(x):
-        return x * x
-    
-    # With lambda
-    square = lambda x: x * x
-    ```
-    
+
+   ```python
+   # Without lambda
+   def square(x):
+       return x * x
+
+   # With lambda
+   square = lambda x: x * x
+   ```
+
 2. **Inline Usage**: Lambda functions are perfect for use in places where functions are required temporarily. For example, they can be used as arguments for higher-order functions like `map()`, `filter()`, and `reduce()`.
-    
-    ```python
-    numbers = [1, 2, 3, 4, 5]
-    squares = list(map(lambda x: x * x, numbers))
-    print(squares)  
-    # Output: [1, 4, 9, 16, 25]
-    ```
-    
+
+   ```python
+   numbers = [1, 2, 3, 4, 5]
+   squares = list(map(lambda x: x * x, numbers))
+   print(squares)
+   # Output: [1, 4, 9, 16, 25]
+   ```
+
 3. **Avoiding Function Overhead**: When you need a simple function for a short duration, using a lambda function can avoid the overhead of defining a full function with `def`, which includes naming the function and potentially adding a docstring.
 4. **Functional Programming**: Lambda functions support functional programming paradigms by enabling the creation of simple, anonymous functions that can be passed around as arguments, returned from other functions, and assigned to variables.
-    
-    ```python
-    def make_incrementor(n):
-        return lambda x: x + n
-    
-    increment_by_5 = make_incrementor(5)
-    print(increment_by_5(10))  
-    # Output: 15
-    ```
-    
+
+   ```python
+   def make_incrementor(n):
+       return lambda x: x + n
+
+   increment_by_5 = make_incrementor(5)
+   print(increment_by_5(10))
+   # Output: 15
+   ```
+
 5. **Readability in Specific Contexts**: In contexts where the logic is straightforward and the function's purpose is immediately clear, lambda functions can enhance readability by reducing the amount of boilerplate code.
 
 ## When to Avoid Lambda Functions
