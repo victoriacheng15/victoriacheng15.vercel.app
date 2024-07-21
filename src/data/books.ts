@@ -2,6 +2,10 @@ const BOOKS = [
 	{
 		year: "2024",
 		books: [
+			"Quit: The Power of Knowing When to Walk Away",
+			"Alchemy The Surprising Power of Ideas That Dont Make Sense",
+			"Designing Data-Intensive Applications",
+			"Rich Dad Poor Dad",
 			"Sleep Smarter",
 			"Version Control with Git",
 			"Make Time",
