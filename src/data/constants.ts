@@ -24,8 +24,7 @@ export const MENU_LINKS = [
 	},
 ];
 
-// ! Remember to add your own socials
-export const SOCIALS = [
+const SOCIALS = [
 	{
 		name: "github",
 		href: "https://github.com/victoriacheng15",
@@ -36,6 +35,18 @@ export const SOCIALS = [
 		name: "linkedin",
 		href: "https://www.linkedin.com/in/victoriacheng15",
 		icon: "simple-icons:linkedin",
+		active: true,
+	},
+	{
+		name: "TikTok",
+		href: "https://www.tiktok.com/@victoriacheng15",
+		icon: "simple-icons:tiktok",
+		active: true,
+	},
+	{
+		name: "youtube",
+		href: "https://www.youtube.com/@victoriacheng15",
+		icon: "simple-icons:youtube",
 		active: true,
 	},
 	{
@@ -57,15 +68,11 @@ export const SOCIALS = [
 		active: false,
 	},
 	{
-		name: "youtube",
-		href: "https://www.youtube.com/@victoriacheng15",
-		icon: "simple-icons:youtube",
-		active: true,
-	},
-	{
 		name: "buy me a coffee",
 		href: "https://www.buymeacoffee.com/victoriacheng15",
 		icon: "simple-icons:buymeacoffee",
 		active: true,
 	},
 ];
+
+export const activeSocial = SOCIALS.filter(({ active }) => active);
