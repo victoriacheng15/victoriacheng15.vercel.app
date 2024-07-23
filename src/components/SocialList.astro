@@ -1,12 +1,10 @@
 ---
 import { Icon } from "astro-icon/components";
-import { SOCIALS } from "@/data/constants";
+import { activeSocial } from "@/data/constants";
 
 interface Props {
 	isInHeader: boolean;
 }
-
-const filteredSocials = SOCIALS.filter(({ active }) => active);
 
 const { isInHeader } = Astro.props;
 
@@ -15,7 +13,7 @@ const ulClass = isInHeader ? "flex gap-4" : "flex flex-col justify-center gap-6 
 
 <ul class={ulClass}>
 	{
-		filteredSocials.map(({ name, href, icon }) => (
+		activeSocial.map(({ name, href, icon }) => (
 			<li class="duration-300 ease-in-out hover:text-accent">
 				<a href={href} aria-label={name} target="_blank" rel="noopener noreferrer">
 					<Icon class="h-10 w-10" name={icon} />
