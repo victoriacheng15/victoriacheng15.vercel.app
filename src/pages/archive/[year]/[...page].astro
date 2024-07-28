@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 import { getUniqueYears, sortMDByDate, setPaginationProps } from "@/utils";
 import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
-import ReturnHeading from "@/components/ReturnHeading";
+import BackToLast from "@/components/BackToLast";
 import Pagination from "@/components/Paginator";
 import PostPreivewList from "@/components/blog/PostPreivewList";
 
@@ -43,10 +43,10 @@ const paginationProps = setPaginationProps(page);
 ---
 
 <PageLayout meta={meta}>
-	<ReturnHeading>
+	<BackToLast>
 		<a href="/archive" class="text-link sm:hover:underline">Year:</a>
 		<span class="ml-2 text-xl">#{year}</span>
-	</ReturnHeading>
+	</BackToLast>
 	<section aria-label="Blog post list">
 		<ul class="space-y-4 pb-4">
 			{
