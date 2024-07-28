@@ -6,7 +6,7 @@ import { getUniqueTags, sortMDByDate, setPaginationProps } from "@/utils";
 import { POSTS_PER_PAGE } from "@/data/constants";
 import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
-import ReturnHeading from "@/components/ReturnHeading";
+import BackToLast from "@/components/BackToLast";
 import Pagination from "@/components/Paginator";
 import PostPreivewList from "@/components/blog/PostPreivewList";
 
@@ -40,10 +40,10 @@ const paginationProps = setPaginationProps(page);
 ---
 
 <PageLayout meta={meta}>
-	<ReturnHeading>
+	<BackToLast>
 		<a href="/tags" class="text-link sm:hover:underline">Tags:</a>
 		<span class="ml-2 text-xl">#{tag}</span>
-	</ReturnHeading>
+	</BackToLast>
 	<section aria-label="Blog post list">
 		<ul class="space-y-4 pb-4">
 			{
