@@ -29,4 +29,8 @@ export const projectDetails = [
 		title: "articles-extractor",
 		techs: ["Python", "Docker", "Google Sheets", "Raspberry Pi"],
 	},
+	{
+		title: "all-earthquakes-data",
+		techs: ["Python", "Docker", "PostgreSQL", "Pandas", "Jupyter"],
+	},
 ];
