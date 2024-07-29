@@ -23,13 +23,13 @@ cut -d ',' -f 1,3 file-name
 
 ## Options
 
-| Option | Description |
-| --- | --- |
-| -b, --bytes | Select only the bytes specified by the list |
-| -c, --characters | Select only the characters specified by the list |
-| -d, --delimiter | Specify a delimiter to use (default is TAB) |
-| -f, --fields | Specify the fields to extract, using the delimiter |
-| -s, --only-delimited | Suppress lines that do not contain the delimiter |
+| Option                | Description                                                                |
+| --------------------- | -------------------------------------------------------------------------- |
+| -b, --bytes           | Select only the bytes specified by the list                                |
+| -c, --characters      | Select only the characters specified by the list                           |
+| -d, --delimiter       | Specify a delimiter to use (default is TAB)                                |
+| -f, --fields          | Specify the fields to extract, using the delimiter                         |
+| -s, --only-delimited  | Suppress lines that do not contain the delimiter                           |
 | -z, --zero-terminated | Treat input lines as terminated by a null character (instead of a newline) |
 
 ## Additional Help
