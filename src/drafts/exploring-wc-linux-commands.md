@@ -23,12 +23,12 @@ wc file-name
 
 ## Options
 
-| Option | Description |
-| --- | --- |
-| -c, --bytes | Print the number of bytes in each file |
+| Option      | Description                                                                        |
+| ----------- | ---------------------------------------------------------------------------------- |
+| -c, --bytes | Print the number of bytes in each file                                             |
 | -m, --chars | Print the number of characters in each file (character count may vary by encoding) |
-| -l, --lines | Print the number of lines in each file |
-| -w, --words | Print the number of words in each file |
+| -l, --lines | Print the number of lines in each file                                             |
+| -w, --words | Print the number of words in each file                                             |
 
 ## Additional Help
 
