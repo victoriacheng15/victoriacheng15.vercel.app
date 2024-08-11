@@ -23,13 +23,13 @@ sort file-name
 
 ## Options
 
-| Option | Description |
-| --- | --- |
-| -b, --ignore-leading-blank | Ignore leading blanks |
-|  -d, --dictionary-order  | Consider only blanks and alphanumeric characters |
-| -f, --ignore-case | Fold lower case to upper case characters |
-| -n, --numeric-sort | Compare according to string numerical value |
-| -r, --reverse | reverse the result of comparisons |
+| Option                     | Description                                      |
+| -------------------------- | ------------------------------------------------ |
+| -b, --ignore-leading-blank | Ignore leading blanks                            |
+| -d, --dictionary-order     | Consider only blanks and alphanumeric characters |
+| -f, --ignore-case          | Fold lower case to upper case characters         |
+| -n, --numeric-sort         | Compare according to string numerical value      |
+| -r, --reverse              | reverse the result of comparisons                |
 
 ## Additional Help
 

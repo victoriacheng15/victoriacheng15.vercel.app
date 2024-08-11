@@ -19,8 +19,8 @@ try:
     print("This will not print because an exception occurs above.")
 except ZeroDivisionError:
     print("You can't divide by zero!")
-    
-# You can't divide by zero! 
+
+# You can't divide by zero!
 ```
 
 In this example, attempting to divide by zero raises a `ZeroDivisionError`, which is caught by the `except` block.
@@ -86,7 +86,7 @@ except FileNotFoundError:
 finally:
     file.close()
     print("File closed.")
-    
+
 # File not found!
 # File closed.
 ```
