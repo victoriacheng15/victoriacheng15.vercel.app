@@ -1,7 +1,9 @@
 const BOOKS = [
 	{
-		year: "2024",
+		year: 2024,
 		books: [
+			"Fundamentals of Data Engineering",
+			"The First 20 Hours How to Learn Anything . . . Fast",
 			"Quit: The Power of Knowing When to Walk Away",
 			"Alchemy The Surprising Power of Ideas That Dont Make Sense",
 			"Designing Data-Intensive Applications",
@@ -20,7 +22,7 @@ const BOOKS = [
 		],
 	},
 	{
-		year: "2023",
+		year: 2023,
 		books: [
 			"Show Your Work",
 			"Steal Like an Artis",
@@ -50,13 +52,13 @@ const BOOKS = [
 		],
 	},
 	{
-		year: "2022",
+		year: 2022,
 		books: ["Atomic Habits"],
 	},
 ];
 
 type Book = {
-	year: string;
+	year: number;
 	books: string[];
 };
 
