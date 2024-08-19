@@ -23,13 +23,13 @@ uniq file-name
 
 ## Options
 
-| Option | Description |
-| --- | --- |
-| -c | Precede each output line with the number of occurrences |
-|  -d | Only print duplicate lines, one for each group |
-| -u | Only print unique lines |
-| -i | Ignore differences in case when comparing |
-| -w N | Compare no more than N characters in a line |
+| Option | Description                                             |
+| ------ | ------------------------------------------------------- |
+| -c     | Precede each output line with the number of occurrences |
+| -d     | Only print duplicate lines, one for each group          |
+| -u     | Only print unique lines                                 |
+| -i     | Ignore differences in case when comparing               |
+| -w N   | Compare no more than N characters in a line             |
 
 ## Additional Help
 
