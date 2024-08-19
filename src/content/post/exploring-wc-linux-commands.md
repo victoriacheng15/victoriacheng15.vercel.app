@@ -15,7 +15,7 @@ Basic syntax:
 wc [option] [file]
 ```
 
-Remove an empty directory:
+Example:
 
 ```bash
 wc file-name

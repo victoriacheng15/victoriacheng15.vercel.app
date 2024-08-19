@@ -13,13 +13,13 @@ Basic Syntax:
 
 By default, both commands will display the **first** or **last** 10 lines of file contents respectively.
 
-- head:
+head:
 
 ```bash
 head [option] [file]
 ```
 
-- tail:
+tail:
 
 ```bash
 tail [option] [file]

@@ -15,7 +15,7 @@ Basic syntax:
 cut [option] [file]
 ```
 
-Remove an empty directory:
+Example:
 
 ```bash
 cut -d ',' -f 1,3 file-name

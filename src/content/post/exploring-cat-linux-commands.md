@@ -15,7 +15,7 @@ Basic syntax:
 cat [option] [file]
 ```
 
-Remove an empty directory:
+Example:
 
 ```bash
 cat file-name

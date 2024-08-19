@@ -13,13 +13,13 @@ Basic Syntax:
 
 By default, both commands will display the contents of the file one screen at a time.
 
-- more:
+more:
 
 ```bash
 more [option] [file]
 ```
 
-- less:
+less:
 
 ```bash
 less [option] [file]
