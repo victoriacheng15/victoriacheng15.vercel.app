@@ -27,20 +27,21 @@ gunzip [option] [file]
 
 - Options for `gzip`
 
-| Option | Description |
-| --- | --- |
-| -d | Decompress the file (same as using `gunzip`) |
-| -c | Write output to standard output (stdout) and keep the original files unchanged |
-| -k | Keep the original files after compression |
-| -v | Display the name and percentage reduction for each file |
+| Option | Description                                                                    |
+| ------ | ------------------------------------------------------------------------------ |
+| -d     | Decompress the file (same as using `gunzip`)                                   |
+| -c     | Write output to standard output (stdout) and keep the original files unchanged |
+| -k     | Keep the original files after compression                                      |
+| -v     | Display the name and percentage reduction for each file                        |
+
 - Options for `gunzip`
 
-| Option | Description |
-| --- | --- |
-| -c | Write output to standard output (stdout) and keep the original files unchanged |
-| -f | Force decompression, even if the file appears to be corrupted |
-| -l | List the contents of the compressed file |
-| -t | Test the integrity of the compressed file |
+| Option | Description                                                                    |
+| ------ | ------------------------------------------------------------------------------ |
+| -c     | Write output to standard output (stdout) and keep the original files unchanged |
+| -f     | Force decompression, even if the file appears to be corrupted                  |
+| -l     | List the contents of the compressed file                                       |
+| -t     | Test the integrity of the compressed file                                      |
 
 ## Additional Help
 

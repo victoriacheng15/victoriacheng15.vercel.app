@@ -15,12 +15,12 @@ In this TED Talk, Marion highlights the importance of evaluating company culture
 
 - **Observe the Recruitment Process**: How the company interacts with you during recruitment. A slow response or a hierarchical interview process can indicate a company’s pace and culture.
 - **Ask Key Questions**: During interviews, ask these three crucial questions:
-    - What **kind of people** get promoted here? 
-      - This reveals whether the company values merit, tenure, or other factors.
-    - What are your **core values**? 
-      - Understanding core values helps determine if they align with your principles.
-    - When was the last time you received **feedback** here? 
-      - This shows how the company handles feedback and supports employee growth.
+  - What **kind of people** get promoted here?
+    - This reveals whether the company values merit, tenure, or other factors.
+  - What are your **core values**?
+    - Understanding core values helps determine if they align with your principles.
+  - When was the last time you received **feedback** here?
+    - This shows how the company handles feedback and supports employee growth.
 
 It's easy to get caught up in job titles, salary, or cool projects, but those shouldn't be your only focus. The three questions from the talk are super useful for digging into a company's culture. They'll help you see how the company handles promotions, what its core values are, and how it deals with feedback. This info can help you find a place that fits your values and growth goals.
 
@@ -31,7 +31,7 @@ You can check out this Ted Talk at [this link](https://www.ted.com/talks/marion_
 ## Books
 
 - **Fundamentals of Data Engineering Plan and Build Robust Data Systems**
-    - Explores the essential practices for managing and processing data effectively. Key insights include designing data models, centralizing data in warehouses, and automating workflows through ETL and data pipelines. Emphasizes integrating and cleansing data, handling big data with advanced technologies, and implementing strong data governance and security measures. The field focuses on ensuring data quality, leveraging cloud technologies, and providing a foundation for informed decision-making and insights.
+  - Explores the essential practices for managing and processing data effectively. Key insights include designing data models, centralizing data in warehouses, and automating workflows through ETL and data pipelines. Emphasizes integrating and cleansing data, handling big data with advanced technologies, and implementing strong data governance and security measures. The field focuses on ensuring data quality, leveraging cloud technologies, and providing a foundation for informed decision-making and insights.
 
 ## Thank you!
 
