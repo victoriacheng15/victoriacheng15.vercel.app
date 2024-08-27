@@ -5,7 +5,7 @@ publishDate: "2024-07-20"
 tags: [linux]
 ---
 
-## WWhat are the more and less Commands in Linux?
+## What are the more and less Commands in Linux?
 
 The `more` and `less` commands are used to view the contents of text files in a paginated manner. These commands are particularly useful for reading through large files without loading the entire content into memory at once.
 

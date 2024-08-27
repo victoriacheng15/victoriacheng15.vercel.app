@@ -15,7 +15,7 @@ Basic syntax:
 uniq [option] [input-file] [output-file]
 ```
 
-Sort a file alphabetically:
+Example:
 
 ```bash
 uniq file-name
