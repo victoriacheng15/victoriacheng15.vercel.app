@@ -144,27 +144,23 @@ Additionally, you can get a list of available functions, constants, and methods 
 
 1. Open your terminal and type `python3` to enter the Python REPL.
 2. Import the `os` module and use the `dir()` function to list all available attributes:
-    
-    ```python
-    import os
-    print(dir(os))
-    ```
-    
-    This will display everything the `os` module offers, including functions, constants, and methods.
-    
+
+   ```python
+   import os
+   print(dir(os))
+   ```
+
+   This will display everything the `os` module offers, including functions, constants, and methods.
+
 3. For more detailed information on any function or the entire module, use the `help()` function. For example:
-    - To see an overview of the `os` module:
-        
-        ```python
-        help(os)
-        ```
-        
-    - To see information about a specific submodule like `os.path`:
-        
-        ```python
-        help(os.path)
-        ```
-        
+   - To see an overview of the `os` module:
+     ```python
+     help(os)
+     ```
+   - To see information about a specific submodule like `os.path`:
+     ```python
+     help(os.path)
+     ```
 
 This will provide descriptions, usage, and examples for each function or submodule in the `os` module.
 

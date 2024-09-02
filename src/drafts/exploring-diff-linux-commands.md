@@ -23,14 +23,14 @@ diff file1.txt file2.txt
 
 ## Options
 
-| Option | Description |
-| --- | --- |
-| -c | Output NUM (default 3) lines of copied context |
-| -u | Output NUM (default 3) lines of unified context |
-| -i | Ignores case differences |
-| -r | Recursively compares directories |
-| -w | Ignores all white space differences |
-| -y | Outputs a side-by-side comparison |
+| Option | Description                                     |
+| ------ | ----------------------------------------------- |
+| -c     | Output NUM (default 3) lines of copied context  |
+| -u     | Output NUM (default 3) lines of unified context |
+| -i     | Ignores case differences                        |
+| -r     | Recursively compares directories                |
+| -w     | Ignores all white space differences             |
+| -y     | Outputs a side-by-side comparison               |
 
 ## Additional Help
 
