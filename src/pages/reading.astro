@@ -7,6 +7,8 @@ const meta = {
 	description:
 		"Explore my reading journey since 2022 with this comprehensive list of books I've enjoyed.",
 };
+
+const currentYear = new Date().getFullYear();
 ---
 
 <PageLayout meta={meta}>
@@ -16,15 +18,26 @@ const meta = {
 		social media. Here's a rundown of the books I've managed to dive into so far! 📚
 	</p>
 	{
-		allBooks.map(({ year, books }) => (
-			<section class="mb-10">
-				<h2 class="mb-2 text-2xl font-bold tracking-wider">{year}</h2>
-				<ul class="grid gap-4">
-					{books.map((title) => (
-						<li class="ml-8 list-disc text-lg">{title}</li>
-					))}
-				</ul>
-			</section>
-		))
+		allBooks.map(({ year, books }) =>
+			year === currentYear ? (
+				<details open class="mb-4">
+					<summary class="mb-2 text-xl font-bold tracking-wider">{year}</summary>
+					<ul class="grid gap-4">
+						{books.map((title) => (
+							<li class="ml-8 list-disc text-lg">{title}</li>
+						))}
+					</ul>
+				</details>
+			) : (
+				<details class="mb-4">
+					<summary class="mb-2 text-xl font-bold tracking-wider">{year}</summary>
+					<ul class="grid gap-4">
+						{books.map((title) => (
+							<li class="ml-8 list-disc text-lg">{title}</li>
+						))}
+					</ul>
+				</details>
+			),
+		)
 	}
 </PageLayout>
