@@ -23,12 +23,12 @@ sed 's/old_string/new_string/' file.txt
 
 ## Options
 
-| Option | **Description** |
-| --- | --- |
-| -n | Suppresses automatic output, useful when you only want specific lines |
-|  -e | Allows multiple commands to be executed |
-| -i | Modifies the file in place (saves changes directly to the file) |
-| -r | Enables extended regular expressions in the script |
+| Option | **Description**                                                       |
+| ------ | --------------------------------------------------------------------- |
+| -n     | Suppresses automatic output, useful when you only want specific lines |
+| -e     | Allows multiple commands to be executed                               |
+| -i     | Modifies the file in place (saves changes directly to the file)       |
+| -r     | Enables extended regular expressions in the script                    |
 
 ## Common Use Cases
 
