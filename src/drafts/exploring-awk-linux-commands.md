@@ -23,11 +23,11 @@ awk '{print $1}' file.txt
 
 ## Options
 
-| Option | Description |
-| --- | --- |
-| -F | Sets the field separator (default is space or tab) |
-|  -f | Reads the `awk` program from a file instead of the command line |
-| -v | Allows you to pass in external variables |
+| Option | Description                                                     |
+| ------ | --------------------------------------------------------------- |
+| -F     | Sets the field separator (default is space or tab)              |
+| -f     | Reads the `awk` program from a file instead of the command line |
+| -v     | Allows you to pass in external variables                        |
 
 ## Common Use Cases
 

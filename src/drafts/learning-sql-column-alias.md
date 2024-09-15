@@ -29,11 +29,11 @@ While `AS` is optional, leaving it out can make the query harder to read. I pref
 
 ## Why Use Aliases?
 
-- Cleaner Results: 
+- Cleaner Results:
   - If the column names are long or unclear, aliases make your output easier to read
-- Naming calculations: 
+- Naming calculations:
   - When doing math or combining columns, aliases give a name to the result
-- Avoid Confusion: 
+- Avoid Confusion:
   - If you are working with more than one table, and they have columns with same names, aliases help you tell them apart
 
 ## Examples
