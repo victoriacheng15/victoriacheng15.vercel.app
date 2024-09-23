@@ -25,13 +25,13 @@ This command searches for all `.txt` files in the `/home/user` directory.
 
 ## Options
 
-| Option | **Description** |
-| --- | --- |
-| -name | Search for files by name (case-sensitive) |
-|  -inname | Search for files by name (case-insensitive) |
-| -type | Specify the type of file: `f` for files, `d` for directories |
-| -size | Search for files of a specific size (e.g., `+100k` for files larger than 100KB) |
-| -mtime | Search for files modified within a certain number of days |
+| Option  | **Description**                                                                 |
+| ------- | ------------------------------------------------------------------------------- |
+| -name   | Search for files by name (case-sensitive)                                       |
+| -inname | Search for files by name (case-insensitive)                                     |
+| -type   | Specify the type of file: `f` for files, `d` for directories                    |
+| -size   | Search for files of a specific size (e.g., `+100k` for files larger than 100KB) |
+| -mtime  | Search for files modified within a certain number of days                       |
 
 ## Common Use Cases
 
