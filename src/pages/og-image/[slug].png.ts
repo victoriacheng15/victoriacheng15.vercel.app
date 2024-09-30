@@ -1,5 +1,5 @@
 import type { APIContext, GetStaticPathsResult } from "astro";
-import { getCollection, getEntryBySlug } from "astro:content";
+import { getCollection } from "astro:content";
 import satori, { type SatoriOptions } from "satori";
 import { html } from "satori-html";
 import { Resvg } from "@resvg/resvg-js";
@@ -46,9 +46,8 @@ const markup = (title: string) =>
 		</div>
 	</div>`;
 
-export async function GET({ params: { slug } }: APIContext) {
-	const post = await getEntryBySlug("post", slug!);
-	const title = post?.data.title ?? siteConfig.title;
+export async function GET(context: APIContext) {
+	const { title } = context.props;
 	const svg = await satori(markup(title), ogOptions);
 	const png = new Resvg(svg).render().asPng();
 	return new Response(png, {
@@ -61,5 +60,12 @@ export async function GET({ params: { slug } }: APIContext) {
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 	const posts = await getCollection("post");
-	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
+	return posts
+		.filter(({ data }) => !data.ogImage)
+		.map((post) => ({
+			params: { slug: post.slug },
+			props: {
+				title: post.data.title,
+			},
+		}));
 }
