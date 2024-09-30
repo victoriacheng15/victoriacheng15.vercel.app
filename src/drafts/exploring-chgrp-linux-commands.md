@@ -25,11 +25,11 @@ This command changes the group ownership of `project.txt` to the `developers` gr
 
 ## Options
 
-| Option | **Description** |
-| --- | --- |
-| `-R` | Recursively change the group ownership of all files in a directory and its subdirectories |
-| `-v` | Verbose output, showing files as their group is changed |
-| `-c` | Show output only for files that actually had their group changed |
+| Option | **Description**                                                                           |
+| ------ | ----------------------------------------------------------------------------------------- |
+| `-R`   | Recursively change the group ownership of all files in a directory and its subdirectories |
+| `-v`   | Verbose output, showing files as their group is changed                                   |
+| `-c`   | Show output only for files that actually had their group changed                          |
 
 ## Common Use Cases
 
@@ -99,7 +99,7 @@ For more details and advanced options, you can always refer to the manual by typ
 
 ```bash
 man chgrp
-# or 
+# or
 chgrp --help
 
 ```

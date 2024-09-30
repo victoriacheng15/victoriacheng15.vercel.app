@@ -47,38 +47,38 @@ The `WHERE` clause supports a wide range of operators in defining conditions. So
 Here are a few examples:
 
 - Retrieve customers who are older than 30:
-    
+
 ```sql
 SELECT first_name, last_name, age
 FROM customers
 WHERE age > 30;
 ```
-    
+
 - Retrieve customers from specific cities:
-    
+
 ```sql
 SELECT first_name, last_name, city
 FROM customers
 WHERE city IN ('New York', 'Los Angeles', 'Chicago');
 ```
-    
+
 - Retrieve orders placed within a specific date range:
-    
+
 ```sql
 SELECT order_id, order_date, total
 FROM orders
 WHERE order_date BETWEEN '2023-01-01' AND '2023-12-31';
 ```
-    
+
 - Retrieve customers whose first name starts with the letter "A" using the `LIKE` operator:
-    
+
 ```sql
 SELECT first_name, last_name
 FROM customers
 WHERE first_name LIKE 'A%';
 ```
+
 Here, % is a wildcard matching any characters after "A", returning names like "Alice" or "Andrew."
-    
 
 ### Combining Conditions with AND & OR
 
