@@ -10,7 +10,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"lint": "biome lint .",
-		"format": "biome format . --write && prettier -w ./src ./src/**/*.astro",
+		"format": "biome format ./src --write && prettier -w ./src ./src/**/*.astro",
 		"test": "vitest --run",
 		"test:coverage": "vitest --coverage",
 		"cypress:open": "npx cypress open",
