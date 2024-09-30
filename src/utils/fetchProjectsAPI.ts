@@ -25,7 +25,6 @@ export async function getPinnedProjects(): Promise<Repository[]> {
     }
   }`;
 
-	// @ts-expect-error
 	const token: string = import.meta.env.TOKEN;
 
 	const response = await fetch(GITHUB_API, {
