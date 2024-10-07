@@ -28,6 +28,7 @@ This command changes the group ownership of `project.txt` to the `developers` gr
 | Option | **Description**                                                                           |
 | ------ | ----------------------------------------------------------------------------------------- |
 | `-R`   | Recursively change the group ownership of all files in a directory and its subdirectories |
+| `--reference`   | Change the group of a file to match the group of another reference file |
 | `-v`   | Verbose output, showing files as their group is changed                                   |
 | `-c`   | Show output only for files that actually had their group changed                          |
 
