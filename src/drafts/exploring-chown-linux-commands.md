@@ -25,12 +25,12 @@ This command changes the owner of `report.txt` to `alice` and the group to `deve
 
 ## Options
 
-| Option | **Description** |
-| --- | --- |
-| -R | Change ownership recursively for directories and their contents |
-| --reference | Change the ownership of a file to match the ownership of another file |
-| --from | Only change ownership if the current owner and group match the specified criteria |
-| -h | Modify symbolic links instead of the target files |
+| Option      | **Description**                                                                   |
+| ----------- | --------------------------------------------------------------------------------- |
+| -R          | Change ownership recursively for directories and their contents                   |
+| --reference | Change the ownership of a file to match the ownership of another file             |
+| --from      | Only change ownership if the current owner and group match the specified criteria |
+| -h          | Modify symbolic links instead of the target files                                 |
 
 ## Common Use Cases
 
