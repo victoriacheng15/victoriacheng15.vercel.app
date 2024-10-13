@@ -2,6 +2,9 @@ const BOOKS = [
 	{
 		year: 2024,
 		books: [
+			"The Strangest Secret",
+			"Range Why Generalists Triumph in a Specialized World",
+			"The Millionaire Fastlane Crack the Code to Wealth and Live Rich for a Lifetime",
 			"Fundamentals of Data Engineering",
 			"The First 20 Hours How to Learn Anything . . . Fast",
 			"Quit: The Power of Knowing When to Walk Away",
