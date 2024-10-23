@@ -29,7 +29,7 @@
 		"@tailwindcss/line-clamp": "^0.4.4",
 		"@tailwindcss/typography": "^0.5.15",
 		"@types/jsdom": "^21.1.7",
-		"@vitest/coverage-v8": "^2.1.2",
+		"@vitest/coverage-v8": "^2.1.3",
 		"autoprefixer": "^10.4.20",
 		"cypress": "^13.15.0",
 		"jsdom": "^25.0.1",
