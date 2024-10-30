@@ -5,30 +5,22 @@
 @layer base {
 	:root {
 		color-scheme: light;
-		--theme-bg: #d1d5db;
-		--theme-link: #064e3b;
+		--theme-bg: #f3f4f6;
 		--theme-text: #22272a;
-		--theme-accent: #1e3a8a;
-		--theme-accent-2: #9a3412;
-		--theme-quote: #6b21a8;
-		--theme-menu-bg: #d1d5db;
-		--theme-bold: #9d174d;
-		--theme-underline: #0f5c2b;
+		--theme-link: #1147BB;
+		--theme-accent: #205522;
+		--theme-accent-2: #80330A;
 	}
-
+	
 	:root.dark {
 		color-scheme: dark;
 		--theme-bg: #1f2937;
-		--theme-link: #34d399;
 		--theme-text: #f1f5f9;
-		--theme-accent: #60a5fa;
-		--theme-accent-2: #fdba74;
-		--theme-quote: #d8b4fe;
-		--theme-menu-bg: #1d1f21d9;
-		--theme-bold: #f9a8d4;
-		--theme-underline: #63de8f;
+		--theme-link: #93c5fd;
+		--theme-accent: #9BCAAC;
+		--theme-accent-2: #FFA375;
 	}
-
+	
 	html {
 		@apply scroll-smooth;
 	}
