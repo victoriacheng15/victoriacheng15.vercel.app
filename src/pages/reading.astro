@@ -21,7 +21,7 @@ const currentYear = new Date().getFullYear();
 		allBooks.map(({ year, books }) =>
 			year === currentYear ? (
 				<details open class="mb-4">
-					<summary class="mb-2 text-xl font-bold tracking-wider">{year}</summary>
+					<summary class="mb-2 text-xl font-bold tracking-wider text-accent">{year}</summary>
 					<ul class="grid gap-4">
 						{books.map((title) => (
 							<li class="ml-8 list-disc text-lg">{title}</li>
@@ -30,7 +30,7 @@ const currentYear = new Date().getFullYear();
 				</details>
 			) : (
 				<details class="mb-4">
-					<summary class="mb-2 text-xl font-bold tracking-wider">{year}</summary>
+					<summary class="mb-2 text-xl font-bold tracking-wider text-accent">{year}</summary>
 					<ul class="grid gap-4">
 						{books.map((title) => (
 							<li class="ml-8 list-disc text-lg">{title}</li>
