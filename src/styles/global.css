@@ -7,20 +7,20 @@
 		color-scheme: light;
 		--theme-bg: #f3f4f6;
 		--theme-text: #22272a;
-		--theme-link: #1147BB;
+		--theme-link: #1147bb;
 		--theme-accent: #205522;
-		--theme-accent-2: #80330A;
+		--theme-accent-2: #80330a;
 	}
-	
+
 	:root.dark {
 		color-scheme: dark;
 		--theme-bg: #1f2937;
 		--theme-text: #f1f5f9;
 		--theme-link: #93c5fd;
-		--theme-accent: #9BCAAC;
-		--theme-accent-2: #FFA375;
+		--theme-accent: #9bcaac;
+		--theme-accent-2: #ffa375;
 	}
-	
+
 	html {
 		@apply scroll-smooth;
 	}
