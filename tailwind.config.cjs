@@ -39,10 +39,10 @@ module.exports = {
 					css: {
 						"--tw-prose-body": "var(--theme-text)",
 						"--tw-prose-headings": "var(--theme-accent-2)",
-						"--tw-prose-links": "var(--theme-text)",
+						"--tw-prose-links": "var(--theme-link)",
 						"--tw-prose-bold": "var(--theme-text)",
 						"--tw-prose-bullets": "var(--theme-text)",
-						"--tw-prose-quotes": "var(--theme-quote)",
+						"--tw-prose-quotes": "var(--theme-accent)",
 						"--tw-prose-code": "var(--theme-text)",
 						"--tw-prose-hr": "0.5px dashed #666",
 						"--tw-prose-th-borders": "#666",
@@ -55,11 +55,11 @@ module.exports = {
 						},
 						strong: {
 							fontWeight: "700",
-							color: "var(--theme-bold)",
+							color: "var(--theme-accent)",
 						},
 						em: {
 							"text-decoration": "underline",
-							color: "var(--theme-underline)",
+							color: "var(--theme-accent-2)",
 						},
 						code: {
 							border: "1px solid #666",
