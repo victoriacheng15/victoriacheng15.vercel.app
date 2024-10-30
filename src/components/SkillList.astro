@@ -6,7 +6,7 @@ import { SKILLS } from "@/data/skills";
 <ul class="grid grid-cols-2 gap-6 sm:grid-cols-4 md:grid-cols-6">
 	{
 		SKILLS.map(({ skill, name }) => (
-			<li class="grid place-items-center gap-2 text-accent">
+			<li class="grid place-items-center gap-2 text-link">
 				<Icon class="h-14 w-14" aria-label={name} name={skill} />
 				<p class="text-center text-xs font-semibold md:text-sm">{name}</p>
 			</li>
