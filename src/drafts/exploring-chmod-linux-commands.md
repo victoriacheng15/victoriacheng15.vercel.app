@@ -25,12 +25,12 @@ This command sets the permissions of `script.sh` so that the owner can read, wri
 
 ## Options
 
-| Option | **Description** |
-| --- | --- |
-| -R | Change permissions recursively for directories and their contents |
-| -v | Show a verbose output, listing each file as the permissions change |
-| -c | Only change files that actually need to be changed and report them |
-| --reference | Change permissions to match another file |
+| Option      | **Description**                                                    |
+| ----------- | ------------------------------------------------------------------ |
+| -R          | Change permissions recursively for directories and their contents  |
+| -v          | Show a verbose output, listing each file as the permissions change |
+| -c          | Only change files that actually need to be changed and report them |
+| --reference | Change permissions to match another file                           |
 
 ## Common Use Cases
 
