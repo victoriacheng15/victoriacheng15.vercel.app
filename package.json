@@ -21,7 +21,7 @@
 		"@astrojs/mdx": "^3.1.9",
 		"@astrojs/sitemap": "^3.2.1",
 		"@astrojs/tailwind": "5.1.2",
-		"@biomejs/biome": "1.9.3",
+		"@biomejs/biome": "1.9.4",
 		"@iconify-json/ph": "^1.2.1",
 		"@iconify-json/simple-icons": "^1.2.10",
 		"@resvg/resvg-js": "^2.6.2",
