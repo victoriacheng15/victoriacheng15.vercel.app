@@ -58,8 +58,10 @@ async function sortFiles(files) {
 
 		if (new Date(today).getTime() + ONE_DAY === new Date(firstPost[0]).getTime()) {
 			const fileName = `${firstPost[1]}.md`;
+			const filePath = path.join(DRAFT_DIR, fileName);
+			const destinationPath = path.join(MARKDOWN_DIR, fileName);
 
-			await fs.rename(`${DRAFT_DIR}/${fileName}`, `${MARKDOWN_DIR}/${fileName}`);
+			await fs.rename(filePath, destinationPath);
 
 			console.log("\n== 🥳️ The file moving is done 🥳️ ==\n");
 		} else {

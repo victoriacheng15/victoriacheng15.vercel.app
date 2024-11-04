@@ -32,7 +32,7 @@ select action in "${actions[@]}"; do
     break
     ;;
   "${actions[2]}")
-    scripts/publish-post.sh
+    node scripts/publishPost.js
     break
     ;;
   "${actions[3]}")
