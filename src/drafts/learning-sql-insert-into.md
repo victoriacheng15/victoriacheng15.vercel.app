@@ -55,17 +55,17 @@ You can insert multiple rows in a single `INSERT INTO` statement, which can be b
 
 ```sql
 INSERT INTO table_name (column1, column2, ...)
-VALUES 
+VALUES
 (value1a, value2a, ...),
 (value1b, value2b, ...),
 (value1c, value2c, ...);
 ```
 
-Example: 
+Example:
 
 ```sql
 INSERT INTO employees (employee_id, name, department)
-VALUES 
+VALUES
 (103, 'Alice Brown', 'Finance'),
 (104, 'Bob White', 'Marketing'),
 (105, 'Charlie Green', 'HR');
