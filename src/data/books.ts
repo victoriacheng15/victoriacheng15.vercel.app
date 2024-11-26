@@ -2,6 +2,7 @@ const BOOKS = [
 	{
 		year: 2024,
 		books: [
+			"Fundamentals of Software Architecture",
 			"The Strangest Secret",
 			"Range Why Generalists Triumph in a Specialized World",
 			"The Millionaire Fastlane Crack the Code to Wealth and Live Rich for a Lifetime",
