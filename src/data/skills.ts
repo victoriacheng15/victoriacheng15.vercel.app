@@ -12,12 +12,28 @@ export const SKILLS = [
 		skill: "simple-icons:python",
 	},
 	{
+		name: ".NET",
+		skill: "simple-icons:dotnet",
+	},
+	{
+		name: "HTML 5",
+		skill: "simple-icons:html5",
+	},
+	{
+		name: "CSS 3",
+		skill: "simple-icons:css3",
+	},
+	{
 		name: "React",
 		skill: "simple-icons:react",
 	},
 	{
 		name: "Next.js",
 		skill: "simple-icons:nextdotjs",
+	},
+	{
+		name: "Redux",
+		skill: "simple-icons:redux",
 	},
 	{
 		name: "Tailwind CSS",
@@ -28,14 +44,6 @@ export const SKILLS = [
 		skill: "simple-icons:sass",
 	},
 	{
-		name: "Redux",
-		skill: "simple-icons:redux",
-	},
-	{
-		name: "Chakra UI",
-		skill: "simple-icons:chakraui",
-	},
-	{
 		name: "Node.js",
 		skill: "simple-icons:nodedotjs",
 	},
@@ -44,28 +52,8 @@ export const SKILLS = [
 		skill: "simple-icons:express",
 	},
 	{
-		name: "Jest",
-		skill: "simple-icons:jest",
-	},
-	{
-		name: "Testing Library",
-		skill: "simple-icons:testinglibrary",
-	},
-	{
-		name: "Cypress",
-		skill: "simple-icons:cypress",
-	},
-	{
-		name: "Docker",
-		skill: "simple-icons:docker",
-	},
-	{
-		name: "Github Actions",
-		skill: "simple-icons:githubactions",
-	},
-	{
-		name: "Linux",
-		skill: "simple-icons:linux",
+		name: "Flask",
+		skill: "simple-icons:flask",
 	},
 	{
 		name: "MongoDB",
@@ -76,15 +64,31 @@ export const SKILLS = [
 		skill: "simple-icons:postgresql",
 	},
 	{
+		name: "Cypress",
+		skill: "simple-icons:cypress",
+	},
+	{
+		name: "Jest",
+		skill: "simple-icons:jest",
+	},
+	{
+		name: "Github Actions",
+		skill: "simple-icons:githubactions",
+	},
+	{
+		name: "Testing Library",
+		skill: "simple-icons:testinglibrary",
+	},
+	{
+		name: "Docker",
+		skill: "simple-icons:docker",
+	},
+	{
 		name: "Bash",
 		skill: "simple-icons:gnubash",
 	},
 	{
-		name: "HTML 5",
-		skill: "simple-icons:html5",
-	},
-	{
-		name: "CSS 3",
-		skill: "simple-icons:css3",
+		name: "Linux",
+		skill: "simple-icons:linux",
 	},
 ];
