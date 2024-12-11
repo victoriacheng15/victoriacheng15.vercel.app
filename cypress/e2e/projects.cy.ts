@@ -9,6 +9,6 @@ describe("Projects page", () => {
 	});
 
 	it("should have a list of 5 projects", () => {
-		cy.get("article").should("have.length", 4);
+		cy.get("article").should("have.length", 5);
 	});
 });
