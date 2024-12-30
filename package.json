@@ -18,7 +18,7 @@
 		"check": "astro check"
 	},
 	"devDependencies": {
-		"@astrojs/mdx": "^4.0.2",
+		"@astrojs/mdx": "^4.0.3",
 		"@astrojs/sitemap": "^3.2.1",
 		"@astrojs/tailwind": "5.1.4",
 		"@biomejs/biome": "1.9.4",
